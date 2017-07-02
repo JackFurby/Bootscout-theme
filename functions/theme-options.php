@@ -65,6 +65,12 @@ function theme_options_do_page() {
                         <label class="description" for="scout_theme_options[twitter_link]"> Inset your groups Twitter account URL</label>
                     </td>
                 </tr>
+				<tr><th colspan="2"><h2>Extra</h2></th></tr>
+                <tr valign="top"><th scope="row">Disable sidebar</th>
+                    <td>
+						<input id="scout_theme_options[sidebar]" type="checkbox" name="scout_theme_options[sidebar]" value="1"<?php checked( 1 == $options['sidebar'] ); ?>">Check to disable<br>
+                    </td>
+                </tr>
 				<tr><th colspan="2"><h2>Section page links</h2></th></tr>
 				<tr valign="top"><th scope="row"></th>
                     <td>
