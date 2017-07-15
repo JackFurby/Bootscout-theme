@@ -108,6 +108,15 @@
     background-color: #79A12E;
 	border-color: #79A12E;
 }
+.navbar-inverse .navbar-nav .nav-link {
+	color: white;
+}
+.navbar-inverse .navbar-nav .nav-link:hover {
+	color: #9F9F9F;
+}
+.navbar-inverse .navbar-brand:hover {
+	color: #9F9F9F;
+}
 
 /* Main content */
 

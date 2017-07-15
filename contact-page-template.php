@@ -20,14 +20,14 @@
         ?>
         <div id="content" role="main">
             <header>
-                <div>
                     <?php if ( function_exists( 'the_custom_logo' ) ) {
                         $custom_logo_id = get_theme_mod( 'custom_logo' );
                         $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
                         $link = esc_url( home_url('/') );
-                        echo"<a href=\"$link\"><img class=\"site-logo\" src=\"$image[0]\" alt=\"\"></a>";
-       	            }?>
-                </div>
+                        if ( has_custom_logo() ) {
+                            echo"<div><a href=\"$link\"><img class=\"site-logo\" src=\"$image[0]\" alt=\"\"></a></div>";
+                        }
+               	    }?>
                 <h2><?php the_title()?></h2>
             </header>
             <?php get_template_part('loops/content', 'page'); ?>
@@ -43,14 +43,12 @@
                     $is_twitter_link = false;
                 }
                 if ($is_facebook_link || $is_twitter_link) {
-                    echo"<ul class=\"list-unstyled list-inline list-social-icons\">";
                     if ($is_facebook_link) {
-                        echo"<li><a href=\"".$options['fb_link']."\"><i class=\"fa fa-facebook-square fa-2x\"></i></a></li>";
+                        echo"<a href=\"".$options['fb_link']."\" class=\"ml-1\"><i id=\"social-fb\" class=\"fa fa-facebook-square fa-3x social\"></i></a>";
                     }
                     if ($is_twitter_link) {
-                        echo"<li><a href=\"".$options['twitter_link']."\"><i class=\"fa fa-twitter-square fa-2x\"></i></a></li>";
+                        echo"<a href=\"".$options['twitter_link']."\" class=\"ml-1\"><i id=\"social-tw\" class=\"fa fa-twitter-square fa-3x social\"></i></a>";
                     }
-                    echo"</ul>";
                 }
             ?>
         </div><!-- /#content -->
