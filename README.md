@@ -22,9 +22,7 @@ Currently the theme works and has some useful functionality. this includes:
 
 ### Page templates
 * Default: includes page title and sidebar
-* Contact template (including sidebar): Includes page title, social media links if set and sidebar
-* Contact template (no sidebar): Includes page title, social media links if set
-* banner (no sidebar): Includes page title, banner image (set a featured image for the page to display)
-* no title (no sidebar): just a plain page
-* no title (including sidebar): just a plain page with a sidebar
-* section page: Display links to various scout sections if set (can set sections in theme options), no sidebar
+* Contact: Includes page title, social media links if set and sidebar
+* Banner: Includes page title, banner image (set a featured image for the page to display)
+* No title: just a plain page
+* Section page: Display links to various scout sections if set (can set sections in theme options)
