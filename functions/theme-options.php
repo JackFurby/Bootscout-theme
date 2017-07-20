@@ -68,7 +68,12 @@ function theme_options_do_page() {
 				<tr><th colspan="2"><h2>Extra</h2></th></tr>
                 <tr valign="top"><th scope="row">Disable sidebar</th>
                     <td>
-						<input id="scout_theme_options[sidebar]" type="checkbox" name="scout_theme_options[sidebar]" value="<?php checked( 1 == $options['sidebar'] ); ?>">Check to disable<br>
+						<input id="scout_theme_options[sidebar]" type="checkbox" name="scout_theme_options[sidebar]" value="1"<?php checked( 1 == $options['sidebar'] ); ?>>Check to disable<br>
+                    </td>
+                </tr>
+				<tr valign="top"><th scope="row">Show carousel</th>
+                    <td>
+						<input id="scout_theme_options[carousel]" type="checkbox" name="scout_theme_options[carousel]" value="1"<?php checked( 1 == $options['carousel'] ); ?>>Check to enable<br>
                     </td>
                 </tr>
 				<tr><th colspan="2"><h2>Section page links</h2></th></tr>
