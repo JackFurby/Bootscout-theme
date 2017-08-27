@@ -24,6 +24,10 @@ add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'qu
 include 'theme-options.php';
 $options = get_option('scout_theme_options');
 
+//Bootscout settings
+include 'bootscout-settings.php';
+$bootscout = get_option('scout_settings');
+
 function register_my_menus() {
   register_nav_menus(
     array(

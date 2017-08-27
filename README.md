@@ -11,10 +11,11 @@ Currently the theme works and has some useful functionality. this includes:
 * Two menus can be set at any one time (one as the navbar and one as extra information in the footer)
 * Various page templates have been created to make editing the site easier
 * theme options have been created to set useful information about the scout group / district / county
+* (WIP)a carousel can be displayed on the front page displaying recent posts
 
 ### Setting up the theme
 1. Download the latest release (keep it in .zip format)
-2. Within your WP site upload the zip in the theme options. Activate the them once complete
+2. Within your WP site upload the zip in the theme options. Activate the theme once complete
 3. In your WP dashboard navigate to theme options which is located in appearance
 4. fill in all fields that apply and save changes
 5. Also with the appearance tab go to customize.
@@ -26,3 +27,8 @@ Currently the theme works and has some useful functionality. this includes:
 * Banner: Includes page title, banner image (set a featured image for the page to display)
 * No title: just a plain page
 * Section page: Display links to various scout sections if set (can set sections in theme options)
+
+### To do
+* Look into disabling wp comments
+* Remake join page to use bootstap features
+* Add ability for theme to make use of wide monitors e.g. 21:9 (grid layouts?)

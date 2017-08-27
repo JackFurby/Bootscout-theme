@@ -36,3 +36,13 @@ function b4st_enqueues() {
 	}
 }
 add_action('wp_enqueue_scripts', 'b4st_enqueues', 100);
+
+function bootscout_admin_enqueue() {
+
+	/* Styles */
+
+	wp_register_style('bootscout-admin-css', get_template_directory_uri() . '/theme/css/admin.css');
+	wp_enqueue_style('bootscout-admin-css');
+
+}
+add_action('admin_enqueue_scripts', 'bootscout_admin_enqueue');

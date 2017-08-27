@@ -17,6 +17,24 @@
         <h1>Category: <?php echo single_cat_title(); ?></h1>
         <hr>
         <?php get_template_part('loops/content', get_post_format()); ?>
+        <!-- left and right banner images start -->
+        <?php
+        if ($bootscout['banner_2_image'] != "") {
+            echo "<div class=\"leftImg\">";
+            $imgSrc = wp_get_attachment_image_src( $bootscout['banner_2_image'], 'full');
+            $img = $imgSrc[0];
+            echo "<img class=\"bannerSideImgLeft\" src=\"$img\" />";
+            echo "</div>";
+        }
+        if ($bootscout['banner_1_image'] != "") {
+            echo "<div class=\"rightImg\">";
+            $imgSrc = wp_get_attachment_image_src( $bootscout['banner_1_image'], 'full');
+            $img = $imgSrc[0];
+            echo "<img class=\"bannerSideImgRight\" src=\"$img\" />";
+            echo "</div>";
+        }
+         ?>
+      <!-- left and right banner images end -->
       </div><!-- /#content -->
     </div>
     <?php if ($options['sidebar'] != true) {

@@ -8,6 +8,9 @@
 	max-width: 100%;
 	height: auto
 }
+.page-template-default {
+	overflow-x: hidden;
+}
 @media (min-width: 576px) {
   .container {
     padding-right: 15px;
@@ -119,6 +122,7 @@
 }
 
 /* carousel */
+
 @media (min-width: 200px) {
 	.carousel_caption {
 		font-size: 40px;
@@ -173,10 +177,10 @@
 	top:-20px;
   	margin-left: -50vw;
   	margin-right: -50vw;
-	overflow: hidden;
+	display: flex;
 }
 .carousel-item img {
-	width: 100vw;
+	width:100vw;
 	object-fit: cover;
 }
 .carousel_background {
@@ -195,6 +199,70 @@
 }
 .carousel-caption {
 	bottom:30px;
+}
+
+/* left and right banners */
+
+@media (min-width: 576px) {
+  	.rightImg, .rightImgFade {
+		margin-left: 270px;
+  	}
+	.leftImg, .leftImgFade {
+		margin-right: 270px;
+	}
+}
+
+@media (min-width: 768px) {
+	.rightImg, .rightImgFade {
+		margin-left: 360px;
+ 	}
+	.leftImg, .leftImgFade {
+		margin-right: 360px;
+	}
+}
+
+@media (min-width: 992px) {
+	.rightImg, .rightImgFade {
+		margin-left: 480px;
+  	}
+	.leftImg, .leftImgFade {
+		margin-right: 480px;
+	}
+}
+
+@media (min-width: 1200px) {
+  	.rightImg, .rightImgFade {
+		margin-left: 580px;
+	}
+	.leftImg, .leftImgFade {
+		margin-right: 580px;
+	}
+}
+.leftImg {
+	position: fixed;
+	top:60px;
+	bottom:30px;
+	right: 50%;
+	width: 300px;
+	height:850px;
+	z-index: -1;
+	overflow: hidden;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.rightImg {
+	position: fixed;
+	top:60px;
+	bottom:30px;
+	left: 50%;
+	width: 300px;
+	height:850px;
+	z-index: -1;
+	overflow: hidden;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bannerSideImgLeft, .bannerSideImgRight {
+	height:100%;
+	width:auto;
 }
 
 /* Main content */
