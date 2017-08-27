@@ -29,6 +29,10 @@ Currently the theme works and has some useful functionality. this includes:
 * Section page: Display links to various scout sections if set (can set sections in theme options)
 
 ### To do
+<<<<<<< HEAD
+=======
+* Finnish carousel
+>>>>>>> 322c4d8bca6561a96ac288e319d25752b9321b6d
 * Look into disabling wp comments
 * Remake join page to use bootstap features
 * Add ability for theme to make use of wide monitors e.g. 21:9 (grid layouts?)
