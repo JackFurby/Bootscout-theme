@@ -5,7 +5,7 @@ add_action('admin_menu', 'bootscout_settings_menu');
 function bootscout_settings_menu() {
 
 	//create new top-level menu,'publish_pages' allows editors and admins to access these settings
-	add_menu_page('Bootscout Settings', 'Bootscout Settings', 'publish_pages', __FILE__, 'bootscout_settings_page' );
+	add_menu_page('Bootscout Settings', 'Bootscout Settings', 'manage_options', __FILE__, 'bootscout_settings_page' );
 
 }
 
@@ -34,9 +34,8 @@ function bootscout_settings_page() {
     <?php settings_fields( 'bootscout_options' ); ?>
     <?php $bootscout = get_option( 'scout_settings' ); ?>
     <table class="form-table">
-		<h2>Banner Settings</h2>
-        <tr><th colspan="2"><h2>Banner right</h2></th></tr>
-        <tr valign="top"><th scope="row">Banner image</th>
+        <tr><th colspan="2"><h2>Banner setting</h2></th></tr>
+        <tr valign="top"><th scope="row">Right banner image</th>
             <td>
 				<?php
 				wp_enqueue_media();
@@ -53,8 +52,7 @@ function bootscout_settings_page() {
                 <input type="hidden" name="scout_settings[banner_1_image]" id="scout_settings[banner_1_image]" value="<?php esc_attr_e( $bootscout['banner_1_image'] ); ?>" />
             </td>
         </tr>
-        <tr><th colspan="2"><h2>Banner left</h2></th></tr>
-        <tr valign="top"><th scope="row">Banner image</th>
+        <tr valign="top"><th scope="row">Left banner image</th>
             <td>
 				<?php
 				wp_enqueue_media();

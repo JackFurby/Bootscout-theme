@@ -28,6 +28,12 @@ $options = get_option('scout_theme_options');
 include 'bootscout-settings.php';
 $bootscout = get_option('scout_settings');
 
+//adds capabilities to editor so they can edit bootscout settings
+$role_object = get_role( 'editor' );
+$role_object->add_cap( 'manage_options' );
+//$role_object->remove_cap('manage_options');
+
+
 function register_my_menus() {
   register_nav_menus(
     array(

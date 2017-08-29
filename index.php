@@ -34,9 +34,13 @@
       </div><!-- /#content -->
     </div>
 
-    <div class="col-sm-4" id="sidebar" role="navigation">
-       <?php get_sidebar(); ?>
-    </div>
+    <?php if ($options['sidebar'] != true) {
+      echo"
+        <div class=\"col-sm-4\" id=\"sidebar\" role=\"navigation\">";
+            get_sidebar();
+        echo"</div>";
+    }
+    ?>
 
   </div><!-- /.row -->
 </div><!-- /.container -->
