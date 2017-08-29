@@ -10,8 +10,10 @@ Currently the theme works and has some useful functionality. this includes:
 * A logo can be set to appear in the top left had side of each page
 * Two menus can be set at any one time (one as the navbar and one as extra information in the footer)
 * Various page templates have been created to make editing the site easier
-* theme options have been created to set useful information about the scout group / district / county
-* (WIP)a carousel can be displayed on the front page displaying recent posts
+* Theme options have been created to set useful information about the scout group / district / county
+* A carousel can be displayed on the front page displaying recent posts
+* Two banners can be set either side of the main content
+* Bootscout setting is available to manage some theme options by site editors
 
 ### Setting up the theme
 1. Download the latest release (keep it in .zip format)
@@ -31,4 +33,3 @@ Currently the theme works and has some useful functionality. this includes:
 ### To do
 * Look into disabling wp comments
 * Remake join page to use bootstap features
-* Add ability for theme to make use of wide monitors e.g. 21:9 (grid layouts?)
