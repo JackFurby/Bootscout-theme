@@ -61,54 +61,49 @@
         if ($is_beaver || $is_cub || $is_scout || $is_explorer || $is_network) {
             echo"<ul id=\"sectionList\">";
             if ($is_beaver) {
-                echo"<li>
-                    <a href=\"".$options['beaver-page-link']."\">
-                        <ol id=\"bevMainBtn\" class=\"sectionItm\">
-                            <li><img class=\"alignnone wp-image-743\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Beaver_PNG.png\" /></li>
-                            <li class=\"joinAge\">6 - 8</li>
-                        </ol>
-                    </a>
-                </li>";
+                echo"<div class=\"card d-inline-block m-4\" id=\"bevMainBtn\" style=\"width: 15rem;\">
+                        <img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Beaver_PNG.png\" alt=\"Card image cap\">
+                        <div class=\"card-block\">
+                            <p class=\"card-text\"><strong>Age</strong>: 6 - 8</p>
+                            <a href=\"".$options['beaver-page-link']."\" class=\"btn btn-primary\">View more</a>
+                        </div>
+                    </div>";
             }
             if ($is_cub) {
-                echo"<li>
-                    <a href=\"".$options['cub-page-link']."\">
-                        <ol id=\"cubMainBtn\" class=\"sectionItm\">
-                            <li><img class=\"alignnone wp-image-743\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Cub_PNG.png\" /></li>
-                            <li class=\"joinAge\">8 - 10.5</li>
-                        </ol>
-                    </a>
-                </li>";
+                echo"<div class=\"card d-inline-block m-4\" id=\"cubMainBtn\" style=\"width: 15rem;\">
+                        <img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Cub_PNG.png\" alt=\"Card image cap\">
+                        <div class=\"card-block\">
+                            <p class=\"card-text\"><strong>Age</strong>: 8 - 10.5</p>
+                            <a href=\"".$options['cub-page-link']."\" class=\"btn btn-primary\">View more</a>
+                        </div>
+                    </div>";
             }
             if ($is_scout) {
-                echo"<li>
-                    <a href=\"".$options['scout-page-link']."\">
-                        <ol id=\"scoMainBtn\" class=\"sectionItm\">
-                            <li><img class=\"alignnone wp-image-743\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Scouts_PNG.png\" /></li>
-                            <li class=\"joinAge\">10.5 - 14</li>
-                        </ol>
-                    </a>
-                </li>";
+                echo"<div class=\"card d-inline-block m-4\" id=\"scoMainBtn\" style=\"width: 15rem;\">
+                        <img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Scouts_PNG.png\" alt=\"Card image cap\">
+                        <div class=\"card-block\">
+                            <p class=\"card-text\"><strong>Age</strong>: 10.5 - 14</p>
+                            <a href=\"".$options['scout-page-link']."\" class=\"btn btn-primary\">View more</a>
+                        </div>
+                    </div>";
             }
             if ($is_explorer) {
-                echo"<li>
-                    <a href=\"".$options['explorer-page-link']."\">
-                        <ol id=\"expMainBtn\" class=\"sectionItm\">
-                            <li><img class=\"alignnone wp-image-743\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Explorers_PNG.png\" /></li>
-                            <li class=\"joinAge\">14 - 18</li>
-                        </ol>
-                    </a>
-                </li>";
+                echo"<div class=\"card d-inline-block m-4\" id=\"expMainBtn\" style=\"width: 15rem;\">
+                        <img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Explorers_PNG.png\" alt=\"Card image cap\">
+                        <div class=\"card-block\">
+                            <p class=\"card-text\"><strong>Age</strong>: 14 - 18</p>
+                            <a href=\"".$options['explorer-page-link']."\" class=\"btn btn-primary\">View more</a>
+                        </div>
+                    </div>";
             }
             if ($is_network) {
-                echo"<li>
-                    <a href=\"".$options['network-page-link']."\">
-                        <ol id=\"netMainBtn\" class=\"sectionItm\">
-                            <li><img class=\"alignnone wp-image-743\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Network_PNG.png\" /></li>
-                            <li class=\"joinAge\">18 - 25</li>
-                        </ol>
-                    </a>
-                </li>";
+                echo"<div class=\"card d-inline-block m-4\" id=\"netMainBtn\" style=\"width: 15rem;\">
+                        <img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Network_PNG.png\" alt=\"Card image cap\">
+                        <div class=\"card-block\">
+                            <p class=\"card-text\"><strong>Age</strong>: 18 - 25</p>
+                            <a href=\"".$options['network-page-link']."\" class=\"btn btn-primary\">View more</a>
+                        </div>
+                    </div>";
             }
             echo"</ul>";
         }

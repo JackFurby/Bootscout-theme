@@ -467,78 +467,28 @@ hr {
 /*join page css */
 
 #sectionList {
-	list-style-type: none;
 	text-align:center;
 	padding: 0;
 }
-#sectionList li {
-	list-style:none;
-	display: inline-block;
-
-}
-#sectionList li a {
-	text-decoration: none;
-}
-.sectionItm {
-	transition: all 0.1s linear;
-	list-style-type: none;
-    margin: 1em;
-    padding: 0;
-    overflow: hidden;
-	width: 300px;
-	text-align: center;
-}
-.sectionItm li {
-	list-style-type: none;
-	display: inline-block;
-}
 
 #bevMainBtn:hover {
-	background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(1,162,216,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: -o-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(1,162,216,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(1,162,216,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(1,162,216,0.55) 220px, rgba(255,255,255,0) 1px);
+	background: rgba(1,162,216,0.1);
 }
 #cubMainBtn:hover {
-	background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(115,163,51,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: -o-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(115,163,51,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(115,163,51,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(115,163,51,0.55) 220px, rgba(255,255,255,0) 1px);
+	background: rgba(115,163,51,0.1);
 }
 #scoMainBtn:hover {
-	background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(0,58,69,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: -o-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(0,58,69,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(0,58,69,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(0,58,69,0.55) 220px, rgba(255,255,255,0) 1px);
+	background: rgba(0,58,69,0.1);
 }
 #expMainBtn:hover {
-	background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(1,45,94,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: -o-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(1,45,94,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(1,45,94,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(1,45,94,0.55) 220px, rgba(255,255,255,0) 1px);
+	background: rgba(1,45,94,0.1);
 }
 #netMainBtn:hover {
-	background: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(35,31,32,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: -o-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(35,31,32,0.55) 220px, rgba(255,255,255,0) 1px);
-    background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(35,31,32,0.55) 220px, rgba(255,255,255,0) 1px) ;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 100px, rgba(35,31,32,0.55) 220px, rgba(255,255,255,0) 1px);
+	background: rgba(35,31,32,0.1);
 }
-
-.joinAge {
-	font-size: 25px;
-	line-height: 30px;
-	margin:0;
-	color:black;
-	margin-top:15px;
-	background-color:#D3D3D3;
-	border-radius: 10px;
-	width:300px;
-	text-align:center;
-}
-.sectionItm li img {
+.section-img {
 	height:180px;
 	width:auto;
 	padding:10px;
-	display: block;
-	margin:auto;
+	margin: auto;
 }

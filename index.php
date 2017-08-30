@@ -2,7 +2,17 @@
 
 <div class="container">
   <div class="row">
-    <div class="<?php if(is_active_sidebar('sidebar-widget-area')): ?>col-sm-8<?php else: ?>col-sm-12<?php endif; ?>">
+      <?php
+          if ($options['sidebar'] != true) {
+              if (is_active_sidebar('sidebar-widget-area')) {
+                  echo"<div class=col-sm-8>";
+              } else {
+                  echo"<div class=col-sm-12>";
+              }
+          } else {
+              echo"<div class=col-sm-12>";
+          }
+      ?>
       <div id="content" role="main">
               <?php if ( function_exists( 'the_custom_logo' ) ) {
                   $custom_logo_id = get_theme_mod( 'custom_logo' );
