@@ -2,8 +2,10 @@
     // get theme options
     $options = get_option('scout_theme_options');
 ?>
+
+<hr/>
+
 <footer class="container">
-    <hr>
     <div class="row">
         <div class="col">
             <ul id="footer-content">
@@ -32,7 +34,6 @@
                   	?>
                 </li>
             </ul>
-            <hr>
             <p id="copyright">Copyright © <?php echo $options['group_name']; ?> <?php echo date("Y"); ?>, All Rights Reserved.</p>
         </div>
     </div>
