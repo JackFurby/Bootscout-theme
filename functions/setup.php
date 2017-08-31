@@ -25,8 +25,8 @@ include 'theme-options.php';
 $options = get_option('scout_theme_options');
 
 //Bootscout settings
-include 'bootscout-settings.php';
-$bootscout = get_option('scout_settings');
+//include 'bootscout-settings.php';
+//$bootscout = get_option('scout_settings');
 
 //adds capabilities to editor so they can edit bootscout settings
 $role_object = get_role( 'editor' );
