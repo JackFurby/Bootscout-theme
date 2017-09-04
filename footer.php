@@ -3,8 +3,6 @@
     $options = get_option('scout_theme_options');
 ?>
 
-<hr/>
-
 <footer class="container">
     <div class="row">
         <div class="col">
@@ -37,7 +35,6 @@
             <p id="copyright">Copyright © <?php echo $options['group_name']; ?> <?php echo date("Y"); ?>, All Rights Reserved.</p>
         </div>
     </div>
-
 </footer>
 
 <?php wp_footer(); ?>

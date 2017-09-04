@@ -351,6 +351,30 @@ hr {
 
 /* Site footer */
 
+@media (min-width: 576px) {
+  	footer.container .row {
+    	width: 540px;
+    	max-width: 100%;
+  	}
+}
+@media (min-width: 768px) {
+  	footer.container .row {
+    	width: 720px;
+    	max-width: 100%;
+  	}
+}
+@media (min-width: 992px) {
+  	footer.container .row {
+    	width: 960px;
+    	max-width: 100%;
+  	}
+}
+@media (min-width: 1200px) {
+	footer.container .row {
+    	width: 1140px;
+    	max-width: 100%;
+  	}
+}
 .site-footer {
  	padding: 40px 0
 }
@@ -370,6 +394,8 @@ hr {
 }
 #footer-content {
 	padding: 0px;
+	height: 240px;
+	overflow: hidden;
 }
 #footer-content li {
 	list-style-type: none;
@@ -381,20 +407,46 @@ hr {
 .menu-footer-title {
 	padding-top:15px;
 }
+.menu-footer li a.nav-link {
+	padding:0;
+}
 .menu-footer li a {
 	text-decoration: none;
-	color: #79A12E;
+	color: rgb(0,19,35);
 	display:inline-block;
+	font-size: 13px;
 }
 .menu-footer li a:hover {
 	text-decoration: none;
-	color: #F37A1F;
+	color: rgb(139,0,102);
 }
-hr {
-	margin-top: 1rem;
-      margin-bottom: 1rem;
-      border: 0;
-      border-top: 1px solid rgba(0,0,0,.125);
+footer.container {
+	width:100%;
+	margin: 0;
+	background-color: rgb(134,162,11);
+}
+footer.container .row {
+	margin: 0 auto;
+	padding: 15px;
+}
+
+/* sticky footer */
+
+html, body {
+	height: 100%;
+}
+#container {
+	min-height: 100%;
+}
+#wrap {
+	overflow:auto;
+	padding-bottom: 350px;
+}
+footer.container {
+	position: relative;
+	margin-top: -350px; /* negative value of footer height */
+	height: 350px;
+	clear:both;
 }
 
 /*join page css */

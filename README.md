@@ -31,3 +31,4 @@ Currently the theme works and has some useful functionality. this includes:
 * Section page: Display links to various scout sections if set (can set sections in theme options)
 
 ### To do
+* add counters for number of scouts, leader and groups etc.
