@@ -11,4 +11,5 @@ Editor stylesheet
 
 body#tinymce {
   padding: 10px !important;
+  height:auto !important; /* stops area height growing on mouse click */
 }

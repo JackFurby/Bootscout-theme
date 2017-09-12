@@ -41,7 +41,7 @@ function bootscout_admin_enqueue() {
 
 	/* Styles */
 
-	wp_register_style('bootscout-admin-css', get_template_directory_uri() . '/theme/css/admin.css');
+	wp_register_style('bootscout-admin-css', get_template_directory_uri() . '/theme/css/admin.css', false);
 	wp_enqueue_style('bootscout-admin-css');
 
 }
