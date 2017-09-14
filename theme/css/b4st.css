@@ -1,3 +1,13 @@
+/* Fix for container within navbar on small viewports, for Firefox and Chrome.
+This may but be necessary when Bootstrap 4 is improved after alpha. */
+
+ @media (max-width: 575px) {
+ 	.navbar > .container {
+		position: static;
+     	width: 100%;
+   	}
+}
+
 /* Max content widths */
 
 .size-auto,
@@ -99,30 +109,35 @@
 .navbar .dropdown-menu {
 	margin-top: 0;
 }
-.navbar-toggler-right {
-	border: 0px;
-}
 .navbar-custom {
 	background-color: #4D2177 !important;
 }
-.btn-outline-info {
-    color: white;
-    background-image: none;
-    background-color: transparent;
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+#searchsubmit {
     border-color: white;
 }
-.btn-outline-info:hover {
+#searchsubmit:hover {
     background-color: #79A12E;
 	border-color: #79A12E;
 }
-.navbar-inverse .navbar-nav .nav-link {
+.nav-link {
 	color: white;
 }
-.navbar-inverse .navbar-nav .nav-link:hover {
+.nav-link:hover {
 	color: #9F9F9F;
 }
-.navbar-inverse .navbar-brand:hover {
+.navbar-brand {
+	color: white;
+}
+.navbar-brand:hover {
 	color: #9F9F9F;
+}
+@media (min-width: 768px) {
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
 }
 
 /* carousel */
