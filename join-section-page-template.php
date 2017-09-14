@@ -1,4 +1,4 @@
-<?php /* Template Name: section page */ ?>
+<?php /* Template Name: Section links page */ ?>
 <?php get_header(); ?>
 <?php
     // get theme options
