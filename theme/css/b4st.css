@@ -409,12 +409,13 @@ hr {
 }
 #footer-content {
 	padding: 0px;
-	height: 240px;
 	overflow: hidden;
+    text-align: center;
 }
 #footer-content li {
 	list-style-type: none;
-	display: inline;
+	display:inline-block;
+    vertical-align:top;
 }
 #ceop {
 	padding-bottom: 15px;
@@ -422,17 +423,22 @@ hr {
 .menu-footer-title {
 	padding-top:15px;
 }
-.menu-footer li a.nav-link {
-	padding:0;
-}
 .menu-footer li a {
 	text-decoration: none;
-	color: rgb(0,19,35);
 	display:inline-block;
 	font-size: 13px;
 }
+.menu-footer li a.nav-link {
+    padding:0;
+	color: rgb(0,19,35);
+}
+.menu-footer li a.social-link {
+	color: white;
+}
 .menu-footer li a:hover {
 	text-decoration: none;
+}
+.menu-footer li a.nav-link:hover {
 	color: rgb(139,0,102);
 }
 footer.container {
@@ -444,8 +450,80 @@ footer.container .row {
 	margin: 0 auto;
 	padding: 15px;
 }
+#copyright {
+    margin-bottom: 0;
+}
 
 /* sticky footer */
+@media (min-width:200px) {
+    #footer-content li {
+        float: none!important;
+    }
+    #footer-content {
+        height: 350px;
+    }
+    #wrap {
+        padding-bottom: 550px;
+    }
+    footer.container {
+        margin-top: -550px; /* negative value of footer height */
+    	height: 550px;
+    }
+}
+@media (min-width: 576px) {
+    #footer-content {
+        height: 200px;
+    }
+    #footer-content li.float-left {
+        float: left!important;
+    }
+    #footer-content li.float-right {
+        float: right!important;
+    }
+    #wrap {
+        padding-bottom: 350px;
+    }
+    footer.container {
+        margin-top: -350px; /* negative value of footer height */
+    	height: 350px;
+    }
+}
+@media (min-width: 768px) {
+    #footer-content {
+        height: 200px;
+    }
+    #wrap {
+        padding-bottom: 350px;
+    }
+    footer.container {
+        margin-top: -350px; /* negative value of footer height */
+    	height: 350px;
+    }
+}
+@media (min-width: 992px) {
+    #footer-content {
+        height: 200px;
+    }
+    #wrap {
+        padding-bottom: 350px;
+    }
+    footer.container {
+        margin-top: -350px; /* negative value of footer height */
+    	height: 350px;
+    }
+}
+@media (min-width: 1200px) {
+    #footer-content {
+        height: 200px;
+    }
+    #wrap {
+        padding-bottom: 350px;
+    }
+    footer.container {
+        margin-top: -350px; /* negative value of footer height */
+    	height: 350px;
+    }
+}
 
 html, body {
 	height: 100%;
@@ -455,12 +533,9 @@ html, body {
 }
 #wrap {
 	overflow:auto;
-	padding-bottom: 350px;
 }
 footer.container {
 	position: relative;
-	margin-top: -350px; /* negative value of footer height */
-	height: 350px;
 	clear:both;
 }
 
