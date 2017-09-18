@@ -29,33 +29,51 @@
                     	) );
                   	?>
                 </li>
-                <li class="float-none">
-                    <h4 class="menu-footer-title">Contact</h4>
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu-footer d-inline">
-                    <?php
-                        if (trim($options['fb_link']) != '') {
+                <?php
+                if (trim($options['fb_link']) != '') {
+                    $got_fb = true;
+                } else {
+                    $got_fb = false;
+                }
+                if (trim($options['twitter_link']) != '') {
+                    $got_twitter = true;
+                } else {
+                    $got_twitter = false;
+                }
+                # get page id of pages with contact page tempate
+                $args = [
+                    'post_type' => 'page',
+                    'fields' => 'ids',
+                    'nopaging' => true,
+                    'meta_key' => '_wp_page_template',
+                    'meta_value' => 'contact-page-template.php'
+                ];
+                $contactPages = get_posts( $args );
+                if(sizeof($contactPages) >= 1) {
+                    $got_contact = true;
+                } else {
+                    $got_contact = false;
+                }
+
+                if ($is_twitter || $is_fb || $got_contact) {
+                    echo"<li class=\"float-none\">
+                        <h4 class=\"menu-footer-title\">Contact</h4>
+                        <ul class=\"navbar-nav mr-auto mt-2 mt-lg-0 menu-footer d-inline\">";
+
+                        if ($got_fb) {
                             echo"<li data-toggle=\"tooltip\" title=\"Facebook\"><a href=\"".$options['fb_link']."\" class=\"ml-1 social-link\"><i id=\"social-fb\" class=\"fa fa-facebook-square fa-3x social\"></i></a></li>";
                         }
-                        if (trim($options['twitter_link']) != '') {
+                        if ($got_twitter) {
                             echo"<li data-toggle=\"tooltip\" title=\"Twitter\"><a href=\"".$options['twitter_link']."\" class=\"ml-1 social-link\"><i id=\"social-tw\" class=\"fa fa-twitter-square fa-3x social\"></i></a></li>";
                         }
-
-                        # get page id of pages with contact page tempate
-                        $args = [
-                            'post_type' => 'page',
-                            'fields' => 'ids',
-                            'nopaging' => true,
-                            'meta_key' => '_wp_page_template',
-                            'meta_value' => 'contact-page-template.php'
-                        ];
-                        $contactPages = get_posts( $args );
-                        if(sizeof($contactPages) >= 1) {
+                        if($got_contact) {
                             $contactPageLink = get_page_link($contactPages[0]);
                             echo"<li data-toggle=\"tooltip\" title=\"Contact Us\"><a href=\"$contactPageLink\" class=\"ml-1 social-link\"><i class=\"fa fa-envelope-square fa-3x\" aria-hidden=\"true\"></i></a></li>";
                         }
-                    ?>
-                    </ul>
-                </li>
+                    echo"</ul>
+                </li>";
+                }
+                ?>
                 <li class="float-right">
                     <h4 class="menu-footer-title">Useful links</h4>
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu-footer">
