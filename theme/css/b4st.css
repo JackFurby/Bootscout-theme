@@ -458,6 +458,7 @@ footer.container .row {
 @media (min-width:200px) {
     #footer-content li {
         float: none!important;
+        display: block;
     }
     #footer-content {
         height: 350px;
@@ -473,6 +474,9 @@ footer.container .row {
 @media (min-width: 576px) {
     #footer-content {
         height: 200px;
+    }
+    #footer-content li {
+        display: inline-block;
     }
     #footer-content li.float-left {
         float: left!important;
