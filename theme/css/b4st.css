@@ -1,3 +1,20 @@
+/* Fonts */
+
+@font-face {
+    font-family: TheSerifExtraBold;
+    src: url(../fonts/theserif-exbld-webfont.woff);
+}
+
+@font-face {
+    font-family: TheSerifPlain;
+    src: url(../fonts/theserif-hp5plain-webfont.woff);
+}
+
+@font-face {
+    font-family: TheSerifBold;
+    src: url(../fonts/theserif-hp6sebld-webfont.woff);
+}
+
 /* Fix for container within navbar on small viewports, for Firefox and Chrome.
 This may but be necessary when Bootstrap 4 is improved after alpha. */
 
@@ -222,17 +239,20 @@ This may but be necessary when Bootstrap 4 is improved after alpha. */
 }
 h2 {
 	color: #79A12E;
-	font-family: Frutiger;
+	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
 }
 h3 {
 	color:#F37A1F;
-	font-family: Frutiger;
+	font-family: "TheSerifBold",Tahoma,Verdana,Arial,Sans-serif;
+}
+h4 {
+	font-family: "TheSerifPlain",Tahoma,Verdana,Arial,Sans-serif;
 }
 p {
-	font-family: "Verdana", Geneva, sans-serif;
+	font-family: Verdana,Arial,Sans-serif;
 }
 nav a {
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
 }
 .alignright {
 	float: right;
