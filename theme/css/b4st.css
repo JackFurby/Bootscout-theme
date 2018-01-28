@@ -15,6 +15,24 @@
     src: url(../fonts/theserif-hp6sebld-webfont.woff);
 }
 
+h2 {
+	color: #79A12E;
+	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
+}
+h3 {
+	color:#F37A1F;
+	font-family: "TheSerifBold",Tahoma,Verdana,Arial,Sans-serif;
+}
+h4 {
+	font-family: "TheSerifPlain",Tahoma,Verdana,Arial,Sans-serif;
+}
+p {
+	font-family: Verdana,Arial,Sans-serif;
+}
+a {
+	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
+}
+
 /* Fix for container within navbar on small viewports, for Firefox and Chrome.
 This may but be necessary when Bootstrap 4 is improved after alpha. */
 
@@ -237,23 +255,6 @@ This may but be necessary when Bootstrap 4 is improved after alpha. */
 	height:160px;
 	padding-top:10px;
 }
-h2 {
-	color: #79A12E;
-	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
-}
-h3 {
-	color:#F37A1F;
-	font-family: "TheSerifBold",Tahoma,Verdana,Arial,Sans-serif;
-}
-h4 {
-	font-family: "TheSerifPlain",Tahoma,Verdana,Arial,Sans-serif;
-}
-p {
-	font-family: Verdana,Arial,Sans-serif;
-}
-nav a {
-	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
-}
 .alignright {
 	float: right;
 	margin-left: 15px;
@@ -268,9 +269,6 @@ nav a {
 }
 .alignnone, .alignleft, .aligncenter, .alignright, img[class*="wp-image"] {
 	max-width:100%;
-}
-#content article {
-  margin: 40px 0
 }
 #content header {
   margin: 20px 0
@@ -290,18 +288,12 @@ nav a {
 
 /* Sidebar */
 
-.sidebar {
-  	margin-top: 20px
-}
-.sidebar section {
-  	margin-bottom: 40px
-}
-.sidebar ul,
-.sidebar ol {
+#sidebar ul,
+#sidebar ol {
   	list-style-type: none;
   	padding: 0
 }
-.sidebar li {
+#sidebar li {
   	margin: 10px 0
 }
 
@@ -564,11 +556,6 @@ footer.container {
 }
 
 /*join page css */
-
-#sectionList {
-	text-align:center;
-	padding: 0;
-}
 
 #bevMainBtn:hover {
 	background: rgba(1,162,216,0.1);

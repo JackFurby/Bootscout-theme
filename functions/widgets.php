@@ -9,7 +9,7 @@ function b4st_widgets_init() {
     'name'            => __( 'Sidebar', 'b4st' ),
     'id'              => 'sidebar-widget-area',
     'description'     => __( 'The sidebar widget area', 'b4st' ),
-    'before_widget'   => '<section class="%1$s %2$s">',
+    'before_widget'   => '<section class="%1$s %2$s mb-4">',
     'after_widget'    => '</section>',
     'before_title'    => '<h4>',
     'after_title'     => '</h4>',
