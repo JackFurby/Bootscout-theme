@@ -1,7 +1,7 @@
 <?php
 /*
-The Search Loop
-===============
+The Search Results Loop
+=======================
 */
 ?>
 
@@ -14,6 +14,6 @@ The Search Loop
   </article>
 <?php endwhile; else: ?>
   <div class="alert alert-warning">
-    <i class="fa fa-exclamation-triangle"></i> <?php _e('Sorry, your search yielded no results.', 'b4st'); ?>
+    <i class="fas fa-exclamation-triangle"></i> <?php _e('Sorry, your search yielded no results.', 'b4st'); ?>
   </div>
 <?php endif; ?>

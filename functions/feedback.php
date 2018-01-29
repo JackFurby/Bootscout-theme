@@ -35,12 +35,12 @@ function b4st_comment($comment, $args, $depth) {
       <div class="col-sm-12">
         <hr/>
       	<?php comment_text() ?>
-      </div>  
+      </div>
     </div>
     <div class="reply">
       <p class="text-right"><?php edit_comment_link("<span class='btn btn-default btn-info'>" . __('Edit', 'b4st') . "</span>",' ','' );	?> <?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?></p>
     </div>
       <?php if ( 'div' != $args['style'] ) : ?>
     </div>
-  <?php 
+  <?php
   endif; }

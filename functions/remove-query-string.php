@@ -3,7 +3,7 @@
 Remove Query Strings From Static Resources
 */
 
-function _remove_query_strings_1( $src ){ 	
+function _remove_query_strings_1( $src ){
   $rqs = explode( '?ver', $src );
   return $rqs[0];
 }

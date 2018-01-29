@@ -14,7 +14,10 @@
     font-family: TheSerifBold;
     src: url(../fonts/theserif-hp6sebld-webfont.woff);
 }
-
+h1 {
+	color: #006990 ;
+	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
+}
 h2 {
 	color: #79A12E;
 	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
@@ -24,6 +27,12 @@ h3 {
 	font-family: "TheSerifBold",Tahoma,Verdana,Arial,Sans-serif;
 }
 h4 {
+	font-family: "TheSerifPlain",Tahoma,Verdana,Arial,Sans-serif;
+}
+h5 {
+	font-family: "TheSerifPlain",Tahoma,Verdana,Arial,Sans-serif;
+}
+h6 {
 	font-family: "TheSerifPlain",Tahoma,Verdana,Arial,Sans-serif;
 }
 p {
