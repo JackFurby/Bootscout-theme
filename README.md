@@ -25,9 +25,9 @@ Currently the theme works and has some useful functionality. this includes:
 * Default: includes page title and sidebar
 * Contact: Includes page title, social media links if set and sidebar
 * Banner: Includes page title, banner image (set a featured image for the page to display)
-* No title: just a plain page
 * Section page: Display links to various scout sections if set (can set sections in theme options)
 
 ### To do
 * add counters for number of scouts, leader and groups etc.
 * Make a guide to use theme
+* remove unnecessary CSS
