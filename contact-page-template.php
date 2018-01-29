@@ -35,10 +35,10 @@
 					<?php get_template_part('loops/page-content'); ?>
 					<?php
 					if (trim($options['fb_link']) != '') {
-						echo"<a href=\"".$options['fb_link']."\" class=\"ml-1\"><i id=\"social-fb\" class=\"fab fa-facebook-square fa-4x\"></i></a>";
+						echo"<a href=\"".$options['fb_link']."\" class=\"ml-1\"><i id=\"social-fb\" class=\"fab fa-facebook-square fa-3x\"></i></a>";
 					}
 					if (trim($options['twitter_link']) != '') {
-						echo"<a href=\"".$options['twitter_link']."\" class=\"ml-1\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-4x\"></i></a>";
+						echo"<a href=\"".$options['twitter_link']."\" class=\"ml-1\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-3x\"></i></a>";
 					}
 					?>
 				</div><!-- /#content -->
