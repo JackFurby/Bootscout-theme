@@ -68,7 +68,7 @@ endif;
 				<label for="comment"><?php _e('Your comment', 'b4st'); ?></label>
 				<textarea name="comment" class="form-control" id="comment" placeholder="<?php _e('Your comment', 'b4st'); ?>" rows="8" aria-required="true"></textarea>
 			</div>
-			<p><input name="submit" class="btn btn-default" type="submit" id="submit" value="<?php _e('Submit comment', 'b4st'); ?>"></p>
+			<p><input name="submit" class="btn btn-default bg-scout-purple border-scout-purple text-white" type="submit" id="submit" value="<?php _e('Submit comment', 'b4st'); ?>"></p>
 			<?php comment_id_fields(); ?>
 			<?php do_action('comment_form', $post->ID); ?>
 		</form>

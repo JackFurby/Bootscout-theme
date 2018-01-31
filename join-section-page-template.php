@@ -28,10 +28,12 @@
 							$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 							$link = esc_url( home_url('/') );
 							if ( has_custom_logo() ) {
-								echo"<div><a href=\"$link\"><img class=\"site-logo\" src=\"$image[0]\" alt=\"\"></a></div>";
+								echo"<div><a href=\"$link\"><img class=\"site-logo pt-2\" src=\"$image[0]\" alt=\"\"></a></div>";
 							}
 						}?>
 					</header>
+
+					<?php get_template_part('loops/page-content'); ?>
 
 					<?php
 					if (trim($options['beaver-page-link']) != '') {
@@ -110,8 +112,6 @@
 						echo"</ul>";
 					}
 					?>
-
-					<?php get_template_part('loops/page-content'); ?>
 				</div><!-- /#content -->
 			</div>
 			<?php if ($options['sidebar'] != true) {

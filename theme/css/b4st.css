@@ -1,18 +1,22 @@
+/**!
+ * b4st CSS
+ */
+
 /* Fonts */
 
 @font-face {
-    font-family: TheSerifExtraBold;
-    src: url(../fonts/theserif-exbld-webfont.woff);
+	font-family: TheSerifExtraBold;
+	src: url(../fonts/theserif-exbld-webfont.woff);
 }
 
 @font-face {
-    font-family: TheSerifPlain;
-    src: url(../fonts/theserif-hp5plain-webfont.woff);
+	font-family: TheSerifPlain;
+	src: url(../fonts/theserif-hp5plain-webfont.woff);
 }
 
 @font-face {
-    font-family: TheSerifBold;
-    src: url(../fonts/theserif-hp6sebld-webfont.woff);
+	font-family: TheSerifBold;
+	src: url(../fonts/theserif-hp6sebld-webfont.woff);
 }
 h1 {
 	color: #006990 ;
@@ -69,146 +73,176 @@ a {
 	font-family: "TheSerifBold",Tahoma,Verdana,Arial,Sans-serif;
 }
 
-/* Fix for container within navbar on small viewports, for Firefox and Chrome.
-This may but be necessary when Bootstrap 4 is improved after alpha. */
+/* colours */
 
- @media (max-width: 575px) {
- 	.navbar > .container {
-		position: static;
-     	width: 100%;
-   	}
+.bg-scout-purple {
+	background-color: #4D2177 !important;
+}
+.border-scout-purple {
+	background-color: #4D2177 !important;
+}
+.bg-scout-purple:hover {
+	background-color: #3e1a60 !important;
+}
+.border-scout-purple:hover {
+	background-color: #3e1a60 !important;
+}
+.bg-scout-green {
+	background-color: #86A20B !important;
 }
 
-/* Max content widths */
+/* buttons */
 
+.btn-scout-green {
+	border-color: white;
+}
+.btn-scout-green:hover {
+	background-color: #86A20B;
+	border-color: #86A20B;
+}
+
+.site-header-image {
+	display: block;
+	margin: auto;
+}
+
+.wp-caption {}
+.wp-caption-text {}
+.sticky {
+	background-color: rgba(77, 33, 119, .1);
+	padding:15px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.screen-reader-text {}
+.gallery-caption {}
+
+.bypostauthor {}
+
+.alignleft {
+	float: left;
+	margin-right: 15px;
+}
+
+.alignright {
+	float: right;
+	margin-left: 15px;
+}
+
+.aligncenter {
+	display: block;
+    margin: auto;
+}
+
+/* Max img widths */
+
+img,
 .size-auto,
 .size-full,
 .size-large,
 .size-medium,
 .size-thumbnail {
 	max-width: 100%;
-	height: auto
-}
-.page-template-default {
-	overflow-x: hidden;
-}
-@media (min-width: 576px) {
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
+	height: auto;
 }
 
-@media (min-width: 768px) {
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
+/* Responsive Container (because Bootstrap 4.0.0 doesn't have this) */
+
+.container-responsive {
+	width: 100%;
+	max-width: 1140px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-@media (min-width: 992px) {
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
+.navbar > .container-responsive {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-responsive {
+	padding-right: 0;
+	padding-left: 0;
+}
+.navbar > .container,
+.navbar > .container-responsive {
+	max-width: 1110px;
 }
 
-@media (min-width: 576px) {
-  .container {
-    width: 540px;
-    max-width: 100%;
-  }
-  iframe {
-	  width:420px;
-	  height:236px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 720px;
-    max-width: 100%;
-  }
-  iframe {
-	  width:420px;
-	  height:236px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 960px;
-    max-width: 100%;
-  }
-  iframe {
-	  width:500px;
-	  height:281px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1140px;
-    max-width: 100%;
-  }
-  iframe {
-	  width:500px;
-	  height:281px;
-  }
-}
-
-/* Navbar */
-
-/*.navbar-brand {
-	max-width: 600px;
+.overflow-hide {
 	overflow: hidden;
-}*/
-.navbar-topbar {
-  	border-radius: 0;
 }
-.navbar .dropdown-menu li {
-  	width: 100%;
-  	margin-left: 0 !important;
+
+/* Author bio */
+
+.author-bio .avatar {
+	border: 1px solid #dee2e6;
+	border-radius: 50%;
 }
-.navbar .dropdown-menu {
-	margin-top: 0;
+
+/* Main content */
+
+.site-logo {
+	width:auto;
+	height:160px;
 }
-.navbar-custom {
-	background-color: #4D2177 !important;
+
+/* posts */
+
+/* Sidebar */
+
+#sidebar ul,
+#sidebar ol {
+  	list-style-type: none;
+  	padding: 0
 }
-.navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+#sidebar li {
+  	margin: 10px 0
 }
-#searchsubmit {
-    border-color: white;
+
+/* Hide form placeholders on focus */
+
+input:focus::-webkit-input-placeholder { color: transparent; }
+input:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+textarea:focus::-webkit-input-placeholder { color: transparent; }
+textarea:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+
+/* Comments */
+
+#comments,
+#reply-title {
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
 }
-#searchsubmit:hover {
-    background-color: #79A12E;
-	border-color: #79A12E;
+
+.commentlist,
+.commentlist ul {
+	padding-left: 0;
 }
-.nav-link {
-	color: white;
+
+.commentlist li {
+	padding: 1rem;
 }
-.nav-link:hover {
-	color: #9F9F9F;
+
+.comment-meta {
+	margin-bottom: 1rem;
 }
-.navbar-brand {
-	color: white;
-}
-.navbar-brand:hover {
-	color: #9F9F9F;
-}
-@media (min-width: 768px) {
-    .dropdown:hover>.dropdown-menu {
-        display: block;
-    }
+.commentlist .children {
+	margin-top: 1rem;
 }
 
 /* carousel */
@@ -265,241 +299,70 @@ This may but be necessary when Bootstrap 4 is improved after alpha. */
 	object-fit:cover;
 	background-color: #4D2177; /* fallback in case no image is set */
 }
-.carousel_background {
-
-}
 .carousel-caption {
 	color: #79A12E;
 	font-weight: bold;
 	text-shadow: 2px 0 0 #1E1E1E, -2px 0 0 #1E1E1E, 0 2px 0 #1E1E1E, 0 -2px 0 #1E1E1E, 1px 1px #1E1E1E, -1px -1px 0 #1E1E1E, 1px -1px 0 #1E1E1E, -1px 1px 0 #1E1E1E;
 }
 
-/* Main content */
+/*join page css */
 
-#banner-img, .attachment-post-thumbnail {
-	margin:0 auto;
-	width:100%;
-	height: auto;
-
+#bevMainBtn:hover {
+	background: rgba(1,162,216,0.1);
 }
-#banner-img {
-	max-height:400px;
-	overflow: hidden;
+#cubMainBtn:hover {
+	background: rgba(115,163,51,0.1);
 }
-.site-logo {
+#scoMainBtn:hover {
+	background: rgba(0,58,69,0.1);
+}
+#expMainBtn:hover {
+	background: rgba(1,45,94,0.1);
+}
+#netMainBtn:hover {
+	background: rgba(35,31,32,0.1);
+}
+.section-img {
+	height:180px;
 	width:auto;
-	height:160px;
-	padding-top:10px;
-}
-.alignright {
-	float: right;
-	margin-left: 15px;
-}
-.aligncenter {
-	display: block;
-    margin: auto;
-}
-.alignleft {
-	float: left;
-	margin-right: 15px;
-}
-.alignnone, .alignleft, .aligncenter, .alignright, img[class*="wp-image"] {
-	max-width:100%;
-}
-#content header {
-  margin: 20px 0
-}
-#content section {
-  margin-bottom: 20px
-}
-#content footer {
-  padding-bottom: 20px
-}
-.page-header {
-  	background: #f9f9f9 none repeat scroll 0 0;
-  	border-bottom: 1px solid #eee;
-  	margin: 40px 0 20px;
-  	padding: 10px 14px;
+	padding:10px;
+	margin: auto;
 }
 
-/* Sidebar */
-
-#sidebar ul,
-#sidebar ol {
-  	list-style-type: none;
-  	padding: 0
-}
-#sidebar li {
-  	margin: 10px 0
-}
-
-/* Hide form placeholders on focus */
-
-input:focus::-webkit-input-placeholder { color: transparent; }
-input:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
-input:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
-textarea:focus::-webkit-input-placeholder { color: transparent; }
-textarea:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
-textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
-
-/* Comments */
-
-#respond {
-  	margin-top: 40px
-}
-ol.commentlist {
-	counter-reset: li; /* Initiate a counter */
-	padding: 0
-}
-ol.commentlist ul {
-  	padding: 0
-}
-ol.commentlist > li {
-	position: relative;
-	margin: 0 0 20px 0;
-	list-style: none /* Disable the normal item numbering */
-}
-ol.commentlist > li:before {
-  	content: "Thread " counter(li); /* Use the counter as content */
-  	counter-increment: li; /* Increment the counter by 1 */
-  	position:absolute;
-  	top: 0;
-  	right: 0;
-  	border-bottom: 1px solid #ddd;
-  	border-left: 1px solid #ddd;
-  	border-bottom-left-radius: 4px;
-  	padding: 5px 20px 5px 10px;
-  	color: #999
-}
-ol.commentlist li ol,
-ol.commentlist li ul {
- 	list-style-type: none;
-	margin: 0
-}
-
-.commentlist li li {
- 	background: #f9f9f9;
-}
-.commentlist li li li {
- 	background: #fff
-}
-.commentlist li li li li {
- 	background: #f9f9f9
-}
-.commentlist li li li li li li {
- 	background: #fff
-}
-.commentlist li {
- 	padding: 20px
-}
-.commentlist ul li {
- 	margin-top: 20px;
- 	margin-bottom: 0
-}
-.reply p {
- 	margin: 0
-}
-hr {
-	border: 0px;
-	padding-bottom: 5px;
-}
-
-/* posts */
-
-.sticky {
-	background-color: rgba(77, 33, 119, .1);
-	padding:15px;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-/* Site footer */
+/* footer */
 
 @media (min-width: 576px) {
   	footer.container .row {
     	width: 540px;
-    	max-width: 100%;
   	}
 }
 @media (min-width: 768px) {
   	footer.container .row {
     	width: 720px;
-    	max-width: 100%;
   	}
 }
 @media (min-width: 992px) {
   	footer.container .row {
     	width: 960px;
-    	max-width: 100%;
   	}
 }
 @media (min-width: 1200px) {
 	footer.container .row {
     	width: 1140px;
-    	max-width: 100%;
   	}
 }
-.site-footer {
- 	padding: 40px 0
+
+.menu-footer li a.nav-link {
+    padding:0;
+	color: rgb(0,19,35);
 }
-.site-footer ul,
-.site-footer ol {
- 	list-style-type: none;
- 	padding: 0
-}
-.site-footer li {
- 	margin: 10px 0
-}
-.site-sub-footer p {
- 	text-align: center
-}
-.site-footer p {
- 	text-align: center
-}
-#footer-content {
-	padding: 0px;
-	overflow: hidden;
-    text-align: center;
-}
-#footer-content li {
-	list-style-type: none;
-	display:inline-block;
-    vertical-align:top;
-}
-#ceop {
-	padding-bottom: 15px;
-}
-.menu-footer-title {
-	padding-top:15px;
+.menu-footer li a.nav-link:hover {
+	color: rgb(139,0,102);
 }
 .menu-footer li a {
 	text-decoration: none;
 	display:inline-block;
 	font-size: 13px;
-}
-.menu-footer li a.nav-link {
-    padding:0;
-	color: rgb(0,19,35);
-}
-.menu-footer li a.social-link {
-	color: white;
-}
-.menu-footer li a:hover {
-	text-decoration: none;
-}
-.menu-footer li a.nav-link:hover {
-	color: rgb(139,0,102);
-}
-footer.container {
-	width:100%;
-	margin: 0;
-	background-color: rgb(134,162,11);
-}
-footer.container .row {
-	margin: 0 auto;
-	padding: 15px;
-}
-#copyright {
-    margin-bottom: 0;
 }
 
 /* sticky footer */
@@ -589,28 +452,4 @@ html, body {
 footer.container {
 	position: relative;
 	clear:both;
-}
-
-/*join page css */
-
-#bevMainBtn:hover {
-	background: rgba(1,162,216,0.1);
-}
-#cubMainBtn:hover {
-	background: rgba(115,163,51,0.1);
-}
-#scoMainBtn:hover {
-	background: rgba(0,58,69,0.1);
-}
-#expMainBtn:hover {
-	background: rgba(1,45,94,0.1);
-}
-#netMainBtn:hover {
-	background: rgba(35,31,32,0.1);
-}
-.section-img {
-	height:180px;
-	width:auto;
-	padding:10px;
-	margin: auto;
 }

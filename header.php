@@ -10,7 +10,7 @@
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-expand-md navbar-custom">
+<nav class="navbar navbar-expand-md navbar-dark bg-scout-purple">
 
 	<a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
 

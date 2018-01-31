@@ -3,15 +3,15 @@
 	$options = get_option('scout_theme_options');
 ?>
 
-<footer class="container">
-	<div class="row">
+<footer class="container mw-100 bg-scout-green ml-0 mr-0 mb-0 w-100">
+	<div class="row m-auto p-3">
 		<div class="col">
-			<div id="ceop">
+			<div id="ceop" class="pb-3">
 				<a href='http://www.ceop.police.uk/reportabuse/' target='_blank'><img src='<?php bloginfo('template_directory'); ?>/img/CEOPReportBtn.gif' alt='Click CEOP' height='51' width='143' /></a>
 			</div>
-			<ul id="footer-content" class="float-none">
+			<ul id="footer-content" class="float-none p-0 overflow-hide text-center">
 				<li class="float-left">
-					<h4 class="menu-footer-title">Information</h4>
+					<h4 class="pt-3">Information</h4>
 					<?php
 					if (trim($options['charity_number']) != '') {
 						echo"<p>Registered Charity: ".$options['charity_number']."</p>";
@@ -61,14 +61,14 @@
 					<ul class=\"navbar-nav mr-auto mt-2 mt-lg-0 menu-footer d-inline\">";
 
 					if ($got_fb) {
-						echo"<li data-toggle=\"tooltip\" title=\"Facebook\"><a href=\"".$options['fb_link']."\" class=\"ml-1 social-link\"><i id=\"social-fb\" class=\"fab fa-facebook-square fa-3x\"></i></a></li>";
+						echo"<li data-toggle=\"tooltip\" title=\"Facebook\"><a href=\"".$options['fb_link']."\" class=\"ml-1 text-white\"><i id=\"social-fb\" class=\"fab fa-facebook-square fa-3x\"></i></a></li>";
 					}
 					if ($got_twitter) {
-						echo"<li data-toggle=\"tooltip\" title=\"Twitter\"><a href=\"".$options['twitter_link']."\" class=\"ml-1 social-link\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-3x\"></i></a></li>";
+						echo"<li data-toggle=\"tooltip\" title=\"Twitter\"><a href=\"".$options['twitter_link']."\" class=\"ml-1 text-white\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-3x\"></i></a></li>";
 					}
 					if($got_contact) {
 						$contactPageLink = get_page_link($contactPages[0]);
-						echo"<li data-toggle=\"tooltip\" title=\"Contact Us\"><a href=\"$contactPageLink\" class=\"ml-1 social-link\"><i class=\"fas fa-envelope-square fa-3x\" aria-hidden=\"true\"></i></a></li>";
+						echo"<li data-toggle=\"tooltip\" title=\"Contact Us\"><a href=\"$contactPageLink\" class=\"ml-1 text-white\"><i class=\"fas fa-envelope-square fa-3x\" aria-hidden=\"true\"></i></a></li>";
 					}
 					echo"</ul>
 					</li>";
@@ -82,7 +82,7 @@
 					</ul>
 				</li>
 			</ul>
-			<p id="copyright">Copyright © <?php echo $options['group_name']; ?> <?php echo date("Y"); ?>, All Rights Reserved.</p>
+			<p id="copyright" class="mb-0">Copyright © <?php echo $options['group_name']; ?> <?php echo date("Y"); ?>, All Rights Reserved.</p>
 		</div>
 	</div>
 </footer>

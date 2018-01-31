@@ -28,13 +28,13 @@
 							$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 							$link = esc_url( home_url('/') );
 							if ( has_custom_logo() ) {
-								echo"<div><a href=\"$link\"><img class=\"site-logo\" src=\"$image[0]\" alt=\"\"></a></div>";
+								echo"<div><a href=\"$link\"><img class=\"site-logo pt-2\" src=\"$image[0]\" alt=\"\"></a></div>";
 							}
 						}?>
 						<?php
 						if ( has_post_thumbnail() ) {
-							echo"<div id=\"banner-img\" class=\"img-responsive center-block\">";
-							the_post_thumbnail();
+							echo"<div id=\"banner-img\" class=\"img-responsive center-block w-100 overflow-hide mt-3\" style=\"height:400px\">";
+							the_post_thumbnail('full', array( 'class' => 'm-0 w-100' ));
 							echo"</div>";
 						}  ?>
 					</header>
