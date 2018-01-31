@@ -81,10 +81,10 @@ a {
 .border-scout-purple {
 	background-color: #4D2177 !important;
 }
-.bg-scout-purple:hover {
+.bg-scout-purple-link:hover {
 	background-color: #3e1a60 !important;
 }
-.border-scout-purple:hover {
+.border-scout-purple-link:hover {
 	background-color: #3e1a60 !important;
 }
 .bg-scout-green {

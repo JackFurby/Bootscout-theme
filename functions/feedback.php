@@ -38,7 +38,7 @@ function b4st_comment($comment, $args, $depth) {
       </div>
     </div>
     <div class="reply">
-      <p class="text-right"><?php edit_comment_link("<span class='btn btn-default bg-scout-purple border-scout-purple text-white'>" . __('Edit', 'b4st') . "</span>",' ','' );	?> <?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?></p>
+      <p class="text-right"><?php edit_comment_link("<span class='btn btn-default bg-scout-purple bg-scout-purple-link border-scout-purple border-scout-purple-link text-white'>" . __('Edit', 'b4st') . "</span>",' ','' );	?> <?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?></p>
     </div>
       <?php if ( 'div' != $args['style'] ) : ?>
     </div>
