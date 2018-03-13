@@ -5,7 +5,7 @@ Bootscout is a WordPress theme using Bootstrap 4.0.0 Beta. It has been styled fo
 The base theme can be found here: http://simonpadbury.github.io. I used this as a starting point and build it up to the current state of the project.
 
 ### Fonts
-The fonts being used are the official Scout Association fonts. Only use them if you have permission (e.g. you are a scout group)
+The fonts being used are the official Scout Association fonts. Only use them if you have permission (e.g. you are a scout group).
 
 ### Current development
 Currently the theme works and has some useful functionality. this includes:
