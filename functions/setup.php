@@ -24,9 +24,8 @@ add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'qu
 include 'theme-options.php';
 $options = get_option('scout_theme_options');
 
-//Bootscout settings
-//include 'bootscout-settings.php';
-//$bootscout = get_option('scout_settings');
+
+include 'extend-post-thumbnail.php';
 
 //adds capabilities to editor so they can edit bootscout settings
 $role_object = get_role( 'editor' );
@@ -35,12 +34,12 @@ $role_object->remove_cap('manage_options');
 
 
 function register_my_menus() {
-  register_nav_menus(
-    array(
-      'navbar' => __( 'Main navbar' ),
-      'footer_menu' => __( 'Footer menu' )
-    )
-  );
+	register_nav_menus(
+		array(
+			'navbar' => __( 'Main navbar' ),
+			'footer_menu' => __( 'Footer menu' )
+		)
+	);
 }
 add_action( 'init', 'register_my_menus' );
 

@@ -39,82 +39,80 @@ function theme_options_do_page() {
 			<?php $options = get_option( 'scout_theme_options' ); ?>
 
 			<table class="form-table">
-                <tr><th colspan="2"><h2>Theme Setup</h2></th></tr>
-                <tr valign="top"><th scope="row">Group Name</th>
-                    <td>
-                        <input id="scout_theme_options[group_name]" class="regular-text" type="text" name="scout_theme_options[group_name]" value="<?php esc_attr_e( $options['group_name'] ); ?>" />
-                        <label class="description" for="scout_theme_options[group_name]"> e.g. "1st Anywhere Scout Group"</label>
-                    </td>
-                </tr>
+				<tr><th colspan="2"><h2>Theme Setup</h2></th></tr>
+				<tr valign="top"><th scope="row">Group Name</th>
+					<td>
+						<input id="scout_theme_options[group_name]" class="regular-text" type="text" name="scout_theme_options[group_name]" value="<?php esc_attr_e( $options['group_name'] ); ?>" />
+						<label class="description" for="scout_theme_options[group_name]"> e.g. "1st Anywhere Scout Group"</label>
+					</td>
+				</tr>
 				<tr valign="top"><th scope="row">Charity number</th>
-                    <td>
-                        <input id="scout_theme_options[charity_number]" class="regular-text" type="text" name="scout_theme_options[charity_number]" value="<?php esc_attr_e( $options['charity_number'] ); ?>" />
-                        <label class="description" for="scout_theme_options[charity_number]"> leave blank if unknown</label>
-                    </td>
-                </tr>
+					<td>
+						<input id="scout_theme_options[charity_number]" class="regular-text" type="text" name="scout_theme_options[charity_number]" value="<?php esc_attr_e( $options['charity_number'] ); ?>" />
+						<label class="description" for="scout_theme_options[charity_number]"> leave blank if unknown</label>
+					</td>
+				</tr>
 				<tr><th colspan="2"><h2>Social media</h2></th></tr>
-                <tr valign="top"><th scope="row">Facebook page</th>
-                    <td>
-                        <input id="scout_theme_options[fb_link]" class="regular-text" type="text" name="scout_theme_options[fb_link]" value="<?php esc_attr_e( $options['fb_link'] ); ?>" />
-                        <label class="description" for="scout_theme_options[fb_link]"> Insert the URL for your Facebook page</label>
-                    </td>
-                </tr>
+				<tr valign="top"><th scope="row">Facebook page</th>
+					<td>
+						<input id="scout_theme_options[fb_link]" class="regular-text" type="text" name="scout_theme_options[fb_link]" value="<?php esc_attr_e( $options['fb_link'] ); ?>" />
+						<label class="description" for="scout_theme_options[fb_link]"> Insert the URL for your Facebook page</label>
+					</td>
+				</tr>
 				<tr valign="top"><th scope="row">Twitter</th>
-                    <td>
-                        <input id="scout_theme_options[twitter_link]" class="regular-text" type="text" name="scout_theme_options[twitter_link]" value="<?php esc_attr_e( $options['twitter_link'] ); ?>" />
-                        <label class="description" for="scout_theme_options[twitter_link]"> Inset your groups Twitter account URL</label>
-                    </td>
-                </tr>
+					<td>
+						<input id="scout_theme_options[twitter_link]" class="regular-text" type="text" name="scout_theme_options[twitter_link]" value="<?php esc_attr_e( $options['twitter_link'] ); ?>" />
+						<label class="description" for="scout_theme_options[twitter_link]"> Inset your groups Twitter account URL</label>
+					</td>
+				</tr>
 				<tr><th colspan="2"><h2>Extra</h2></th></tr>
-                <tr valign="top"><th scope="row">Disable sidebar</th>
-                    <td>
+				<tr valign="top"><th scope="row">Disable sidebar</th>
+					<td>
 						<input id="scout_theme_options[sidebar]" type="checkbox" name="scout_theme_options[sidebar]" value="1"<?php checked( 1 == $options['sidebar'] ); ?>>Check to disable<br>
-                    </td>
-                </tr>
+					</td>
+				</tr>
 				<tr valign="top"><th scope="row">Show carousel</th>
-                    <td>
+					<td>
 						<input id="scout_theme_options[carousel]" type="checkbox" name="scout_theme_options[carousel]" value="1"<?php checked( 1 == $options['carousel'] ); ?>>Check to enable<br>
-                    </td>
-                </tr>
+					</td>
+				</tr>
 				<tr><th colspan="2"><h2>Section page links</h2></th></tr>
 				<tr valign="top"><th scope="row"></th>
-                    <td>
-                        <p>These links will be added to the buttons on the "section page" template. If you have 2 or more section on the site fill these out and create a empty page with the template "section page". If you have less than 2 sections you can leave these fields blank and do not make a page with the template "section page".</p>
-                    </td>
-                </tr>
-                <tr valign="top"><th scope="row">Beaver button</th>
-                    <td>
-                        <input id="scout_theme_options[beaver-page-link]" class="regular-text" type="text" name="scout_theme_options[beaver-page-link]" value="<?php esc_attr_e( $options['beaver-page-link'] ); ?>" />
-                        <label class="description" for="scout_theme_options[beaver-page-link]"> enter beaver page URL</label>
-                    </td>
-                </tr>
+					<td>
+						<p>These links will be added to the buttons on the "section page" template. If you have 2 or more section on the site fill these out and create a empty page with the template "section page". If you have less than 2 sections you can leave these fields blank and do not make a page with the template "section page".</p>
+					</td>
+				</tr>
+				<tr valign="top"><th scope="row">Beaver button</th>
+					<td>
+						<input id="scout_theme_options[beaver-page-link]" class="regular-text" type="text" name="scout_theme_options[beaver-page-link]" value="<?php esc_attr_e( $options['beaver-page-link'] ); ?>" />
+						<label class="description" for="scout_theme_options[beaver-page-link]"> enter beaver page URL</label>
+					</td>
+				</tr>
 				<tr valign="top"><th scope="row">Cub button</th>
-                    <td>
-                        <input id="scout_theme_options[cub-page-link]" class="regular-text" type="text" name="scout_theme_options[cub-page-link]" value="<?php esc_attr_e( $options['cub-page-link'] ); ?>" />
-                        <label class="description" for="scout_theme_options[cub-page-link]"> enter cub page URL</label>
-                    </td>
-                </tr>
+					<td>
+						<input id="scout_theme_options[cub-page-link]" class="regular-text" type="text" name="scout_theme_options[cub-page-link]" value="<?php esc_attr_e( $options['cub-page-link'] ); ?>" />
+						<label class="description" for="scout_theme_options[cub-page-link]"> enter cub page URL</label>
+					</td>
+				</tr>
 				<tr valign="top"><th scope="row">Scout button</th>
-                    <td>
-                        <input id="scout_theme_options[scout-page-link]" class="regular-text" type="text" name="scout_theme_options[scout-page-link]" value="<?php esc_attr_e( $options['scout-page-link'] ); ?>" />
-                        <label class="description" for="scout_theme_options[scout-page-link]"> enter scout page URL</label>
-                    </td>
-                </tr>
+					<td>
+						<input id="scout_theme_options[scout-page-link]" class="regular-text" type="text" name="scout_theme_options[scout-page-link]" value="<?php esc_attr_e( $options['scout-page-link'] ); ?>" />
+						<label class="description" for="scout_theme_options[scout-page-link]"> enter scout page URL</label>
+					</td>
+				</tr>
 				<tr valign="top"><th scope="row">Explorer button</th>
-                    <td>
-                        <input id="scout_theme_options[explorer-page-link]" class="regular-text" type="text" name="scout_theme_options[explorer-page-link]" value="<?php esc_attr_e( $options['explorer-page-link'] ); ?>" />
-                        <label class="description" for="scout_theme_options[explorer-page-link]"> enter explorer page URL</label>
-                    </td>
-                </tr>
+					<td>
+						<input id="scout_theme_options[explorer-page-link]" class="regular-text" type="text" name="scout_theme_options[explorer-page-link]" value="<?php esc_attr_e( $options['explorer-page-link'] ); ?>" />
+						<label class="description" for="scout_theme_options[explorer-page-link]"> enter explorer page URL</label>
+					</td>
+				</tr>
 				<tr valign="top"><th scope="row">Network button</th>
-                    <td>
-                        <input id="scout_theme_options[network-page-link]" class="regular-text" type="text" name="scout_theme_options[network-page-link]" value="<?php esc_attr_e( $options['network-page-link'] ); ?>" />
-                        <label class="description" for="scout_theme_options[network-page-link]"> enter network page URL</label>
-                    </td>
-                </tr>
-
-
-            </table>
+					<td>
+						<input id="scout_theme_options[network-page-link]" class="regular-text" type="text" name="scout_theme_options[network-page-link]" value="<?php esc_attr_e( $options['network-page-link'] ); ?>" />
+						<label class="description" for="scout_theme_options[network-page-link]"> enter network page URL</label>
+					</td>
+				</tr>
+			</table>
 
 			<p class="submit">
 				<input type="submit" class="button-primary" value="<?php _e( 'Save Options', 'scout-theme' ); ?>" />
@@ -125,8 +123,8 @@ function theme_options_do_page() {
 }
 
 /**
- * Sanitize and validate input. Accepts an array, return a sanitized array.
- */
+* Sanitize and validate input. Accepts an array, return a sanitized array.
+*/
 function theme_options_validate( $input ) {
 	global $select_options, $radio_options;
 

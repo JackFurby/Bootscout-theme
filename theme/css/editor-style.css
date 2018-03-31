@@ -10,5 +10,6 @@ Editor stylesheet
 @import url('b4st.css');
 
 body#tinymce {
-  padding: 10px !important;
+	padding: 10px !important;
+	height: auto !important;
 }

@@ -18,10 +18,10 @@ function register_bootscout_settings() {
 }
 
 function bootscout_settings_page() {
-    global $select_options_banner, $radio_options_banner;
+	global $select_options_banner, $radio_options_banner;
 
-    if ( ! isset( $_REQUEST['settings-updated'] ) )
-        $_REQUEST['settings-updated'] = false;
+	if ( ! isset( $_REQUEST['settings-updated'] ) )
+		$_REQUEST['settings-updated'] = false;
 ?>
 <div class="wrap">
 <h1>Bootscout Settings</h1>
@@ -31,11 +31,8 @@ function bootscout_settings_page() {
 <?php endif; ?>
 
 <form method="post" action="options.php">
-    <?php settings_fields( 'bootscout_options' ); ?>
-    <?php $bootscout = get_option( 'scout_settings' ); ?>
-    <table class="form-table">
-
-    </table>
+	<?php settings_fields( 'bootscout_options' ); ?>
+	<?php $bootscout = get_option( 'scout_settings' ); ?>
 
 	<?php submit_button(); ?>
 
@@ -44,11 +41,8 @@ function bootscout_settings_page() {
 <?php }
 
 /**
- * Sanitize and validate input. Accepts an array, return a sanitized array.
- */
-
-
-
+* Sanitize and validate input. Accepts an array, return a sanitized array.
+*/
 
 function bootscout_validate( $input ) {
 	global $select_options_banner, $radio_options_banner;
