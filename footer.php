@@ -14,7 +14,7 @@
 					<h4 class="pt-3">Information</h4>
 					<?php
 					if (trim($options['charity_number']) != '') {
-						echo"<p>Registered Charity: ".$options['charity_number']."</p>";
+						echo"<p class='mb-0'>Registered Charity: ".$options['charity_number']."</p>";
 					}
 					?>
 					<?php
