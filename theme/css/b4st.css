@@ -267,46 +267,46 @@ textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
 	margin-top: 1rem;
 }
 
-/* carousel */
+/* carousel and banner */
 
 @media (min-width: 200px) {
-	.carousel-caption {
+	.carousel-caption, .banner-caption {
 		font-size: 40px;
 	}
-	.carousel {
-	    height: 230px;
+	.carousel, .banner {
+		height: 230px;
 	}
 }
 @media (min-width: 576px) {
-	.carousel-caption {
+	.carousel-caption, .banner-caption {
 		font-size: 40px;
 	}
-	.carousel {
-	    height: 270px;
+	.carousel, .banner {
+		height: 270px;
 	}
 }
 @media (min-width: 768px) {
-	.carousel-caption {
+	.carousel-caption, .banner-caption  {
 		font-size: 40px;
 	}
-	.carousel {
-	    height: 300px;
+	.carousel, .banner {
+		height: 300px;
 	}
 }
 @media (min-width: 992px) {
-	.carousel-caption {
+	.carousel-caption, .banner-caption {
 		font-size: 50px;
 	}
-	.carousel {
-	    height: 350px;
+	.carousel, .banner {
+		height: 350px;
 	}
 }
 @media (min-width: 1200px) {
-	.carousel-caption {
+	.carousel-caption, .banner-caption {
 		font-size: 50px;
 	}
-	.carousel {
-	    height: 400px;
+	.carousel, .banner {
+		height: 400px;
 	}
 }
 .carousel-inner {
@@ -327,7 +327,13 @@ textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
 	text-shadow: 2px 0 0 #1E1E1E, -2px 0 0 #1E1E1E, 0 2px 0 #1E1E1E, 0 -2px 0 #1E1E1E, 1px 1px #1E1E1E, -1px -1px 0 #1E1E1E, 1px -1px 0 #1E1E1E, -1px 1px 0 #1E1E1E;
 }
 
-/* banner */
+.banner-img {
+	min-width: 100% !important;
+	max-width: none;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
 
 /*join page css */
 
