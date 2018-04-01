@@ -207,6 +207,14 @@ img,
 	overflow: hidden;
 }
 
+.nav-main .nav-link, .navbar-brand {
+	color: white !important;
+	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
+}
+.nav-main .nav-link:hover , .navbar-brand:hover {
+	color: grey !important;
+}
+
 /* Author bio */
 
 .author-bio .avatar {
@@ -383,7 +391,7 @@ textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
 }
 
 .menu-footer li a.nav-link {
-    padding:0;
+	padding:0;
 	color: rgb(0,19,35);
 }
 .menu-footer li a.nav-link:hover {
