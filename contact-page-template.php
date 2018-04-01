@@ -47,8 +47,8 @@
 								echo"<div><a href=\"$link\"><img class=\"site-logo pt-2\" src=\"$image[0]\" alt=\"\"></a></div>";
 							}
 						}?>
+						<h2><?php wp_title(''); ?></h2>
 					</header>
-					<?php get_template_part('loops/page-content'); ?>
 					<?php
 					if (trim($options['fb_link']) != '') {
 						echo"<a href=\"".$options['fb_link']."\" class=\"ml-1\"><i id=\"social-fb\" class=\"fab fa-facebook-square fa-3x\"></i></a>";
@@ -57,6 +57,7 @@
 						echo"<a href=\"".$options['twitter_link']."\" class=\"ml-1\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-3x\"></i></a>";
 					}
 					?>
+					<?php get_template_part('loops/page-content-no-title');?>
 				</div><!-- /#content -->
 			</div>
 			<?php if ($options['sidebar'] != true) {
