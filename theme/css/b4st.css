@@ -78,6 +78,9 @@ a {
 .bg-scout-purple {
 	background-color: #4D2177 !important;
 }
+.bg-scout-purple-50 {
+	background-color: rgba(77, 33, 119, 0.5) !important;
+}
 .border-scout-purple {
 	background-color: #4D2177 !important;
 }
