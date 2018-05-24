@@ -5,105 +5,168 @@
 /* Fonts */
 
 @font-face {
-	font-family: TheSerifExtraBold;
-	src: url(../fonts/theserif-exbld-webfont.woff);
+	font-family: NunitoSans-Black;
+	src: url(../fonts/NunitoSans-Black.ttf);
 }
 
 @font-face {
-	font-family: TheSerifPlain;
-	src: url(../fonts/theserif-hp5plain-webfont.woff);
+	font-family: NunitoSans-Black;
+	src: url(../fonts/NunitoSans-BlackItalic.ttf);
+	font-style: italic;
 }
 
 @font-face {
-	font-family: TheSerifBold;
-	src: url(../fonts/theserif-hp6sebld-webfont.woff);
+	font-family: NunitoSans-Italic;
+	src: url(../fonts/NunitoSans-Italic.ttf);
 }
+
+@font-face {
+	font-family: NunitoSans-Regular;
+	src: url(../fonts/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: NunitoSans-Regular;
+	src: url(../fonts/NunitoSans-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: NunitoSans-Regular;
+	src: url(../fonts/NunitoSans-ExtraBold.ttf);
+	font-weight: bolder;
+}
+
+@font-face {
+	font-family: NunitoSans-Regular;
+	src: url(../fonts/NunitoSans-Light.ttf);
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: NunitoSans-Regular;;
+	src: url(../fonts/NunitoSans-BoldItalic.ttf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: NunitoSans-Regular;
+	src: url(../fonts/NunitoSans-ExtraBoldItalic.ttf);
+	font-weight: bolder;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: NunitoSans-ExtraLight;
+	src: url(../fonts/NunitoSans-ExtraLight.ttf);
+}
+
+@font-face {
+	font-family: NunitoSans-ExtraLightItalic;
+	src: url(../fonts/NunitoSans-ExtraLightItalic.ttf);
+}
+
+@font-face {
+	font-family: NunitoSans-SemiBold;
+	src: url(../fonts/NunitoSans-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: NunitoSans-SemiBoldItalic;
+	src: url(../fonts/NunitoSans-SemiBoldItalic.ttf);
+}
+
 h1 {
-	color: #006990 ;
-	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
+	color: #006ddf ;
+	font-family: "NunitoSans-Black";
 }
 h2 {
-	color: #79A12E;
-	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
+	color: #23a950;
+	font-family: "NunitoSans-Regular";
+	font-weight: bolder;
 }
 h3 {
-	color:#F37A1F;
-	font-family: "TheSerifBold",Tahoma,Verdana,Arial,Sans-serif;
+	color:#00a794;
+	font-family: "NunitoSans-Regular";
+	font-weight: bold;
 }
 h4 {
-	font-family: "TheSerifPlain",Tahoma,Verdana,Arial,Sans-serif;
+	font-family: "NunitoSans-Regular";
+	font-weight: bold;
 }
 h5 {
-	font-family: "TheSerifPlain",Tahoma,Verdana,Arial,Sans-serif;
+	font-family: "NunitoSans-Regular";
 }
 h6 {
-	font-family: "TheSerifPlain",Tahoma,Verdana,Arial,Sans-serif;
+	font-family: "NunitoSans-Regular";
 }
 p {
-	font-family: Verdana,Arial,Sans-serif;
+	font-family: "NunitoSans-Regular";
 }
 a {
-	font-family: "TheSerifBold",Tahoma,Verdana,Arial,Sans-serif;
+	font-family: "NunitoSans-Regular";
 }
 .h1 {
-	color: #006990 ;
-	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
+	color: #006ddf ;
+	font-family: "NunitoSans-Black";
 }
 .h2 {
-	color: #79A12E;
-	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
+	color: #23a950;
+	font-family: "NunitoSans-Regular";
+	font-weight: bolder;
 }
 .h3 {
-	color:#F37A1F;
-	font-family: "TheSerifBold",Tahoma,Verdana,Arial,Sans-serif;
+	color:#00a794;
+	font-family: "NunitoSans-Regular";
 }
 .h4 {
-	font-family: "TheSerifPlain",Tahoma,Verdana,Arial,Sans-serif;
+	font-family: "NunitoSans-Regular";
 }
 .h5 {
-	font-family: "TheSerifPlain",Tahoma,Verdana,Arial,Sans-serif;
+	font-family: "NunitoSans-Regular";
 }
 .h6 {
-	font-family: "TheSerifPlain",Tahoma,Verdana,Arial,Sans-serif;
+	font-family: "NunitoSans-Regular";
 }
 .p {
-	font-family: Verdana,Arial,Sans-serif;
+	font-family: "NunitoSans-Regular";
 }
 .a {
-	font-family: "TheSerifBold",Tahoma,Verdana,Arial,Sans-serif;
+	font-family: "NunitoSans-Regular";
 }
 
 /* colours */
 
 .bg-scout-purple {
-	background-color: #4D2177 !important;
+	background-color: #7413dc !important;
 }
 .bg-scout-purple-50 {
-	background-color: rgba(77, 33, 119, 0.5) !important;
+	background-color: rgba(116, 20, 220, 0.5) !important;
 }
 .border-scout-purple {
-	background-color: #4D2177 !important;
+	background-color: #7413dc !important;
 }
 .bg-scout-purple-link:hover {
-	background-color: #3e1a60 !important;
+	background-color: rgba(116, 20, 220, 0.5) !important;
 }
 .border-scout-purple-link:hover {
-	background-color: #3e1a60 !important;
+	background-color: rgba(116, 20, 220, 0.5) !important;
 }
 .bg-scout-green {
-	background-color: #86A20B !important;
+	background-color: #23a950 !important;
 }
 .text-scout-blue {
-	color: #006990;
+	color: #006ddf;
 }
 .text-scout-green {
-	color: #79A12E;
+	color: #23a950;
 }
 .text-scout-purple {
-	color: #4D2177;
+	color: #7413dc;
 }
-.text-scout-orange {
-	color: #F37A1F;
+.text-scout-teal {
+	color: #00a794;
 }
 
 /* shadow */
@@ -119,11 +182,11 @@ a {
 
 .btn-scout-green {
 	border-color: white;
-	background-color: #4D2177;
+	background-color: #7413dc;
 }
 .btn-scout-green:hover {
-	background-color: #86A20B;
-	border-color: #86A20B;
+	background-color: #23a950;
+	border-color: #23a950;
 }
 
 .site-header-image {
@@ -212,7 +275,8 @@ img,
 
 .nav-main .nav-link, .navbar-brand {
 	color: white !important;
-	font-family: "TheSerifExtraBold",Tahoma,Verdana,Arial,Sans-serif;
+	font-family: "NunitoSans-Regular";
+	font-weight: bold;
 }
 .nav-main .nav-link:hover , .navbar-brand:hover {
 	color: grey !important;
@@ -330,10 +394,10 @@ textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
 }
 .carousel_background {
 	object-fit:cover;
-	background-color: #4D2177; /* fallback in case no image is set */
+	background-color: #7413dc; /* fallback in case no image is set */
 }
 .carousel-caption {
-	color: #79A12E;
+	color: #23a950;
 	font-weight: bold;
 	text-shadow: 2px 0 0 #1E1E1E, -2px 0 0 #1E1E1E, 0 2px 0 #1E1E1E, 0 -2px 0 #1E1E1E, 1px 1px #1E1E1E, -1px -1px 0 #1E1E1E, 1px -1px 0 #1E1E1E, -1px 1px 0 #1E1E1E;
 }
