@@ -11,7 +11,7 @@
 
 <body <?php body_class(); ?>>
 
-	<nav class="navbar navbar-expand-md navbar-dark bg-scout-purple">
+	<nav class="navbar navbar-expand-md navbar-dark bg-scout-purple solid-shadow">
 
 
 		<?php if ( function_exists( 'the_custom_logo' ) ) {
