@@ -4,136 +4,75 @@
 
 /* Fonts */
 
-@font-face {
-	font-family: NunitoSans-Black;
-	src: url(../fonts/NunitoSans-Black.ttf);
-}
-
-@font-face {
-	font-family: NunitoSans-Black;
-	src: url(../fonts/NunitoSans-BlackItalic.ttf);
-	font-style: italic;
-}
-
-@font-face {
-	font-family: NunitoSans-Italic;
-	src: url(../fonts/NunitoSans-Italic.ttf);
-}
-
-@font-face {
-	font-family: NunitoSans-Regular;
-	src: url(../fonts/NunitoSans-Regular.ttf);
-}
-
-@font-face {
-	font-family: NunitoSans-Regular;
-	src: url(../fonts/NunitoSans-Bold.ttf);
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: NunitoSans-Regular;
-	src: url(../fonts/NunitoSans-ExtraBold.ttf);
-	font-weight: bolder;
-}
-
-@font-face {
-	font-family: NunitoSans-Regular;
-	src: url(../fonts/NunitoSans-Light.ttf);
-	font-weight: lighter;
-}
-
-@font-face {
-	font-family: NunitoSans-Regular;;
-	src: url(../fonts/NunitoSans-BoldItalic.ttf);
-	font-weight: bold;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: NunitoSans-Regular;
-	src: url(../fonts/NunitoSans-ExtraBoldItalic.ttf);
-	font-weight: bolder;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: NunitoSans-ExtraLight;
-	src: url(../fonts/NunitoSans-ExtraLight.ttf);
-}
-
-@font-face {
-	font-family: NunitoSans-ExtraLightItalic;
-	src: url(../fonts/NunitoSans-ExtraLightItalic.ttf);
-}
-
-@font-face {
-	font-family: NunitoSans-SemiBold;
-	src: url(../fonts/NunitoSans-SemiBold.ttf);
-}
-
-@font-face {
-	font-family: NunitoSans-SemiBoldItalic;
-	src: url(../fonts/NunitoSans-SemiBoldItalic.ttf);
-}
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
 h1 {
 	color: #006ddf ;
-	font-family: "NunitoSans-Black";
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 900;
 }
 h2 {
 	color: #23a950;
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
 	font-weight: bolder;
 }
 h3 {
 	color:#00a794;
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
 	font-weight: bold;
 }
 h4 {
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
 	font-weight: bold;
 }
 h5 {
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
 }
 h6 {
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
 }
 p {
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: normal;
 }
 a {
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
+}
+strong {
+	font-weight: 900;
 }
 .h1 {
 	color: #006ddf ;
-	font-family: "NunitoSans-Black";
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 900;
 }
 .h2 {
 	color: #23a950;
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
 	font-weight: bolder;
 }
 .h3 {
 	color:#00a794;
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
 }
 .h4 {
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
 }
 .h5 {
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
 }
 .h6 {
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
 }
 .p {
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: normal;
 }
 .a {
-	font-family: "NunitoSans-Regular";
+	font-family: "Nunito Sans", sans-serif;
+}
+.strong {
+	font-weight: 900;
 }
 
 /* colours */
@@ -155,6 +94,12 @@ a {
 }
 .bg-scout-green {
 	background-color: #23a950 !important;
+}
+.bg-scout-blue {
+	background-color: #006ddf !important;
+}
+.bg-scout-teal {
+	background-color: #00a794 !important;
 }
 .text-scout-blue {
 	color: #006ddf;
@@ -187,6 +132,15 @@ a {
 .btn-scout-green:hover {
 	background-color: #23a950;
 	border-color: #23a950;
+}
+
+.btn-scout-teal {
+	border-color: white;
+	background-color: #7413dc;
+}
+.btn-scout-teal:hover {
+	background-color: #00a794;
+	border-color: #00a794;
 }
 
 .site-header-image {
@@ -275,8 +229,8 @@ img,
 
 .nav-main .nav-link, .navbar-brand {
 	color: white !important;
-	font-family: "NunitoSans-Regular";
-	font-weight: bold;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: bolder;
 }
 .nav-main .nav-link:hover , .navbar-brand:hover {
 	color: grey !important;
@@ -462,7 +416,7 @@ textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
 	color: rgb(0,19,35);
 }
 .menu-footer li a.nav-link:hover {
-	color: rgb(139,0,102);
+	color: #7413dc;
 }
 .menu-footer li a {
 	text-decoration: none;

@@ -3,7 +3,7 @@
 	$options = get_option('scout_theme_options');
 ?>
 
-<footer class="container mw-100 bg-scout-green ml-0 mr-0 mb-0 w-100">
+<footer class="container mw-100 bg-scout-teal ml-0 mr-0 mb-0 w-100">
 	<div class="row m-auto p-3">
 		<div class="col">
 			<div id="ceop" class="pb-3">
