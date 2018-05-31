@@ -1,53 +1,101 @@
 <?php
+/**!
+ * Setup
+ */
 
-function b4st_setup() {
-	add_editor_style('theme/css/editor-style.css');
-	add_theme_support('post-thumbnails');
-	update_option('thumbnail_size_w', 170);
-	update_option('medium_size_w', 470);
-	update_option('large_size_w', 970);
+if ( ! function_exists('b4st_setup') ) {
+	function b4st_setup() {
+		add_editor_style('theme/css/editor-style.css');
+
+		add_theme_support('title-tag');
+
+		add_theme_support('post-thumbnails');
+
+		update_option('thumbnail_size_w', 285); /* internal max-width of col-3 */
+		update_option('small_size_w', 350); /* internal max-width of col-4 */
+		update_option('medium_size_w', 730); /* internal max-width of col-8 */
+		update_option('large_size_w', 1110); /* internal max-width of col-12 */
+
+		if ( ! isset($content_width) ) {
+			$content_width = 1100;
+		}
+
+		add_theme_support( 'post-formats', array(
+			'aside',
+			'gallery',
+			'link',
+			'image',
+			'quote',
+			'status',
+			'video',
+			'audio',
+			'chat'
+		) );
+
+
+
+		add_theme_support('automatic-feed-links');
+
+		add_theme_support( 'custom-logo', array(
+			'height'      => 142,
+			'width'       => 312,
+			'flex-height' => true,
+			'flex-width'  => true,
+			'header-text' => array( 'site-title', 'site-description' ),
+		) );
+	}
 }
 add_action('init', 'b4st_setup');
 
-if (! isset($content_width))
-	$content_width = 600;
-
-function b4st_excerpt_readmore() {
-	return '&nbsp; <a href="'. get_permalink() . '">' . '&hellip; ' . __('Read more', 'b4st') . ' <i class="fas fa-arrow-right"></i>' . '</a></p>';
+if ( ! function_exists( 'b4st_avatar_attributes' ) ) {
+	function b4st_avatar_attributes($avatar_attributes) {
+		$display_name = get_the_author_meta( 'display_name' );
+		$avatar_attributes = str_replace('alt=\'\'', 'alt=\'Avatar for '.$display_name.'\' title=\'Gravatar for '.$display_name.'\'',$avatar_attributes);
+		return $avatar_attributes;
+	}
 }
-add_filter('excerpt_more', 'b4st_excerpt_readmore');
+add_filter('get_avatar','b4st_avatar_attributes');
 
-// Add post formats support. See http://codex.wordpress.org/Post_Formats
-add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));
+if ( ! function_exists( 'b4st_author_avatar' ) ) {
+	function b4st_author_avatar() {
+
+		echo get_avatar('', $size = '96');
+	}
+}
+
+if ( ! function_exists( 'b4st_author_description' ) ) {
+	function b4st_author_description() {
+		echo get_the_author_meta('user_description');
+	}
+}
+
+if ( ! function_exists( 'b4st_post_date' ) ) {
+	function b4st_post_date() {
+		if ( in_array( get_post_type(), array( 'post', 'attachment' ) ) ) {
+			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
+
+			if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+				$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time> <time class="updated" datetime="%3$s">(updated %4$s)</time>';
+			}
+
+			$time_string = sprintf( $time_string,
+				esc_attr( get_the_date( 'c' ) ),
+				get_the_date(),
+				esc_attr( get_the_modified_date( 'c' ) ),
+				get_the_modified_date()
+			);
+
+			echo $time_string;
+		}
+	}
+}
+
+if ( ! function_exists('b4st_excerpt_more') ) {
+	function b4st_excerpt_more() {
+		return '&hellip;</p><p><a class="btn btn-primary" href="'. get_permalink() . '">' . __('Continue reading', 'b4st') . ' <i class="fas fa-arrow-right"></i>' . '</a></p>';
+	}
+}
+add_filter('excerpt_more', 'b4st_excerpt_more');
 
 //edit theme-options
-include 'theme-options.php';
 $options = get_option('scout_theme_options');
-
-
-include 'extend-post-thumbnail.php';
-
-//adds capabilities to editor so they can edit bootscout settings
-$role_object = get_role( 'editor' );
-//$role_object->add_cap( 'manage_options' );
-$role_object->remove_cap('manage_options');
-
-
-function register_my_menus() {
-	register_nav_menus(
-		array(
-			'navbar' => __( 'Main navbar' ),
-			'footer_menu' => __( 'Footer menu' )
-		)
-	);
-}
-add_action( 'init', 'register_my_menus' );
-
-add_theme_support( 'custom-logo', array(
-	'height'      => 383,
-	'width'       => 500,
-	'flex-height' => true,
-	'flex-width'  => true,
-	'header-text' => array( 'site-title', 'site-description' ),
-) );
-?>

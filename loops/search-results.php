@@ -1,14 +1,13 @@
 <?php
-/*
-The Search Results Loop
-=======================
-*/
+/**!
+ * The Search Results Loop
+ */
 ?>
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
-  <article role="article" id="post_<?php the_ID()?>" <?php post_class('mt-4 mb-4')?>>
+  <article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
     <header>
-      <h4><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h4>
+      <h2><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h2>
     </header>
     <?php the_excerpt(); ?>
   </article>

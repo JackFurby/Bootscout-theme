@@ -1,32 +1,25 @@
 <?php get_header(); ?>
 
-<!-- /#contaner and #wrap used for sticky footer -->
-<div id="container">
-	<div id="wrap">
-		<div class="container">
-			<div class="row">
+<main class="container-responsive mt-5">
+	<div class="row">
 
-				<div class="<?php if(is_active_sidebar('sidebar-widget-area')): ?>col-sm-8<?php else: ?>col-sm-12<?php endif; ?>">
-					<div id="content" role="main">
-						<header>
-							<h1><?php _e('Search Results for', 'b4st'); ?> &ldquo;<?php the_search_query(); ?>&rdquo;</h1>
-						</header>
-						<hr/>
-						<?php get_template_part('loops/content', 'search'); ?>
-					</div><!-- /#content -->
-				</div>
+		<div class="col-sm">
+			<div id="content" role="main">
+				<header class="mb-4 border-bottom">
+					<h1>
+						<?php _e('Search Results for', 'b4st'); ?> &ldquo;<?php the_search_query(); ?>&rdquo;
+					</h1>
+				</header>
+				<?php get_template_part('loops/search-results'); ?>
+			</div><!-- /#content -->
+		</div>
 
-				<?php if ($options['sidebar'] != true) {
-					echo"
-					<div class=\"col-sm-4\" id=\"sidebar\" role=\"navigation\">";
-					get_sidebar();
-					echo"</div>";
-				}
-				?>
+	<?php if ($options['sidebar'] != true) {
+		get_sidebar();
+	}
+	?>
 
-			</div><!-- /.row -->
-		</div><!-- /.container -->
-	</div><!-- /#wrap -->
-</div><!-- /#container -->
+	</div><!-- /.row -->
+</main><!-- /.container-responsive -->
 
 <?php get_footer(); ?>

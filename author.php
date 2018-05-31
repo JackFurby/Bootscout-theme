@@ -8,62 +8,37 @@ if (
 	!in_array('editor', $userInfo -> roles)
 ) {
 	$isAuthor = false;
-	wp_redirect(get_bloginfo('url').'/404', 404);
+	wp_redirect(esc_url( home_url() ) . '/404', 404);
 }
 ?>
-	<?php get_header(); ?>
+<?php get_header(); ?>
 
-	<!-- /#contaner and #wrap used for sticky footer -->
-	<div id="container">
-		<div id="wrap">
-			<div class="container">
-				<div class="row">
+<main class="container-responsive mt-5">
+	<div class="row">
 
-					<?php
-					if ($options['sidebar'] != true) {
-						if (is_active_sidebar('sidebar-widget-area')) {
-							echo"<div class=col-sm-8>";
-						} else {
-							echo"<div class=col-sm-12>";
-						}
-					} else {
-						echo"<div class=col-sm-12>";
-					}
-					?>
+		<div class="col-sm">
+			<div id="content" role="main">
+				<header class="mb-4 border-bottom">
+					<?php if ($isAuthor === true): ?>
+						<h1>
+							<?php _e('Posts by: ', 'b4st'); echo get_the_author_meta( 'display_name' ); ?>
+						</h1>
+					<?php endif; ?>
+				</header>
+				<?php if(have_posts()): ?>
+					<?php get_template_part('loops/index-loop'); ?>
+				<?php else: ?>
+					<?php get_template_part('loops/index-none'); ?>
+				<?php endif; ?>
+			</div><!-- /#content -->
+		</div>
 
-						<div id="content" role="main">
-							<header>
-								<?php if ($isAuthor === true): ?>
-									<h1>
-										<?php echo sprintf(__('Author: %s', 'b4st'), get_the_author_meta('user_nicename', $userInfo -> data -> ID)); ?>
-										<hr/>
-										<?php echo $curauth->display_name; ?>
-										<hr/>
-									</h1>
-								<?php endif; ?>
-							</header>
-							<?php if(have_posts()): ?>
-								<?php get_template_part('loops/index-loop'); ?>
-							<?php else: ?>
-								<?php get_template_part('loops/index-none'); ?>
-							<?php endif; ?>
+	<?php if ($options['sidebar'] != true) {
+		get_sidebar();
+	}
+	?>
 
-						</div><!-- /#content -->
-					</div>
-
-					<?php if ($options['sidebar'] != true) {
-						echo"
-						<div class=\"col-sm-4\" id=\"sidebar\" role=\"navigation\">";
-						get_sidebar();
-						echo"</div>";
-					}
-					?>
-
-				</div>
-				<!-- /.row -->
-			</div>
-			<!-- /.container -->
-		</div><!-- /#wrap -->
-	</div><!-- /#container -->
+  </div><!-- /.row -->
+</main><!-- /.container-responsive -->
 
 <?php get_footer(); ?>

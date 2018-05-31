@@ -52,6 +52,23 @@ function theme_options_do_page() {
 						<label class="description" for="scout_theme_options[charity_number]"> leave blank if unknown</label>
 					</td>
 				</tr>
+
+				<tr valign="top"><th scope="row">Privacy statement</th>
+					<td>
+						<input id="scout_theme_options[privacy_link]" class="regular-text" type="text" name="scout_theme_options[privacy_link]" value="<?php esc_attr_e( $options['privacy_link'] ); ?>" />
+						<label class="description" for="scout_theme_options[privacy_link]"> Inset page link for your Privacy statement</label>
+					</td>
+				</tr>
+				<tr valign="top"><th scope="row">Terms and Disclaimer</th>
+					<td>
+						<input id="scout_theme_options[terms_link]" class="regular-text" type="text" name="scout_theme_options[terms_link]" value="<?php esc_attr_e( $options['terms_link'] ); ?>" />
+						<label class="description" for="scout_theme_options[terms_link]"> Inset page link for your Terms and Disclaimer</label>
+					</td>
+				</tr>
+
+
+
+
 				<tr><th colspan="2"><h2>Social media</h2></th></tr>
 				<tr valign="top"><th scope="row">Facebook page</th>
 					<td>
