@@ -164,7 +164,11 @@ main {
 
 .wp-caption {}
 .wp-caption-text {}
-.sticky {}
+.sticky {
+	background-color: rgba(35, 169, 80, .1);
+	padding:15px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
 .screen-reader-text {}
 .gallery-caption {}
 
