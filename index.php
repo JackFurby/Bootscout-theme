@@ -3,7 +3,18 @@
 <main class="container-responsive mt-5">
 	<div class="row">
 
-		<div class="col-sm">
+		<?php
+if ($options['sidebar'] != true) {
+	if (is_active_sidebar('sidebar-widget-area')) {
+		echo"<div class=col-sm-8>";
+	} else {
+		echo"<div class=col-sm-12>";
+	}
+} else {
+	echo"<div class=col-sm-12>";
+}
+?>
+
 			<div id="content" role="main">
 
 				<?php get_template_part('loops/index-loop'); ?>

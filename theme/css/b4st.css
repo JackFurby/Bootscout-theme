@@ -176,15 +176,17 @@ main {
 
 .alignleft {
 	float: left;
+	margin-right: 15px;
 }
 
 .alignright {
 	float: right;
+	margin-left: 15px;
 }
 
 .aligncenter {
-	clear: both;
 	display: block;
+	margin: auto;
 }
 
 /* Max img widths */
@@ -197,6 +199,10 @@ img,
 .size-thumbnail {
 	max-width: 100%;
 	height: auto;
+}
+
+div.wp-caption {
+	max-width: 100% !important;
 }
 
 /* Responsive Container (because Bootstrap 4.0.0 doesn't have this) */
@@ -250,6 +256,11 @@ img,
 }
 
 /* Main content */
+
+.break-word {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
 
 /* Sidebar */
 
