@@ -98,6 +98,9 @@ strong {
 .bg-scout-blue {
 	background-color: #006ddf !important;
 }
+.bg-scout-navy {
+	background-color: #003982 !important;
+}
 .bg-scout-teal {
 	background-color: #00a794 !important;
 }
@@ -137,7 +140,6 @@ strong {
 	background-color: #23a950;
 	border-color: #23a950;
 }
-
 .btn-scout-teal {
 	border-color: white;
 	background-color: #7413dc;
@@ -145,6 +147,15 @@ strong {
 .btn-scout-teal:hover {
 	background-color: #00a794;
 	border-color: #00a794;
+}
+.btn-circle {
+	width: 50px;
+	height: 50px;
+	padding: 6px 0px;
+	border-radius: 45px;
+	text-align: center;
+	font-size: 25px;
+	line-height: 1.45857;
 }
 
 /* Sticky Footer */
@@ -165,9 +176,7 @@ main {
 .wp-caption {}
 .wp-caption-text {}
 .sticky {
-	background-color: rgba(35, 169, 80, .1);
-	padding:15px;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	background-color: rgba(0, 58, 130, .1);
 }
 .screen-reader-text {}
 .gallery-caption {}
