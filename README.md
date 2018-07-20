@@ -1,5 +1,5 @@
 ## Bootscout
-Bootscout is a WordPress theme using Bootstrap 4.1.1 Beta. This is on brand for scout websites in the UK. An example of theis theme can be found at [bootscout.jackfurby.co.uk](http://bootscout.jackfurby.co.uk)
+Bootscout is a WordPress theme using Bootstrap 4.1.1 Beta. This is on brand for scout websites in the UK. An example of the theme can be found at [bootscout.jackfurby.co.uk](http://bootscout.jackfurby.co.uk).
 
 ### Base theme
 The base theme can be found here: http://simonpadbury.github.io. I used this as a starting point and build it up to the current state of the project.
