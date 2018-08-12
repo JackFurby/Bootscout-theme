@@ -65,6 +65,18 @@ function theme_options_do_page() {
 						<label class="description" for="scout_theme_options[terms_link]"> Inset page link for your Terms and Disclaimer</label>
 					</td>
 				</tr>
+				<tr valign="top"><th scope="row">District / County link</th>
+					<td>
+						<input id="scout_theme_options[parent_link]" class="regular-text" type="text" name="scout_theme_options[parent_link]" value="<?php esc_attr_e( $options['parent_link'] ); ?>" />
+						<label class="description" for="scout_theme_options[parent_link]"> Inset link for your district or county site</label>
+					</td>
+				</tr>
+				<tr valign="top"><th scope="row">District / County link text</th>
+					<td>
+						<input id="scout_theme_options[parent_text]" class="regular-text" type="text" name="scout_theme_options[parent_text]" value="<?php esc_attr_e( $options['parent_text'] ); ?>" />
+						<label class="description" for="scout_theme_options[parent_text]"> Inset text to be displayed</label>
+					</td>
+				</tr>
 
 
 
