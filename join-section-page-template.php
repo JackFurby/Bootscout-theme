@@ -38,10 +38,12 @@
 				}
 
 				if ($is_beaver || $is_cub || $is_scout || $is_explorer || $is_network) {
-					echo"<ul id=\"p-0\">";
+					echo"<div>";
 					if ($is_beaver) {
 						echo"<div class=\"card text-center d-inline-block m-4\" id=\"bevMainBtn\" style=\"width: 15rem;\">
-						<img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Beaver_PNG.png\" alt=\"Card image cap\">
+						<div style=\"height:10rem;\" class=\"d-flex align-items-center\">
+							<img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Beaver_PNG.png\">
+						</div>
 						<div class=\"card-block pb-3\">
 						<p class=\"card-text\"><strong>Age</strong>: 6 - 8</p>
 						<a href=\"".$options['beaver-page-link']."\" class=\"btn btn-primary\">View more</a>
@@ -50,7 +52,9 @@
 					}
 					if ($is_cub) {
 						echo"<div class=\"card text-center d-inline-block m-4\" id=\"cubMainBtn\" style=\"width: 15rem;\">
-						<img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Cub_PNG.png\" alt=\"Card image cap\">
+						<div style=\"height:10rem;\" class=\"d-flex align-items-center\">
+							<img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Cub_PNG.png\">
+						</div>
 						<div class=\"card-block pb-3\">
 						<p class=\"card-text\"><strong>Age</strong>: 8 - 10.5</p>
 						<a href=\"".$options['cub-page-link']."\" class=\"btn btn-primary\">View more</a>
@@ -59,7 +63,9 @@
 					}
 					if ($is_scout) {
 						echo"<div class=\"card text-center d-inline-block m-4\" id=\"scoMainBtn\" style=\"width: 15rem;\">
-						<img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Scouts_PNG.png\" alt=\"Card image cap\">
+						<div style=\"height:10rem;\" class=\"d-flex align-items-center\">
+							<img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Scouts_PNG.png\">
+						</div>
 						<div class=\"card-block pb-3\">
 						<p class=\"card-text\"><strong>Age</strong>: 10.5 - 14</p>
 						<a href=\"".$options['scout-page-link']."\" class=\"btn btn-primary\">View more</a>
@@ -68,7 +74,9 @@
 					}
 					if ($is_explorer) {
 						echo"<div class=\"card text-center d-inline-block m-4\" id=\"expMainBtn\" style=\"width: 15rem;\">
-						<img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Explorers_PNG.png\" alt=\"Card image cap\">
+						<div style=\"height:10rem;\" class=\"d-flex align-items-center\">
+							<img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Explorers_PNG.png\">
+						</div>
 						<div class=\"card-block pb-3\">
 						<p class=\"card-text\"><strong>Age</strong>: 14 - 18</p>
 						<a href=\"".$options['explorer-page-link']."\" class=\"btn btn-primary\">View more</a>
@@ -77,14 +85,16 @@
 					}
 					if ($is_network) {
 						echo"<div class=\"card text-center d-inline-block m-4\" id=\"netMainBtn\" style=\"width: 15rem;\">
-						<img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Network_PNG.png\" alt=\"Card image cap\">
+						<div style=\"height:10rem;\" class=\"d-flex align-items-center\">
+							<img class=\"card-img-top section-img\" src=\"";?><?php bloginfo('template_directory'); ?><?php echo"/img/Network_PNG.png\">
+						</div>
 						<div class=\"card-block pb-3\">
 						<p class=\"card-text\"><strong>Age</strong>: 18 - 25</p>
 						<a href=\"".$options['network-page-link']."\" class=\"btn btn-primary\">View more</a>
 						</div>
 						</div>";
 					}
-					echo"</ul>";
+					echo"</div>";
 				}
 				?>
 
