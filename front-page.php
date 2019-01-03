@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+	get_header();
+	b4st_main_before();
+?>
 
 <?php
 if ($options['carousel'] == true) {
@@ -24,4 +27,7 @@ if ($options['carousel'] == true) {
 	</div><!-- /.row -->
 </main><!-- /.container-responsive -->
 
-<?php get_footer(); ?>
+<?php
+	b4st_main_after();
+	get_footer();
+?>

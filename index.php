@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+	get_header();
+	b4st_main_before();
+?>
 
 <main class="container-responsive mt-5">
 	<div class="row">
@@ -31,4 +34,7 @@ if ($options['sidebar'] != true) {
 	</div><!-- /.row -->
 </main><!-- /.container-responsive -->
 
-<?php get_footer(); ?>
+<?php
+	b4st_main_after();
+	get_footer(); 
+?>

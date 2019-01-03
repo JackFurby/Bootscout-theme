@@ -3,7 +3,6 @@
  * Custom Feedback
  * https://codex.wordpress.org/Function_Reference/wp_list_comments#Comments_Only_With_A_Custom_Comment_Display
 */
-
 function b4st_comment($comment, $args, $depth) {
   $GLOBALS['comment'] = $comment;
   extract($args, EXTR_SKIP);
@@ -43,22 +42,20 @@ function b4st_comment($comment, $args, $depth) {
           <?php comment_reply_link( array_merge( $args, array(
               'add_below' => $add_below,
               'reply_text' => __('<i class="fas fa-reply"></i> Reply', 'textdomain'),
-              'depth' => $depth, 
+              'depth' => $depth,
               'max_depth' => $args['max_depth']
               ))
           ); ?>
-          <?php edit_comment_link('<span class="btn btn-info">' . __('<i class="fas fa-edit"></i> Edit this reply', 'b4st') . '</span>',' ','' ); ?> 
+          <?php edit_comment_link('<span class="btn btn-info">' . __('<i class="fas fa-edit"></i> Edit this reply', 'b4st') . '</span>',' ','' ); ?>
       </p>
   </div>
 
 <?php if ( 'div' != $args['style'] ) : ?>
 </div>
 <?php endif; }
-
 /**!
  * Custom Comments Form
  */
-
 // Do not delete this section
 if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])){
   die ('Please do not load this page directly. Thanks!'); }
@@ -69,7 +66,6 @@ if ( post_password_required() ) { ?>
 <?php
   return;
 } // End do not delete section
-
 if (have_comments()) : ?>
 
 <h3 class="mt-5 mb-3">

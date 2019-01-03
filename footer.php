@@ -1,3 +1,5 @@
+<?php b4st_footer_before();?>
+
 <?php
 	// get theme options
 	$options = get_option('scout_theme_options');
@@ -108,6 +110,7 @@
 	</div>
 </footer>
 
+<?php b4st_footer_after();?>
 
 <?php wp_footer(); ?>
 </body>
