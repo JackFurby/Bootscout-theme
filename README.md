@@ -1,5 +1,5 @@
 ## Bootscout
-Bootscout is a WordPress theme using Bootstrap 4.1.1 Beta. This is on brand for scout websites in the UK. An example of the theme can be found at [bootscout.org.uk](http://www.bootscout.org.uk).
+Bootscout is a WordPress theme using Bootstrap 4.1.3. This is on brand for scout websites in the UK. An example of the theme can be found at [bootscout.org.uk](http://www.bootscout.org.uk).
 
 ### Base theme
 The base theme can be found here: http://simonpadbury.github.io. I used this as a starting point and build it up to the current state of the project.
@@ -28,5 +28,4 @@ Currently the theme works and has some useful functionality. this includes:
 * Section page: Display links to various scout sections if set (can set sections in theme options)
 
 ### To do
-* add counters for number of scouts, leader and groups etc.
 * Make a guide to use theme

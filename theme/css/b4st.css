@@ -6,78 +6,53 @@
 
  @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
- h1 {
+ h1, .h1, .has-h-1-font-size {
 	color: #006ddf ;
 	font-family: "Nunito Sans", sans-serif;
 	font-weight: 900;
+	font-size: 2.5rem;
 }
-h2 {
+h2, .h2, .has-h-2-font-size {
 	color: #23a950;
 	font-family: "Nunito Sans", sans-serif;
 	font-weight: bolder;
+	font-size: 2rem;
 }
-h3 {
+h3, .h3, .has-h-3-font-size {
 	color:#00a794;
 	font-family: "Nunito Sans", sans-serif;
 	font-weight: bold;
+	font-size: 1.75rem;
 }
-h4 {
+h4, .h4, .has-h-4-font-size {
 	font-family: "Nunito Sans", sans-serif;
 	font-weight: bold;
+	font-size: 1.5rem;
 }
-h5 {
+h5, .h5, .has-h-5-font-size {
 	font-family: "Nunito Sans", sans-serif;
+	font-size: 1.25rem;
 }
-h6 {
+h6, .h6, .has-h-6-font-size {
 	font-family: "Nunito Sans", sans-serif;
+	font-size: 1rem;
 }
-p {
-	font-family: "Nunito Sans", sans-serif;
-	font-weight: normal;
-}
-a {
-	font-family: "Nunito Sans", sans-serif;
-}
-strong {
-	font-weight: 900;
-}
-.h1 {
-	color: #006ddf ;
-	font-family: "Nunito Sans", sans-serif;
-	font-weight: 900;
-}
-.h2 {
-	color: #23a950;
-	font-family: "Nunito Sans", sans-serif;
-	font-weight: bolder;
-}
-.h3 {
-	color:#00a794;
-	font-family: "Nunito Sans", sans-serif;
-}
-.h4 {
-	font-family: "Nunito Sans", sans-serif;
-}
-.h5 {
-	font-family: "Nunito Sans", sans-serif;
-}
-.h6 {
-	font-family: "Nunito Sans", sans-serif;
-}
-.p {
+p, .p, .has-p-font-size {
 	font-family: "Nunito Sans", sans-serif;
 	font-weight: normal;
+	font-size: 1rem;
 }
-.a {
+a, .a {
 	font-family: "Nunito Sans", sans-serif;
+	font-size: 1rem;
 }
-.strong {
+strong, .strong {
 	font-weight: 900;
 }
 
  /* colours */
 
-.bg-scout-purple {
+.bg-scout-purple, .has-scout-purple-background-color {
 	background-color: #7413dc !important;
 }
 .bg-scout-purple-50 {
@@ -92,29 +67,92 @@ strong {
 .border-scout-purple-link:hover {
 	background-color: rgba(116, 20, 220, 0.5) !important;
 }
-.bg-scout-green {
+.bg-scout-green, .has-scout-green-background-color {
 	background-color: #23a950 !important;
 }
-.bg-scout-blue {
+.bg-scout-blue, .has-scout-blue-background-color {
 	background-color: #006ddf !important;
 }
-.bg-scout-navy {
+.bg-scout-navy, .has-scout-navy-background-color {
 	background-color: #003982 !important;
 }
-.bg-scout-teal {
+.bg-scout-teal, .has-scout-teal-background-color {
 	background-color: #00a794 !important;
 }
-.text-scout-blue {
-	color: #006ddf;
+.bg-scout-red, .has-scout-red-background-color {
+	background-color: #e22e12 !important;
 }
-.text-scout-green {
-	color: #23a950;
+.bg-scout-pink, .has-scout-pink-background-color {
+	background-color: #ffb4e5 !important;
 }
-.text-scout-purple {
-	color: #7413dc;
+.bg-scout-yellow, .has-scout-yellow-background-color {
+	background-color: #ffe627 !important;
 }
-.text-scout-teal {
-	color: #00a794;
+.bg-white, .has-white-background-color {
+	background-color: #ffffff !important;
+}
+.bg-grey-5, .has-grey-5-background-color {
+	background-color: #F2F2F2 !important;
+}
+.bg-grey-20, .has-grey-20-background-color {
+	background-color: #CCCCCC !important;
+}
+.bg-grey-40, .has-grey-40-background-color {
+	background-color: #999999 !important;
+}
+.bg-grey-60, .has-grey-60-background-color {
+	background-color: #666666 !important;
+}
+.bg-grey-80, .has-grey-80-background-color {
+	background-color: #333333 !important;
+}
+.bg-black, .has-black-background-color {
+	background-color: #000000 !important;
+}
+.text-grey-5, .has-grey-5-color  {
+	color: #F2F2F2 !important;
+}
+.text-grey-20, .has-grey-20-color  {
+	color: #CCCCCC !important;
+}
+.text-grey-40, .has-grey-40-color  {
+	color: #999999 !important;
+}
+.text-grey-60, .has-grey-60-color  {
+	color: #666666 !important;
+}
+.text-grey-80, .has-grey-80-color  {
+	color: #333333 !important;
+}
+.text-black, .has-black-color  {
+	color: #000000 !important;
+}
+.text-white, .has-white-color  {
+	color: #ffffff !important;
+}
+.text-scout-yellow, .has-scout-yellow-color  {
+	color: #ffe627 !important;
+}
+.text-scout-red, .has-scout-red-color  {
+	color: #e22e12 !important;
+}
+.text-scout-pink, .has-scout-pink-color  {
+	color: #ffb4e5 !important;
+}
+.text-scout-navy, .has-scout-navy-color  {
+	color: #003982 !important;
+}
+.text-scout-blue, .has-scout-blue-color {
+	color: #006ddf !important;
+}
+.text-scout-green, .has-scout-green-color {
+	color: #23a950 !important;
+}
+.text-scout-purple, .has-scout-purple-color {
+	color: #7413dc !important;
+}
+.text-scout-teal, .has-scout-teal-color {
+	color: #00a794 !important;
 }
 
 /* shadow */
@@ -156,6 +194,42 @@ strong {
 	text-align: center;
 	font-size: 25px;
 	line-height: 1.45857;
+}
+
+.wp-block-button .wp-block-button__link {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	border: 2px solid currentcolor !important;
+	background: transparent;
+	font-family: "Nunito Sans", sans-serif !important;
+}
+
+.wp-block-button .wp-block-button__link:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.wp-block-button.is-style-default .wp-block-button__link {
+	border-radius: 2rem;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+	border: 2px solid currentcolor !important;
+}
+.wp-block-button.is-style-squared .wp-block-button__link {
+	border-radius: 0rem;
 }
 
 /* Sticky Footer */

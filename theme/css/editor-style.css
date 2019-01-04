@@ -15,3 +15,14 @@ body#tinymce {
 	height: auto !important;
 	min-height: inherit !important;
 }
+
+.editor-post-title__input {
+	color: #006ddf ;
+	font-family: "Nunito Sans", sans-serif !important;
+	font-weight: 900;
+	font-size: 2.5rem;
+}
+
+.editor-styles-wrapper {
+	font-family: "Nunito Sans", sans-serif !important;
+}

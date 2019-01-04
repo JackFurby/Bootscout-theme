@@ -40,6 +40,11 @@ if ( ! function_exists('b4st_enqueues') ) {
 }
 add_action('wp_enqueue_scripts', 'b4st_enqueues', 100);
 
+function theme_support_scripts() {
+	wp_enqueue_script('theme-support', get_stylesheet_directory_uri() . '/theme/js/theme-support.js');
+}
+add_action( 'enqueue_block_editor_assets', 'theme_support_scripts' );
+
 function bootscout_admin_enqueue() {
 
 	/* Styles */
