@@ -19,32 +19,46 @@ if (
 <main class="container-responsive mt-5">
 	<div class="row">
 
-		<div class="col-sm">
-			<div id="content" role="main">
-				<header class="mb-4 border-bottom">
-					<?php if ($isAuthor === true): ?>
-						<h1>
-							<?php _e('Posts by: ', 'b4st'); echo get_the_author_meta( 'display_name' ); ?>
-						</h1>
+		<?php
+			if ($options['sidebar'] != true) {
+				if (is_active_sidebar('sidebar-widget-area')) {
+					echo"<div class=col-sm-8>";
+				} else {
+					echo"<div class=col-sm-12>";
+				}
+			} else {
+				echo"<div class=col-sm-12>";
+			}
+		?>
+
+			<div class="col-sm">
+				<div id="content" role="main">
+					<header class="mb-4 border-bottom">
+						<?php if ($isAuthor === true): ?>
+							<h1>
+								<?php _e('Posts by: ', 'b4st'); echo get_the_author_meta( 'display_name' ); ?>
+							</h1>
+						<?php endif; ?>
+					</header>
+					<?php if(have_posts()): ?>
+						<?php get_template_part('loops/index-loop'); ?>
+					<?php else: ?>
+						<?php get_template_part('loops/index-none'); ?>
 					<?php endif; ?>
-				</header>
-				<?php if(have_posts()): ?>
-					<?php get_template_part('loops/index-loop'); ?>
-				<?php else: ?>
-					<?php get_template_part('loops/index-none'); ?>
-				<?php endif; ?>
-			</div><!-- /#content -->
+				</div><!-- /#content -->
+			</div>
+
 		</div>
 
-	<?php if ($options['sidebar'] != true) {
-		get_sidebar();
-	}
-	?>
+		<?php if ($options['sidebar'] != true) {
+			get_sidebar();
+		}
+		?>
 
-  </div><!-- /.row -->
+	</div><!-- /.row -->
 </main><!-- /.container-responsive -->
 
 <?php
 	b4st_main_after();
-	get_footer(); 
+	get_footer();
 ?>

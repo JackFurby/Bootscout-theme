@@ -50,6 +50,14 @@ strong, .strong {
 	font-weight: 900;
 }
 
+li {
+	font-family: "Nunito Sans", sans-serif !important;
+}
+
+table {
+	font-family: "Nunito Sans", sans-serif !important;
+}
+
  /* colours */
 
 .bg-scout-purple, .has-scout-purple-background-color {
@@ -200,6 +208,7 @@ strong, .strong {
 	display: inline-block;
 	font-weight: 400;
 	text-align: center;
+	text-decoration: none;
 	white-space: nowrap;
 	vertical-align: middle;
 	-webkit-user-select: none;
@@ -212,7 +221,6 @@ strong, .strong {
 	line-height: 1.5;
 	border-radius: 0.25rem;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-	border: 2px solid currentcolor !important;
 	background: transparent;
 	font-family: "Nunito Sans", sans-serif !important;
 }
@@ -343,6 +351,38 @@ div.wp-caption {
 .break-word {
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
+}
+
+.col-sm-12 .alignfull {
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	width: auto;
+	max-width: 1000%;
+}
+
+.col-sm-12 .alignwide {
+	margin-left: calc(25% - 25vw);
+	margin-right: calc(25% - 25vw);
+	width: auto;
+	max-width: 1000%;
+}
+
+.alignwide img, .alignfull img {
+	display: block;
+	margin: 0 auto;
+}
+
+.page-item.active .page-link {
+	background-color: #7413dc;
+	border-color: #7413dc;
+}
+
+.page-link {
+	color: #7413dc;
+}
+
+.page-link:hover {
+	color: #7413dc;
 }
 
 /* Sidebar */

@@ -7,22 +7,25 @@
 	<div class="row">
 
 		<?php
-if ($options['sidebar'] != true) {
-	if (is_active_sidebar('sidebar-widget-area')) {
-		echo"<div class=col-sm-8>";
-	} else {
-		echo"<div class=col-sm-12>";
-	}
-} else {
-	echo"<div class=col-sm-12>";
-}
-?>
+			if ($options['sidebar'] != true) {
+				if (is_active_sidebar('sidebar-widget-area')) {
+					echo"<div class=col-sm-8>";
+				} else {
+					echo"<div class=col-sm-12>";
+				}
+			} else {
+				echo"<div class=col-sm-12>";
+			}
+		?>
 
-			<div id="content" role="main">
+			<div class="col-sm">
+				<div id="content" role="main">
 
-				<?php get_template_part('loops/index-loop'); ?>
+					<?php get_template_part('loops/index-loop'); ?>
 
-			</div><!-- /#content -->
+				</div><!-- /#content -->
+			</div>
+
 		</div>
 
 
@@ -36,5 +39,5 @@ if ($options['sidebar'] != true) {
 
 <?php
 	b4st_main_after();
-	get_footer(); 
+	get_footer();
 ?>

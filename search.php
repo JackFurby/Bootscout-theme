@@ -6,15 +6,29 @@
 <main class="container-responsive mt-5">
 	<div class="row">
 
-		<div class="col-sm">
-			<div id="content" role="main">
-				<header class="mb-4 border-bottom">
-					<h1>
-						<?php _e('Search Results for', 'b4st'); ?> &ldquo;<?php the_search_query(); ?>&rdquo;
-					</h1>
-				</header>
-				<?php get_template_part('loops/search-results'); ?>
-			</div><!-- /#content -->
+		<?php
+			if ($options['sidebar'] != true) {
+				if (is_active_sidebar('sidebar-widget-area')) {
+					echo"<div class=col-sm-8>";
+				} else {
+					echo"<div class=col-sm-12>";
+				}
+			} else {
+				echo"<div class=col-sm-12>";
+			}
+		?>
+
+			<div class="col-sm">
+				<div id="content" role="main">
+					<header class="mb-4 border-bottom">
+						<h1>
+							<?php _e('Search Results for', 'b4st'); ?> &ldquo;<?php the_search_query(); ?>&rdquo;
+						</h1>
+					</header>
+					<?php get_template_part('loops/search-results'); ?>
+				</div><!-- /#content -->
+			</div>
+
 		</div>
 
 	<?php if ($options['sidebar'] != true) {
@@ -27,5 +41,5 @@
 
 <?php
 	b4st_main_after();
-	get_footer(); 
+	get_footer();
 ?>
