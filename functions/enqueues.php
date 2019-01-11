@@ -40,10 +40,10 @@ if ( ! function_exists('b4st_enqueues') ) {
 }
 add_action('wp_enqueue_scripts', 'b4st_enqueues', 100);
 
-function theme_support_scripts() {
-	wp_enqueue_script('theme-support', get_stylesheet_directory_uri() . '/theme/js/theme-support.js');
+function blocks_scripts() {
+	wp_enqueue_script('bootstrap', get_stylesheet_directory_uri() . '/theme/js/block.js');
 }
-add_action( 'enqueue_block_editor_assets', 'theme_support_scripts' );
+add_action( 'enqueue_block_editor_assets', 'blocks_scripts' );
 
 function bootscout_admin_enqueue() {
 
