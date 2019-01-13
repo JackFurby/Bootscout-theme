@@ -122,9 +122,12 @@ add_theme_support( 'editor-font-sizes', array(
 
 add_theme_support('editor-styles');
 
+add_editor_style( get_stylesheet_directory_uri() . '/theme/css/bootstrap_override.css' );
+
 add_editor_style( get_stylesheet_directory_uri() . '/theme/css/b4st.css' );
 
-add_editor_style( get_stylesheet_directory_uri() . '/theme/css/admin.css' );
+add_editor_style( get_stylesheet_directory_uri() . '/theme/css/editor.css' );
+
 
 add_theme_support( 'wp-block-styles' );
 

@@ -1,8 +1,10 @@
 <?php
-/**!
+/*
  * Custom Feedback
+ * ===============
  * https://codex.wordpress.org/Function_Reference/wp_list_comments#Comments_Only_With_A_Custom_Comment_Display
 */
+
 function b4st_comment($comment, $args, $depth) {
   $GLOBALS['comment'] = $comment;
   extract($args, EXTR_SKIP);
@@ -53,9 +55,11 @@ function b4st_comment($comment, $args, $depth) {
 <?php if ( 'div' != $args['style'] ) : ?>
 </div>
 <?php endif; }
+
 /**!
  * Custom Comments Form
  */
+
 // Do not delete this section
 if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])){
   die ('Please do not load this page directly. Thanks!'); }
@@ -66,6 +70,7 @@ if ( post_password_required() ) { ?>
 <?php
   return;
 } // End do not delete section
+
 if (have_comments()) : ?>
 
 <h3 class="mt-5 mb-3">
@@ -106,7 +111,7 @@ if (have_comments()) : ?>
 <?php
   else :
 	  if (comments_open()) :
-  echo '<p class="alert alert-info">' . __('Be the first to write a comment.', 'b4st') . '</p>';
+  echo '<p class="alert alert-info mt-5">' . __('Be the first to write a comment.', 'b4st') . '</p>';
 		else :
 			echo '<p class="alert alert-warning">' . __('Comments are closed for this post.', 'b4st') . '</p>';
 		endif;
@@ -122,7 +127,7 @@ if (have_comments()) : ?>
   <p><?php printf(__('You must be <a href="%s">logged in</a> to post a comment.', 'b4st'), wp_login_url(get_permalink())); ?></p>
   <?php else : ?>
 
-  <form action="<?php echo get_option('url'); ?>/wp-comments-post.php" method="post" id="commentform">
+  <form action="<?php echo site_url('/wp-comments-post.php') ?>" method="post" id="commentform">
 
     <?php if (is_user_logged_in()) : ?>
     <p>
@@ -153,7 +158,7 @@ if (have_comments()) : ?>
       <textarea name="comment" class="form-control" id="comment" placeholder="<?php _e('Your comment', 'b4st'); ?>" rows="8" aria-required="true"></textarea>
     </div>
 
-    <p><input name="submit" class="btn btn-default" type="submit" id="submit" value="<?php _e('Post comment', 'b4st'); ?>"></p>
+    <p><input name="submit" class="btn btn-scout-purple" type="submit" id="submit" value="<?php _e('Post comment', 'b4st'); ?>"></p>
 
     <?php comment_id_fields(); ?>
     <?php do_action('comment_form', $post->ID); ?>

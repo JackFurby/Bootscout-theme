@@ -1,64 +1,8 @@
-/**!
- * Bootscout CSS
+/*
+ * b4st CSS
  */
 
- /* Fonts */
-
- @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
-
- h1, .h1, .has-h-1-font-size {
-	color: #006ddf ;
-	font-family: "Nunito Sans", sans-serif;
-	font-weight: 900;
-	font-size: 2.5rem;
-}
-h2, .h2, .has-h-2-font-size {
-	color: #23a950;
-	font-family: "Nunito Sans", sans-serif;
-	font-weight: bolder;
-	font-size: 2rem;
-}
-h3, .h3, .has-h-3-font-size {
-	color:#00a794;
-	font-family: "Nunito Sans", sans-serif;
-	font-weight: bold;
-	font-size: 1.75rem;
-}
-h4, .h4, .has-h-4-font-size {
-	font-family: "Nunito Sans", sans-serif;
-	font-weight: bold;
-	font-size: 1.5rem;
-}
-h5, .h5, .has-h-5-font-size {
-	font-family: "Nunito Sans", sans-serif;
-	font-size: 1.25rem;
-}
-h6, .h6, .has-h-6-font-size {
-	font-family: "Nunito Sans", sans-serif;
-	font-size: 1rem;
-}
-p, .p, .has-p-font-size {
-	font-family: "Nunito Sans", sans-serif;
-	font-weight: normal;
-	font-size: 1rem;
-}
-a, .a {
-	font-family: "Nunito Sans", sans-serif;
-	font-size: 1rem;
-}
-strong, .strong {
-	font-weight: 900;
-}
-
-li {
-	font-family: "Nunito Sans", sans-serif !important;
-}
-
-table {
-	font-family: "Nunito Sans", sans-serif !important;
-}
-
- /* colours */
+/* colours */
 
 .bg-scout-purple, .has-scout-purple-background-color {
 	background-color: #7413dc !important;
@@ -163,6 +107,10 @@ table {
 	color: #00a794 !important;
 }
 
+.border-scout-teal {
+	border-color: #00a794!important;
+}
+
 /* shadow */
 .hover-shadow {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -178,22 +126,36 @@ table {
 
 /* buttons */
 
-.btn-scout-green {
-	border-color: white;
+.btn-scout-purple {
 	background-color: #7413dc;
+	border-color: #7413dc;
+	color: white;
 }
-.btn-scout-green:hover {
-	background-color: #23a950;
-	border-color: #23a950;
+.btn-scout-purple:hover {
+	background-color: #5B00C3;
+	border-color: #5B00C3;
+}
+.btn-scout-purple:focus {
+	box-shadow: 0 0 0 0.2rem rgba(45,7,86,.5);
 }
 .btn-scout-teal {
-	border-color: white;
-	background-color: #7413dc;
+	background-color: #00a794;
+	color: white;
 }
 .btn-scout-teal:hover {
-	background-color: #00a794;
-	border-color: #00a794;
+	background-color: #008E7B;
 }
+.btn-outline-scout-teal {
+	color: #00a794 !important;
+	background-color: transparent !important;
+	background-image: none;
+	border-color: #00a794 !important;
+}
+.btn-outline-scout-teal:hover {
+	color: white !important;
+	background-color: #00a794 !important;
+}
+
 .btn-circle {
 	width: 50px;
 	height: 50px;
@@ -203,7 +165,6 @@ table {
 	font-size: 25px;
 	line-height: 1.45857;
 }
-
 .wp-block-button .wp-block-button__link {
 	display: inline-block;
 	font-weight: 400;
@@ -223,6 +184,7 @@ table {
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	background: transparent;
 	font-family: "Nunito Sans", sans-serif !important;
+	background-color: #000000;
 }
 
 .wp-block-button .wp-block-button__link:hover {
@@ -230,10 +192,14 @@ table {
 }
 
 .wp-block-button.is-style-default .wp-block-button__link {
-	border-radius: 2rem;
+	border-radius: 0.25rem;
 }
 
 .wp-block-button.is-style-outline .wp-block-button__link {
+	border: 2px solid currentcolor !important;
+}
+.is-style-outline .wp-block-button__link {
+	background-color: transparent !important;
 	border: 2px solid currentcolor !important;
 }
 .wp-block-button.is-style-squared .wp-block-button__link {
@@ -242,12 +208,12 @@ table {
 
 /* Sticky Footer */
 body {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 main {
-	flex: 1 0 auto;
+    flex: 1 0 auto;
 }
 
 .site-header-image {
@@ -296,49 +262,6 @@ div.wp-caption {
 	max-width: 100% !important;
 }
 
-/* Responsive Container (because Bootstrap 4.0.0 doesn't have this) */
-
-.container-responsive {
-	width: 100%;
-	max-width: 1140px;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.navbar > .container-responsive {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-}
-
-.navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-responsive {
-	padding-right: 0;
-	padding-left: 0;
-}
-.navbar > .container,
-.navbar > .container-responsive {
-	max-width: 1110px;
-}
-
-.navbar-nav .nav-link, .navbar-brand, .footer-item {
-	color: white !important;
-}
-.navbar-nav .nav-link:hover , .navbar-brand:hover, .footer-item:hover {
-	color: lightgrey !important;
-}
-
 /* Author bio */
 
 .author-bio .avatar {
@@ -347,11 +270,6 @@ div.wp-caption {
 }
 
 /* Main content */
-
-.break-word {
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
-}
 
 .col-sm-12 .alignfull {
 	margin-left: calc(50% - 50vw);
@@ -385,7 +303,30 @@ div.wp-caption {
 	color: #7413dc;
 }
 
+/* navbar */
+
+.navbar-nav .nav-link, .navbar-brand, .footer-item {
+	color: white !important;
+}
+.navbar-nav .nav-link:hover , .navbar-brand:hover, .footer-item:hover {
+	color: lightgrey !important;
+}
+
 /* Sidebar */
+
+/* banner */
+
+.banner {
+	height: 600px;
+}
+
+.banner-img {
+	min-width: 100% !important;
+	max-width: none;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+}
 
 /* Hide form placeholders on focus */
 
@@ -416,97 +357,10 @@ textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
 .comment-meta {
 	margin-bottom: 1rem;
 }
-.commentlist .children {
+
+.comment > .children {
 	margin-top: 1rem;
+	margin-right: -0.625rem;
+	margin-bottom: -1.625rem;
 }
-
 /* Site footer */
-
-/*join page css */
-
-#bevMainBtn:hover {
-	background: rgba(1,162,216,0.1);
-}
-#cubMainBtn:hover {
-	background: rgba(115,163,51,0.1);
-}
-#scoMainBtn:hover {
-	background: rgba(0,58,69,0.1);
-}
-#expMainBtn:hover {
-	background: rgba(1,45,94,0.1);
-}
-#netMainBtn:hover {
-	background: rgba(35,31,32,0.1);
-}
-.section-img {
-	width:80%;
-	padding:10px;
-	margin: auto;
-}
-
-/* carousel and banner */
-
-@media (min-width: 200px) {
-	.carousel-caption, .banner-caption {
-		font-size: 40px;
-	}
-	.carousel, .banner {
-		height: 200px;
-	}
-}
-@media (min-width: 576px) {
-	.carousel-caption, .banner-caption {
-		font-size: 40px;
-	}
-	.carousel, .banner {
-		height: 350px;
-	}
-}
-@media (min-width: 768px) {
-	.carousel-caption, .banner-caption  {
-		font-size: 40px;
-	}
-	.carousel, .banner {
-		height: 400px;
-	}
-}
-@media (min-width: 992px) {
-	.carousel-caption, .banner-caption {
-		font-size: 50px;
-	}
-	.carousel, .banner {
-		height: 450px;
-	}
-}
-@media (min-width: 1200px) {
-	.carousel-caption, .banner-caption {
-		font-size: 50px;
-	}
-	.carousel, .banner {
-		height: 500px;
-	}
-}
-.carousel-inner {
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-.carousel-inner, .carousel-item, .carousel-item a, .carousel-item a div, .carousel_background {
-	width:100%;
-	height:100%;
-
-}
-.carousel_background {
-	object-fit:cover;
-	background-color: #7413dc; /* fallback in case no image is set */
-}
-.carousel-caption {
-	font-weight: bold;
-}
-
-.banner-img {
-	min-width: 100% !important;
-	max-width: none;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-}

@@ -1,0 +1,47 @@
+/*
+ * Boostrap override CSS
+ */
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+* {
+	font-family: "Nunito Sans", sans-serif;
+}
+h1, .h1, .has-h-1-font-size {
+	color: #006ddf;
+	font-weight: 900;
+	font-size: 2.5rem;
+}
+h2, .h2, .has-h-2-font-size {
+	color: #23a950;
+	font-weight: bolder;
+	font-size: 2rem;
+}
+h3, .h3, .has-h-3-font-size {
+	color:#00a794;
+	font-weight: bold;
+	font-size: 1.75rem;
+}
+h4, .h4, .has-h-4-font-size {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+h5, .h5, .has-h-5-font-size {
+	font-size: 1.25rem;
+}
+h6, .h6, .has-h-6-font-size {
+	font-size: 1rem;
+}
+p, .p, .has-p-font-size {
+	font-weight: normal;
+	font-size: 1rem;
+}
+a, .a {
+	font-size: 1rem;
+	color: #006ddf;
+}
+strong, .strong {
+	font-weight: 900;
+}

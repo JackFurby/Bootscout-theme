@@ -1,9 +1,9 @@
 <?php
-/**!
+/*
  * The Default Loop (used by index.php, category.php and author.php)
  * =================================================================
- * If you require only post excerpts to be shown in index and category pages,
- * use the [---more---] line within blog posts.
+ * If you require only post excerpts to be shown in index and category pages, 
+ * use the [---more---] block within blog posts.
  */
 ?>
 
@@ -26,3 +26,4 @@
   else :
     get_template_part('loops/404');
   endif;
+?>

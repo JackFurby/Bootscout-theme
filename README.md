@@ -1,31 +1,23 @@
-## Bootscout
-Bootscout is a WordPress theme using Bootstrap 4.1.3. This is on brand for scout websites in the UK. An example of the theme can be found at [bootscout.org.uk](http://www.bootscout.org.uk).
+# Bootscout – A Bootstrap 4 Theme for UK scout websites
 
-### Base theme
+*Version 1.2*
+
+------------------
+
+**Bootscout is a simple wordpress theme styled for scout websites in the UK using Bootstrap.**
+
+## Features
+
+* On brand styling as detailed in the UK scouts brand guidlines including correct colours and fonts.
+* Sidebar-widget-area and footer-widget-area. These areas will be present if widget are added to the areas. The sidebar can also be disabled in theme options.
+* Banner images are present on all pages and added by selecting a featured image when editing a page or post.
+* Contact page tempate can be used to link your contact page to the sites footer. Only one page should have this tempate at any one time to benefit from the contact page link.
+* Site logo can be added and displayed in the navigation bar.
+
+
+## Base theme
 The base theme can be found here: http://simonpadbury.github.io. I used this as a starting point and build it up to the current state of the project.
 
-### Current development
-Currently the theme works and has some useful functionality. this includes:
-* Colours and text are inline with the scout association style guidelines
-* A logo can be set to appear in the navigation bar.
-* One menu can be set at any one time (one as the navbar and one as extra information in the footer)
-* Various page templates have been created to make editing the site easier
-* Theme options have been created to set useful information about the scout group / district / county
-* A carousel can be displayed on the front page displaying recent posts
-* A banner and caption can be displayed on all page templates (set by applying a featured image)
+## More
 
-### Setting up the theme
-1. Download the latest release (keep it in .zip format)
-2. Within your WP site upload the zip in the theme options. Activate the theme once complete
-3. In your WP dashboard navigate to theme options which is located in appearance
-4. fill in all fields that apply and save changes
-5. Within the appearance tab go to customize.
-6. set a site logo from within the site identity options and site icon, set your menu in the menus options (you will need to make the pages first).
-
-### Page templates
-* Default: includes page title and sidebar
-* Contact: Includes page title, social media links and sidebar
-* Section page: Display links to various scout sections if set (can set sections in theme options)
-
-### To do
-* Make a guide to use theme
+You can view the theme in action at [bootscout.org.uk](http://www.bootscout.org.uk).

@@ -1,9 +1,9 @@
 <?php
 /*
-The Index Post (or excerpt)
-===========================
-Used by index.php, category.php and author.php
-*/
+ * The Index Post (or excerpt)
+ * ===========================
+ * Used by index.php, category.php and author.php
+ */
 ?>
 
 <article role="article" id="post_<?php the_ID()?>" <?php post_class("mb-3 card hover-shadow"); ?> >
