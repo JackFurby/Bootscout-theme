@@ -16,7 +16,7 @@
 
 
 ## Base theme
-The base theme can be found here: http://simonpadbury.github.io. I used this as a starting point and build it up to the current state of the project.
+The base theme can be found here: https://github.com/SimonPadbury/b4st. I used this as a starting point and build it up to the current state of the project.
 
 ## More
 
