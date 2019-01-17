@@ -361,6 +361,7 @@ div.wp-caption {
 		-webkit-border-radius: 0;
 		-moz-border-radius: 0;
 		border-radius: 0;
+		margin-left: 0px;
 	}
 }
 
