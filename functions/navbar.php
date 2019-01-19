@@ -51,7 +51,8 @@ class b4st_walker_nav_menu extends Walker_Nav_menu {
 			if ($args->walker->has_children != true) {
 				$item_output .= '<a class="dropdown-item"' . $attributes . '>';
 			} else {
-				$item_output .= '<a class="dropdown-item dropdown-toggle"' . $attributes . '>';
+				# This menu item will act as a dropdown and a link
+				$item_output .= '<a class="dropdown-item dropdown-toggle"' . (! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '') . '>';
 			}
 
 		} else {
