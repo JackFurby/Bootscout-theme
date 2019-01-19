@@ -1,6 +1,6 @@
 # Bootscout – A Bootstrap 4 Theme for UK scout websites
 
-*Version 1.2*
+*Version 1.2.1*
 
 ------------------
 
