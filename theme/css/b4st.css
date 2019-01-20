@@ -195,12 +195,9 @@
 	border-radius: 0.25rem;
 }
 
-.wp-block-button.is-style-outline .wp-block-button__link {
+.wp-block-button.is-style-outline .wp-block-button__link, .is-style-outline .wp-block-button__link {
 	border: 2px solid currentcolor !important;
-}
-.is-style-outline .wp-block-button__link {
 	background-color: transparent !important;
-	border: 2px solid currentcolor !important;
 }
 .wp-block-button.is-style-squared .wp-block-button__link {
 	border-radius: 0rem;
