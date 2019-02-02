@@ -126,6 +126,8 @@ add_editor_style( get_stylesheet_directory_uri() . '/theme/css/bootstrap_overrid
 
 add_editor_style( get_stylesheet_directory_uri() . '/theme/css/b4st.css' );
 
+add_editor_style( get_stylesheet_directory_uri() . '/theme/css/blocks.css' );
+
 add_editor_style( get_stylesheet_directory_uri() . '/theme/css/editor.css' );
 
 
