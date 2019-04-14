@@ -26,7 +26,7 @@
     </section>
     <footer class="mt-5 border-top pt-3">
       <div>
-        <?php _e('Category: ', 'b4st'); the_category(', ') ?> | <?php if (has_tag()) { the_tags('Tags: ', ', '); ?> | <?php } _e('Comments', 'b4st'); ?>: <?php printf( number_format_i18n( get_comments_number() ) ); ?>
+        <?php _e('Category: ', 'b4st'); the_category(', ') ?> | <?php if (has_tag()) { the_tags('Tags: ', ', '); ?> <?php } ?> <?php if(comments_open()) { ?> | <?php _e('Comments', 'b4st'); ?>: <?php printf( number_format_i18n( get_comments_number() ) ); ?> <?php } ?>
       </div>
 
       <div class="author-bio media mt-5 bg-light rounded p-3 mb-2 solid-shadow">

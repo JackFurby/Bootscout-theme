@@ -8,7 +8,7 @@
 
 <article role="article" id="post_<?php the_ID()?>" <?php post_class("mb-3 card hover-shadow"); ?> >
 	<?php the_post_thumbnail("full", array("class" => "card-img-top")); ?>
-	<header class="card-body bg-light">
+	<header class="card-body bg-white">
 		<h2 class="mw-100 break-word">
 			<a href="<?php the_permalink(); ?>">
 				<?php the_title()?>
@@ -16,8 +16,10 @@
 		</h2>
 		<p class="text-muted">
 			<i class="far fa-calendar-alt"></i>&nbsp;<?php b4st_post_date(); ?>&nbsp;|
-			<i class="far fa-user"></i>&nbsp; <?php _e('By ', 'b4st'); the_author_posts_link(); ?>&nbsp;|
-			<i class="far fa-comment"></i>&nbsp;<a href="<?php comments_link(); ?>"><?php printf( _nx( 'One Comment', '%1$s Comments', get_comments_number(), '', 'b4st' ), number_format_i18n( get_comments_number() ) ); ?></a>
+			<i class="far fa-user"></i>&nbsp; <?php _e('By ', 'b4st'); the_author_posts_link(); ?>
+			<?php if(comments_open()) { ?>&nbsp;|
+				<i class="far fa-comment"></i>&nbsp;<a href="<?php comments_link(); ?>"><?php printf( _nx( 'One Comment', '%1$s Comments', get_comments_number(), '', 'b4st' ), number_format_i18n( get_comments_number() ) ); ?></a>
+			<?php } ?>
 		</p>
 	</header>
 	<hr class="mt-0">

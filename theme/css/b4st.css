@@ -268,6 +268,10 @@ div.wp-caption {
 
 /* Main content */
 
+body {
+	background-color:#F5F5F5
+}
+
 .col-sm-12 .alignfull {
 	margin-left: calc(50% - 50vw);
 	margin-right: calc(50% - 50vw);
