@@ -371,14 +371,11 @@ body {
 /* banner */
 
 .banner {
-	height: 500px;
+	max-height: 500px;
 }
 
 .banner-img {
-	min-width: 100% !important;
-	max-width: none;
-	min-height: 100%;
-	width: auto;
+	width: 100% !important;
 	height: auto;
 }
 
