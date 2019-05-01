@@ -7,8 +7,8 @@
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
   <article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
     <?php if (!empty(get_the_title())) { ?>
-      <header class="mb-5">
-        <h1>
+      <header>
+        <h1 class="mb-5">
           <?php the_title() ?>
         </h1>
       </header>
