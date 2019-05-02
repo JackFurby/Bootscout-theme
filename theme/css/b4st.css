@@ -268,7 +268,7 @@ div.wp-caption {
 
 /* Main content */
 
-body {
+body, .bg-body {
 	background-color:#F5F5F5
 }
 
