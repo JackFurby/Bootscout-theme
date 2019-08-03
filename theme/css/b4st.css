@@ -230,12 +230,12 @@ main {
 
 .alignleft {
 	float: left;
-	margin-right: 15px;
+	margin-right: 15px !important;
 }
 
 .alignright {
 	float: right;
-	margin-left: 15px;
+	margin-left: 15px !important;
 }
 
 .aligncenter {
@@ -302,6 +302,12 @@ body, .bg-body {
 
 .page-link:hover {
 	color: #7413dc;
+}
+
+.after-content::after {
+	content: "";
+	display: flex;
+	width: 100%;
 }
 
 /* navbar */

@@ -17,7 +17,7 @@
         ?>
       </div>
     </header>
-    <section>
+    <section class="after-content">
       <?php
         the_post_thumbnail();
         the_content();
