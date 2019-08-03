@@ -10,7 +10,7 @@ if ( ! function_exists('b4st_enqueues') ) {
 
 		wp_register_style('bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css', false, '4.3.1', null);
 		wp_enqueue_style('bootstrap');
-		wp_register_style('fontawesome5', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css', false, '5.8.1', null);
+		wp_register_style('fontawesome5', 'https://use.fontawesome.com/releases/v5.10.1/css/all.css', false, '5.10.1', null);
 		wp_enqueue_style('fontawesome5');
 		wp_register_style('bootstrap_override', get_template_directory_uri() . '/theme/css/bootstrap_override.css', false, null);
 		wp_enqueue_style('bootstrap_override');
