@@ -11,7 +11,7 @@
 
 <?php b4st_navbar_before();?>
 
-<nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-scout-purple solid-shadow">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-scout-purple solid-shadow">
 	<div class="container">
 
 		<?php if ( function_exists( 'the_custom_logo' ) ) {
