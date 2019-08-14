@@ -13,14 +13,18 @@
         </h1>
       </header>
     <?php } ?>
-    <section>
+    <section class="after-content">
       <?php the_content()?>
-      <?php wp_link_pages(); ?>
     </section>
+		<?php wp_link_pages(); ?>
   </article>
 <?php
-  endwhile;
-  else :
-    get_template_part('loops/404');
-  endif;
+// This continues in the single post loop
+	if ( comments_open() || get_comments_number() ) :
+		//comments_template();
+		comments_template('/loops/single-post-comments.php');
+	endif;
+endwhile; else :
+	get_template_part('loops/404');
+endif;
 ?>

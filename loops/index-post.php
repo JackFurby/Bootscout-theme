@@ -24,8 +24,8 @@
 	</header>
 	<hr class="mt-0">
 	<div class="card-body">
-		<a class="btn btn-circle bg-scout-blue text-white position-relative float-right hover-shadow" style="top: -63px;" href="<?php the_permalink(); ?>">
-			>
+		<a class="btn btn-circle bg-scout-blue text-white position-relative float-right hover-shadow" style="top: -61px;" href="<?php the_permalink(); ?>">
+			<i class="fas fa-chevron-right" style="margin-left: 2px; margin-top: 5px;"></i>
 		</a>
 		<?php if ( has_excerpt( $post->ID ) ) {
 			the_excerpt("m-0");
