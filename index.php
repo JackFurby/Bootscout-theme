@@ -9,7 +9,7 @@
   <div class="row">
 
 	<?php
-		if ($options['sidebar'] != true) {
+		if ((isset($options['sidebar']) ? $options['sidebar'] : false) != true) {
 			if (is_active_sidebar('sidebar-widget-area')) {
 				echo"<div class=col-sm-8>";
 			} else {
@@ -30,7 +30,7 @@
 
 	</div>
 
-	<?php if ($options['sidebar'] != true) {
+	<?php if ((isset($options['sidebar']) ? $options['sidebar'] : false) != true) {
 		get_sidebar();
 	}
 	?>

@@ -1,7 +1,7 @@
 <?php
 /*
- * Split Post Pagination
- */
+* Split Post Pagination
+*/
 
 add_filter('wp_link_pages', 'b4st_split_post_pagination');
 
@@ -12,7 +12,7 @@ function b4st_split_post_pagination($args){
 
 	if ( empty($args) ) {
 		return '';
-  	}
+	}
 
 	$defaults = array(
 		'before' => '<nav aria-label="Page navigation"<ul class="pagination justify-content-center mt-5">',
