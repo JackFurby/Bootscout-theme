@@ -19,6 +19,9 @@
 .border-scout-purple-link:hover {
 	background-color: rgba(116, 20, 220, 0.5) !important;
 }
+.bg-scout-section-green, .has-scout-section-green-background-color {
+	background-color: #004851 !important;
+}
 .bg-scout-green, .has-scout-green-background-color {
 	background-color: #23a950 !important;
 }
@@ -153,6 +156,15 @@
 .btn-outline-scout-teal:hover {
 	color: white !important;
 	background-color: #00a794 !important;
+}
+.btn-scout-section-green {
+	background-color: #004851 !important;
+	border-color: #004851;
+	color: white;
+}
+.btn-scout-section-green:hover {
+	background-color: #003B44;
+	border-color: #003B44;
 }
 
 .btn-circle {
