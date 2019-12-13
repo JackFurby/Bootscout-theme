@@ -43,25 +43,25 @@
 .bg-scout-yellow, .has-scout-yellow-background-color {
 	background-color: #ffe627 !important;
 }
-.bg-white, .has-white-background-color {
+.bg-white, .has-white-background-color, .bg-scout-white {
 	background-color: #ffffff !important;
 }
-.bg-grey-5, .has-grey-5-background-color {
+.bg-grey-5, .has-grey-5-background-color, .bg-scout-grey-5 {
 	background-color: #F2F2F2 !important;
 }
-.bg-grey-20, .has-grey-20-background-color {
+.bg-grey-20, .has-grey-20-background-color, .bg-scout-grey-20 {
 	background-color: #CCCCCC !important;
 }
-.bg-grey-40, .has-grey-40-background-color {
+.bg-grey-40, .has-grey-40-background-color, .bg-scout-grey-40 {
 	background-color: #999999 !important;
 }
-.bg-grey-60, .has-grey-60-background-color {
+.bg-grey-60, .has-grey-60-background-color, .bg-scout-grey-60 {
 	background-color: #666666 !important;
 }
-.bg-grey-80, .has-grey-80-background-color {
+.bg-grey-80, .has-grey-80-background-color, .bg-scout-grey-80 {
 	background-color: #333333 !important;
 }
-.bg-black, .has-black-background-color {
+.bg-black, .has-black-background-color, .bg-scout-black {
 	background-color: #000000 !important;
 }
 .text-grey-5, .has-grey-5-color  {

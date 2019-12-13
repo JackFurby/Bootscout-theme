@@ -11,7 +11,9 @@
 
 <?php b4st_navbar_before();?>
 
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-scout-purple solid-shadow">
+<?php $options = get_option('scout_theme_options');?>
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-scout-<?php echo (!empty($options['navColour']) ? $options['navColour'] : 'purple') ?> solid-shadow">
 	<div class="container">
 
 		<?php if ( function_exists( 'the_custom_logo' ) ) {

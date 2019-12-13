@@ -122,7 +122,7 @@ function b4st_bottomline() {
 				$got_parent_site = false;
 			}
 		?>
-		<footer class="container mw-100 bg-scout-teal ml-0 mr-0 mb-0">
+		<footer class="container mw-100 bg-scout-<?php echo (!empty($options['footerColour']) ? $options['footerColour'] : 'teal') ?> ml-0 mr-0 mb-0">
 			<div class="row m-auto p-3">
 				<div class="container">
 

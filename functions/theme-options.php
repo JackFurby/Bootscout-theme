@@ -78,9 +78,6 @@ function theme_options_do_page() {
 					</td>
 				</tr>
 
-
-
-
 				<tr><th colspan="2"><h2>Social media</h2></th></tr>
 				<tr valign="top"><th scope="row">Facebook page</th>
 					<td>
@@ -94,12 +91,48 @@ function theme_options_do_page() {
 						<label class="description" for="scout_theme_options[twitter_link]"> Inset your groups Twitter account URL</label>
 					</td>
 				</tr>
+
 				<tr><th colspan="2"><h2>Extra</h2></th></tr>
 				<tr valign="top"><th scope="row">Disable sidebar</th>
 					<td>
 						<input id="scout_theme_options[sidebar]" type="checkbox" name="scout_theme_options[sidebar]" value="1"<?php checked( 1 == (isset($options['sidebar']) ? $options['sidebar'] : '') ) ?>>Check to disable<br>
 					</td>
 				</tr>
+				<tr valign="top"><th scope="row">Navbar colour</th>
+					<td>
+						<select id="scout_theme_options[navColour]" name='scout_theme_options[navColour]'>
+							<option selected value>Choose...</option>
+							<option value='purple' <?php isset($options['navColour']) ? selected( $options['navColour'], 'purple' ) : '' ?>>Purple</option>
+							<option value='teal' <?php isset($options['navColour']) ? selected( $options['navColour'], 'teal' ) : '' ?>>Teal</option>
+							<option value='red' <?php isset($options['navColour']) ? selected( $options['navColour'], 'red' ) : '' ?>>Red</option>
+							<option value='pink' <?php isset($options['navColour']) ? selected( $options['navColour'], 'pink' ) : '' ?>>Pink</option>
+							<option value='green' <?php isset($options['navColour']) ? selected( $options['navColour'], 'green' ) : '' ?>>Grean</option>
+							<option value='navy' <?php isset($options['navColour']) ? selected( $options['navColour'], 'navy' ) : '' ?>>Navy</option>
+							<option value='blue' <?php isset($options['navColour']) ? selected( $options['navColour'], 'blue' ) : '' ?>>Blue</option>
+							<option value='yellow' <?php isset($options['navColour']) ? selected( $options['navColour'], 'yellow' ) : '' ?>>Yellow</option>
+							<option value='while' <?php isset($options['navColour']) ? selected( $options['navColour'], 'white' ) : '' ?>>White</option>
+							<option value='black' <?php isset($options['navColour']) ? selected( $options['navColour'], 'black' ) : '' ?>>Black</option>
+						</select>
+					</td>
+				</tr>
+				<tr valign="top"><th scope="row">Footer colour</th>
+					<td>
+						<select id="scout_theme_options[footerColour]" name='scout_theme_options[footerColour]'>
+							<option selected value>Choose...</option>
+							<option value='purple' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'purple' ) : '' ?>>Purple</option>
+							<option value='teal' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'teal' ) : '' ?>>Teal</option>
+							<option value='red' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'red' ) : '' ?>>Red</option>
+							<option value='pink' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'pink' ) : '' ?>>Pink</option>
+							<option value='green' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'green' ) : '' ?>>Grean</option>
+							<option value='navy' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'navy' ) : '' ?>>Navy</option>
+							<option value='blue' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'blue' ) : '' ?>>Blue</option>
+							<option value='yellow' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'yellow' ) : '' ?>>Yellow</option>
+							<option value='while' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'white' ) : '' ?>>White</option>
+							<option value='black' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'black' ) : '' ?>>Black</option>
+						</select>
+					</td>
+				</tr>
+
 			</table>
 
 			<p class="submit">
@@ -108,7 +141,12 @@ function theme_options_do_page() {
 		</form>
 	</div>
 	<?php
+
+
+
 }
+
+
 
 /**
 * Sanitize and validate input. Accepts an array, return a sanitized array.
