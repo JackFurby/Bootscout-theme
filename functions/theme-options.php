@@ -110,7 +110,7 @@ function theme_options_do_page() {
 							<option value='navy' <?php isset($options['navColour']) ? selected( $options['navColour'], 'navy' ) : '' ?>>Navy</option>
 							<option value='blue' <?php isset($options['navColour']) ? selected( $options['navColour'], 'blue' ) : '' ?>>Blue</option>
 							<option value='yellow' <?php isset($options['navColour']) ? selected( $options['navColour'], 'yellow' ) : '' ?>>Yellow</option>
-							<option value='while' <?php isset($options['navColour']) ? selected( $options['navColour'], 'white' ) : '' ?>>White</option>
+							<option value='white' <?php isset($options['navColour']) ? selected( $options['navColour'], 'white' ) : '' ?>>White</option>
 							<option value='black' <?php isset($options['navColour']) ? selected( $options['navColour'], 'black' ) : '' ?>>Black</option>
 						</select>
 					</td>
@@ -127,7 +127,7 @@ function theme_options_do_page() {
 							<option value='navy' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'navy' ) : '' ?>>Navy</option>
 							<option value='blue' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'blue' ) : '' ?>>Blue</option>
 							<option value='yellow' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'yellow' ) : '' ?>>Yellow</option>
-							<option value='while' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'white' ) : '' ?>>White</option>
+							<option value='white' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'white' ) : '' ?>>White</option>
 							<option value='black' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'black' ) : '' ?>>Black</option>
 						</select>
 					</td>

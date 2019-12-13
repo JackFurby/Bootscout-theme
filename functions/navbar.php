@@ -15,6 +15,7 @@ class b4st_walker_nav_menu extends Walker_Nav_menu {
 	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ){ // li a span
 
 		$indent = ( $depth ) ? str_repeat("\t",$depth) : '';
+		$options = get_option('scout_theme_options');
 
 		$li_attributes = '';
 		$class_names = $value = '';
@@ -42,7 +43,10 @@ class b4st_walker_nav_menu extends Walker_Nav_menu {
 		$attributes .= ! empty( $item->xfn ) ? ' rel="' . esc_attr($item->xfn) . '"' : '';
 		$attributes .= ! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '';
 
-		$attributes .= ( $args->walker->has_children ) ? ' class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"' : ' class="nav-link"';
+		$link_text_colour = get_navbar_text_colour($options['navColour']);
+		//$link_text_colour = (!empty($options['navColour']) ? get_navbar_text_colour($options['navColour']) : 'white');
+
+		$attributes .= ( $args->walker->has_children ) ? ' class="link-text-'.$link_text_colour.' nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"' : ' class="link-text-'.$link_text_colour.' nav-link"';
 
 
 		$item_output = $args->before;
@@ -73,3 +77,28 @@ Register Navbar
 */
 
 register_nav_menu('navbar', __('Navbar', 'b4st'));
+
+
+function get_navbar_text_colour($navColour) {
+	if ($navColour == 'teal') {
+		return 'white';
+	} else if ($navColour == 'red') {
+		return 'white';
+	} else if ($navColour == 'pink') {
+		return 'grey-80';
+	} else if ($navColour == 'green') {
+		return 'white';
+	} else if ($navColour == 'navy') {
+		return 'white';
+	} else if ($navColour == 'blue') {
+		return 'white';
+	} else if ($navColour == 'yellow') {
+		return 'grey-80';
+	} else if ($navColour == 'white') {
+		return 'grey-80';
+	} else if ($navColour == 'black') {
+		return 'white';
+	} else {  // navbar colour is either not set or purple
+		return 'white';
+	}
+}
