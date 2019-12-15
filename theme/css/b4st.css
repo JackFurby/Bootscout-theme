@@ -172,6 +172,23 @@
 	background-color: #003B44;
 	border-color: #003B44;
 }
+.btn-scout-white {
+	background-color: white;
+	color: #333333;
+}
+.btn-scout-white:hover {
+	background-color: #F2F2F2;
+}
+.btn-outline-scout-white {
+	color: #333333 !important;
+	background-color: transparent !important;
+	background-image: none;
+	border-color: white !important;
+}
+.btn-outline-scout-white:hover {
+	color: #333333 !important;
+	background-color: #F2F2F2 !important;
+}
 
 .btn-circle {
 	width: 50px;

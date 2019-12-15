@@ -23,20 +23,23 @@ function b4st_navbar_brand() {
 	}
 }
 function b4st_navbar_search() {
-  if ( ! has_action('navbar_search') ) {
-    ?>
-    <form class="form-inline ml-auto pt-2 pt-md-0" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-      <div class="input-group">
-        <input class="form-control border-white" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
-        <div class="input-group-append">
-          <button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-scout-teal text-white">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
-    <?php
-  } else {
+	if ( ! has_action('navbar_search') ) {
+		$options = get_option('scout_theme_options');
+		$bg_colour = get_navbar_search_bg_colour($options['navColour']);
+		$btn_colour = get_navbar_search_btn_colour($options['navColour']);
+		?>
+		<form class="form-inline ml-auto pt-2 pt-md-0" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<div class="input-group">
+				<input class="bg-scout-<?php echo $bg_colour ?> form-control border-<?php echo $bg_colour ?>" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
+				<div class="input-group-append">
+					<button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-scout-<?php echo $btn_colour ?> text-white">
+						<i class="fas fa-search"></i>
+					</button>
+				</div>
+			</div>
+		</form>
+		<?php
+	} else {
 		do_action('navbar_search');
 	}
 }
@@ -185,5 +188,53 @@ function b4st_bottomline() {
 		<?php
 	} else {
 		do_action('bottomline');
+	}
+}
+
+function get_navbar_search_bg_colour($navColour) {
+	if ($navColour == 'teal') {
+		return 'white';
+	} else if ($navColour == 'red') {
+		return 'white';
+	} else if ($navColour == 'pink') {
+		return 'white';
+	} else if ($navColour == 'green') {
+		return 'white';
+	} else if ($navColour == 'navy') {
+		return 'white';
+	} else if ($navColour == 'blue') {
+		return 'white';
+	} else if ($navColour == 'yellow') {
+		return 'grey-5';
+	} else if ($navColour == 'white') {
+		return 'grey-5';
+	} else if ($navColour == 'black') {
+		return 'grey-5';
+	} else {  // navbar colour is either not set or purple
+		return 'white';
+	}
+}
+
+function get_navbar_search_btn_colour($navColour) {
+	if ($navColour == 'teal') {
+		return 'white';
+	} else if ($navColour == 'red') {
+		return 'pink';
+	} else if ($navColour == 'pink') {
+		return 'red';
+	} else if ($navColour == 'green') {
+		return 'navy';
+	} else if ($navColour == 'navy') {
+		return 'green';
+	} else if ($navColour == 'blue') {
+		return 'yellow';
+	} else if ($navColour == 'yellow') {
+		return 'blue';
+	} else if ($navColour == 'white') {
+		return 'black';
+	} else if ($navColour == 'black') {
+		return 'white';
+	} else {  // navbar colour is either not set or purple
+		return 'teal';
 	}
 }

@@ -44,7 +44,6 @@ class b4st_walker_nav_menu extends Walker_Nav_menu {
 		$attributes .= ! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '';
 
 		$link_text_colour = get_navbar_text_colour($options['navColour']);
-		//$link_text_colour = (!empty($options['navColour']) ? get_navbar_text_colour($options['navColour']) : 'white');
 
 		$attributes .= ( $args->walker->has_children ) ? ' class="link-text-'.$link_text_colour.' nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"' : ' class="link-text-'.$link_text_colour.' nav-link"';
 
