@@ -238,3 +238,27 @@ function get_navbar_search_btn_colour($colour) {
 		return 'teal';
 	}
 }
+
+function get_navbar_brand_colour($colour) {
+	if ($colour == 'teal') {
+		return 'light';
+	} else if ($colour == 'red') {
+		return 'light';
+	} else if ($colour == 'pink') {
+		return 'dark';
+	} else if ($colour == 'green') {
+		return 'light';
+	} else if ($colour == 'navy') {
+		return 'light';
+	} else if ($colour == 'blue') {
+		return 'light';
+	} else if ($colour == 'yellow') {
+		return 'dark';
+	} else if ($colour == 'white') {
+		return 'dark';
+	} else if ($colour == 'black') {
+		return 'light';
+	} else {  // navbar colour is either not set or purple
+		return 'light';
+	}
+}
