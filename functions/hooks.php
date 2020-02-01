@@ -32,7 +32,7 @@ function b4st_navbar_search() {
 			<div class="input-group">
 				<input class="bg-scout-<?php echo $bg_colour ?> form-control border-<?php echo $bg_colour ?>" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
 				<div class="input-group-append">
-					<button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-scout-<?php echo $btn_colour ?> text-white">
+					<button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-scout-<?php echo $btn_colour ?>">
 						<i class="fas fa-search"></i>
 					</button>
 				</div>
@@ -191,50 +191,50 @@ function b4st_bottomline() {
 	}
 }
 
-function get_navbar_search_bg_colour($navColour) {
-	if ($navColour == 'teal') {
+function get_navbar_search_bg_colour($colour) {
+	if ($colour == 'teal') {
 		return 'white';
-	} else if ($navColour == 'red') {
+	} else if ($colour == 'red') {
 		return 'white';
-	} else if ($navColour == 'pink') {
+	} else if ($colour == 'pink') {
 		return 'white';
-	} else if ($navColour == 'green') {
+	} else if ($colour == 'green') {
 		return 'white';
-	} else if ($navColour == 'navy') {
+	} else if ($colour == 'navy') {
 		return 'white';
-	} else if ($navColour == 'blue') {
+	} else if ($colour == 'blue') {
 		return 'white';
-	} else if ($navColour == 'yellow') {
+	} else if ($colour == 'yellow') {
 		return 'grey-5';
-	} else if ($navColour == 'white') {
+	} else if ($colour == 'white') {
 		return 'grey-5';
-	} else if ($navColour == 'black') {
+	} else if ($colour == 'black') {
 		return 'grey-5';
-	} else {  // navbar colour is either not set or purple
+	} else {  // colour is either not set or purple
 		return 'white';
 	}
 }
 
-function get_navbar_search_btn_colour($navColour) {
-	if ($navColour == 'teal') {
-		return 'white';
-	} else if ($navColour == 'red') {
+function get_navbar_search_btn_colour($colour) {
+	if ($colour == 'teal') {
+		return 'purple';
+	} else if ($colour == 'red') {
 		return 'pink';
-	} else if ($navColour == 'pink') {
+	} else if ($colour == 'pink') {
 		return 'red';
-	} else if ($navColour == 'green') {
+	} else if ($colour == 'green') {
 		return 'navy';
-	} else if ($navColour == 'navy') {
+	} else if ($colour == 'navy') {
 		return 'green';
-	} else if ($navColour == 'blue') {
+	} else if ($colour == 'blue') {
 		return 'yellow';
-	} else if ($navColour == 'yellow') {
+	} else if ($colour == 'yellow') {
 		return 'blue';
-	} else if ($navColour == 'white') {
+	} else if ($colour == 'white') {
 		return 'black';
-	} else if ($navColour == 'black') {
+	} else if ($colour == 'black') {
 		return 'white';
-	} else {  // navbar colour is either not set or purple
+	} else {  // colour is either not set or purple
 		return 'teal';
 	}
 }

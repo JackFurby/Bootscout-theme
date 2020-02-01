@@ -21,9 +21,9 @@
 			$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 			$link = esc_url( home_url('/') );
 			if ( has_custom_logo() ) {
-				echo"<div><a href=\"$link\"><img class=\"navbar-brand\" src=\"$image[0]\" style=\"height:65px\"></a></div>";
+				echo"<div><a href=\"$link\"><img class=\"navbar-brand-light\" src=\"$image[0]\" style=\"height:65px\"></a></div>";
 			} else {
-				echo"<a class=\"navbar-brand\" href=\""; echo esc_url( home_url('/') ); echo"\">";
+				echo"<a class=\"navbar-brand-light\" href=\""; echo esc_url( home_url('/') ); echo"\">";
 					bloginfo('name');
 					echo"</a>";
 			}
