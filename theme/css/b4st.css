@@ -588,6 +588,77 @@ body, .bg-body {
 	}
 }
 
+.dropdown-item-scout-purple:active {
+	background-color: #7413dc;
+	color: white;
+}
+.dropdown-item-scout-purple:focus {
+	box-shadow: 0 0 0 0.2rem rgba(45,7,86,.5);
+}
+.dropdown-item-scout-yellow:active {
+	background-color: #ffe627;
+	color: #333333;
+}
+.dropdown-item-scout-yellow:focus {
+	box-shadow: 0 0 0 0.2rem rgba(230, 205, 14, 0.5);
+}
+.dropdown-item-scout-red:active {
+	background-color: #e22e12;
+	color: white;
+}
+.dropdown-item-scout-red:focus {
+	box-shadow: 0 0 0 0.2rem rgba(201, 21, 0, 0.5);
+}
+.dropdown-item-scout-pink:active {
+	background-color: #ffb4e5;
+	color: #333333;
+}
+.dropdown-item-scout-pink:focus {
+	box-shadow: 0 0 0 0.2rem rgba(230, 155, 204, 0.5);
+}
+.dropdown-item-scout-navy:active {
+	background-color: #003982;
+	color: white;
+}
+.dropdown-item-scout-navy:focus {
+	box-shadow: 0 0 0 0.2rem rgba(0, 32, 105, 0.5);
+}
+.dropdown-item-scout-blue:active {
+	background-color: #006ddf;
+	color: white;
+}
+.dropdown-item-scout-blue:focus {
+	box-shadow: 0 0 0 0.2rem rgba(0, 84, 198, 0.5);
+}
+.dropdown-item-scout-green:active {
+	background-color: #23a950;
+	color: white;
+}
+.dropdown-item-scout-green:focus {
+	box-shadow: 0 0 0 0.2rem rgba(10, 144, 55, 0.5);
+}
+.dropdown-item-scout-teal:active {
+	background-color: #00a794;
+	color: white;
+}
+.dropdown-item-scout-teal:focus {
+	box-shadow: 0 0 0 0.2rem rgba(0, 142, 123, 0.5);
+}
+.dropdown-item-scout-black:active {
+	background-color: #000000;
+	color: white;
+}
+.dropdown-item-scout-black:focus {
+	box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+.dropdown-item-scout-white:active {
+	background-color: #ffffff;
+	color: #333333;
+}
+.dropdown-item-scout-white:focus {
+	box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
 /* Sidebar */
 
 /* banner */

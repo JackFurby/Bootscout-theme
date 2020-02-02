@@ -51,11 +51,14 @@ class b4st_walker_nav_menu extends Walker_Nav_menu {
 		$item_output = $args->before;
 		// style link depending if link is just a link, opens a menu or opens a sub menu
 		if ($depth > 0) {
+			// get bg colour of menu items on focus
+			$focus_colour = get_navbar_reverse_colour($options['navColour']);
+
 			if ($args->walker->has_children != true) {
-				$item_output .= '<a class="dropdown-item"' . $attributes . '>';
+				$item_output .= '<a class="dropdown-item dropdown-item-scout-'. $focus_colour .'"' . $attributes . '>';
 			} else {
 				# This menu item will act as a dropdown and a link
-				$item_output .= '<a class="dropdown-item dropdown-toggle"' . (! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '') . '>';
+				$item_output .= '<a class="dropdown-item dropdown-item-scout-'. $focus_colour .' dropdown-toggle"' . (! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '') . '>';
 			}
 
 		} else {

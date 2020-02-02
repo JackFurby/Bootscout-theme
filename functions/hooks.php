@@ -26,7 +26,7 @@ function b4st_navbar_search() {
 	if ( ! has_action('navbar_search') ) {
 		$options = get_option('scout_theme_options');
 		$bg_colour = get_navbar_search_bg_colour($options['navColour']);
-		$btn_colour = get_navbar_search_btn_colour($options['navColour']);
+		$btn_colour = get_navbar_reverse_colour($options['navColour']);
 		?>
 		<form class="form-inline ml-auto pt-2 pt-md-0" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 			<div class="input-group">
@@ -216,7 +216,7 @@ function get_navbar_search_bg_colour($colour) {
 	}
 }
 
-function get_navbar_search_btn_colour($colour) {
+function get_navbar_reverse_colour($colour) {
 	if ($colour == 'teal') {
 		return 'purple';
 	} else if ($colour == 'red') {
