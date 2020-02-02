@@ -20,7 +20,7 @@
 			$custom_logo_id = get_theme_mod( 'custom_logo' );
 			$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 			$link = esc_url( home_url('/') );
-			$brand_colour = get_navbar_brand_colour($options['navColour']);
+			$brand_colour = get_text_light_dark($options['navColour']);
 			if ( has_custom_logo() ) {
 				echo"<div><a href=\"$link\"><img class=\"navbar-brand-$brand_colour\" src=\"$image[0]\" style=\"height:65px\"></a></div>";
 			} else {

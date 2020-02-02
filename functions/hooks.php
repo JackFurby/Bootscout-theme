@@ -78,6 +78,7 @@ function b4st_bottomline() {
 		<?php
 			// get theme options
 			$options = get_option('scout_theme_options');
+			$text_colour = get_text_light_dark($options['footerColour']);
 
 			// makes sure links are not empty
 			if (trim($options['fb_link']) != '') {
@@ -127,7 +128,7 @@ function b4st_bottomline() {
 		?>
 		<footer class="container mw-100 bg-scout-<?php echo (!empty($options['footerColour']) ? $options['footerColour'] : 'teal') ?> ml-0 mr-0 mb-0">
 			<div class="row m-auto p-3">
-				<div class="container">
+				<div class="container text-<?php echo $text_colour ?>">
 
 					<div id="ceop" class="pb-3">
 						<a href='http://www.ceop.police.uk/reportabuse/' target='_blank'><img src='<?php bloginfo('template_directory'); ?>/img/CEOPReportBtn.png' alt='Click CEOP' height='51' width='143' /></a>
@@ -146,20 +147,20 @@ function b4st_bottomline() {
 							if ($got_terms || $got_privacy || $got_parent_site) {
 
 								if ($got_terms) {
-									echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item\" href=\"".$options['terms_link']."\">Terms and Disclaimer</a></li>";
+									echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item-". $text_colour ."\" href=\"".$options['terms_link']."\">Terms and Disclaimer</a></li>";
 								}
 								if ($got_privacy) {
-									echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item\" href=\"".$options['privacy_link']."\">Privacy statement</a></li>";
+									echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item-". $text_colour ."\" href=\"".$options['privacy_link']."\">Privacy statement</a></li>";
 								}
 
 								if ($got_parent_site) {
-									echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item\" href=\"".$options['parent_link']."\">".$options['parent_text']."</a></li>";
+									echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item-". $text_colour ."\" href=\"".$options['parent_link']."\">".$options['parent_text']."</a></li>";
 								}
 							}?>
 
-							<li class="list-inline-item"><a class="nav-link footer-item" href="http://scouts.org.uk/home/">scouts.org.uk</a></li>
+							<li class="list-inline-item"><a class="nav-link footer-item-<?php echo $text_colour ?>" href="http://scouts.org.uk/home/">scouts.org.uk</a></li>
 
-							<li class="list-inline-item"><a class="nav-link footer-item" href="https://bootscout.org.uk">Powered by Bootscout</a></li>
+							<li class="list-inline-item"><a class="nav-link footer-item-<?php echo $text_colour ?>" href="https://bootscout.org.uk">Powered by Bootscout</a></li>
 
 						</ul>
 					</div>
@@ -169,14 +170,14 @@ function b4st_bottomline() {
 								echo"<div class=\"d-block m-auto\">
 								<ul class=\"p-0 list-inline text-center\">";
 								if ($got_fb) {
-									echo"<li data-toggle=\"tooltip\" title=\"Facebook\" class=\"list-inline-item m-0 footer-item\"><a href=\"".$options['fb_link']."\" class=\"m-1 footer-item\"><i id=\"social-fb\" class=\"fab fa-facebook-square fa-3x\"></i></a></li>";
+									echo"<li data-toggle=\"tooltip\" title=\"Facebook\" class=\"list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['fb_link']."\" class=\"m-1 footer-item-". $text_colour ." font-weight-normal\" ><i id=\"social-fb\" class=\"fab fa-facebook-square fa-3x\"></i></a></li>";
 								}
 								if ($got_tw) {
-									echo"<li data-toggle=\"tooltip\" title=\"Twitter\" class=\"list-inline-item m-0 footer-item\"><a href=\"".$options['twitter_link']."\" class=\"m-1 footer-item\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-3x\"></i></a></li>";
+									echo"<li data-toggle=\"tooltip\" title=\"Twitter\" class=\"list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['twitter_link']."\" class=\"m-1 footer-item-". $text_colour ." font-weight-normal\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-3x\"></i></a></li>";
 								}
 								if ($got_contact) {
 									$contactPageLink = get_page_link($contactPages[0]);
-									echo"<li data-toggle=\"tooltip\" title=\"Contact Us\" class=\"list-inline-item m-0 footer-item\"><a href=\"$contactPageLink\" class=\"m-1 footer-item\"><i class=\"fas fa-envelope-square fa-3x\" aria-hidden=\"true\"></i></a></li>";
+									echo"<li data-toggle=\"tooltip\" title=\"Contact Us\" class=\"list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"$contactPageLink\" class=\"m-1 footer-item-". $text_colour ." font-weight-normal\"><i class=\"fas fa-envelope-square fa-3x\" aria-hidden=\"true\"></i></a></li>";
 								}
 								echo"</ul></div>";
 							}?>
@@ -239,7 +240,7 @@ function get_navbar_search_btn_colour($colour) {
 	}
 }
 
-function get_navbar_brand_colour($colour) {
+function get_text_light_dark($colour) {
 	if ($colour == 'teal') {
 		return 'light';
 	} else if ($colour == 'red') {

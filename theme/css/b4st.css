@@ -516,21 +516,21 @@ body, .bg-body {
 
 /* navbar */
 
-.navbar-brand-light, .footer-item {
+.navbar-brand-light, .footer-item-light {
 	color: white !important;
 	font-size: 20px;
 	font-weight: bold;
 }
-.navbar-brand-light:hover, .footer-item:hover {
+.navbar-brand-light:hover, .footer-item-light:hover {
 	color: lightgrey !important;
 	text-decoration: none;
 }
-.navbar-brand-dark, .footer-item {
+.navbar-brand-dark, .footer-item-dark {
 	color: #333333 !important;
 	font-size: 20px;
 	font-weight: bold;
 }
-.navbar-brand-dark:hover, .footer-item:hover {
+.navbar-brand-dark:hover, .footer-item-dark:hover {
 	color: #000000 !important;
 	text-decoration: none;
 }
