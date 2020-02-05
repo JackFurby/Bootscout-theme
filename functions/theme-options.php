@@ -106,7 +106,7 @@ function theme_options_do_page() {
 							<option value='teal' <?php isset($options['navColour']) ? selected( $options['navColour'], 'teal' ) : '' ?>>Teal</option>
 							<option value='red' <?php isset($options['navColour']) ? selected( $options['navColour'], 'red' ) : '' ?>>Red</option>
 							<option value='pink' <?php isset($options['navColour']) ? selected( $options['navColour'], 'pink' ) : '' ?>>Pink</option>
-							<option value='green' <?php isset($options['navColour']) ? selected( $options['navColour'], 'green' ) : '' ?>>Grean</option>
+							<option value='green' <?php isset($options['navColour']) ? selected( $options['navColour'], 'green' ) : '' ?>>Green</option>
 							<option value='navy' <?php isset($options['navColour']) ? selected( $options['navColour'], 'navy' ) : '' ?>>Navy</option>
 							<option value='blue' <?php isset($options['navColour']) ? selected( $options['navColour'], 'blue' ) : '' ?>>Blue</option>
 							<option value='yellow' <?php isset($options['navColour']) ? selected( $options['navColour'], 'yellow' ) : '' ?>>Yellow</option>
@@ -123,7 +123,7 @@ function theme_options_do_page() {
 							<option value='teal' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'teal' ) : '' ?>>Teal</option>
 							<option value='red' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'red' ) : '' ?>>Red</option>
 							<option value='pink' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'pink' ) : '' ?>>Pink</option>
-							<option value='green' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'green' ) : '' ?>>Grean</option>
+							<option value='green' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'green' ) : '' ?>>Green</option>
 							<option value='navy' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'navy' ) : '' ?>>Navy</option>
 							<option value='blue' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'blue' ) : '' ?>>Blue</option>
 							<option value='yellow' <?php isset($options['footerColour']) ? selected( $options['footerColour'], 'yellow' ) : '' ?>>Yellow</option>
