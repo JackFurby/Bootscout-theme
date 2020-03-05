@@ -13,14 +13,15 @@
 
 <?php $options = get_option('scout_theme_options');?>
 
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-scout-<?php echo (!empty($options['navColour']) ? $options['navColour'] : 'purple') ?> solid-shadow">
+<?php $brand_colour = get_text_light_dark($options['navColour']); ?>
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-<?php echo get_reverse_light_dark($brand_colour) ?> bg-scout-<?php echo (!empty($options['navColour']) ? $options['navColour'] : 'purple') ?> solid-shadow">
 	<div class="container">
 
 		<?php if ( function_exists( 'the_custom_logo' ) ) {
 			$custom_logo_id = get_theme_mod( 'custom_logo' );
 			$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 			$link = esc_url( home_url('/') );
-			$brand_colour = get_text_light_dark($options['navColour']);
 			if ( has_custom_logo() ) {
 				echo"<div><a href=\"$link\"><img class=\"navbar-brand-$brand_colour\" src=\"$image[0]\" style=\"height:65px\"></a></div>";
 			} else {

@@ -263,3 +263,11 @@ function get_text_light_dark($colour) {
 		return 'light';
 	}
 }
+
+function get_reverse_light_dark($colour) {
+	if ($colour == 'light') {
+		return 'dark';
+	} else {
+		return 'light';
+	}
+}
