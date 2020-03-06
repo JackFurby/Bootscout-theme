@@ -1,6 +1,6 @@
 # Bootscout – A Bootstrap 4 Theme for UK scout websites
 
-*Version 1.3*
+*Version 1.3.1*
 
 ------------------
 
@@ -13,6 +13,7 @@
 * Banner images are present on all pages and added by selecting a featured image when editing a page or post.
 * Contact page tempate can be used to link your contact page to the sites footer. Only one page should have this tempate at any one time to benefit from the contact page link.
 * Site logo can be added and displayed in the navigation bar.
+* Colour selection for navbar and footer.
 
 
 ## Base theme
