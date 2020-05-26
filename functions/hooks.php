@@ -131,7 +131,7 @@ function b4st_bottomline() {
 				<div class="container text-<?php echo $text_colour ?>">
 
 					<div id="ceop" class="pb-3">
-						<a href='http://www.ceop.police.uk/reportabuse/' target='_blank'><img src='<?php bloginfo('template_directory'); ?>/img/CEOPReportBtn.png' alt='Click CEOP' height='51' width='143' /></a>
+						<a href='https://www.ceop.police.uk/ceop-reporting/' target='_blank'><img src='<?php bloginfo('template_directory'); ?>/img/CEOPReportBtn.png' alt='Click CEOP' height='51' width='143' /></a>
 					</div>
 
 					<div class="w-75 d-block w-100">
@@ -158,7 +158,7 @@ function b4st_bottomline() {
 								}
 							}?>
 
-							<li class="list-inline-item"><a class="nav-link footer-item-<?php echo $text_colour ?>" href="http://scouts.org.uk/home/">scouts.org.uk</a></li>
+							<li class="list-inline-item"><a class="nav-link footer-item-<?php echo $text_colour ?>" href="https://www.scouts.org.uk/">scouts.org.uk</a></li>
 
 							<li class="list-inline-item"><a class="nav-link footer-item-<?php echo $text_colour ?>" href="https://bootscout.org.uk">Powered by Bootscout</a></li>
 
