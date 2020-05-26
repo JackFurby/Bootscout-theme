@@ -1,0 +1,292 @@
+// Buttons
+
+.btn-scout-purple {
+	background-color: $scout-purple;
+	border-color: $scout-purple;
+	color: $white;
+}
+.btn-scout-purple:hover {
+	background-color: darken($scout-purple, 10%);
+	border-color: darken($scout-purple, 10%);
+	color: $white !important;
+}
+.btn-scout-purple:focus {
+	box-shadow: 0 0 0 0.2rem rgba($scout-purple,.5);
+}
+.btn-outline-scout-purple {
+	color: $scout-purple !important;
+	background-color: transparent !important;
+	background-image: none;
+	border-color: $scout-purple !important;
+}
+.btn-outline-scout-purple:hover {
+	color: $white !important;
+	background-color: $scout-purple !important;
+}
+.btn-scout-teal {
+	background-color: $scout-teal;
+	border-color: $scout-teal;
+	color: $white;
+}
+.btn-scout-teal:hover {
+	background-color: darken($scout-teal, 10%);
+	border-color: darken($scout-teal, 10%);
+	color: $white !important;
+}
+.btn-scout-teal:focus {
+	box-shadow: 0 0 0 0.2rem rgba($scout-teal, 0.5);
+}
+.btn-outline-scout-teal {
+	color: $scout-teal !important;
+	background-color: transparent !important;
+	background-image: none;
+	border-color: $scout-teal !important;
+}
+.btn-outline-scout-teal:hover {
+	color: $white !important;
+	background-color: $scout-teal !important;
+}
+.btn-scout-green {
+	background-color: $scout-green;
+	border-color: $scout-green;
+	color: $white;
+}
+.btn-scout-green:hover {
+	background-color: darker($scout-green, 10%);
+	border-color: darken($scout-green, 10%);
+	color: $white !important;
+}
+.btn-scout-green:focus {
+	box-shadow: 0 0 0 0.2rem rgba($scout-green, 0.5);
+}
+.btn-outline-scout-green {
+	color: $scout-green !important;
+	background-color: transparent !important;
+	background-image: none;
+	border-color: $scout-green !important;
+}
+.btn-outline-scout-green:hover {
+	color: $white !important;
+	background-color: $scout-green !important;
+}
+.btn-scout-blue {
+	background-color: $scout-blue;
+	border-color: $scout-blue;
+	color: $white;
+}
+.btn-scout-blue:hover {
+	background-color: darken($scout-blue, 10%);
+	border-color: darken($scout-blue, 10%);
+	color: $white !important;
+}
+.btn-scout-blue:focus {
+	box-shadow: 0 0 0 0.2rem rgba($scout-blue, 0.5);
+}
+.btn-outline-scout-blue {
+	color: $scout-blue !important;
+	background-color: transparent !important;
+	background-image: none;
+	border-color: $scout-blue !important;
+}
+.btn-outline-scout-blue:hover {
+	color: $white !important;
+	background-color: $scout-blue !important;
+}
+.btn-scout-navy {
+	background-color: $scout-navy;
+	border-color: $scout-navy;
+	color: $white;
+}
+.btn-scout-navy:hover {
+	background-color: darken($scout-navy, 10%);
+	border-color: darken($scout-navy, 10%);
+	color: $white !important;
+}
+.btn-scout-navy:focus {
+	box-shadow: 0 0 0 0.2rem rgba($scout-navy, 0.5);
+}
+.btn-outline-scout-navy {
+	color: $scout-navy !important;
+	background-color: transparent !important;
+	background-image: none;
+	border-color: $scout-navy !important;
+}
+.btn-outline-scout-navy:hover {
+	color: $white !important;
+	background-color: $scout-navy !important;
+}
+.btn-scout-pink {
+	background-color: $scout-pink;
+	border-color: $scout-pink;
+	color: $grey-80;
+}
+.btn-scout-pink:hover {
+	background-color: darken($scout-pink, 10%);
+	border-color: darken($scout-pink, 10%);
+	color: $grey-80;
+}
+.btn-scout-pink:focus {
+	box-shadow: 0 0 0 0.2rem rgba($scout-pink, 0.5);
+}
+.btn-outline-scout-pink {
+	color: $scout-pink !important;
+	background-color: transparent !important;
+	background-image: none;
+	border-color: $scout-pink !important;
+}
+.btn-outline-scout-pink:hover {
+	color: $grey-80 !important;
+	background-color: $scout-pink !important;
+}
+.btn-scout-red {
+	background-color: $scout-red;
+	border-color: $scout-red;
+	color: $white;
+}
+.btn-scout-red:hover {
+	background-color: darken($scout-red, 10%);
+	border-color: darken($scout-red, 10%);
+	color: $white !important;
+}
+.btn-scout-red:focus {
+	box-shadow: 0 0 0 0.2rem rgba($scout-red, 0.5);
+}
+.btn-outline-scout-red {
+	color: $scout-red !important;
+	background-color: transparent !important;
+	background-image: none;
+	border-color: $scout-red !important;
+}
+.btn-outline-scout-red:hover {
+	color: $white !important;
+	background-color: $scout-red !important;
+}
+.btn-scout-yellow {
+	background-color: $scout-yellow;
+	border-color: $scout-yellow;
+	color: $grey-80;
+}
+.btn-scout-yellow:hover {
+	background-color: darken($scout-yellow, 10%);
+	border-color: darken($scout-yellow, 10%);
+	color: $grey-80 !important;
+}
+.btn-scout-yellow:focus {
+	box-shadow: 0 0 0 0.2rem rgba($scout-yellow, 0.5);
+}
+.btn-outline-scout-yellow {
+	color: $scout-yellow !important;
+	background-color: transparent !important;
+	background-image: none;
+	border-color: $scout-yellow !important;
+}
+.btn-outline-scout-yellow:hover {
+	color: $grey-80 !important;
+	background-color: $scout-yellow !important;
+}
+.btn-scout-section-green {
+	background-color: $scout-section-green !important;
+	border-color: $scout-section-green;
+	color: $white;
+}
+.btn-scout-section-green:hover {
+	background-color: darken($scout-section-green, 10%);
+	border-color: darken($scout-section-green, 10%);
+	color: $white !important;
+}
+.btn-scout-section-green:focus {
+	box-shadow: 0 0 0 0.2rem rgba($scout-section-green, 0.5);
+}
+.btn-scout-white {
+	background-color: $white;
+	border-color: $white;
+	color: $grey-80;
+}
+.btn-scout-white:hover {
+	background-color: darken($white, 10%);
+	border-color: darken($white, 10%);
+	color: $grey-80 !important;
+}
+.btn-scout-white:focus {
+	box-shadow: 0 0 0 0.2rem rgba($white, 0.5);
+}
+.btn-outline-scout-white {
+	color: $grey-80 !important;
+	background-color: transparent !important;
+	background-image: none;
+	border-color: $white !important;
+}
+.btn-outline-scout-white:hover {
+	color: $grey-80 !important;
+	background-color: $white !important;
+}
+.btn-scout-black {
+	background-color: $black;
+	border-color: $black;
+	color: $white;
+}
+.btn-scout-black:hover {
+	background-color: lighten($black, 10%);
+	border-color: lighten($black, 10%);
+	color: $white !important;
+}
+.btn-scout-black:focus {
+	box-shadow: 0 0 0 0.2rem rgba($black, 0.5);
+}
+.btn-outline-scout-black {
+	color: $white !important;
+	background-color: transparent !important;
+	background-image: none;
+	border-color: $black !important;
+}
+.btn-outline-scout-black:hover {
+	color: $white !important;
+	background-color: $black !important;
+}
+
+.btn-circle {
+	width: 50px;
+	height: 50px;
+	padding: 6px 0px;
+	border-radius: 45px;
+	text-align: center;
+	font-size: 25px;
+	line-height: 1.45857;
+}
+.wp-block-button .wp-block-button__link {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	background: transparent;
+	font-family: "Nunito Sans", sans-serif !important;
+	background-color: $black;
+}
+
+.wp-block-button .wp-block-button__link:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.wp-block-button.is-style-default .wp-block-button__link {
+	border-radius: 0.25rem;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link, .is-style-outline .wp-block-button__link {
+	border: 2px solid currentcolor !important;
+	background-color: transparent !important;
+}
+.wp-block-button.is-style-squared .wp-block-button__link {
+	border-radius: 0rem;
+}

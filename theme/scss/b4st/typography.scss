@@ -37,3 +37,57 @@
 .more-link {
   display: block;
 }
+
+// text colour
+
+.link-text-white:hover  {
+	color: $grey-20 !important;
+}
+.link-text-grey-80:hover  {
+	color: darken($grey-80, 10%) !important;
+}
+.text-grey-5, .has-grey-5-color, .link-text-grey-5 {
+	color: $grey-5 !important;
+}
+.text-grey-20, .has-grey-20-color, .link-text-grey-20  {
+	color: $grey-20 !important;
+}
+.text-grey-40, .has-grey-40-color, .link-text-grey-40  {
+	color: $grey-40 !important;
+}
+.text-grey-60, .has-grey-60-color, .link-text-grey-60  {
+	color: $grey-60 !important;
+}
+.text-grey-80, .has-grey-80-color, .link-text-grey-80  {
+	color: $grey-80 !important;
+}
+.text-black, .has-black-color, .link-text-black  {
+	color: $black !important;
+}
+.text-white, .has-white-color, .link-text-white  {
+	color: $white !important;
+}
+.text-scout-yellow, .has-scout-yellow-color, .link-text-yellow  {
+	color: $scout-yellow !important;
+}
+.text-scout-red, .has-scout-red-color, .link-text-red  {
+	color: $scout-red !important;
+}
+.text-scout-pink, .has-scout-pink-color, .link-text-pink  {
+	color: $scout-pink !important;
+}
+.text-scout-navy, .has-scout-navy-color, .link-text-navy  {
+	color: $scout-navy !important;
+}
+.text-scout-blue, .has-scout-blue-color, .link-text-blue {
+	color: $scout-blue !important;
+}
+.text-scout-green, .has-scout-green-color , .link-text-green{
+	color: $scout-green !important;
+}
+.text-scout-purple, .has-scout-purple-color, .link-text-purple {
+	color: $scout-purple !important;
+}
+.text-scout-teal, .has-scout-teal-color, .link-text-teal {
+	color: $scout-teal !important;
+}
