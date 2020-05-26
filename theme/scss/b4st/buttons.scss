@@ -269,14 +269,14 @@
 	font-size: 1rem;
 	line-height: 1.5;
 	border-radius: 0.25rem;
-	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out, filter .15s ease-in-out;
 	background: transparent;
 	font-family: "Nunito Sans", sans-serif !important;
 	background-color: $black;
 }
 
 .wp-block-button .wp-block-button__link:hover {
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	filter: brightness(90%);
 }
 
 .wp-block-button.is-style-default .wp-block-button__link {
