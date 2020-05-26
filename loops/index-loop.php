@@ -2,7 +2,7 @@
 /*
  * The Default Loop (used by index.php, category.php and author.php)
  * =================================================================
- * If you require only post excerpts to be shown in index and category pages, 
+ * If you require only post excerpts to be shown in index and category pages,
  * use the [---more---] block within blog posts.
  */
 ?>

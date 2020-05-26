@@ -15,7 +15,7 @@
 
 <?php $brand_colour = get_text_light_dark($options['navColour']); ?>
 
-<nav id="navbar" class="navbar navbar-expand-lg navbar-<?php echo get_reverse_light_dark($brand_colour) ?> bg-scout-<?php echo (!empty($options['navColour']) ? $options['navColour'] : 'purple') ?> solid-shadow">
+<nav id="site-navbar" class="navbar navbar-expand-lg navbar-<?php echo get_reverse_light_dark($brand_colour) ?> bg-scout-<?php echo (!empty($options['navColour']) ? $options['navColour'] : 'purple') ?> solid-shadow">
 	<div class="container">
 
 		<?php if ( function_exists( 'the_custom_logo' ) ) {

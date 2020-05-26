@@ -3,7 +3,7 @@
     b4st_main_before();
 ?>
 
-<main id="main" class="container mt-5">
+<main id="site-main" class="container mt-5">
   <div class="row">
 
 	<?php

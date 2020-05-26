@@ -8,10 +8,10 @@
 
 ## Features
 
-* On brand styling as detailed in the UK scouts brand guidlines including correct colours and fonts.
+* On brand styling as detailed in the UK scouts brand guidelines including correct colours and fonts.
 * Sidebar-widget-area and footer-widget-area. These areas will be present if widget are added to the areas. The sidebar can also be disabled in theme options.
 * Banner images are present on all pages and added by selecting a featured image when editing a page or post.
-* Contact page tempate can be used to link your contact page to the sites footer. Only one page should have this tempate at any one time to benefit from the contact page link.
+* Contact page template can be used to link your contact page to the sites footer. Only one page should have this template at any one time to benefit from the contact page link.
 * Site logo can be added and displayed in the navigation bar.
 
 
@@ -21,3 +21,9 @@ The base theme can be found here: https://github.com/SimonPadbury/b4st. I used t
 ## More
 
 You can view the theme in action at [bootscout.org.uk](http://www.bootscout.org.uk).
+
+## Development help
+
+### Compile scss to css
+
+From root of project run `gulp css`. This will update B4st.cdd and b4st.css.map files.

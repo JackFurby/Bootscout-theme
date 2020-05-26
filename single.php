@@ -5,7 +5,7 @@
 
 <?php get_template_part('loops/banner'); ?>
 
-<main id="main" class="container mt-5">
+<main id="site-main" class="container mt-5">
   <div class="row">
 
 	<?php

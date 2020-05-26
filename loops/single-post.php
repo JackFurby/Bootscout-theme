@@ -4,7 +4,7 @@
  */
 ?>
 
-<?php /* Single post loop */ if(have_posts()): while(have_posts()): the_post(); ?>
+<?php if(have_posts()): while(have_posts()): the_post(); ?>
   <article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
     <header class="mb-5">
       <h1><?php the_title()?></h1>
@@ -14,20 +14,37 @@
           the_author_posts_link();
           _e(' on ', 'b4st');
           b4st_post_date();
-        ?>
+        ?><br>
+        <?php
+          _e('In ', 'b4st');
+          the_category(', ');
+          _e(' / ', 'b4st');
+
+          if (has_tag()) {
+            the_tags('Tags: ', ', ');
+            _e(' / ', 'b4st');
+          };
+        ?><a href="#post-comments"><?php
+          $comment_count = get_comments_number();
+          printf(
+            /* translators: 1: comment count number. */
+            esc_html( _nx( '%1$s comment', '%1$s comments', $comment_count, 'b4st' ) ),
+            number_format_i18n( $comment_count )
+          );
+        ?></a>
       </div>
     </header>
-    <section class="after-content">
+    <section class="entry-content">
       <?php
         the_post_thumbnail();
         the_content();
         wp_link_pages();
       ?>
     </section>
-    <footer class="mt-5 border-top pt-3">
-      <div>
-        <?php _e('Category: ', 'b4st'); the_category(', ') ?> | <?php if (has_tag()) { the_tags('Tags: ', ', '); ?> <?php } ?> <?php if(comments_open()) { ?> | <?php _e('Comments', 'b4st'); ?>: <?php printf( number_format_i18n( get_comments_number() ) ); ?> <?php } ?>
-      </div>
+
+    <?php wp_link_pages(); ?>
+
+    <footer class="container mt-5 border-top pt-3">
 
       <div class="author-bio media mt-5 bg-light rounded p-3 mb-2 solid-shadow">
         <?php b4st_author_avatar(); ?>
@@ -42,12 +59,12 @@
         </div>
       </div><!-- /.author-bio -->
 
-      <div class="row mt-5 border-top pt-3">
+      <div class="row mt-5 border-top pt-3 pb-5">
         <div class="col">
-          <?php previous_post_link('%link', '<i class="fas fa-fw fa-arrow-left"></i> Previous post<br/>'.'%title'); ?>
+          <?php previous_post_link('%link', '<i class="fas fa-fw fa-angle-left"></i>Previous post: '.'%title'); ?>
         </div>
         <div class="col text-right">
-          <?php next_post_link('%link', 'Next post <i class="fas fa-fw fa-arrow-right"></i><br/>'.'%title'); ?>
+          <?php next_post_link('%link', 'Next post: '.'%title'.'<i class="fas fa-fw fa-angle-right"></i>'); ?>
         </div>
       </div>
 
