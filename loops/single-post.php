@@ -34,7 +34,7 @@
         ?></a>
       </div>
     </header>
-    <section class="entry-content">
+    <section class="entry-content clearfix">
       <?php
         the_post_thumbnail();
         the_content();
@@ -46,7 +46,7 @@
 
     <footer class="container mt-5 border-top pt-3">
 
-      <div class="author-bio media mt-5 bg-light rounded p-3 mb-2 shadow-sm">
+      <div class="author-bio media mt-5 bg-white rounded p-3 mb-2 shadow-sm">
         <?php b4st_author_avatar(); ?>
         <div class="media-body ml-3">
           <p class="h4 author-name"><?php _e('Author: ', 'b4st'); the_author_posts_link(); ?></p>

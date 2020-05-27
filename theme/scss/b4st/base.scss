@@ -64,6 +64,15 @@ body, .bg-body {
 	max-width: 1000%;
 }
 
+// do not let align over flow cards (e.g. in blog posts)
+.card-body .alignfull,
+.card-body .alignwide {
+	margin-left: 0;
+	margin-right: 0;
+	width: auto;
+	max-width: 100%;
+}
+
 .alignwide img, .alignfull img {
 	display: block;
 	margin: 0 auto;

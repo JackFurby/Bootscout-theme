@@ -40,7 +40,10 @@ p, .p, .has-p-font-size {
 	font-size: 1rem;
 }
 a, .a {
-	color: #006ddf;
+	color: $scout-blue;
+}
+a:hover {
+	color: darken($scout-blue, 10%);
 }
 strong, .strong {
 	font-weight: 900;
