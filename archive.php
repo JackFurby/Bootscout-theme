@@ -10,17 +10,15 @@
 
 		<?php get_template_part('content-column'); ?>
 
-    <div class="col-lg">
-      <div id="content" role="main">
-        <header class="mb-4 border-bottom">
-          <span class="text-muted"><?php  _e('Archive', 'b4st'); ?></span>
-          <h1>
-            <?php echo the_archive_title(); ?>
-          </h1>
-        </header>
-        <?php get_template_part('loops/index-loop'); ?>
-      </div><!-- /#content -->
-    </div>
+    <div id="content" role="main">
+      <header class="mb-4 border-bottom">
+        <span class="text-muted"><?php  _e('Archive', 'b4st'); ?></span>
+        <h1>
+          <?php echo the_archive_title(); ?>
+        </h1>
+      </header>
+      <?php get_template_part('loops/index-loop'); ?>
+    </div><!-- /#content -->
 
 	</div>
 

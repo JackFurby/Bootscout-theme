@@ -10,13 +10,11 @@
 
 		<?php get_template_part('content-column'); ?>
 
-    <div class="col-lg">
-      <div id="content" role="main">
+    <div id="content" role="main">
 
-        <?php get_template_part('loops/index-loop'); ?>
+      <?php get_template_part('loops/index-loop'); ?>
 
-      </div><!-- /#content -->
-    </div>
+    </div><!-- /#content -->
 
 	</div>
 

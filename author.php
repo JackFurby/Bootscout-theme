@@ -23,22 +23,20 @@ if (
 
 		<?php get_template_part('content-column'); ?>
 
-    <div class="col-lg">
-      <div id="content" role="main">
-        <header class="mb-4 border-bottom">
-          <?php if ($isAuthor === true): ?>
-          <h1>
-            <?php _e('Posts by: ', 'b4st'); echo get_the_author_meta( 'display_name' ); ?>
-          </h1>
-          <?php endif; ?>
-        </header>
-        <?php if(have_posts()): ?>
-          <?php get_template_part('loops/index-loop'); ?>
-        <?php else: ?>
-          <?php get_template_part('loops/index-none'); ?>
+    <div id="content" role="main">
+      <header class="mb-4 border-bottom">
+        <?php if ($isAuthor === true): ?>
+        <h1>
+          <?php _e('Posts by: ', 'b4st'); echo get_the_author_meta( 'display_name' ); ?>
+        </h1>
         <?php endif; ?>
-      </div><!-- /#content -->
-    </div>
+      </header>
+      <?php if(have_posts()): ?>
+        <?php get_template_part('loops/index-loop'); ?>
+      <?php else: ?>
+        <?php get_template_part('loops/index-none'); ?>
+      <?php endif; ?>
+    </div><!-- /#content -->
 
 	</div>
 

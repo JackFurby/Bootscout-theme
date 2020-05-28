@@ -10,11 +10,9 @@
 
 		<?php get_template_part('content-column'); ?>
 
-    <div class="col-lg">
-      <div id="content" role="main">
-        <?php get_template_part('loops/single-post', get_post_format()); ?>
-      </div><!-- /#content -->
-    </div>
+    <div id="content" role="main">
+      <?php get_template_part('loops/single-post', get_post_format()); ?>
+    </div><!-- /#content -->
 
 	</div>
 
