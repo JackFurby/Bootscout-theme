@@ -59,7 +59,11 @@ function b4st_comment($comment, $args, $depth) {
 /**!
  * Custom Comments Form
  */
+?>
 
+ <hr/>
+
+<?php
  // Do not delete this section
  if (isset($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])){
    die ('Please do not load this page directly. Thanks!'); }
@@ -118,7 +122,7 @@ function b4st_comment($comment, $args, $depth) {
  <?php
    else :
      if (comments_open()) :
-   echo '<section id="post-comments"><div class="comments-wrap"><p class="alert alert-info mt-5">' . __('Be the first to write a comment.', 'b4st') . '</p></div></section>';
+   echo '<section id="post-comments"><div class="comments-wrap"><p class="alert alert-info mt-4">' . __('Be the first to write a comment.', 'b4st') . '</p></div></section>';
      else :
        echo '<section id="post-comments"><div class="comments-wrap"><p class="alert alert-info">' . __('Comments are closed for this post.', 'b4st') . '</p></div></section>';
      endif;
