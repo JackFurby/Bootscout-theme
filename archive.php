@@ -11,16 +11,16 @@
 	<?php
 		if ((isset($options['sidebar']) ? $options['sidebar'] : false) != true) {
 			if (is_active_sidebar('sidebar-widget-area')) {
-				echo"<div class=col-sm-8>";
+				echo"<div class=col-lg-8>";
 			} else {
-				echo"<div class=col-sm-12>";
+				echo"<div class=col-lg-12>";
 			}
 		} else {
-			echo"<div class=col-sm-12>";
+			echo"<div class=col-lg-12>";
 		}
 	?>
 
-	    <div class="col-sm">
+	    <div class="col-lg">
 	      <div id="content" role="main">
 	        <header class="mb-4 border-bottom">
             <span class="text-muted"><?php  _e('Archive', 'b4st'); ?></span>
