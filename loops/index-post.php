@@ -6,7 +6,7 @@
  */
 ?>
 
-<article role="article" id="post_<?php the_ID()?>" <?php post_class("mb-3 card hover-shadow"); ?> >
+<article role="article" id="post_<?php the_ID()?>" <?php post_class("mb-3 card shadow-sm"); ?> >
 	<?php the_post_thumbnail("full", array("class" => "card-img-top")); ?>
 	<header class="card-body bg-white">
 		<h2 class="mw-100 break-word">

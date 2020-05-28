@@ -34,21 +34,21 @@ function b4st_split_post_pagination($args){
 			$output .= $before;
 
 			// Page status
-			$output .= '<li class="page-item disabled"><a class="page-link">Page ' . $page . ' of ' . $numpages . '</a></li>';
+			$output .= '<li class="page-item disabled m-0"><a class="page-link">Page ' . $page . ' of ' . $numpages . '</a></li>';
 
-			// Page numbering
+			// First page link
 			if ( $page == 1 ) {
-				$output .= '<li class="page-item disabled"><a class="page-link">';
+				$output .= '<li class="page-item disabled m-0"><a class="page-link">';
 			} else {
-				$output .= '<li class="page-item"><a class="page-link" href="' . $postbase . '">';
+				$output .= '<li class="page-item m-0"><a class="page-link" href="' . get_post_page_url( 1 ) . '">';
 			}
 			$output .= '<i class="fas fa-angle-double-left"></i></a></li>';
 
 			// Previous page link
 			if ( $page == 1 ) {
-				$output .= '<li class="page-item disabled"><a class="page-link">';
+				$output .= '<li class="page-item disabled m-0"><a class="page-link">';
 			} else {
-				$output .= '<li class="page-item"><a class="page-link" href="' . $post_base . ($page - 1) . '">';
+				$output .= '<li class="page-item m-0"><a class="page-link" href="' . get_post_page_url( $page - 1 ) . '">';
 			}
 			$output .= '<i class="fas fa-angle-left"></i></a></li>';
 
@@ -57,9 +57,9 @@ function b4st_split_post_pagination($args){
 				$j = str_replace( '%', $i, $pagelink );
 				$output .= ' ';
 				if ( $i != $page || ( ( ! $more ) && ( $page == 1 ) ) )
-					$output .= '<li class="page-item"><a class="page-link" href="' . get_post_page_url( $i ) . '">';
+					$output .= '<li class="page-item m-0"><a class="page-link" href="' . get_post_page_url( $i ) . '">';
 				else
-					$output .= '<li class="page-item active"><a class="page-link" href="#">';
+					$output .= '<li class="page-item active m-0"><a class="page-link" href="#">';
 				$output .= $text_before . $j . $text_after;
 				if ( $i != $page || ( ( ! $more ) && ( $page == 1 ) ) )
 					$output .= '</li></a>';

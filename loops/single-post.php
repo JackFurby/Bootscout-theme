@@ -42,8 +42,6 @@
       ?>
     </section>
 
-    <?php wp_link_pages(); ?>
-
     <footer class="container mt-5 border-top pt-3">
 
       <div class="author-bio media mt-5 bg-white rounded p-3 mb-2 shadow-sm">
