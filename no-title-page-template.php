@@ -10,17 +10,7 @@
 <main id="main" class="container mt-5">
   <div class="row">
 
-	<?php
-		if ((isset($options['sidebar']) ? $options['sidebar'] : false) != true) {
-			if (is_active_sidebar('sidebar-widget-area')) {
-				echo"<div class=col-lg-8>";
-			} else {
-				echo"<div class=col-lg-12>";
-			}
-		} else {
-			echo"<div class=col-lg-12>";
-		}
-	?>
+		<?php get_template_part('content-column'); ?>
 
 		<div class="col-lg">
 			<div id="content" role="main">

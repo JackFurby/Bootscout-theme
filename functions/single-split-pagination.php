@@ -15,8 +15,8 @@ function b4st_split_post_pagination($args){
 	}
 
 	$defaults = array(
-		'before' => '<nav aria-label="Page navigation"<ul class="pagination justify-content-center mt-5">',
-		'after' => '</ul></nav>',
+		'before' => '<ul class="pagination justify-content-center mt-5" aria-label="Page navigation">',
+		'after' => '</ul>',
 		'text_before' => '',
 		'text_after' => '',
 		'link_class' => 'page-link',
