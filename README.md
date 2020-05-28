@@ -27,4 +27,8 @@ You can view the theme in action at [bootscout.org.uk](http://www.bootscout.org.
 
 ### Compile scss to css
 
-From root of project run `gulp css`. This will update B4st.cdd and b4st.css.map files.
+From root of project run `gulp css` and `gulp editor-css`. This will update editor.css, editor.css.map, b4st.css and b4st.css.map files.
+
+Basic setup info for scss here (not my guide): https://github.com/SimonPadbury/b4st/wiki/Customizing-Bootstrap-4-(SCSS)-in-b4st
+
+TO DO: Create a basic guide on setting up dev environment
