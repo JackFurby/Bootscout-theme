@@ -42,9 +42,21 @@
 					'container'       => false,
 					'menu_class'      => '',
 					'fallback_cb'     => '__return_false',
-					'items_wrap'      => '<ul id="%1$s" class="navbar-nav mr-auto mt-2 mt-lg-0 %2$s">%3$s</ul>',
+					'items_wrap'      => '<ul id="%1$s" class="navbar-nav mr-auto mt-2 mt-lg-0 d-none d-lg-flex %2$s">%3$s</ul>',
 					'depth'           => 0,
 					'walker'          => new b4st_walker_nav_menu()
+				) );
+			?>
+
+			<?php
+				wp_nav_menu( array(
+					'theme_location'  => 'navbar',
+					'container'       => false,
+					'menu_class'      => '',
+					'fallback_cb'     => '__return_false',
+					'items_wrap'      => '<ul id="%1$s" class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex d-lg-none %2$s">%3$s</ul>',
+					'depth'           => 0,
+					'walker'          => new b4st_walker_nav_menu_mobile()
 				) );
 			?>
 
