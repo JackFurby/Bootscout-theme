@@ -81,7 +81,7 @@ class b4st_walker_nav_menu_mobile extends Walker_Nav_menu {
 	function start_lvl( &$output, $depth = 0, $args = array() ){ // ul
 		$indent = str_repeat("\t",$depth); // indents the outputted HTML
 		$submenu = ($depth > 0) ? ' sub-menu dropdown-menu-sub' : '';
-		$output .= "\n$indent<div class=\"dropdown-menu\"><ul class=\"$submenu depth_$depth dropdown-menu-sub\">\n";
+		$output .= "\n$indent<div class=\"p-0 m-0 border-0 dropdown-menu w-100\"><ul class=\"$submenu depth_$depth dropdown-menu-sub\">\n";
 	}
 
 	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ){ // li a span
@@ -95,7 +95,9 @@ class b4st_walker_nav_menu_mobile extends Walker_Nav_menu {
 
 		$classes[] = ($item->current || $item->current_item_ancestor) ? 'active' : '';  # On this items page
 		$classes[] = 'nav-item';
-		$classes[] = 'pb-2';
+		if ($depth == 0) {
+			$classes[] = 'pb-2';
+		}
 		$classes[] = 'nav-item-' . $item->ID;
 
 		$class_names =  join(' ', apply_filters('nav_menu_css_class', array_filter( $classes ), $item, $args ) );
@@ -104,38 +106,38 @@ class b4st_walker_nav_menu_mobile extends Walker_Nav_menu {
 		$id = apply_filters('nav_menu_item_id', 'menu-item-'.$item->ID, $item, $args);
 		$id = strlen( $id ) ? ' id="' . esc_attr( $id ) . '"' : '';
 
-		$output .= $indent . '<li ' . $id . $value . $class_names . $li_attributes . '><div class="btn-group w-100">';
+		$output .= $indent . '<li ' . $id . $value . $class_names . $li_attributes . '><div class="btn-group w-100 d-flex flex-wrap">';
 
 		$attributes = ! empty( $item->attr_title ) ? ' title="' . esc_attr($item->attr_title) . '"' : '';
 		$attributes .= ! empty( $item->target ) ? ' target="' . esc_attr($item->target) . '"' : '';
 		$attributes .= ! empty( $item->xfn ) ? ' rel="' . esc_attr($item->xfn) . '"' : '';
 		$attributes .= ! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '';
 
+		// get bg colour of menu items on focus
+		$focus_colour = get_navbar_reverse_colour($options['navColour']);
 		$link_text_colour = get_navbar_text_colour($options['navColour']);
 
-		$attributes .= ( $args->walker->has_children ) ? ' class="btn link-text-'.$link_text_colour.'" ' : ' class="btn link-text-'.$link_text_colour.'"';
+		$attributes .= ( $args->walker->has_children ) ? ' class="btn link-text-'.$link_text_colour.' flex-grow-1 text-left" ' : ' class="btn link-text-'.$link_text_colour.' flex-grow-1 text-left"';
 
 		$link_text = apply_filters( 'the_title', $item->title, $item->ID );
 
 		$item_output = $args->before;
 		// style link depending if link is just a link, opens a menu or opens a sub menu
 		if ($depth > 0) {
-			// get bg colour of menu items on focus
-			$focus_colour = get_navbar_reverse_colour($options['navColour']);
 
 			if ($args->walker->has_children != true) {
-				$item_output .= '<a class="dropdown-item-scout-'. $focus_colour .'"' . $attributes . '>'. $link_text .'</a>';
+				$item_output .= '<a class="btn dropdown-item-scout-'. $focus_colour .' text-dark flex-grow-1 text-left"' . $attributes . '>'. $link_text .'</a>';
 			} else {
 				# This menu item will act as a dropdown and a link
-				$item_output .= '<a class="dropdown-item-scout-'. $focus_colour .'"' . (! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '') . '>'. $link_text .'</a>';
-				$item_output .= '<button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>';
+				$item_output .= '<a class="btn dropdown-item-scout-'. $focus_colour .' text-dark flex-grow-1 text-left"' . (! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '') . '>'. $link_text .'</a>';
+				$item_output .= '<button type="button" class="btn btn-scout-'. $focus_colour .' dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>';
 			}
 
 		# If link is at depth 0 (can still be a dropdown)
 		} else {
 			$item_output .= '<a' . $attributes . '>'. $link_text .'</a>';
 			if ($args->walker->has_children == true) {
-				$item_output .= '<button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>';
+				$item_output .= '<button type="button" class="btn btn-scout-'. $focus_colour .' dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>';
 			}
 		}
 		$item_output .= $args->link_before . $args->link_after;
