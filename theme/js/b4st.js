@@ -22,7 +22,18 @@
 
 		$('.pagination .dots').addClass('page-link').parent().addClass('disabled');
 
-		// You can put your own code in here
+		// Navbar
+
+		//$('.btn-group').on('hide.bs.dropdown', function (e) {
+		//	console.log("hi");
+		//	if (e.clickEvent) {
+		//		e.preventDefault();
+		//}
+
+		$(document).on('click', '.btn-group', function (e) {
+			e.stopPropagation();
+		});
+});
 
 	});
 
