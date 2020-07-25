@@ -4,6 +4,22 @@
  * Designed to be used by a child theme.
  */
 
+// Head (in `header.php`)
+function extra_styles() {
+	$options = get_option('scout_theme_options');
+	$link_colour = get_anchor_colour($options['navColour']);
+	?>
+	<style>
+	main .a, main a, footer .a, footer a {
+		color: <?php echo $link_colour[0] ?> !important;
+	}
+	main .a:hover, main a:hover, footer .a:hover, footer a:hover {
+		color: <?php echo $link_colour[1] ?> !important;
+	}
+	</style>
+	<?php
+}
+
 // Navbar (in `header.php`)
 
 function b4st_navbar_before() {
@@ -261,6 +277,32 @@ function get_navbar_mobile_button_colour($colour) {
 		return 'black-light';
 	} else {  // colour is either not set or purple
 		return 'purple-dark';
+	}
+}
+
+function get_anchor_colour($colour) {
+	if ($colour == 'teal') {
+		return ['#00a794','#008E7B'];
+	} else if ($colour == 'red') {
+		return ['#e22e12', '#C91500'];
+	} else if ($colour == 'pink') {
+		#return ['#ffb4e5', '#E69BCC'];
+		return ['#e22e12', '#C91500'];
+	} else if ($colour == 'green') {
+		return ['#23a950', '#0A9037'];
+	} else if ($colour == 'navy') {
+		return ['#003982', '#002069'];
+	} else if ($colour == 'blue') {
+		return ['#006ddf', '#0054C6'];
+	} else if ($colour == 'yellow') {
+		#return ['#ffe627', '#E6CD0E'];
+		return ['#006ddf', '#0054C6'];
+	} else if ($colour == 'white') {
+		return ['#006ddf', '#0054C6'];
+	} else if ($colour == 'black') {
+		return ['#006ddf', '#0054C6'];
+	} else {  // colour is either not set or purple
+		return ['#7413dc', '#5B00C3'];
 	}
 }
 

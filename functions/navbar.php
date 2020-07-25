@@ -115,10 +115,9 @@ class b4st_walker_nav_menu_mobile extends Walker_Nav_menu {
 
 		// get bg colour of menu items on focus
 		$focus_colour = get_navbar_reverse_colour($options['navColour']);
-		$link_text_colour = get_navbar_text_colour($options['navColour']);
-		$nav_border_colour = get_navbar_mobile_button_colour($options['navColour']);
+		$nav_button_colour = get_navbar_mobile_button_colour($options['navColour']);
 
-		$attributes .= ' class="btn btn-scout-'.$nav_border_colour.' flex-grow-1 text-left" ';
+		$attributes .= ' class="btn btn-scout-'.$nav_button_colour.' flex-grow-1 text-left" ';
 
 		$link_text = apply_filters( 'the_title', $item->title, $item->ID );
 
