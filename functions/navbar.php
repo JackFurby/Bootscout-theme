@@ -80,7 +80,7 @@ class b4st_walker_nav_menu_mobile extends Walker_Nav_menu {
 
 	function start_lvl( &$output, $depth = 0, $args = array() ){ // ul
 		$indent = str_repeat("\t",$depth); // indents the outputted HTML
-		$submenu = ($depth > 0) ? ' sub-menu dropdown-menu-sub' : '';
+		$submenu = ($depth > 0) ? ' sub-menu dropdown-menu-sub' : 'border rounded';
 		$output .= "\n$indent<div class=\"p-0 m-0 border-0 dropdown-menu w-100\"><ul class=\"$submenu depth_$depth dropdown-menu-sub\">\n";
 	}
 
