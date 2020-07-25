@@ -65,13 +65,15 @@
 	-moz-border-radius: 6px 0 6px 6px;
 	border-radius: 6px 0 6px 6px;
 }
+.dropdown-menu-sub {
+	list-style-type: none;
+	padding: 0;
+}
 @media only screen and (max-width: 992px) {
 	.dropdown-menu-sub {
 		border-color: transparent;
 		border-width: 0;
 		border-top: 1px solid rgba($black,.15);
-		list-style-type: none;
-		padding: 0;
 	}
 	.dropdown-submenu>.dropdown-menu {
 		-webkit-border-radius: 0;
