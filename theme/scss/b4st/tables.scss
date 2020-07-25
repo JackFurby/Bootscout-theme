@@ -1,12 +1,16 @@
 .wp-block-table {
-  overflow-x: auto;
-  margin: 1.5rem0;
+	overflow-x: auto;
+	margin: 1.5rem0;
 }
 
 .wp-block-table table {
-  border-collapse: collapse;
+	border-collapse: collapse;
 }
 
 .wp-block-table td, .wp-block-table th {
-  padding: .5em;
+	padding: .5em;
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(2n+1) {
+	background-color: #D8D8D8;
 }
