@@ -151,3 +151,6 @@
 .dropdown-item-scout-white:focus {
 	box-shadow: 0 0 0 0.2rem rgba($white, 0.5);
 }
+a[class^='dropdown-item']:hover, a[class*=' dropdown-item']:hover {
+	background-color: #f8f9fa;
+}

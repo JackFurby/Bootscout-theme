@@ -28,7 +28,7 @@ function b4st_navbar_search() {
 		$bg_colour = get_navbar_search_bg_colour($options['navColour']);
 		$btn_colour = get_navbar_reverse_colour($options['navColour']);
 		?>
-		<form class="form-inline ml-auto pt-2 pt-md-0 flex-lg-grow-1" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+		<form class="form-inline ml-auto pt-2 pt-md-0" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 			<div class="input-group">
 				<input class="bg-scout-<?php echo $bg_colour ?> form-control border-<?php echo $bg_colour ?> flex-lg-grow-1" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
 				<div class="input-group-append">
@@ -237,6 +237,30 @@ function get_navbar_reverse_colour($colour) {
 		return 'white';
 	} else {  // colour is either not set or purple
 		return 'teal';
+	}
+}
+
+function get_navbar_mobile_button_colour($colour) {
+	if ($colour == 'teal') {
+		return 'teal-dark';
+	} else if ($colour == 'red') {
+		return 'red-dark';
+	} else if ($colour == 'pink') {
+		return 'pink-dark';
+	} else if ($colour == 'green') {
+		return 'green-dark';
+	} else if ($colour == 'navy') {
+		return 'navy-dark';
+	} else if ($colour == 'blue') {
+		return 'blue-dark';
+	} else if ($colour == 'yellow') {
+		return 'yellow-dark';
+	} else if ($colour == 'white') {
+		return 'white-dark';
+	} else if ($colour == 'black') {
+		return 'black-light';
+	} else {  // colour is either not set or purple
+		return 'purple-dark';
 	}
 }
 
