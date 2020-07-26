@@ -67,7 +67,7 @@
 }
 .dropdown-menu-sub {
 	list-style-type: none;
-	padding: 0;
+	padding-left: 0;
 }
 @media only screen and (max-width: 992px) {
 	.dropdown-menu-sub {
@@ -155,4 +155,8 @@
 }
 a[class^='dropdown-item']:hover, a[class*=' dropdown-item']:hover {
 	background-color: #f8f9fa;
+}
+
+.navbar-small a.btn {
+	z-index: auto !important;
 }
