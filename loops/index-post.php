@@ -8,7 +8,7 @@
 
 <article role="article" id="post_<?php the_ID()?>" <?php post_class("mb-3 card shadow-sm"); ?> >
 	<?php the_post_thumbnail("full", array("class" => "card-img-top")); ?>
-	<header class="card-body bg-white">
+	<header class="card-header bg-white">
 		<h2 class="mw-100 break-word">
 			<a href="<?php the_permalink(); ?>">
 				<?php the_title()?>
@@ -22,9 +22,8 @@
 			<?php } ?>
 		</p>
 	</header>
-	<hr class="mt-0">
 	<div class="card-body">
-		<a class="btn btn-circle btn-scout-blue position-relative float-right" style="top: -61px;" href="<?php the_permalink(); ?>">
+		<a class="btn btn-circle btn-scout-blue position-relative float-right" style="top: -45px;" href="<?php the_permalink(); ?>">
 			<i class="fas fa-chevron-right" style="margin-left: 2px; margin-top: 5px;"></i>
 		</a>
 		<?php if ( has_excerpt( $post->ID ) ) {
