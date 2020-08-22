@@ -4,7 +4,7 @@
 
 ------------------
 
-**Bootscout is a simple wordPress theme styled for scout websites in the UK using Bootstrap.**
+**Bootscout is a simple WordPress theme styled for scout websites in the UK using Bootstrap.**
 
 ## Features
 
