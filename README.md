@@ -1,10 +1,10 @@
-# Bootscout – Wordpress theme for UK scout websites
+# Bootscout – WordPress theme for UK scout websites
 
 *Version 1.4.2*
 
 ------------------
 
-**Bootscout is a simple wordpress theme styled for scout websites in the UK using Bootstrap.**
+**Bootscout is a simple wordPress theme styled for scout websites in the UK using Bootstrap.**
 
 ## Features
 
