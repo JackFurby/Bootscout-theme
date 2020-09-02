@@ -14,7 +14,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "lodash": ">=4.17.19"
+    "lodash": "^4.17.20"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
