@@ -157,6 +157,12 @@ a[class^='dropdown-item']:hover, a[class*=' dropdown-item']:hover {
 	background-color: #f8f9fa;
 }
 
-.navbar-small a.btn {
-	z-index: auto !important;
+.navbar-small {
+	a.btn {
+		z-index: auto !important;
+	}
+
+	.btn-group > .dropdown-toggle {
+		flex: 0 1 auto;
+	}
 }
