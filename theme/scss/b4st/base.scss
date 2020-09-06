@@ -49,27 +49,13 @@ body, .bg-body {
 	background-color:#F5F5F5
 }
 
-.col-sm-12 .alignfull {
-	margin-left: calc(50% - 50vw);
-	margin-right: calc(50% - 50vw);
-	width: auto;
-	max-width: 1000%;
-}
-
-.col-sm-12 .alignwide {
-	margin-left: calc(25% - 25vw);
-	margin-right: calc(25% - 25vw);
-	width: auto;
-	max-width: 1000%;
-}
-
 // do not let align over flow cards (e.g. in blog posts)
 .card-body .alignfull,
 .card-body .alignwide {
-	margin-left: 0;
-	margin-right: 0;
-	width: auto;
-	max-width: 100%;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	width: auto !important;
+	max-width: 100% !important;
 }
 
 .alignwide img, .alignfull img {

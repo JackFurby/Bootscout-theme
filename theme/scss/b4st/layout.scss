@@ -1,7 +1,7 @@
 // General structure
 
 // if has sidebar then ignore alignfull and alignwide
-.col-sm-8 {
+.col-lg-8, .card {
 	.entry-content > .alignfull,
 	.wp-block-image.alignfull,
 	.wp-block-gallery.alignfull,
@@ -9,10 +9,22 @@
 	.wp-block-image.alignwide,
 	.wp-block-gallery.alignwide {
 		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 }
-.col-sm-12 {
+.col-lg-12 {
+	.alignwide {
+		margin-left: -80px;
+		margin-right: -80px;
+		max-width: 100vw;
+	}
 
+	.alignfull {
+		margin-left: calc(-100vw / 2 + 100% / 2);
+		margin-right: calc(-100vw / 2 + 100% / 2);
+		max-width: 100vw;
+	}
 }
 
 @media screen and (min-width: 768px) {
