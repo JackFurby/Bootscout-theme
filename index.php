@@ -3,8 +3,6 @@
     b4st_main_before();
 ?>
 
-<?php get_template_part('loops/banner'); ?>
-
 <main id="site-main" class="container mt-5">
   <div class="row">
 
