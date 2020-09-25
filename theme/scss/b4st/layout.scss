@@ -36,8 +36,8 @@
 // Columns
 
 .wp-block-columns {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  //padding-right: 1rem;
+  //padding-left: 1rem;
 }
 
 // Block separator
@@ -45,4 +45,8 @@
 .wp-block-separator {
   margin: 3em auto;
   padding: 0;
+}
+
+.wp-block-group {
+	margin-bottom: 28px !important;
 }
