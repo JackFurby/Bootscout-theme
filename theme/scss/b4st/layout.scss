@@ -47,6 +47,22 @@
   padding: 0;
 }
 
-.wp-block-group {
+//.wp-block-group, .wp-block-media-text, .wp-block-cover {
+//margin-bottom: 28px !important;
+//}
+
+[class^='wp-block-'], [class*='wp-block-'] {
 	margin-bottom: 28px !important;
+
+	* {
+		margin-bottom: 0px !important;
+	}
+
+	.blocks-gallery-item {
+		margin-top: 16px;
+	}
+}
+
+.wp-block-button {
+	margin-bottom: 0px !important;
 }
