@@ -1,5 +1,9 @@
 // General structure
 
+body {
+	overflow-x: hidden;  // stop full width elements overflowing
+}
+
 .col-lg-12 {
 	.alignwide {
 		width: 100vw;
