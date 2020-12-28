@@ -14,7 +14,11 @@
 // More link
 
 .more-link {
-  display: block;
+	display: block;
+}
+
+main .a:hover, main a:hover, footer .a:hover, footer a:hover {
+	color: inherit !important;
 }
 
 // text colour
