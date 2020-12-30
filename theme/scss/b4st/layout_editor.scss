@@ -11,3 +11,21 @@
 		max-width: 1440px;
 	}
 }
+
+
+[class^='wp-block-'], [class*='wp-block-'] {
+	margin-bottom: 28px !important;
+
+	* {
+		margin-bottom: 0px !important;
+		margin-top: 0px !important;
+	}
+
+	.blocks-gallery-item {
+		margin-top: 16px;
+	}
+}
+
+.wp-block-button, .wp-block-image {
+	margin-bottom: 0px !important;
+}
