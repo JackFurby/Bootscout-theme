@@ -1,1 +1,13 @@
 // General structure
+
+.wp-block[data-align="full"] {
+	.wp-block {
+		max-width: 100vw;
+	}
+}
+
+.wp-block[data-align="wide"] {
+	.wp-block {
+		max-width: 1440px;
+	}
+}
