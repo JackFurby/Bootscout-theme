@@ -8,46 +8,6 @@
 
 @import "b4st/variables";
 
-/* Fonts */
-
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
-
-* {
-	font-family: "Nunito Sans", sans-serif;
-}
-h1, .h1, .has-h-1-font-size {
-	font-weight: 900;
-	font-size: 2.5rem;
-	color: #333333;
-}
-h2, .h2, .has-h-2-font-size {
-	font-weight: bolder;
-	font-size: 2rem;
-	color: #333333;
-}
-h3, .h3, .has-h-3-font-size {
-	font-weight: bold;
-	font-size: 1.75rem;
-	color: #333333;
-}
-h4, .h4, .has-h-4-font-size {
-	font-weight: bold;
-	font-size: 1.5rem;
-	color: #333333;
-}
-h5, .h5, .has-h-5-font-size {
-	font-size: 1.25rem;
-	color: #333333;
-}
-h6, .h6, .has-h-6-font-size {
-	font-size: 1rem;
-	color: #333333;
-}
-p, .p, .has-p-font-size {
-	font-weight: normal;
-	font-size: 1rem;
-}
-
 /*!
  * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
