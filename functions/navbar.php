@@ -117,7 +117,7 @@ class b4st_walker_nav_menu_mobile extends Walker_Nav_menu {
 		$focus_colour = get_navbar_reverse_colour($options['navColour']);
 		$nav_button_colour = get_navbar_mobile_button_colour($options['navColour']);
 
-		$attributes .= ' class="btn btn-scout-'.$nav_button_colour.' flex-grow-1 text-left" ';
+		$attributes .= ' class="btn btn-scout-'.$nav_button_colour.' flex-grow-1 text-start" ';
 
 		$link_text = apply_filters( 'the_title', $item->title, $item->ID );
 
@@ -126,18 +126,18 @@ class b4st_walker_nav_menu_mobile extends Walker_Nav_menu {
 		if ($depth > 0) {
 
 			if ($args->walker->has_children != true) {
-				$item_output .= '<a class="btn dropdown-item-scout-'. $focus_colour .' text-dark flex-grow-1 text-left"' . $attributes . '>'. $link_text .'</a>';
+				$item_output .= '<a class="btn dropdown-item-scout-'. $focus_colour .' text-dark flex-grow-1 text-start"' . $attributes . '>'. $link_text .'</a>';
 			} else {
 				# This menu item will act as a dropdown and a link
-				$item_output .= '<a class="btn dropdown-item-scout-'. $focus_colour .' text-dark flex-grow-1 text-left"' . (! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '') . '>'. $link_text .'</a>';
-				$item_output .= '<button type="button" class="btn btn-scout-'. $focus_colour .' dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>';
+				$item_output .= '<a class="btn dropdown-item-scout-'. $focus_colour .' text-dark flex-grow-1 text-start"' . (! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '') . '>'. $link_text .'</a>';
+				$item_output .= '<button type="button" class="btn btn-scout-'. $focus_colour .' dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>';
 			}
 
 		# If link is at depth 0 (can still be a dropdown)
 		} else {
 			$item_output .= '<a' . $attributes . '>'. $link_text .'</a>';
 			if ($args->walker->has_children == true) {
-				$item_output .= '<button type="button" class="btn btn-scout-'. $focus_colour .' dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>';
+				$item_output .= '<button type="button" class="btn btn-scout-'. $focus_colour .' dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>';
 			}
 		}
 		$item_output .= $args->link_before . $args->link_after;

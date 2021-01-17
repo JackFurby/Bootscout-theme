@@ -23,7 +23,7 @@ function b4st_comment($comment, $args, $depth) {
 <?php endif; ?>
 
   <div class="comment-author vcard">
-    <div class="float-left pr-3">
+    <div class="float-start pe-3">
       <?php echo get_avatar( $comment->comment_author_email, $size = '52'); ?>
     </div>
     <div>
@@ -165,7 +165,7 @@ function b4st_comment($comment, $args, $depth) {
 
            <?php endif; ?>
 
-           <div class="form-group">
+           <div class="form-group mb-2">
              <label for="comment"><?php _e('Your comment', 'b4st'); ?></label>
              <textarea name="comment" class="form-control" id="comment" placeholder="<?php _e('Your comment', 'b4st'); ?>" rows="8" aria-required="true"></textarea>
            </div>

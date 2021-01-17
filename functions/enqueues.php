@@ -22,7 +22,7 @@ if ( ! function_exists('b4st_enqueues') ) {
 		wp_enqueue_script('modernizr');
 		wp_register_script('jquery-3.4.1', 'https://code.jquery.com/jquery-3.4.1.min.js', false, '3.4.1', true);
 		wp_enqueue_script('jquery-3.4.1');
-		wp_register_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', false, '1.16.0', true);
+		wp_register_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js', false, '2.6.0', true);
 		wp_enqueue_script('popper');
 		wp_register_script('bootstrap5', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', false, '5.0', true);
 		wp_enqueue_script('bootstrap5');
