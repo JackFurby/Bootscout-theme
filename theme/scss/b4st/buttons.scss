@@ -515,25 +515,31 @@
 .wp-block-button .wp-block-button__link {
 	display: inline-block;
 	font-weight: 400;
+	line-height: 1.5;
 	text-align: center;
 	text-decoration: none;
-	white-space: nowrap;
 	vertical-align: middle;
+	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
 	border: 1px solid transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
 	padding: .375rem .75rem;
 	font-size: 1rem;
-	line-height: 1.5;
 	border-radius: 0.25rem;
-	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out, filter .15s ease-in-out;
-	background: transparent;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	font-family: "Nunito Sans", sans-serif !important;
-	background-color: $black;
 	margin: 5px;
 }
+
+//.wp-block-button:hover .wp-block-button__link:hover {
+//	color: #fff !important;
+//}
 
 .wp-block-button .wp-block-button__link:hover {
 	filter: brightness(90%);

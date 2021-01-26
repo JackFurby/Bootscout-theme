@@ -61,8 +61,20 @@ strong, .strong {
 	display: block;
 }
 
+.a, a {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.a:hover, a:hover {
+	span {
+		text-decoration: underline;
+		text-decoration-color: inherit;
+	}
+}
+
 main .a:hover, main a:hover, footer .a:hover, footer a:hover {
-	color: inherit !important;
+	//color: inherit !important;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
