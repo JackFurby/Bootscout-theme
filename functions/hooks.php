@@ -48,7 +48,7 @@ function b4st_navbar_search() {
 			<div class="input-group w-100">
 				<input class="bg-scout-<?php echo $bg_colour ?> form-control border-<?php echo $bg_colour ?> flex-lg-grow-1" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
 				<div class="input-group-append">
-					<button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-scout-<?php echo $btn_colour ?>">
+					<button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-scout-<?php echo $btn_colour ?> rounded-0 rounded-end">
 						<i class="fas fa-search"></i>
 					</button>
 				</div>

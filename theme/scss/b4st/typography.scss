@@ -73,6 +73,12 @@ strong, .strong {
 	}
 }
 
+p.has-text-color a:hover {
+	color: inherit !important;
+	text-decoration: underline;
+	text-decoration-color: inherit;
+}
+
 main .a:hover, main a:hover, footer .a:hover, footer a:hover {
 	//color: inherit !important;
 }
