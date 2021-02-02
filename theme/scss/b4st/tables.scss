@@ -9,6 +9,12 @@
 
 .wp-block-table td, .wp-block-table th {
 	padding: .5em;
+	border: 1px solid;
+	word-break: normal;
+}
+
+.wp-block-table.is-style-stripes td, .wp-block-table.is-style-stripes th {
+	border: 0;
 }
 
 .wp-block-table.is-style-stripes tbody tr:nth-child(2n+1) {

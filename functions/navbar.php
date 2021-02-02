@@ -27,7 +27,7 @@ class b4st_walker_nav_menu extends Walker_Nav_menu {
 		$classes[] = 'nav-item';
 		$classes[] = 'nav-item-' . $item->ID;
 		if( $depth && $args->walker->has_children ){ # Link has children and is a child of another menu
-			$classes[] = 'dropdown-menu-right';
+			$classes[] = 'dropdown-menu-end';
 		}
 
 		$class_names =  join(' ', apply_filters('nav_menu_css_class', array_filter( $classes ), $item, $args ) );
