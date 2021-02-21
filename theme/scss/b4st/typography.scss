@@ -137,6 +137,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .text-scout-green, .has-scout-green-color , .link-text-green{
 	color: $scout-green !important;
 }
+.text-scout-section-green, .has-scout-section-green-color, .link-text-scout-section {
+	color: $scout-section-green !important;
+}
 .text-scout-purple, .has-scout-purple-color, .link-text-purple {
 	color: $scout-purple !important;
 }
