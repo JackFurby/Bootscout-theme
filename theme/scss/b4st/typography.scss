@@ -79,6 +79,16 @@ p.has-text-color a:hover {
 	text-decoration-color: inherit;
 }
 
+h1.has-text-color, h2.has-text-color, h3.has-text-color, h4.has-text-color, h5.has-text-color, h6.has-text-color {
+	a, .a {
+		color: inherit !important;
+	}
+	.a:hover, a:hover {
+		text-decoration: underline;
+		text-decoration-color: inherit;
+	}
+}
+
 main .a:hover, main a:hover, footer .a:hover, footer a:hover {
 	//color: inherit !important;
 }
