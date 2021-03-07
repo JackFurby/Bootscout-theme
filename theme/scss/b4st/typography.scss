@@ -67,6 +67,11 @@ strong, .strong {
 }
 
 .a:hover, a:hover {
+	text-decoration: underline;
+	text-decoration-color: inherit;
+}
+
+.a:hover, a:hover {
 	span {
 		text-decoration: underline;
 		text-decoration-color: inherit;
