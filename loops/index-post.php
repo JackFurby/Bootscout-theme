@@ -23,7 +23,7 @@
 		</p>
 	</header>
 	<div class="card-body">
-		<a class="btn btn-circle btn-scout-blue position-relative float-right" style="top: -45px;" href="<?php the_permalink(); ?>">
+		<a class="btn btn-circle btn-scout-blue position-relative float-end" style="top: -41px;" href="<?php the_permalink(); ?>">
 			<i class="fas fa-chevron-right" style="margin-left: 2px; margin-top: 5px;"></i>
 		</a>
 		<?php if ( has_excerpt( $post->ID ) ) {

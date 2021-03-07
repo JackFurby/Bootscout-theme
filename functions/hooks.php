@@ -44,11 +44,11 @@ function b4st_navbar_search() {
 		$bg_colour = get_navbar_search_bg_colour($options['navColour']);
 		$btn_colour = get_navbar_reverse_colour($options['navColour']);
 		?>
-		<form class="form-inline ml-auto pt-2 pt-md-0" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+		<form class="form-inline ms-auto pt-2 pt-md-0" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 			<div class="input-group w-100">
 				<input class="bg-scout-<?php echo $bg_colour ?> form-control border-<?php echo $bg_colour ?> flex-lg-grow-1" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
 				<div class="input-group-append">
-					<button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-scout-<?php echo $btn_colour ?>">
+					<button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-scout-<?php echo $btn_colour ?> rounded-0 rounded-end">
 						<i class="fas fa-search"></i>
 					</button>
 				</div>
@@ -142,63 +142,61 @@ function b4st_bottomline() {
 				$got_parent_site = false;
 			}
 		?>
-		<footer class="container mw-100 bg-scout-<?php echo (!empty($options['footerColour']) ? $options['footerColour'] : 'teal') ?> ml-0 mr-0 mb-0">
-			<div class="row m-auto p-3">
-				<div class="container text-<?php echo $text_colour ?>">
+		<footer class="mw-100 bg-scout-<?php echo (!empty($options['footerColour']) ? $options['footerColour'] : 'teal') ?> ms-0 me-0 mb-0">
+			<div class="container-md text-<?php echo $text_colour ?> pt-3">
 
-					<div id="ceop" class="pb-3">
-						<a href='https://www.ceop.police.uk/ceop-reporting/' target='_blank'><img src='<?php bloginfo('template_directory'); ?>/img/CEOPReportBtn.png' alt='Click CEOP' height='51' width='143' /></a>
-					</div>
-
-					<div class="w-75 d-block w-100">
-						<p id="copyright" class="mb-0 text-center">© <?php echo date("Y"); ?> <?php echo $options['group_name']; ?></p>
-						<?php
-						if ($got_charity) {
-							echo"<p class=\"mb-0 text-center\">Charity number: ".$options['charity_number']."</p>";
-						}?>
-						<ul id="footer-content" class="p-0 list-inline text-center">
-
-
-							<?php
-							if ($got_terms || $got_privacy || $got_parent_site) {
-
-								if ($got_terms) {
-									echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item-". $text_colour ."\" href=\"".$options['terms_link']."\">Terms and Disclaimer</a></li>";
-								}
-								if ($got_privacy) {
-									echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item-". $text_colour ."\" href=\"".$options['privacy_link']."\">Privacy statement</a></li>";
-								}
-
-								if ($got_parent_site) {
-									echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item-". $text_colour ."\" href=\"".$options['parent_link']."\">".$options['parent_text']."</a></li>";
-								}
-							}?>
-
-							<li class="list-inline-item"><a class="nav-link footer-item-<?php echo $text_colour ?>" href="https://www.scouts.org.uk/">scouts.org.uk</a></li>
-
-							<li class="list-inline-item"><a class="nav-link footer-item-<?php echo $text_colour ?>" href="https://bootscout.org.uk">Powered by Bootscout</a></li>
-
-						</ul>
-					</div>
-
-							<?php
-							if ($got_fb || $got_tw || $got_contact) {
-								echo"<div class=\"d-block m-auto\">
-								<ul class=\"p-0 list-inline text-center\">";
-								if ($got_fb) {
-									echo"<li data-toggle=\"tooltip\" title=\"Facebook\" class=\"list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['fb_link']."\" class=\"m-1 footer-item-". $text_colour ." font-weight-normal\" ><i id=\"social-fb\" class=\"fab fa-facebook-square fa-3x\"></i></a></li>";
-								}
-								if ($got_tw) {
-									echo"<li data-toggle=\"tooltip\" title=\"Twitter\" class=\"list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['twitter_link']."\" class=\"m-1 footer-item-". $text_colour ." font-weight-normal\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-3x\"></i></a></li>";
-								}
-								if ($got_contact) {
-									$contactPageLink = get_page_link($contactPages[0]);
-									echo"<li data-toggle=\"tooltip\" title=\"Contact Us\" class=\"list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"$contactPageLink\" class=\"m-1 footer-item-". $text_colour ." font-weight-normal\"><i class=\"fas fa-envelope-square fa-3x\" aria-hidden=\"true\"></i></a></li>";
-								}
-								echo"</ul></div>";
-							}?>
-
+				<div id="ceop" class="pb-3">
+					<a href='https://www.ceop.police.uk/ceop-reporting/' target='_blank'><img src='<?php bloginfo('template_directory'); ?>/img/CEOPReportBtn.png' alt='Click CEOP' height='51' width='143' /></a>
 				</div>
+
+				<div class="w-75 d-block w-100">
+					<p id="copyright" class="mb-0 text-center">© <?php echo date("Y"); ?> <?php echo $options['group_name']; ?></p>
+					<?php
+					if ($got_charity) {
+						echo"<p class=\"mb-0 text-center\">Charity number: ".$options['charity_number']."</p>";
+					}?>
+					<ul id="footer-content" class="p-0 list-inline text-center">
+
+
+						<?php
+						if ($got_terms || $got_privacy || $got_parent_site) {
+
+							if ($got_terms) {
+								echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item-". $text_colour ."\" href=\"".$options['terms_link']."\">Terms and Disclaimer</a></li>";
+							}
+							if ($got_privacy) {
+								echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item-". $text_colour ."\" href=\"".$options['privacy_link']."\">Privacy statement</a></li>";
+							}
+
+							if ($got_parent_site) {
+								echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item-". $text_colour ."\" href=\"".$options['parent_link']."\">".$options['parent_text']."</a></li>";
+							}
+						}?>
+
+						<li class="list-inline-item"><a class="nav-link footer-item-<?php echo $text_colour ?>" href="https://www.scouts.org.uk/">scouts.org.uk</a></li>
+
+						<li class="list-inline-item"><a class="nav-link footer-item-<?php echo $text_colour ?>" href="https://bootscout.org.uk">Powered by Bootscout</a></li>
+
+					</ul>
+				</div>
+
+						<?php
+						if ($got_fb || $got_tw || $got_contact) {
+							echo"<div class=\"d-block m-auto\">
+							<ul class=\"p-0 list-inline text-center\">";
+							if ($got_fb) {
+								echo"<li data-toggle=\"tooltip\" title=\"Facebook\" class=\"list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['fb_link']."\" class=\"m-1 footer-item-". $text_colour ." font-weight-normal\" ><i id=\"social-fb\" class=\"fab fa-facebook-square fa-3x\"></i></a></li>";
+							}
+							if ($got_tw) {
+								echo"<li data-toggle=\"tooltip\" title=\"Twitter\" class=\"list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['twitter_link']."\" class=\"m-1 footer-item-". $text_colour ." font-weight-normal\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-3x\"></i></a></li>";
+							}
+							if ($got_contact) {
+								$contactPageLink = get_page_link($contactPages[0]);
+								echo"<li data-toggle=\"tooltip\" title=\"Contact Us\" class=\"list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"$contactPageLink\" class=\"m-1 footer-item-". $text_colour ." font-weight-normal\"><i class=\"fas fa-envelope-square fa-3x\" aria-hidden=\"true\"></i></a></li>";
+							}
+							echo"</ul></div>";
+						}?>
+
 			</div>
 		</footer>
 

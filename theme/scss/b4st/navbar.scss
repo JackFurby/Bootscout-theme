@@ -33,14 +33,14 @@
 	-moz-border-radius: 0 6px 6px;
 	border-radius: 0 6px 6px 6px;
 }
-.dropdown-menu-right>.dropdown-menu {
+.dropdown-menu-end>.dropdown-menu {
 	top: 0;
 	left: 100%;
 }
 .dropdown-submenu:hover>.dropdown-menu {
 	display: block;
 }
-.dropdown-menu-right>a:after {
+.dropdown-menu-end>a:after {
 	display: block;
 	content: " ";
 	width: 0;
@@ -53,7 +53,7 @@
 	margin-top: 5px;
 	margin-right: -10px;
 }
-.dropdown-menu-right:hover>a:after {
+.dropdown-menu-end:hover>a:after {
 	border-left-color: lighten( $black, 10% );
 }
 .dropdown-submenu.pull-left {

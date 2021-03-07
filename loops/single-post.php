@@ -46,7 +46,7 @@
 
       <div class="author-bio media mt-5 bg-white rounded p-3 mb-2 shadow-sm">
         <?php b4st_author_avatar(); ?>
-        <div class="media-body ml-3">
+        <div class="media-body ms-3">
           <p class="h4 author-name"><?php _e('Author: ', 'b4st'); the_author_posts_link(); ?></p>
           <?php if (b4st_author_description()) {
             ?>
@@ -61,7 +61,7 @@
         <div class="col">
           <?php previous_post_link('%link', '<i class="fas fa-fw fa-angle-left"></i>Previous post: '.'%title'); ?>
         </div>
-        <div class="col text-right">
+        <div class="col text-end">
           <?php next_post_link('%link', 'Next post: '.'%title'.'<i class="fas fa-fw fa-angle-right"></i>'); ?>
         </div>
       </div>

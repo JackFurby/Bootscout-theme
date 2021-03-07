@@ -48,6 +48,11 @@ if ( ! function_exists('b4st_setup') ) {
 				'color' => '#23a950',
 			),
 			array(
+				'name' => __( 'scout section green', 'bootscout' ),
+				'slug' => 'scout-section-green',
+				'color' => '#004851',
+			),
+			array(
 				'name' => __( 'scout navy', 'bootscout' ),
 				'slug' => 'scout-navy',
 				'color' => '#003982',

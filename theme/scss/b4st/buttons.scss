@@ -392,18 +392,41 @@
 .btn-scout-yellow-dark:focus {
 	box-shadow: 0 0 0 0.2rem rgba(darken($scout-yellow, 10%),.5);
 }
-.btn-scout-section-green {
-	background-color: $scout-section-green;
-	border-color: $scout-section-green;
+.btn-outline-scout-section-green {
+	color: $scout-section-green;
+	background-color: transparent !important;
+	background-image: none;
+	border-color: $scout-section-green !important;
+}
+.btn-outline-scout-section-green:hover {
+	color: $white !important;
+	background-color: $scout-section-green !important;
+}
+.btn-scout-section-green-light {
+	background-color: lighten($scout-section-green, 10%);
+	border-color: lighten($scout-section-green, 10%);
 	color: $white;
 }
-.btn-scout-section-green:hover {
-	background-color: darken($scout-section-green, 10%);
-	border-color: darken($scout-section-green, 10%);
+.btn-scout-section-green-light:hover {
+	background-color: darken(lighten($scout-section-green, 10%), 10%);
+	border-color: darken(lighten($scout-section-green, 10%), 10%);
 	color: $white !important;
 }
-.btn-scout-section-green:focus {
-	box-shadow: 0 0 0 0.2rem rgba($scout-section-green, 0.5);
+.btn-scout-section-green-light:focus {
+	box-shadow: 0 0 0 0.2rem rgba(lighten($scout-section-green, 10%),.5);
+}
+.btn-scout-section-green-dark {
+	background-color: darken($scout-section-green, 10%);
+	border-color: darken($scout-section-green, 10%);
+	color: $white;
+}
+.btn-scout-section-green-dark:hover {
+	background-color: darken(darken($scout-section-green, 10%), 10%);
+	border-color: darken(darken($scout-section-green, 10%), 10%);
+	color: $white !important;
+}
+.btn-scout-section-green-dark:focus {
+	box-shadow: 0 0 0 0.2rem rgba(darken($scout-section-green, 10%),.5);
 }
 .btn-scout-white {
 	background-color: $white;
@@ -515,25 +538,31 @@
 .wp-block-button .wp-block-button__link {
 	display: inline-block;
 	font-weight: 400;
+	line-height: 1.5;
 	text-align: center;
 	text-decoration: none;
-	white-space: nowrap;
 	vertical-align: middle;
+	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
 	border: 1px solid transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
 	padding: .375rem .75rem;
 	font-size: 1rem;
-	line-height: 1.5;
 	border-radius: 0.25rem;
-	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out, filter .15s ease-in-out;
-	background: transparent;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	font-family: "Nunito Sans", sans-serif !important;
-	background-color: $black;
 	margin: 5px;
 }
+
+//.wp-block-button:hover .wp-block-button__link:hover {
+//	color: #fff !important;
+//}
 
 .wp-block-button .wp-block-button__link:hover {
 	filter: brightness(90%);

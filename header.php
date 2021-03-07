@@ -17,14 +17,14 @@
 <?php $brand_colour = get_text_light_dark($options['navColour']); ?>
 
 <nav id="site-navbar" class="navbar navbar-expand-lg navbar-<?php echo get_reverse_light_dark($brand_colour) ?> bg-scout-<?php echo (!empty($options['navColour']) ? $options['navColour'] : 'purple') ?> shadow-sm">
-	<div class="container">
+	<div class="container-md">
 
 		<?php if ( function_exists( 'the_custom_logo' ) ) {
 			$custom_logo_id = get_theme_mod( 'custom_logo' );
 			$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 			$link = esc_url( home_url('/') );
 			if ( has_custom_logo() ) {
-				echo"<div><a href=\"$link\"><img class=\"navbar-brand-$brand_colour\" src=\"$image[0]\" style=\"height:65px\"></a></div>";
+				echo"<div><a href=\"$link\"><img class=\"navbar-brand-$brand_colour\" src=\"$image[0]\" style=\"max-height:65px; width:auto; height:auto;\"></a></div>";
 			} else {
 				echo"<a class=\"navbar-brand-$brand_colour\" href=\""; echo esc_url( home_url('/') ); echo"\">";
 					bloginfo('name');
@@ -32,7 +32,7 @@
 			}
 		}?>
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
@@ -43,7 +43,7 @@
 					'container'       => false,
 					'menu_class'      => '',
 					'fallback_cb'     => '__return_false',
-					'items_wrap'      => '<ul id="%1$s" class="navbar-nav navbar-large mr-auto mt-2 mt-lg-0 d-none d-lg-flex %2$s">%3$s</ul>',
+					'items_wrap'      => '<ul id="%1$s" class="navbar-nav navbar-large me-auto mt-2 mt-lg-0 d-none d-lg-flex %2$s">%3$s</ul>',
 					'depth'           => 0,
 					'walker'          => new b4st_walker_nav_menu()
 				) );
@@ -55,7 +55,7 @@
 					'container'       => false,
 					'menu_class'      => '',
 					'fallback_cb'     => '__return_false',
-					'items_wrap'      => '<ul id="%1$s" class="navbar-nav navbar-small mr-auto mt-2 mt-lg-0 d-flex d-lg-none %2$s">%3$s</ul>',
+					'items_wrap'      => '<ul id="%1$s" class="navbar-nav navbar-small me-auto mt-2 mt-lg-0 d-flex d-lg-none %2$s">%3$s</ul>',
 					'depth'           => 0,
 					'walker'          => new b4st_walker_nav_menu_mobile()
 				) );

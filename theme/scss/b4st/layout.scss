@@ -18,6 +18,23 @@ body {
 		margin: 1.5em 0 1.5em 50%;
 		transform: translateX(-50%);
 	}
+
+	// Add padding to alignwide when viewed on smaller screens
+	@media only screen and (max-width: 1520px) {
+		.alignwide {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+	}
+	// Treat alignwide like regular page elements when on very small screens
+	@media only screen and (max-width: 992px) {
+		.alignwide {
+			width: 100%;
+			margin-left: 0px;
+			margin-right: 0px;
+			transform: translateX(0%);
+		}
+	}
 }
 
 // if has sidebar then ignore alignfull and alignwide

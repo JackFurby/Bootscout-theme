@@ -61,8 +61,41 @@ strong, .strong {
 	display: block;
 }
 
-main .a:hover, main a:hover, footer .a:hover, footer a:hover {
+.a, a {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.a:hover, a:hover {
+	text-decoration: underline;
+	text-decoration-color: inherit;
+}
+
+.a:hover, a:hover {
+	span {
+		text-decoration: underline;
+		text-decoration-color: inherit;
+	}
+}
+
+p.has-text-color a:hover {
 	color: inherit !important;
+	text-decoration: underline;
+	text-decoration-color: inherit;
+}
+
+h1.has-text-color, h2.has-text-color, h3.has-text-color, h4.has-text-color, h5.has-text-color, h6.has-text-color {
+	a, .a {
+		color: inherit !important;
+	}
+	.a:hover, a:hover {
+		text-decoration: underline;
+		text-decoration-color: inherit;
+	}
+}
+
+main .a:hover, main a:hover, footer .a:hover, footer a:hover {
+	//color: inherit !important;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -118,6 +151,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 .text-scout-green, .has-scout-green-color , .link-text-green{
 	color: $scout-green !important;
+}
+.text-scout-section-green, .has-scout-section-green-color, .link-text-scout-section {
+	color: $scout-section-green !important;
 }
 .text-scout-purple, .has-scout-purple-color, .link-text-purple {
 	color: $scout-purple !important;
