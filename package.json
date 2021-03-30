@@ -6,9 +6,6 @@
     "url": "git+https://github.com/JackFurby/Bootscout-theme.git"
   },
   "main": "gulpfile.js",
-  "dependencies": {
-    "is-svg": ">=4.2.2"
-  },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "cssnano": "^4.1.10",
@@ -16,7 +13,9 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "lodash": "^4.17.20"
+    "is-svg": ">=4.2.2",
+    "lodash": "^4.17.20",
+    "y18n": ">=3.2.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
