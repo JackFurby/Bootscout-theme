@@ -36,8 +36,9 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="collapse navbar-collapse flex-wrap" id="navbarDropdown">
-			<div id="nav-extras" class="w-100 d-flex flex-row-reverse">
+		<div class="collapse navbar-collapse flex-wrap flex-row-reverse" id="navbarDropdown">
+
+			<div id="nav-extras" class="d-none d-lg-flex flex-row-reverse">
 				<?php b4st_navbar_search();?>
 				<ul class="p-0 m-0 list-inline">
 					<li data-toggle="tooltip" title="Facebook" class="list-inline-item m-0 footer-item-light">
@@ -64,7 +65,7 @@
 					'container'       => false,
 					'menu_class'      => '',
 					'fallback_cb'     => '__return_false',
-					'items_wrap'      => '<ul id="%1$s" class="w-100 navbar-nav navbar-large me-auto mt-2 mt-lg-0 d-none d-lg-flex %2$s">%3$s</ul>',
+					'items_wrap'      => '<ul id="%1$s" class="navbar-nav navbar-large me-auto mt-2 mt-lg-0 d-none d-lg-flex flex-grow-1 %2$s">%3$s</ul>',
 					'depth'           => 0,
 					'walker'          => new b4st_walker_nav_menu()
 				) );
@@ -80,7 +81,9 @@
 					'depth'           => 0,
 					'walker'          => new b4st_walker_nav_menu_mobile()
 				) );
+				b4st_navbar_search("d-flex d-lg-none");
 			?>
+
 		</div>
 
 	</div>
