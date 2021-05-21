@@ -93,9 +93,14 @@ function theme_options_do_page() {
 				</tr>
 
 				<tr><th colspan="2"><h2>Extra</h2></th></tr>
-				<tr valign="top"><th scope="row">Disable sidebar</th>
+				<tr valign="top"><th scope="row">Show sidebar</th>
 					<td>
-						<input id="scout_theme_options[sidebar]" type="checkbox" name="scout_theme_options[sidebar]" value="1"<?php checked( 1 == (isset($options['sidebar']) ? $options['sidebar'] : '') ) ?>>Check to disable<br>
+						<input id="scout_theme_options[sidebar]" type="checkbox" name="scout_theme_options[sidebar]" value="1"<?php checked( 1 == (isset($options['sidebar']) ? $options['sidebar'] : '') ) ?>>Check to enable<br>
+					</td>
+				</tr>
+				<tr valign="top"><th scope="row">Show quick links in navbar</th>
+					<td>
+						<input id="scout_theme_options[navbarQuickLinks]" type="checkbox" name="scout_theme_options[navbarQuickLinks]" value="1"<?php checked( 1 == (isset($options['navbarQuickLinks']) ? $options['navbarQuickLinks'] : '') ) ?>>Check to enable<br>
 					</td>
 				</tr>
 				<tr valign="top"><th scope="row">Navbar colour</th>

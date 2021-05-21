@@ -40,23 +40,31 @@
 
 			<div id="nav-extras" class="d-none d-lg-flex flex-row-reverse">
 				<?php b4st_navbar_search();?>
-				<ul class="p-0 m-0 list-inline">
-					<li data-toggle="tooltip" title="Facebook" class="list-inline-item m-0 footer-item-light">
-						<a href="https://www.facebook.com/" class="footer-item-light font-weight-normal">
-							<i id="social-fb" class="fab fa-facebook-square fa-2x"></i>
-						</a>
-					</li>
-					<li data-toggle="tooltip" title="Twitter" class="list-inline-item m-0 footer-item-light">
-						<a href="https://www.twitter.com/" class="footer-item-light font-weight-normal">
-							<i id="social-tw" class="fab fa-twitter-square fa-2x"></i>
-						</a>
-					</li>
-					<li data-toggle="tooltip" title="Contact Us" class="list-inline-item m-0 footer-item-light">
-						<a href="http://localhost/bootscout/?page_id=1833" class="footer-item-light font-weight-normal">
-							<i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i>
-						</a>
-					</li>
-				</ul>
+				<?php if ((isset($options['navbarQuickLinks']) ? $options['navbarQuickLinks'] : false)) {
+					// makes sure links are not empty
+					if (trim($options['fb_link']) != '') {
+						$got_fb = true;
+					} else {
+						$got_fb = false;
+					}
+					if (trim($options['twitter_link']) != '') {
+						$got_tw = true;
+					} else {
+						$got_tw = false;
+					}
+					if ($got_tw || $got_fb) {
+
+						echo"<ul class=\"p-0 m-0 list-inline\">";
+						if ($got_fb) {
+							echo"<li data-toggle=\"tooltip\" title=\"Facebook\" class=\"list-inline-item m-0 footer-item-light\"><a href=\"".$options['fb_link']."\" class=\"footer-item-light font-weight-normal\" ><i id=\"social-fb\" class=\"fab fa-facebook-square fa-2x\"></i></a></li>";
+						}
+						if ($got_tw) {
+							echo"<li data-toggle=\"tooltip\" title=\"Twitter\" class=\"list-inline-item m-0 footer-item-light\"><a href=\"".$options['twitter_link']."\" class=\"footer-item-light font-weight-normal\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-2x\"></i></a></li>";
+						}
+						echo"</ul>";
+					}
+				}
+				?>
 			</div>
 
 			<?php

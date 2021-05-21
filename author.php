@@ -40,7 +40,7 @@ if (
 
 	</div>
 
-	<?php if ((isset($options['sidebar']) ? $options['sidebar'] : false) != true) {
+	<?php if ((isset($options['sidebar']) ? $options['sidebar'] : false)) {
 		get_sidebar();
 	}
 	?>
