@@ -56,10 +56,10 @@
 
 						echo"<ul class=\"p-0 m-0 list-inline\">";
 						if ($got_fb) {
-							echo"<li data-toggle=\"tooltip\" title=\"Facebook\" class=\"list-inline-item m-0 footer-item-light\"><a href=\"".$options['fb_link']."\" class=\"footer-item-light font-weight-normal\" ><i id=\"social-fb\" class=\"fab fa-facebook-square fa-2x\"></i></a></li>";
+							echo"<li data-toggle=\"tooltip\" title=\"Facebook\" class=\"list-inline-item m-0\"><a href=\"".$options['fb_link']."\" class=\"navbar-brand-$brand_colour font-weight-normal\" ><i id=\"social-fb\" class=\"fab fa-facebook-square fa-2x\"></i></a></li>";
 						}
 						if ($got_tw) {
-							echo"<li data-toggle=\"tooltip\" title=\"Twitter\" class=\"list-inline-item m-0 footer-item-light\"><a href=\"".$options['twitter_link']."\" class=\"footer-item-light font-weight-normal\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-2x\"></i></a></li>";
+							echo"<li data-toggle=\"tooltip\" title=\"Twitter\" class=\"list-inline-item m-0\"><a href=\"".$options['twitter_link']."\" class=\"navbar-brand-$brand_colour font-weight-normal\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-2x\"></i></a></li>";
 						}
 						echo"</ul>";
 					}
