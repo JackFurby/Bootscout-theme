@@ -39,7 +39,7 @@
 		<div class="collapse navbar-collapse flex-wrap flex-row-reverse" id="navbarDropdown">
 
 			<div id="nav-extras" class="d-none d-lg-flex flex-row-reverse">
-				<?php b4st_navbar_search();?>
+				<?php b4st_navbar_search("ps-3");?>
 				<?php if ((isset($options['navbarQuickLinks']) ? $options['navbarQuickLinks'] : false)) {
 					// makes sure links are not empty
 					if (trim($options['fb_link']) != '') {
@@ -56,10 +56,10 @@
 
 						echo"<ul class=\"p-0 m-0 list-inline\">";
 						if ($got_fb) {
-							echo"<li data-toggle=\"tooltip\" title=\"Facebook\" class=\"list-inline-item m-0\"><a href=\"".$options['fb_link']."\" class=\"navbar-brand-$brand_colour font-weight-normal\" ><i id=\"social-fb\" class=\"fab fa-facebook-square fa-2x\"></i></a></li>";
+							echo"<li data-toggle=\"tooltip\" title=\"Facebook\" class=\"list-inline-item m-0\"><a href=\"".$options['fb_link']."\" class=\"ps-1 pe-1 nav-link\" ><i id=\"social-fb\" class=\"h5 navbar-brand-$brand_colour bi-facebook\"></i></a></li>";
 						}
 						if ($got_tw) {
-							echo"<li data-toggle=\"tooltip\" title=\"Twitter\" class=\"list-inline-item m-0\"><a href=\"".$options['twitter_link']."\" class=\"navbar-brand-$brand_colour font-weight-normal\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-2x\"></i></a></li>";
+							echo"<li data-toggle=\"tooltip\" title=\"Twitter\" class=\"list-inline-item m-0\"><a href=\"".$options['twitter_link']."\" class=\"ps-1 pe-1 nav-link\"><i id=\"social-tw\" class=\"h5 navbar-brand-$brand_colour bi-twitter\"></i></a></li>";
 						}
 						echo"</ul>";
 					}

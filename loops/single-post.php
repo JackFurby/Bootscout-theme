@@ -59,10 +59,10 @@
 
       <div class="row mt-5 border-top pt-3 pb-5">
         <div class="col">
-          <?php previous_post_link('%link', '<i class="fas fa-fw fa-angle-left"></i>Previous post: '.'%title'); ?>
+          <?php previous_post_link('%link', '<i class="bi bi-chevron-left"></i>Previous post: '.'%title'); ?>
         </div>
         <div class="col text-end">
-          <?php next_post_link('%link', 'Next post: '.'%title'.'<i class="fas fa-fw fa-angle-right"></i>'); ?>
+          <?php next_post_link('%link', 'Next post: '.'%title'.'<i class="bi bi-chevron-right"></i>'); ?>
         </div>
       </div>
 

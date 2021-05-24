@@ -15,6 +15,6 @@
   </article>
 <?php endwhile; else: ?>
   <article class="alert alert-warning">
-    <i class="fas fa-exclamation-triangle"></i> <?php _e('Sorry, your search yielded no results.', 'b4st'); ?>
+    <i class="bi bi-exclamation-triangle"></i> <?php _e('Sorry, your search yielded no results.', 'b4st'); ?>
   </article>
 <?php endif; ?>
