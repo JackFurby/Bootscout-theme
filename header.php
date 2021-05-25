@@ -52,7 +52,12 @@
 					} else {
 						$got_tw = false;
 					}
-					if ($got_tw || $got_fb) {
+					if (trim($options['osm_link']) != '') {
+						$got_osm = true;
+					} else {
+						$got_osm = false;
+					}
+					if ($got_tw || $got_fb || $got_osm) {
 
 						echo"<ul class=\"p-0 m-0 list-inline\">";
 						if ($got_fb) {
@@ -60,6 +65,9 @@
 						}
 						if ($got_tw) {
 							echo"<li data-toggle=\"tooltip\" title=\"Twitter\" class=\"list-inline-item m-0\"><a href=\"".$options['twitter_link']."\" class=\"ps-1 pe-1 nav-link\"><i id=\"social-tw\" class=\"h5 navbar-brand-$brand_colour bi-twitter\"></i></a></li>";
+						}
+						if ($got_osm) {
+							echo"<li data-toggle=\"tooltip\" title=\"Online Scout Manager\" class=\"list-inline-item m-0\"><a href=\"".$options['osm_link']."\" class=\"ps-1 pe-1 nav-link\"><i id=\"social-osm\" class=\"h5 navbar-brand-$brand_colour boots-OSM-inverse\"></i></a></li>";
 						}
 						echo"</ul>";
 					}
