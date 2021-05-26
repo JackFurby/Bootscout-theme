@@ -61,13 +61,13 @@
 
 						echo"<ul class=\"p-0 m-0 list-inline\">";
 						if ($got_fb) {
-							echo"<li data-toggle=\"tooltip\" title=\"Facebook\" class=\"list-inline-item m-0\"><a href=\"".$options['fb_link']."\" class=\"ps-1 pe-1 nav-link\" ><i id=\"social-fb\" class=\"h5 navbar-brand-$brand_colour bi-facebook\"></i></a></li>";
+							echo"<li data-toggle=\"tooltip\" title=\"Like us on Facebook\" class=\"list-inline-item m-0\"><a href=\"".$options['fb_link']."\" class=\"ps-1 pe-1 nav-link\" ><i id=\"social-fb\" class=\"h5 navbar-brand-$brand_colour bi-facebook\"></i></a></li>";
 						}
 						if ($got_tw) {
-							echo"<li data-toggle=\"tooltip\" title=\"Twitter\" class=\"list-inline-item m-0\"><a href=\"".$options['twitter_link']."\" class=\"ps-1 pe-1 nav-link\"><i id=\"social-tw\" class=\"h5 navbar-brand-$brand_colour bi-twitter\"></i></a></li>";
+							echo"<li data-toggle=\"tooltip\" title=\"Follow us on Twitter\" class=\"list-inline-item m-0\"><a href=\"".$options['twitter_link']."\" class=\"ps-1 pe-1 nav-link\"><i id=\"social-tw\" class=\"h5 navbar-brand-$brand_colour bi-twitter\"></i></a></li>";
 						}
 						if ($got_osm) {
-							echo"<li data-toggle=\"tooltip\" title=\"Online Scout Manager\" class=\"list-inline-item m-0\"><a href=\"".$options['osm_link']."\" class=\"ps-1 pe-1 nav-link\"><i id=\"social-osm\" class=\"h5 navbar-brand-$brand_colour boots-OSM-inverse\"></i></a></li>";
+							echo"<li data-toggle=\"tooltip\" title=\"Login to Online Scout Manager\" class=\"list-inline-item m-0\"><a href=\"".$options['osm_link']."\" class=\"ps-1 pe-1 nav-link\"><i id=\"social-osm\" class=\"h5 navbar-brand-$brand_colour boots-OSM-inverse\"></i></a></li>";
 						}
 						echo"</ul>";
 					}

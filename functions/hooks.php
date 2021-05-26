@@ -185,10 +185,10 @@ function b4st_bottomline() {
 							echo"<div class=\"d-block m-auto\">
 							<ul class=\"p-0 list-inline text-center\">";
 							if ($got_fb) {
-								echo"<li data-toggle=\"tooltip\" title=\"Facebook\" class=\"pe-3 list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['fb_link']."\" class=\"m-1 font-weight-normal\" ><i class=\"footer-item-". $text_colour ." h2 bi-facebook\"></i></a></li>";
+								echo"<li data-toggle=\"tooltip\" title=\"Like us on Facebook\" class=\"pe-3 list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['fb_link']."\" class=\"m-1 font-weight-normal\" ><i class=\"footer-item-". $text_colour ." h2 bi-facebook\"></i></a></li>";
 							}
 							if ($got_tw) {
-								echo"<li data-toggle=\"tooltip\" title=\"Twitter\" class=\" pe-3 list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['twitter_link']."\" class=\"m-1 font-weight-normal\"><i class=\"footer-item-". $text_colour ." h2 bi-twitter\"></i></a></li>";
+								echo"<li data-toggle=\"tooltip\" title=\"Follow us on Twitter\" class=\" pe-3 list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['twitter_link']."\" class=\"m-1 font-weight-normal\"><i class=\"footer-item-". $text_colour ." h2 bi-twitter\"></i></a></li>";
 							}
 							if ($got_contact) {
 								$contactPageLink = get_page_link($contactPages[0]);
