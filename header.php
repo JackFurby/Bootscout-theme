@@ -67,7 +67,7 @@
 							echo"<li data-toggle=\"tooltip\" title=\"Follow us on Twitter\" class=\"list-inline-item m-0\"><a href=\"".$options['twitter_link']."\" class=\"ps-1 pe-1 nav-link\"><i id=\"social-tw\" class=\"h5 navbar-brand-$brand_colour bi-twitter\"></i></a></li>";
 						}
 						if ($got_osm) {
-							echo"<li data-toggle=\"tooltip\" title=\"Login to Online Scout Manager\" class=\"list-inline-item m-0\"><a href=\"".$options['osm_link']."\" class=\"ps-1 pe-1 nav-link\"><i id=\"social-osm\" class=\"h5 navbar-brand-$brand_colour boots-OSM-inverse\"></i></a></li>";
+							echo"<li data-toggle=\"tooltip\" title=\"Login to Online Scout Manager\" class=\"list-inline-item m-0\"><a href=\"".$options['osm_link']."\" class=\"ps-1 pe-1 nav-link\"><i id=\"social-osm\" class=\"h5 navbar-brand-$brand_colour boots-OSM\"></i></a></li>";
 						}
 						echo"</ul>";
 					}
