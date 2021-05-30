@@ -42,7 +42,7 @@ function b4st_split_post_pagination($args){
 			} else {
 				$output .= '<li class="page-item m-0"><a class="page-link" href="' . get_post_page_url( 1 ) . '">';
 			}
-			$output .= '<i class="fas fa-angle-double-left"></i></a></li>';
+			$output .= '<i class="bi bi-chevron-double-left"></i></a></li>';
 
 			// Previous page link
 			if ( $page == 1 ) {
@@ -50,7 +50,7 @@ function b4st_split_post_pagination($args){
 			} else {
 				$output .= '<li class="page-item m-0"><a class="page-link" href="' . get_post_page_url( $page - 1 ) . '">';
 			}
-			$output .= '<i class="fas fa-angle-left"></i></a></li>';
+			$output .= '<i class="bi bi-chevron-left"></i></a></li>';
 
 			// Page numbering
 			for ( $i = 1; $i < ( $numpages + 1 ); $i = $i + 1 ) {

@@ -23,33 +23,33 @@ function extra_styles() {
 // Navbar (in `header.php`)
 
 function b4st_navbar_before() {
-  do_action('navbar_before');
+	do_action('navbar_before');
 }
 
 function b4st_navbar_after() {
   do_action('navbar_after');
 }
 function b4st_navbar_brand() {
-  if ( ! has_action('navbar_brand') ) {
-    ?>
-    <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
-    <?php
-  } else {
+	if ( ! has_action('navbar_brand') ) {
+		?>
+		<a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
+		<?php
+	} else {
 		do_action('navbar_brand');
 	}
 }
-function b4st_navbar_search() {
+function b4st_navbar_search($base_classes="") {
 	if ( ! has_action('navbar_search') ) {
 		$options = get_option('scout_theme_options');
 		$bg_colour = get_navbar_search_bg_colour($options['navColour']);
 		$btn_colour = get_navbar_reverse_colour($options['navColour']);
 		?>
-		<form class="form-inline ms-auto pt-2 pt-md-0" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+		<form class="form-inline pt-2 pt-md-0 <?php echo $base_classes ?>" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 			<div class="input-group w-100">
 				<input class="bg-scout-<?php echo $bg_colour ?> form-control border-<?php echo $bg_colour ?> flex-lg-grow-1" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
 				<div class="input-group-append">
 					<button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-scout-<?php echo $btn_colour ?> rounded-0 rounded-end">
-						<i class="fas fa-search"></i>
+						<i class="bi bi-search"></i>
 					</button>
 				</div>
 			</div>
@@ -64,28 +64,28 @@ function b4st_navbar_search() {
 // Main
 
 function b4st_main_before() {
-  do_action('main_before');
+	do_action('main_before');
 }
 function b4st_main_after() {
-  do_action('main_after');
+	do_action('main_after');
 }
 
 // Sidebar (in `sidebar.php` -- only displayed when sidebar has 1 widget or more)
 
 function b4st_sidebar_before() {
-  do_action('sidebar_before');
+	do_action('sidebar_before');
 }
 function b4st_sidebar_after() {
-  do_action('sidebar_after');
+	do_action('sidebar_after');
 }
 
 // Footer (in `footer.php`)
 
 function b4st_footer_before() {
-  do_action('footer_before');
+	do_action('footer_before');
 }
 function b4st_footer_after() {
-  do_action('footer_after');
+	do_action('footer_after');
 }
 function b4st_bottomline() {
 	if ( ! has_action('bottomline') ) {
@@ -162,20 +162,20 @@ function b4st_bottomline() {
 						if ($got_terms || $got_privacy || $got_parent_site) {
 
 							if ($got_terms) {
-								echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item-". $text_colour ."\" href=\"".$options['terms_link']."\">Terms and Disclaimer</a></li>";
+								echo"<li class=\"list-inline-item\"><a class=\"fw-bold nav-link footer-item-". $text_colour ."\" href=\"".$options['terms_link']."\">Terms and Disclaimer</a></li>";
 							}
 							if ($got_privacy) {
-								echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item-". $text_colour ."\" href=\"".$options['privacy_link']."\">Privacy statement</a></li>";
+								echo"<li class=\"list-inline-item\"><a class=\"fw-bold nav-link footer-item-". $text_colour ."\" href=\"".$options['privacy_link']."\">Privacy statement</a></li>";
 							}
 
 							if ($got_parent_site) {
-								echo"<li class=\"list-inline-item\"><a class=\"nav-link footer-item-". $text_colour ."\" href=\"".$options['parent_link']."\">".$options['parent_text']."</a></li>";
+								echo"<li class=\"list-inline-item\"><a class=\"fw-bold nav-link footer-item-". $text_colour ."\" href=\"".$options['parent_link']."\">".$options['parent_text']."</a></li>";
 							}
 						}?>
 
-						<li class="list-inline-item"><a class="nav-link footer-item-<?php echo $text_colour ?>" href="https://www.scouts.org.uk/">scouts.org.uk</a></li>
+						<li class="list-inline-item"><a class="fw-bold nav-link footer-item-<?php echo $text_colour ?>" href="https://www.scouts.org.uk/">scouts.org.uk</a></li>
 
-						<li class="list-inline-item"><a class="nav-link footer-item-<?php echo $text_colour ?>" href="https://bootscout.org.uk">Powered by Bootscout</a></li>
+						<li class="list-inline-item"><a class="fw-bold nav-link footer-item-<?php echo $text_colour ?>" href="https://bootscout.org.uk">Powered by Bootscout</a></li>
 
 					</ul>
 				</div>
@@ -185,14 +185,14 @@ function b4st_bottomline() {
 							echo"<div class=\"d-block m-auto\">
 							<ul class=\"p-0 list-inline text-center\">";
 							if ($got_fb) {
-								echo"<li data-toggle=\"tooltip\" title=\"Facebook\" class=\"list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['fb_link']."\" class=\"m-1 footer-item-". $text_colour ." font-weight-normal\" ><i id=\"social-fb\" class=\"fab fa-facebook-square fa-3x\"></i></a></li>";
+								echo"<li data-toggle=\"tooltip\" title=\"Like us on Facebook\" class=\"pe-3 list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['fb_link']."\" class=\"m-1 font-weight-normal\" ><i class=\"footer-item-". $text_colour ." h2 bi-facebook\"></i></a></li>";
 							}
 							if ($got_tw) {
-								echo"<li data-toggle=\"tooltip\" title=\"Twitter\" class=\"list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['twitter_link']."\" class=\"m-1 footer-item-". $text_colour ." font-weight-normal\"><i id=\"social-tw\" class=\"fab fa-twitter-square fa-3x\"></i></a></li>";
+								echo"<li data-toggle=\"tooltip\" title=\"Follow us on Twitter\" class=\" pe-3 list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"".$options['twitter_link']."\" class=\"m-1 font-weight-normal\"><i class=\"footer-item-". $text_colour ." h2 bi-twitter\"></i></a></li>";
 							}
 							if ($got_contact) {
 								$contactPageLink = get_page_link($contactPages[0]);
-								echo"<li data-toggle=\"tooltip\" title=\"Contact Us\" class=\"list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"$contactPageLink\" class=\"m-1 footer-item-". $text_colour ." font-weight-normal\"><i class=\"fas fa-envelope-square fa-3x\" aria-hidden=\"true\"></i></a></li>";
+								echo"<li data-toggle=\"tooltip\" title=\"Contact Us\" class=\"list-inline-item m-0 footer-item-". $text_colour ."\"><a href=\"$contactPageLink\" class=\"m-1 font-weight-normal\"><i class=\"footer-item-". $text_colour ." h2 bi-envelope-fill\"></i></a></li>";
 							}
 							echo"</ul></div>";
 						}?>

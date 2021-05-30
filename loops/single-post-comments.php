@@ -43,12 +43,12 @@ function b4st_comment($comment, $args, $depth) {
       <p class="mb-0">
           <?php comment_reply_link( array_merge( $args, array(
               'add_below' => $add_below,
-              'reply_text' => __('<i class="fas fa-reply"></i> Reply', 'textdomain'),
+              'reply_text' => __('<i class="bi bi-reply-fill"></i> Reply', 'textdomain'),
               'depth' => $depth,
               'max_depth' => $args['max_depth']
               ))
           ); ?>
-          <?php edit_comment_link('<span class="btn btn-info">' . __('<i class="fas fa-edit"></i> Edit this reply', 'b4st') . '</span>',' ','' ); ?>
+          <?php edit_comment_link('<span class="btn btn-info">' . __('<i class="bi bi-pencil-square"></i> Edit this reply', 'b4st') . '</span>',' ','' ); ?>
       </p>
   </div>
 
@@ -144,7 +144,7 @@ function b4st_comment($comment, $args, $depth) {
            <?php if (is_user_logged_in()) : ?>
            <p>
              <?php printf(__('Logged in as', 'b4st') . ' <a href="%s/wp-admin/profile.php">%s</a>.', get_option('url'), $user_identity); ?>
-             <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php __('Log out of this account', 'b4st'); ?>"><?php echo __('Log out', 'b4st') . ' <i class="fas fa-arrow-right"></i>'; ?></a>
+             <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php __('Log out of this account', 'b4st'); ?>"><?php echo __('Log out', 'b4st') . ' <i class="bi bi-box-arrow-in-right"></i>'; ?></a>
            </p>
            <?php else : ?>
 

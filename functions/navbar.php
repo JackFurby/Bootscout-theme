@@ -130,14 +130,14 @@ class b4st_walker_nav_menu_mobile extends Walker_Nav_menu {
 			} else {
 				# This menu item will act as a dropdown and a link
 				$item_output .= '<a class="btn dropdown-item-scout-'. $focus_colour .' text-dark flex-grow-1 text-start"' . (! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '') . '>'. $link_text .'</a>';
-				$item_output .= '<button type="button" class="btn btn-scout-'. $focus_colour .' dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown' . esc_attr($item->ID) . '" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>';
+				$item_output .= '<button type="button" class="btn btn-scout-'. $focus_colour .' dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown' . esc_attr($item->ID) . '" aria-haspopup="true" aria-expanded="false"><span class="sr-only"></span></button>';
 			}
 
 		# If link is at depth 0 (can still be a dropdown)
 		} else {
 			$item_output .= '<a' . $attributes . '>'. $link_text .'</a>';
 			if ($args->walker->has_children == true) {
-				$item_output .= '<button type="button" class="btn btn-scout-'. $focus_colour .' dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>';
+				$item_output .= '<button type="button" class="btn btn-scout-'. $focus_colour .' dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only"></span></button>';
 			}
 		}
 		$item_output .= $args->link_before . $args->link_after;

@@ -5,7 +5,7 @@
 
 $options = get_option('scout_theme_options');
 
-if ((isset($options['sidebar']) ? $options['sidebar'] : false) != true) {
+if ((isset($options['sidebar']) ? $options['sidebar'] : false)) {
 	if (is_active_sidebar('sidebar-widget-area')) {
 		echo"<div class=col-lg-8>";
 	} else {
