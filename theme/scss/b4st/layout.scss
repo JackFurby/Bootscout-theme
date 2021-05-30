@@ -4,7 +4,7 @@ body {
 	overflow-x: hidden;  // stop full width elements overflowing
 }
 
-.col-lg-12 {
+.col-lg-12 :not(article) {
 	.alignfull {
 		position: relative;
 		right: 0px; // Fallback
@@ -52,7 +52,7 @@ body {
 		width: 100%;
 		margin-left: 0px;
 		margin-right: 0px;
-		transform: translateX(0%);
+		right: 0 !important;
 	}
 }
 
@@ -65,9 +65,9 @@ body {
 
 // Columns
 
-.wp-block-columns {
-  //padding-right: 1rem;
-  //padding-left: 1rem;
+.wp-block-columns.alignfull, .wp-block-columns.alignwide{
+	padding-right: 1rem;
+	padding-left: 1rem;
 }
 
 // Block separator
