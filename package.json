@@ -15,8 +15,9 @@
     "gulp-sourcemaps": "^2.6.5",
     "is-svg": ">=4.2.2",
     "lodash": "^4.17.21",
+    "postcss": ">=8.2.10",
     "y18n": ">=3.2.2",
-    "postcss": ">=8.2.10"
+    "yargs-parser": ">=5.0.0-security.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
