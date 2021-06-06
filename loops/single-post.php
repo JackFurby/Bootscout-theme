@@ -36,7 +36,6 @@
     </header>
     <section class="entry-content clearfix">
       <?php
-        the_post_thumbnail();
         the_content();
         wp_link_pages();
       ?>
