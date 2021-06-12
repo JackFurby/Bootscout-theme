@@ -60,6 +60,43 @@ function b4st_navbar_search($base_classes="") {
 	}
 }
 
+function navbar_quick_links($base_classes="") {
+	$options = get_option('scout_theme_options');
+	$brand_colour = get_text_light_dark($options['navColour']);
+	if ((isset($options['navbarQuickLinks']) ? $options['navbarQuickLinks'] : false)) {
+		// makes sure links are not empty
+		if (trim($options['fb_link']) != '') {
+			$got_fb = true;
+		} else {
+			$got_fb = false;
+		}
+		if (trim($options['twitter_link']) != '') {
+			$got_tw = true;
+		} else {
+			$got_tw = false;
+		}
+		if (trim($options['osm_link']) != '') {
+			$got_osm = true;
+		} else {
+			$got_osm = false;
+		}
+		if ($got_tw || $got_fb || $got_osm) {
+
+			echo"<ul class=\"p-0 m-0 list-inline $base_classes\">";
+			if ($got_fb) {
+				echo"<li data-toggle=\"tooltip\" title=\"Like us on Facebook\" class=\"list-inline-item m-0\"><a href=\"".$options['fb_link']."\" class=\"ps-1 pe-1 nav-link\" ><i id=\"social-fb\" class=\"h5 navbar-brand-$brand_colour bi-facebook\"></i></a></li>";
+			}
+			if ($got_tw) {
+				echo"<li data-toggle=\"tooltip\" title=\"Follow us on Twitter\" class=\"list-inline-item m-0\"><a href=\"".$options['twitter_link']."\" class=\"ps-1 pe-1 nav-link\"><i id=\"social-tw\" class=\"h5 navbar-brand-$brand_colour bi-twitter\"></i></a></li>";
+			}
+			if ($got_osm) {
+				echo"<li data-toggle=\"tooltip\" title=\"Login to Online Scout Manager\" class=\"list-inline-item m-0\"><a href=\"".$options['osm_link']."\" class=\"ps-1 pe-1 nav-link\"><i id=\"social-osm\" class=\"h5 navbar-brand-$brand_colour boots-OSM\"></i></a></li>";
+			}
+			echo"</ul>";
+		}
+	}
+}
+
 
 // Main
 
