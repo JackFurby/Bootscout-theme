@@ -5,18 +5,16 @@
 	b4st_main_before();
 ?>
 
-<?php get_template_part('loops/banner'); ?>
+<?php //get_template_part('loops/banner'); ?>
 
-<main id="main" class="container mt-5">
+<main id="main" class="container">
   <div class="row">
 
 		<?php get_template_part('content-column'); ?>
 
-		<div class="col-lg">
-			<div id="content" role="main">
-				<?php get_template_part('loops/no-title-page-content'); ?>
-			</div><!-- /#content -->
-		</div>
+		<div id="content" role="main">
+			<?php get_template_part('loops/no-title-page-content'); ?>
+		</div><!-- /#content -->
 
 	</div>
 
