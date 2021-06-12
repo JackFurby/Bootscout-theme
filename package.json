@@ -19,7 +19,9 @@
     "lodash": "^4.17.21",
     "postcss": ">=8.2.10",
     "y18n": ">=3.2.2",
-    "yargs-parser": ">=5.0.1"
+    "yargs-parser": ">=5.0.1",
+    "glob-parent": ">=5.1.2",
+    "trim-newlines": ">=3.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
