@@ -1,7 +1,15 @@
 .blog-card-featured-image {
+	height:100%;
+	width:auto;
+}
+
+.blog-card-image-container{
 	margin: auto;
-	margin-top: -1.5rem;
+	top: -1.5rem;
 	max-width: 100%;
-	width: auto;
+	width: 500px;
+}
+
+.blog-card-image-container, .blog-card-featured-image {
 	max-height: 500px;
 }
