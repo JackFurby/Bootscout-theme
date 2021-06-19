@@ -6,8 +6,19 @@
  */
 ?>
 
-<article role="article" id="post_<?php the_ID()?>" <?php post_class("mb-3 card shadow-sm"); ?> >
-	<?php the_post_thumbnail("full", array("class" => "card-img-top")); ?>
+<?php
+	if (has_post_thumbnail()) {
+		$thumbnail_mt = "mt-5";
+	} else {
+		$thumbnail_mt = "";
+	}
+?>
+
+<article role="article" id="post_<?php the_ID()?>" <?php post_class("mb-4 card shadow-sm $thumbnail_mt"); ?> >
+	<?php #the_post_thumbnail("full", array("class" => "card-img-top")); ?>
+	<div class="position-relative blog-card-image-container px-4">
+		<?php the_post_thumbnail("medium-large", array("class" => "blog-card-featured-image rounded mx-auto d-block")); ?>
+	</div>
 	<header class="card-header bg-white">
 		<h2 class="mw-100 break-word">
 			<a href="<?php the_permalink(); ?>">
