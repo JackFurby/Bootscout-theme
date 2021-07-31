@@ -2,6 +2,7 @@
  * b4st JS
  */
 
+
 (function ($) {
 
 	'use strict';
@@ -41,4 +42,4 @@
 
 	});
 
-}(jQuery));
+})(jQuery);
