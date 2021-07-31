@@ -43,7 +43,7 @@ class b4st_walker_nav_menu extends Walker_Nav_menu {
 		$attributes .= ! empty( $item->xfn ) ? ' rel="' . esc_attr($item->xfn) . '"' : '';
 		$attributes .= ! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '';
 
-		$link_text_colour = get_navbar_text_colour($options['navColour']);
+		$link_text_colour = get_navbar_text_colour($options['navColour'] ?? '');
 
 		$attributes .= ( $args->walker->has_children ) ? ' class="link-text-'.$link_text_colour.' nav-link dropdown-toggle" ' : ' class="link-text-'.$link_text_colour.' nav-link"';
 
@@ -114,8 +114,8 @@ class b4st_walker_nav_menu_mobile extends Walker_Nav_menu {
 		$attributes .= ! empty( $item->url ) ? ' href="' . esc_attr($item->url) . '"' : '';
 
 		// get bg colour of menu items on focus
-		$focus_colour = get_navbar_reverse_colour($options['navColour']);
-		$nav_button_colour = get_navbar_mobile_button_colour($options['navColour']);
+		$focus_colour = get_navbar_reverse_colour($options['navColour'] ?? '');
+		$nav_button_colour = get_navbar_mobile_button_colour($options['navColour'] ?? '');
 
 		$attributes .= ' class="btn btn-scout-'.$nav_button_colour.' flex-grow-1 text-start" ';
 

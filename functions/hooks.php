@@ -7,7 +7,8 @@
 // Head (in `header.php`)
 function extra_styles() {
 	$options = get_option('scout_theme_options');
-	$link_colour = get_anchor_colour($options['navColour']);
+
+	$link_colour = get_anchor_colour($options['navColour'] ?? '');
 	?>
 	<style>
 	main .a, main a, footer .a, footer a {
@@ -41,8 +42,8 @@ function b4st_navbar_brand() {
 function b4st_navbar_search($base_classes="") {
 	if ( ! has_action('navbar_search') ) {
 		$options = get_option('scout_theme_options');
-		$bg_colour = get_navbar_search_bg_colour($options['navColour']);
-		$btn_colour = get_navbar_reverse_colour($options['navColour']);
+		$bg_colour = get_navbar_search_bg_colour($options['navColour'] ?? '');
+		$btn_colour = get_navbar_reverse_colour($options['navColour'] ?? '');
 		?>
 		<form class="form-inline pt-2 pt-md-0 <?php echo $base_classes ?>" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 			<div class="input-group w-100">
@@ -62,7 +63,7 @@ function b4st_navbar_search($base_classes="") {
 
 function navbar_quick_links($base_classes="") {
 	$options = get_option('scout_theme_options');
-	$brand_colour = get_text_light_dark($options['navColour']);
+	$brand_colour = get_text_light_dark($options['navColour'] ?? '');
 	if ((isset($options['navbarQuickLinks']) ? $options['navbarQuickLinks'] : false)) {
 		// makes sure links are not empty
 		if (trim($options['fb_link']) != '') {
@@ -131,15 +132,15 @@ function b4st_bottomline() {
 		<?php
 			// get theme options
 			$options = get_option('scout_theme_options');
-			$text_colour = get_text_light_dark($options['footerColour']);
+			$text_colour = get_text_light_dark($options['footerColour'] ?? '');
 
 			// makes sure links are not empty
-			if (trim($options['fb_link']) != '') {
+			if (trim($options['fb_link'] ?? '') != '') {
 				$got_fb = true;
 			} else {
 				$got_fb = false;
 			}
-			if (trim($options['twitter_link']) != '') {
+			if (trim($options['twitter_link'] ?? '') != '') {
 				$got_tw = true;
 			} else {
 				$got_tw = false;
@@ -158,22 +159,22 @@ function b4st_bottomline() {
 			} else {
 				$got_contact = false;
 			}
-			if (trim($options['terms_link']) != '') {
+			if (trim($options['terms_link'] ?? '') != '') {
 				$got_terms = true;
 			} else {
 				$got_terms = false;
 			}
-			if (trim($options['privacy_link']) != '') {
+			if (trim($options['privacy_link'] ?? '') != '') {
 				$got_privacy = true;
 			} else {
 				$got_privacy = false;
 			}
-			if (trim($options['charity_number']) != '') {
+			if (trim($options['charity_number'] ?? '') != '') {
 				$got_charity = true;
 			} else {
 				$got_charity = false;
 			}
-			if (trim($options['parent_link']) != '' && trim($options['parent_text']) != '') {
+			if (trim($options['parent_link'] ?? '') != '' && trim($options['parent_text'] ?? '') != '') {
 				$got_parent_site = true;
 			} else {
 				$got_parent_site = false;
@@ -187,7 +188,7 @@ function b4st_bottomline() {
 				</div>
 
 				<div class="w-75 d-block w-100">
-					<p id="copyright" class="mb-0 text-center">© <?php echo date("Y"); ?> <?php echo $options['group_name']; ?></p>
+					<p id="copyright" class="mb-0 text-center">© <?php echo date("Y"); ?> <?php echo $options['group_name'] ?? ''; ?></p>
 					<?php
 					if ($got_charity) {
 						echo"<p class=\"mb-0 text-center\">Charity number: ".$options['charity_number']."</p>";

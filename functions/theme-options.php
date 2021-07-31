@@ -42,38 +42,38 @@ function theme_options_do_page() {
 				<tr><th colspan="2"><h2>Theme Setup</h2></th></tr>
 				<tr valign="top"><th scope="row">Group Name</th>
 					<td>
-						<input id="scout_theme_options[group_name]" class="regular-text" type="text" name="scout_theme_options[group_name]" value="<?php esc_attr_e( (array_key_exists('group_name', $options)) ? $options['group_name'] : '' ); ?>" />
+						<input id="scout_theme_options[group_name]" class="regular-text" type="text" name="scout_theme_options[group_name]" value="<?php esc_attr_e( (is_array($options) && array_key_exists('group_name', $options)) ? $options['group_name'] : '' ); ?>" />
 						<label class="description" for="scout_theme_options[group_name]"> e.g. "1st Anywhere Scout Group"</label>
 					</td>
 				</tr>
 				<tr valign="top"><th scope="row">Charity number</th>
 					<td>
-						<input id="scout_theme_options[charity_number]" class="regular-text" type="text" name="scout_theme_options[charity_number]" value="<?php esc_attr_e( (array_key_exists('charity_number', $options)) ? $options['charity_number'] : '' ); ?>" />
+						<input id="scout_theme_options[charity_number]" class="regular-text" type="text" name="scout_theme_options[charity_number]" value="<?php esc_attr_e( (is_array($options) && array_key_exists('charity_number', $options)) ? $options['charity_number'] : '' ); ?>" />
 						<label class="description" for="scout_theme_options[charity_number]"> leave blank if unknown</label>
 					</td>
 				</tr>
 
 				<tr valign="top"><th scope="row">Privacy statement</th>
 					<td>
-						<input id="scout_theme_options[privacy_link]" class="regular-text" type="text" name="scout_theme_options[privacy_link]" value="<?php esc_attr_e( (array_key_exists('privacy_link', $options)) ? $options['privacy_link'] : '' ); ?>" />
+						<input id="scout_theme_options[privacy_link]" class="regular-text" type="text" name="scout_theme_options[privacy_link]" value="<?php esc_attr_e( (is_array($options) && array_key_exists('privacy_link', $options)) ? $options['privacy_link'] : '' ); ?>" />
 						<label class="description" for="scout_theme_options[privacy_link]"> Inset page link for your Privacy statement</label>
 					</td>
 				</tr>
 				<tr valign="top"><th scope="row">Terms and Disclaimer</th>
 					<td>
-						<input id="scout_theme_options[terms_link]" class="regular-text" type="text" name="scout_theme_options[terms_link]" value="<?php esc_attr_e( (array_key_exists('terms_link', $options)) ? $options['terms_link'] : '' ); ?>" />
+						<input id="scout_theme_options[terms_link]" class="regular-text" type="text" name="scout_theme_options[terms_link]" value="<?php esc_attr_e( (is_array($options) && array_key_exists('terms_link', $options)) ? $options['terms_link'] : '' ); ?>" />
 						<label class="description" for="scout_theme_options[terms_link]"> Inset page link for your Terms and Disclaimer</label>
 					</td>
 				</tr>
 				<tr valign="top"><th scope="row">District / County link</th>
 					<td>
-						<input id="scout_theme_options[parent_link]" class="regular-text" type="text" name="scout_theme_options[parent_link]" value="<?php esc_attr_e( (array_key_exists('parent_link', $options)) ? $options['parent_link'] : '' ); ?>" />
+						<input id="scout_theme_options[parent_link]" class="regular-text" type="text" name="scout_theme_options[parent_link]" value="<?php esc_attr_e( (is_array($options) && array_key_exists('parent_link', $options)) ? $options['parent_link'] : '' ); ?>" />
 						<label class="description" for="scout_theme_options[parent_link]"> Inset link for your district or county site</label>
 					</td>
 				</tr>
 				<tr valign="top"><th scope="row">District / County link text</th>
 					<td>
-						<input id="scout_theme_options[parent_text]" class="regular-text" type="text" name="scout_theme_options[parent_text]" value="<?php esc_attr_e( (array_key_exists('parent_text', $options)) ? $options['parent_text'] : '' ); ?>" />
+						<input id="scout_theme_options[parent_text]" class="regular-text" type="text" name="scout_theme_options[parent_text]" value="<?php esc_attr_e( (is_array($options) && array_key_exists('parent_text', $options)) ? $options['parent_text'] : '' ); ?>" />
 						<label class="description" for="scout_theme_options[parent_text]"> Inset text to be displayed</label>
 					</td>
 				</tr>
@@ -81,19 +81,19 @@ function theme_options_do_page() {
 				<tr><th colspan="2"><h2>Quick links</h2></th></tr>
 				<tr valign="top"><th scope="row">Facebook page</th>
 					<td>
-						<input id="scout_theme_options[fb_link]" class="regular-text" type="text" name="scout_theme_options[fb_link]" value="<?php esc_attr_e( (array_key_exists('fb_link', $options)) ? $options['fb_link'] : '' ); ?>" />
+						<input id="scout_theme_options[fb_link]" class="regular-text" type="text" name="scout_theme_options[fb_link]" value="<?php esc_attr_e( (is_array($options) && array_key_exists('fb_link', $options)) ? $options['fb_link'] : '' ); ?>" />
 						<label class="description" for="scout_theme_options[fb_link]"> Insert the URL for your Facebook page</label>
 					</td>
 				</tr>
 				<tr valign="top"><th scope="row">Twitter</th>
 					<td>
-						<input id="scout_theme_options[twitter_link]" class="regular-text" type="text" name="scout_theme_options[twitter_link]" value="<?php esc_attr_e( (array_key_exists('twitter_link', $options)) ? $options['twitter_link'] : '' ); ?>" />
+						<input id="scout_theme_options[twitter_link]" class="regular-text" type="text" name="scout_theme_options[twitter_link]" value="<?php esc_attr_e( (is_array($options) && array_key_exists('twitter_link', $options)) ? $options['twitter_link'] : '' ); ?>" />
 						<label class="description" for="scout_theme_options[twitter_link]"> Inset your groups Twitter account URL</label>
 					</td>
 				</tr>
 				<tr valign="top"><th scope="row">Online Scout manger</th>
 					<td>
-						<input id="scout_theme_options[osm_link]" class="regular-text" type="text" name="scout_theme_options[osm_link]" value="<?php esc_attr_e( (array_key_exists('osm_link', $options)) ? $options['osm_link'] : '' ); ?>" />
+						<input id="scout_theme_options[osm_link]" class="regular-text" type="text" name="scout_theme_options[osm_link]" value="<?php esc_attr_e( (is_array($options) && array_key_exists('osm_link', $options)) ? $options['osm_link'] : '' ); ?>" />
 						<label class="description" for="scout_theme_options[osm_link]"> Inset your groups OSM login link</label>
 					</td>
 				</tr>

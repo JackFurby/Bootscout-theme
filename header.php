@@ -14,7 +14,7 @@
 
 <?php $options = get_option('scout_theme_options');?>
 
-<?php $brand_colour = get_text_light_dark($options['navColour']); ?>
+<?php $brand_colour = get_text_light_dark($options['navColour'] ?? ''); ?>
 
 <nav id="site-navbar" class="navbar navbar-expand-lg navbar-<?php echo get_reverse_light_dark($brand_colour) ?> bg-scout-<?php echo (!empty($options['navColour']) ? $options['navColour'] : 'purple') ?> shadow-sm">
 	<div class="container-fluid">
