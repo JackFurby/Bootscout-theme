@@ -6,6 +6,8 @@
 if ( ! function_exists('b4st_setup') ) {
 	function b4st_setup() {
 
+		remove_theme_support( 'widgets-block-editor' );
+
 		add_theme_support( 'editor-styles' );
 		add_editor_style('theme/css/editor.css');
 		add_editor_style('theme/css/blocks.css');
