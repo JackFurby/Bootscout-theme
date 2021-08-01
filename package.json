@@ -1,7 +1,7 @@
 {
   "name": "bootscout",
-  "version": "1.0.0",
-  "description": "*Version 1.6.2*",
+  "version": "1.6.2",
+  "description": "A simple WordPress theme for scout websites styled with Bootstrap ",
   "repository": {
     "url": "git+https://github.com/JackFurby/Bootscout-theme.git"
   },
@@ -41,5 +41,5 @@
   "bugs": {
     "url": "https://github.com/JackFurby/Bootscout-theme/issues"
   },
-  "homepage": "https://github.com/JackFurby/Bootscout-theme#readme"
+  "homepage": "https://bootscout.org.uk/"
 }

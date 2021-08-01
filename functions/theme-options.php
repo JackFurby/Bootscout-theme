@@ -7,7 +7,7 @@ add_action( 'admin_init', 'theme_options_init' );
  * Init plugin options to white list our options
  */
 function theme_options_init(){
-	register_setting( 'scout_options', 'scout_theme_options', 'theme_options_validate' );
+	register_setting( 'scout_options', 'scout_theme_options' );
 }
 
 /**
@@ -153,28 +153,4 @@ function theme_options_do_page() {
 	</div>
 	<?php
 
-
-
-}
-
-
-
-/**
-* Sanitize and validate input. Accepts an array, return a sanitized array.
-*/
-function theme_options_validate( $input ) {
-	global $select_options, $radio_options;
-
-	// Our checkbox value is either 0 or 1
-	if ( ! isset( $input['option1'] ) )
-		$input['option1'] = null;
-	$input['option1'] = ( $input['option1'] == 1 ? 1 : 0 );
-
-	// Say our text option must be safe text with no HTML tags
-	$input['sometext'] = wp_filter_nohtml_kses( $input['sometext'] );
-
-	// Say our textarea option must be safe text with the allowed tags for posts
-	$input['sometextarea'] = wp_filter_post_kses( $input['sometextarea'] );
-
-	return $input;
 }

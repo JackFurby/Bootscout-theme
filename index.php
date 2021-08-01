@@ -1,18 +1,18 @@
 <?php
-    get_header();
-    b4st_main_before();
+	get_header();
+	b4st_main_before();
 ?>
 
 <main id="site-main" class="container mt-5">
-  <div class="row">
+	<div class="row">
 
 		<?php get_template_part('content-column'); ?>
 
-    <div id="content" role="main">
+		<div id="content" role="main">
 
-      <?php get_template_part('loops/index-loop'); ?>
+			<?php get_template_part('loops/index-loop'); ?>
 
-    </div><!-- /#content -->
+		</div><!-- /#content -->
 
 	</div>
 
@@ -21,10 +21,10 @@
 	}
 	?>
 
-  </div><!-- /.row -->
+	</div><!-- /.row -->
 </main><!-- /.container -->
 
 <?php
-    b4st_main_after();
-    get_footer();
+	b4st_main_after();
+	get_footer();
 ?>
