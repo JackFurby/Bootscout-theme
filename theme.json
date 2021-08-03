@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "settings": {
+    "color": {
+      "custom": true,
+      "customDuotone": true,
+      "customGradient": true,
+      "duotone": [
+        {
+          "colors": [ "#7413dc", "#00a794" ],
+          "slug": "scout-purple-and-teal",
+          "name": "scout purple and teal"
+        },
+        {
+          "colors": [ "#e22e12", "#ffb4e5" ],
+          "slug": "scout-red-and-pink",
+          "name": "scout red and pink"
+        },
+        {
+          "colors": [ "#23a950", "#003982" ],
+          "slug": "scout-green-and-navy",
+          "name": "scout green and navy"
+        },
+        {
+          "colors": [ "#006ddf", "#ffe627" ],
+          "slug": "scout-blue-and-yellow",
+          "name": "scout blue and yellow"
+        },
+        {
+          "colors": [ "#000000", "#ffffff" ],
+          "slug": "black-and-white",
+          "name": "black and white"
+        }
+      ],
+      "gradients": [],
+      "link": false,
+      "palette": [
+        {
+          "slug": "scout-purple",
+          "color": "#7413dc",
+          "name": "scout purple"
+        },
+        {
+          "slug": "scout-teal",
+          "color": "#00a794",
+          "name": "scout teal"
+        },
+        {
+          "slug": "scout-red",
+          "color": "#e22e12",
+          "name": "scout red"
+        },
+        {
+          "slug": "scout-pink",
+          "color": "#ffb4e5",
+          "name": "scout pink"
+        },
+        {
+          "slug": "scout-green",
+          "color": "#23a950",
+          "name": "scout green"
+        },
+        {
+          "slug": "scout-section-green",
+          "color": "#004851",
+          "name": "scout section green"
+        },
+        {
+          "slug": "scout-navy",
+          "color": "#003982",
+          "name": "scout navy"
+        },
+        {
+          "slug": "scout-blue",
+          "color": "#006ddf",
+          "name": "scout blue"
+        },
+        {
+          "slug": "scout-yellow",
+          "color": "#ffe627",
+          "name": "scout yellow"
+        },
+        {
+          "slug": "white",
+          "color": "#ffffff",
+          "name": "white"
+        },
+        {
+          "slug": "grey-5",
+          "color": "#F2F2F2",
+          "name": "grey 5%"
+        },
+        {
+          "slug": "grey-20",
+          "color": "#CCCCCC",
+          "name": "grey 20%"
+        },
+        {
+          "slug": "grey-40",
+          "color": "#999999",
+          "name": "grey 40%"
+        },
+        {
+          "slug": "grey-60",
+          "color": "#666666",
+          "name": "grey 60%"
+        },
+        {
+          "slug": "grey-80",
+          "color": "#333333",
+          "name": "grey 80%"
+        },
+        {
+          "slug": "black",
+          "color": "#000000",
+          "name": "black"
+        }
+      ]
+    },
+    "custom": {},
+    "layout": {},
+    "spacing": {
+      "customMargin": false,
+      "customPadding": false,
+      "units": [ "px", "em", "rem", "vh", "vw" ]
+    },
+    "typography": {
+      "customFontSize": true,
+      "customLineHeight": false,
+      "dropCap": true,
+      "fontFamilies": [],
+      "fontSizes": [
+        {
+          "slug": "text",
+          "size": 16,
+          "name": "text"
+        },
+        {
+          "slug": "h6",
+          "size": 16,
+          "name": "smallest"
+        },
+        {
+          "slug": "h5",
+          "size": 20,
+          "name": "small"
+        },
+        {
+          "slug": "h4",
+          "size": 24,
+          "name": "medium"
+        },
+        {
+          "slug": "h3",
+          "size": 28,
+          "name": "large"
+        },
+        {
+          "slug": "h2",
+          "size": 32,
+          "name": "larger"
+        },
+        {
+          "slug": "h1",
+          "size": 40,
+          "name": "largest"
+        }
+      ]
+    },
+    "blocks": {}
+  },
+  "styles": {},
+  "customTemplates": {},
+  "templateParts": {}
+}
