@@ -3,6 +3,10 @@
   "settings": {
     "color": {
       "custom": true,
+      "layout": {
+        "contentSize": "800px",
+        "wideSize": "1000px"
+      },
       "customDuotone": true,
       "customGradient": true,
       "duotone": [
@@ -154,7 +158,18 @@
       "customFontSize": true,
       "customLineHeight": false,
       "dropCap": true,
-      "fontFamilies": [],
+      "fontFamilies": [
+          {
+            "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Nunito Sans\",sans-serif",
+            "slug": "system-font",
+            "name": "System Font"
+          },
+          {
+            "fontFamily": "Nunito Sans, sans-serif",
+            "slug": "nunito-sans",
+            "name": "Nunito Sans"
+          }
+      ],
       "fontSizes": [
         {
           "slug": "text",
@@ -195,7 +210,33 @@
     },
     "blocks": {}
   },
-  "styles": {},
-  "customTemplates": {},
+  "styles": {
+    "color": {
+      "text": "var(--wp--preset--color--grey-80)"
+    },
+    "spacing": {
+      "margin": {},
+      "padding": {}
+    },
+    "typography": {},
+    "elements": {},
+    "blocks": {}
+  },
+  "customTemplates": [
+    {
+      "name": "contact-page-template",
+      "title": "Contact template",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "no-title-page-template",
+      "title": "No title template",
+      "postTypes": [
+        "page"
+      ]
+    }
+  ],
   "templateParts": {}
 }
