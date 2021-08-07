@@ -3,10 +3,6 @@
   "settings": {
     "color": {
       "custom": true,
-      "layout": {
-        "contentSize": "800px",
-        "wideSize": "1000px"
-      },
       "customDuotone": true,
       "customGradient": true,
       "duotone": [
@@ -148,7 +144,10 @@
       ]
     },
     "custom": {},
-    "layout": {},
+    "layout": {
+      "contentSize": "1110px",
+      "wideSize": "1440px"
+    },
     "spacing": {
       "customMargin": false,
       "customPadding": false,
