@@ -9,111 +9,137 @@
         {
           "colors": [ "#7413dc", "#00a794" ],
           "slug": "scout-purple-and-teal",
-          "name": "scout purple and teal"
+          "name": "Scout purple and teal"
         },
         {
           "colors": [ "#e22e12", "#ffb4e5" ],
           "slug": "scout-red-and-pink",
-          "name": "scout red and pink"
+          "name": "Scout red and pink"
         },
         {
           "colors": [ "#23a950", "#003982" ],
           "slug": "scout-green-and-navy",
-          "name": "scout green and navy"
+          "name": "Scout green and navy"
         },
         {
           "colors": [ "#006ddf", "#ffe627" ],
           "slug": "scout-blue-and-yellow",
-          "name": "scout blue and yellow"
+          "name": "Scout blue and yellow"
         },
         {
           "colors": [ "#000000", "#ffffff" ],
           "slug": "black-and-white",
-          "name": "black and white"
+          "name": "Black and white"
         }
       ],
-      "gradients": [],
+      "gradients": [
+        {
+          "slug": "scout-purple-to-teal",
+          "gradient": "linear-gradient(135deg,#7413dc 0%,#00a794 100%)",
+          "name": "Scout purple to teal"
+        },
+        {
+          "slug": "scout-red-to-pink",
+          "gradient": "linear-gradient(135deg,#e22e12 0%,#ffb4e5 100%)",
+          "name": "Scout red to pink"
+        },
+        {
+          "slug": "scout-green-to-navy",
+          "gradient": "linear-gradient(135deg,#23a950 0%,#003982 100%)",
+          "name": "Scout green to navy"
+        },
+        {
+          "slug": "scout-blue-to-yellow",
+          "gradient": "linear-gradient(135deg,#006ddf 0%,#ffe627 100%)",
+          "name": "Scout blue to yellow"
+        },
+        {
+          "slug": "black to white",
+          "gradient": "linear-gradient(135deg,#000000 0%,#ffffff 100%)",
+          "name": "Black to white"
+        }
+      ],
       "link": false,
       "palette": [
         {
           "slug": "scout-purple",
           "color": "#7413dc",
-          "name": "scout purple"
+          "name": "Scout purple"
         },
         {
           "slug": "scout-teal",
           "color": "#00a794",
-          "name": "scout teal"
+          "name": "Scout teal"
         },
         {
           "slug": "scout-red",
           "color": "#e22e12",
-          "name": "scout red"
+          "name": "Scout red"
         },
         {
           "slug": "scout-pink",
           "color": "#ffb4e5",
-          "name": "scout pink"
+          "name": "Scout pink"
         },
         {
           "slug": "scout-green",
           "color": "#23a950",
-          "name": "scout green"
+          "name": "Scout green"
         },
         {
           "slug": "scout-section-green",
           "color": "#004851",
-          "name": "scout section green"
+          "name": "Scout section green"
         },
         {
           "slug": "scout-navy",
           "color": "#003982",
-          "name": "scout navy"
+          "name": "Scout navy"
         },
         {
           "slug": "scout-blue",
           "color": "#006ddf",
-          "name": "scout blue"
+          "name": "Scout blue"
         },
         {
           "slug": "scout-yellow",
           "color": "#ffe627",
-          "name": "scout yellow"
+          "name": "Scout yellow"
         },
         {
           "slug": "white",
           "color": "#ffffff",
-          "name": "white"
+          "name": "White"
         },
         {
           "slug": "grey-5",
           "color": "#F2F2F2",
-          "name": "grey 5%"
+          "name": "Grey 5%"
         },
         {
           "slug": "grey-20",
           "color": "#CCCCCC",
-          "name": "grey 20%"
+          "name": "Grey 20%"
         },
         {
           "slug": "grey-40",
           "color": "#999999",
-          "name": "grey 40%"
+          "name": "Grey 40%"
         },
         {
           "slug": "grey-60",
           "color": "#666666",
-          "name": "grey 60%"
+          "name": "Grey 60%"
         },
         {
           "slug": "grey-80",
           "color": "#333333",
-          "name": "grey 80%"
+          "name": "Grey 80%"
         },
         {
           "slug": "black",
           "color": "#000000",
-          "name": "black"
+          "name": "Black"
         }
       ]
     },
