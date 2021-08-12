@@ -41,7 +41,7 @@ a:hover {
 
 body.wp-block-widget-area__inner-blocks {  // widget block editor section
 	>div[class^="block-editor-block"], >div[class*=" block-editor-block"] {  // block editor container
-		>div[class^="block-editor-block"], >div[class*=" block-editor-block"] {  // widget container
+		>[class^="block-editor-block"], >[class*=" block-editor-block"] {  // widget container
 			background: #fff;
 			padding: 1rem;
 			border-radius: .25rem !important;
@@ -49,6 +49,7 @@ body.wp-block-widget-area__inner-blocks {  // widget block editor section
 		}
 	}
 }
+
 
 
 
