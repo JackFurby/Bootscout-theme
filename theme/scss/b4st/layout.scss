@@ -96,3 +96,14 @@ body {
 .wp-block-button, .wp-block-image {
 	margin-bottom: 0px !important;
 }
+
+
+.widget_block {
+	[class^='wp-block-'], [class*='wp-block-'] {
+		margin-bottom: 0px !important;
+	}
+
+	ol.wp-block-latest-comments {
+		padding-left: 0px;
+	}
+}

@@ -37,6 +37,21 @@ a:hover {
 	color: inherit !important;
 }
 
+// Widget blocks
+
+body.wp-block-widget-area__inner-blocks {  // widget block editor section
+	>div[class^="block-editor-block"], >div[class*=" block-editor-block"] {  // block editor container
+		>[class^="block-editor-block"], >[class*=" block-editor-block"] {  // widget container
+			background: #fff;
+			padding: 1rem;
+			border-radius: .25rem !important;
+			box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+		}
+	}
+}
+
+
+
 
 @import "b4st/typography";
 @import "b4st/code";
