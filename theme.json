@@ -146,12 +146,19 @@
     "custom": {},
     "layout": {
       "contentSize": "1110px",
-      "wideSize": "1440px"
+      "wideSize": "1440px",
+      "units": [ "px", "em", "rem", "%", "vw" ]
     },
     "spacing": {
       "customMargin": false,
       "customPadding": false,
       "units": [ "px", "em", "rem", "vh", "vw" ]
+    },
+    "border": {
+      "customColor": true,
+      "customRadius": true,
+      "customStyle": true,
+      "customWidth": true
     },
     "typography": {
       "customFontSize": true,
@@ -211,11 +218,16 @@
   },
   "styles": {
     "color": {
+      "background": "#F5F5F5",
       "text": "var(--wp--preset--color--grey-80)"
     },
     "spacing": {
-      "margin": {},
-      "padding": {}
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      }
     },
     "typography": {},
     "elements": {},
