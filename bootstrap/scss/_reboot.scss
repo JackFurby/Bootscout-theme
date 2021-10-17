@@ -51,7 +51,7 @@ body {
   line-height: $line-height-base;
   color: $body-color;
   text-align: $body-text-align;
-  background-color: $body-bg; // 2
+  //background-color: $body-bg; // 2  - commented out to allow WP to set this property
   -webkit-text-size-adjust: 100%; // 3
   -webkit-tap-highlight-color: rgba($black, 0); // 4
 }
