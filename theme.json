@@ -1,241 +1,262 @@
 {
-  "version": 1,
-  "settings": {
-    "color": {
-      "custom": true,
-      "customDuotone": true,
-      "customGradient": true,
-      "duotone": [
-        {
-          "colors": [ "#7413dc", "#00a794" ],
-          "slug": "scout-purple-and-teal",
-          "name": "Scout purple and teal"
-        },
-        {
-          "colors": [ "#e22e12", "#ffb4e5" ],
-          "slug": "scout-red-and-pink",
-          "name": "Scout red and pink"
-        },
-        {
-          "colors": [ "#23a950", "#003982" ],
-          "slug": "scout-green-and-navy",
-          "name": "Scout green and navy"
-        },
-        {
-          "colors": [ "#006ddf", "#ffe627" ],
-          "slug": "scout-blue-and-yellow",
-          "name": "Scout blue and yellow"
-        },
-        {
-          "colors": [ "#000000", "#ffffff" ],
-          "slug": "black-and-white",
-          "name": "Black and white"
-        }
-      ],
-      "gradients": [
-        {
-          "slug": "scout-purple-to-teal",
-          "gradient": "linear-gradient(135deg,#7413dc 0%,#00a794 100%)",
-          "name": "Scout purple to teal"
-        },
-        {
-          "slug": "scout-red-to-pink",
-          "gradient": "linear-gradient(135deg,#e22e12 0%,#ffb4e5 100%)",
-          "name": "Scout red to pink"
-        },
-        {
-          "slug": "scout-green-to-navy",
-          "gradient": "linear-gradient(135deg,#23a950 0%,#003982 100%)",
-          "name": "Scout green to navy"
-        },
-        {
-          "slug": "scout-blue-to-yellow",
-          "gradient": "linear-gradient(135deg,#006ddf 0%,#ffe627 100%)",
-          "name": "Scout blue to yellow"
-        },
-        {
-          "slug": "black to white",
-          "gradient": "linear-gradient(135deg,#000000 0%,#ffffff 100%)",
-          "name": "Black to white"
-        }
-      ],
-      "link": false,
-      "palette": [
-        {
-          "slug": "scout-purple",
-          "color": "#7413dc",
-          "name": "Scout purple"
-        },
-        {
-          "slug": "scout-teal",
-          "color": "#00a794",
-          "name": "Scout teal"
-        },
-        {
-          "slug": "scout-red",
-          "color": "#e22e12",
-          "name": "Scout red"
-        },
-        {
-          "slug": "scout-pink",
-          "color": "#ffb4e5",
-          "name": "Scout pink"
-        },
-        {
-          "slug": "scout-green",
-          "color": "#23a950",
-          "name": "Scout green"
-        },
-        {
-          "slug": "scout-section-green",
-          "color": "#004851",
-          "name": "Scout section green"
-        },
-        {
-          "slug": "scout-navy",
-          "color": "#003982",
-          "name": "Scout navy"
-        },
-        {
-          "slug": "scout-blue",
-          "color": "#006ddf",
-          "name": "Scout blue"
-        },
-        {
-          "slug": "scout-yellow",
-          "color": "#ffe627",
-          "name": "Scout yellow"
-        },
-        {
-          "slug": "white",
-          "color": "#ffffff",
-          "name": "White"
-        },
-        {
-          "slug": "grey-5",
-          "color": "#F2F2F2",
-          "name": "Grey 5%"
-        },
-        {
-          "slug": "grey-20",
-          "color": "#CCCCCC",
-          "name": "Grey 20%"
-        },
-        {
-          "slug": "grey-40",
-          "color": "#999999",
-          "name": "Grey 40%"
-        },
-        {
-          "slug": "grey-60",
-          "color": "#666666",
-          "name": "Grey 60%"
-        },
-        {
-          "slug": "grey-80",
-          "color": "#333333",
-          "name": "Grey 80%"
-        },
-        {
-          "slug": "black",
-          "color": "#000000",
-          "name": "Black"
-        }
-      ]
-    },
-    "custom": {},
-    "layout": {
-      "contentSize": "1110px",
-      "wideSize": "1440px"
-    },
-    "spacing": {
-      "customMargin": false,
-      "customPadding": false,
-      "units": [ "px", "em", "rem", "vh", "vw" ]
-    },
-    "typography": {
-      "customFontSize": true,
-      "customLineHeight": false,
-      "dropCap": true,
-      "fontFamilies": [
-          {
-            "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Nunito Sans\",sans-serif",
-            "slug": "system-font",
-            "name": "System Font"
-          },
-          {
-            "fontFamily": "Nunito Sans, sans-serif",
-            "slug": "nunito-sans",
-            "name": "Nunito Sans"
-          }
-      ],
-      "fontSizes": [
-        {
-          "slug": "text",
-          "size": 16,
-          "name": "text"
-        },
-        {
-          "slug": "h6",
-          "size": 16,
-          "name": "smallest"
-        },
-        {
-          "slug": "h5",
-          "size": 20,
-          "name": "small"
-        },
-        {
-          "slug": "h4",
-          "size": 24,
-          "name": "medium"
-        },
-        {
-          "slug": "h3",
-          "size": 28,
-          "name": "large"
-        },
-        {
-          "slug": "h2",
-          "size": 32,
-          "name": "larger"
-        },
-        {
-          "slug": "h1",
-          "size": 40,
-          "name": "largest"
-        }
-      ]
-    },
-    "blocks": {}
-  },
-  "styles": {
-    "color": {
-      "text": "var(--wp--preset--color--grey-80)"
-    },
-    "spacing": {
-      "margin": {},
-      "padding": {}
-    },
-    "typography": {},
-    "elements": {},
-    "blocks": {}
-  },
-  "customTemplates": [
-    {
-      "name": "contact-page-template",
-      "title": "Contact template",
-      "postTypes": [
-        "page"
-      ]
-    },
-    {
-      "name": "no-title-page-template",
-      "title": "No title template",
-      "postTypes": [
-        "page"
-      ]
-    }
-  ],
-  "templateParts": {}
+	"version": 1,
+	"settings": {
+		"color": {
+			"custom": true,
+			"customDuotone": true,
+			"customGradient": true,
+			"duotone": [
+				{
+					"colors": [ "#7413dc", "#00a794" ],
+					"slug": "scout-purple-and-teal",
+					"name": "Scout purple and teal"
+				},
+				{
+					"colors": [ "#e22e12", "#ffb4e5" ],
+					"slug": "scout-red-and-pink",
+					"name": "Scout red and pink"
+				},
+				{
+					"colors": [ "#23a950", "#003982" ],
+					"slug": "scout-green-and-navy",
+					"name": "Scout green and navy"
+				},
+				{
+					"colors": [ "#006ddf", "#ffe627" ],
+					"slug": "scout-blue-and-yellow",
+					"name": "Scout blue and yellow"
+				},
+				{
+					"colors": [ "#000000", "#ffffff" ],
+					"slug": "black-and-white",
+					"name": "Black and white"
+				}
+			],
+			"gradients": [
+				{
+					"slug": "scout-purple-to-teal",
+					"gradient": "linear-gradient(135deg,#7413dc 0%,#00a794 100%)",
+					"name": "Scout purple to teal"
+				},
+				{
+					"slug": "scout-red-to-pink",
+					"gradient": "linear-gradient(135deg,#e22e12 0%,#ffb4e5 100%)",
+					"name": "Scout red to pink"
+				},
+				{
+					"slug": "scout-green-to-navy",
+					"gradient": "linear-gradient(135deg,#23a950 0%,#003982 100%)",
+					"name": "Scout green to navy"
+				},
+				{
+					"slug": "scout-blue-to-yellow",
+					"gradient": "linear-gradient(135deg,#006ddf 0%,#ffe627 100%)",
+					"name": "Scout blue to yellow"
+				},
+				{
+					"slug": "black to white",
+					"gradient": "linear-gradient(135deg,#000000 0%,#ffffff 100%)",
+					"name": "Black to white"
+				}
+			],
+			"link": false,
+			"palette": [
+				{
+					"slug": "scout-purple",
+					"color": "#7413dc",
+					"name": "Scout purple"
+				},
+				{
+					"slug": "scout-teal",
+					"color": "#00a794",
+					"name": "Scout teal"
+				},
+				{
+					"slug": "scout-red",
+					"color": "#e22e12",
+					"name": "Scout red"
+				},
+				{
+					"slug": "scout-pink",
+					"color": "#ffb4e5",
+					"name": "Scout pink"
+				},
+				{
+					"slug": "scout-green",
+					"color": "#23a950",
+					"name": "Scout green"
+				},
+				{
+					"slug": "scout-section-green",
+					"color": "#004851",
+					"name": "Scout section green"
+				},
+				{
+					"slug": "scout-navy",
+					"color": "#003982",
+					"name": "Scout navy"
+				},
+				{
+					"slug": "scout-blue",
+					"color": "#006ddf",
+					"name": "Scout blue"
+				},
+				{
+					"slug": "scout-yellow",
+					"color": "#ffe627",
+					"name": "Scout yellow"
+				},
+				{
+					"slug": "white",
+					"color": "#ffffff",
+					"name": "White"
+				},
+				{
+					"slug": "grey-5",
+					"color": "#F2F2F2",
+					"name": "Grey 5%"
+				},
+				{
+					"slug": "grey-20",
+					"color": "#CCCCCC",
+					"name": "Grey 20%"
+				},
+				{
+					"slug": "grey-40",
+					"color": "#999999",
+					"name": "Grey 40%"
+				},
+				{
+					"slug": "grey-60",
+					"color": "#666666",
+					"name": "Grey 60%"
+				},
+				{
+					"slug": "grey-80",
+					"color": "#333333",
+					"name": "Grey 80%"
+				},
+				{
+					"slug": "black",
+					"color": "#000000",
+					"name": "Black"
+				}
+			]
+		},
+		"custom": {},
+		"layout": {
+			"contentSize": "1110px",
+			"wideSize": "1440px",
+			"units": [ "px", "em", "rem", "%", "vw" ]
+		},
+		"spacing": {
+			"customMargin": false,
+			"customPadding": false,
+			"units": [ "px", "em", "rem", "vh", "vw" ]
+		},
+		"border": {
+			"customColor": true,
+			"customRadius": true,
+			"customStyle": true,
+			"customWidth": true
+		},
+		"typography": {
+			"customFontSize": true,
+			"customLineHeight": false,
+			"dropCap": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Nunito Sans\",sans-serif",
+					"slug": "system-font",
+					"name": "System Font"
+				},
+				{
+					"fontFamily": "Nunito Sans, sans-serif",
+					"slug": "nunito-sans",
+					"name": "Nunito Sans"
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "text",
+					"size": 16,
+					"name": "text"
+				},
+				{
+					"slug": "h6",
+					"size": 16,
+					"name": "smallest"
+				},
+				{
+					"slug": "h5",
+					"size": 20,
+					"name": "small"
+				},
+				{
+					"slug": "h4",
+					"size": 24,
+					"name": "medium"
+				},
+				{
+					"slug": "h3",
+					"size": 28,
+					"name": "large"
+				},
+				{
+					"slug": "h2",
+					"size": 32,
+					"name": "larger"
+				},
+				{
+					"slug": "h1",
+					"size": 40,
+					"name": "largest"
+				}
+			]
+		},
+		"blocks": {}
+	},
+	"styles": {
+		"color": {
+			"background": "#F5F5F5",
+			"text": "var(--wp--preset--color--grey-80)"
+		},
+		"spacing": {
+			"margin": {
+				"top": "0px",
+				"right": "0px",
+				"bottom": "0px",
+				"left": "0px"
+			}
+		},
+		"typography": {},
+		"elements": {},
+		"blocks": {}
+	},
+	"customTemplates": [
+		{
+			"name": "contact-page-template",
+			"title": "Contact template",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "no-title-page-template",
+			"title": "No title template",
+			"postTypes": [
+				"page"
+			]
+		}
+	],
+	"templateParts": [
+		{
+			"name": "header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"area": "footer"
+		}
+	]
 }
