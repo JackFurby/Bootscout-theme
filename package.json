@@ -1,49 +1,57 @@
 {
-  "name": "bootscout",
-  "version": "1.6.4",
-  "description": "A simple WordPress theme for scout websites styled with Bootstrap ",
-  "repository": {
-    "url": "git+https://github.com/JackFurby/Bootscout-theme.git"
-  },
-  "main": "gulpfile.js",
-  "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "browserslist": ">=4.8.3",
-    "css-what": ">=5.0.1",
-    "cssnano": "^5.0.5",
-    "glob-parent": ">=5.1.2",
-    "gulp": "^4.0.2",
-    "gulp-postcss": "^9.0.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "hosted-git-info": ">=2.8.9",
-    "is-svg": ">=4.2.2",
-    "lodash": "^4.17.21",
-    "nth-check": ">=2.0.1",
-    "postcss": ">=8.2.10",
-    "sass": "^1.37.5",
-    "set-value": ">=4.0.1",
-    "tar": ">=6.1.9",
-    "trim-newlines": ">=3.0.1",
-    "y18n": ">=3.2.2",
-    "yargs-parser": ">=5.0.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "WordPress",
-    "Theme",
-    "Bootstrap 5",
-    "Bootstrap icons",
-    "Gulp",
-    "Sass",
-    "SCSS"
-  ],
-  "author": "Jack Furby",
-  "license": "MIT License",
-  "bugs": {
-    "url": "https://github.com/JackFurby/Bootscout-theme/issues"
-  },
-  "homepage": "https://bootscout.org.uk/"
+	"name": "bootscout",
+	"version": "1.6.4",
+	"description": "A simple WordPress theme for scout websites styled with Bootstrap",
+	"repository": {
+		"url": "git+https://github.com/JackFurby/Bootscout-theme.git"
+	},
+	"main": "gulpfile.js",
+	"dependencies": {
+		"@wordpress/block-editor": "^3.9.1",
+		"@wordpress/blocks": "^6.14.1",
+		"@wordpress/i18n": "^4.2.1"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^19.2.2",
+		"autoprefixer": "^10.2.6",
+		"browserslist": ">=4.8.3",
+		"css-what": ">=5.0.1",
+		"cssnano": "^5.0.5",
+		"glob-parent": ">=5.1.2",
+		"gulp": "^4.0.2",
+		"gulp-postcss": "^9.0.0",
+		"gulp-sass": "^5.0.0",
+		"gulp-sourcemaps": "^2.6.5",
+		"hosted-git-info": ">=2.8.9",
+		"is-svg": ">=4.2.2",
+		"lodash": "^4.17.21",
+		"nth-check": ">=2.0.1",
+		"postcss": ">=8.2.10",
+		"sass": "^1.37.5",
+		"set-value": ">=4.0.1",
+		"tar": ">=6.1.9",
+		"trim-newlines": ">=3.0.1",
+		"y18n": ">=3.2.2",
+		"yargs-parser": ">=5.0.1"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start:search-test-block": "wp-scripts start blocks/search-test/src/index.js --output-path=blocks/search-test/build/",
+		"build:search-test-block": "wp-scripts build blocks/search-test/src/index.js --output-path=blocks/search-test/build/"
+	},
+	"keywords": [
+		"WordPress",
+		"Theme",
+		"Bootstrap 5",
+		"Bootstrap icons",
+		"Gulp",
+		"Sass",
+		"SCSS"
+	],
+	"author": "Jack Furby",
+	"license": "MIT License",
+	"bugs": {
+		"url": "https://github.com/JackFurby/Bootscout-theme/issues"
+	},
+	"homepage": "https://bootscout.org.uk/"
 }

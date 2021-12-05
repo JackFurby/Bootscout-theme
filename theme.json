@@ -234,20 +234,6 @@
 		"blocks": {}
 	},
 	"customTemplates": [
-		{
-			"name": "contact-page-template",
-			"title": "Contact template",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "no-title-page-template",
-			"title": "No title template",
-			"postTypes": [
-				"page"
-			]
-		}
 	],
 	"templateParts": [
 		{
