@@ -32,7 +32,8 @@
 		"tar": ">=6.1.9",
 		"trim-newlines": ">=3.0.1",
 		"y18n": ">=3.2.2",
-		"yargs-parser": ">=5.0.1"
+		"yargs-parser": ">=5.0.1",
+		"nanoid": ">=3.1.31"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
