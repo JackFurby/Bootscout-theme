@@ -1,12 +1,12 @@
 /*
- * b4st Editor Styles (Gutenberg Ready)
+ * site Editor Styles (Gutenberg Ready)
  * ====================================
  * (1.) Bootstrap’s Reboot: `reboot.min.css`
  * (2.) Title: `.editor-post-title__block .editor-post-title__input`
  *      — copied from base font-family and Bootstrap h1
  */
 
-@import "b4st/variables";
+@import "site/variables";
 @import "../../bootstrap/scss/bootstrap-reboot";
 
 .components-circular-option-picker__option {
@@ -51,15 +51,15 @@ body.wp-block-widget-area__inner-blocks {  // widget block editor section
 
 
 
-@import "b4st/typography";
-@import "b4st/code";
-@import "b4st/lists";
-@import "b4st/quotes";
-@import "b4st/layout_editor";
-@import "b4st/groups";
-@import "b4st/images-and-galleries";
-@import "b4st/embeds";
-@import "b4st/tables";
-@import "b4st/comments";
-@import "b4st/shadows";
-@import "b4st/buttons";
+@import "site/typography";
+@import "site/code";
+@import "site/lists";
+@import "site/quotes";
+@import "site/layout_editor";
+@import "site/groups";
+@import "site/images-and-galleries";
+@import "site/embeds";
+@import "site/tables";
+@import "site/comments";
+@import "site/shadows";
+@import "site/buttons";
