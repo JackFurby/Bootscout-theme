@@ -218,7 +218,7 @@
 	},
 	"styles": {
 		"color": {
-			"background": "#F5F5F5",
+			"background": "#ffffff",
 			"text": "var(--wp--preset--color--grey-80)"
 		},
 		"spacing": {
