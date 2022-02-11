@@ -28,3 +28,6 @@
   position: relative;
   left: -30px;
 }
+.wp-block-group:where(.site-main) {
+	padding: 1.25em 0em;
+}

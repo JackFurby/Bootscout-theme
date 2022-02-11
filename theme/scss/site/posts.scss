@@ -1,0 +1,23 @@
+.wp-block-post {
+	@extend .card;
+	@extend .mb-2;
+	@extend .overflow-hidden;
+
+	.wp-block-post-title, .post-meta, .wp-block-post-excerpt {
+		@extend .p-2;
+	}
+
+	.wp-block-post-title {
+		@extend .mb-0;
+	}
+
+	.wp-block-post-date {
+		@extend .badge;
+		@extend .rounded-pill;
+		@extend .bg-secondary;
+	}
+}
+
+.sticky {
+	@extend .border-dark;
+}

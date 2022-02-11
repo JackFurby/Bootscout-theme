@@ -5,18 +5,17 @@
 
 /* Imports */
 
-@import "site2/variables";
+@import "site/variables";
 @import "../../bootstrap/scss/bootstrap";
-@import "site2/icons";
-@import "site2/bootstrap-override";
-@import "site2/search";
-@import "site2/buttons";
-@import "site2/backgrounds";
+@import "site/icons";
+@import "site/bootstrap-override";
+@import "site/search";
+@import "site/buttons";
+@import "site/backgrounds";
 
 @import "site/base";
-@import "site2/layout";
-@import "site2/typography";
+@import "site/layout";
+@import "site/typography";
 @import "site/groups";
-@import "site/images-and-galleries";
-@import "site2/footer";
-@import "site/navbar";
+@import "site/footer";
+@import "site/posts";
