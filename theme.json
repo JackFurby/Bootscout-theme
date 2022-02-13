@@ -234,6 +234,11 @@
 		"blocks": {}
 	},
 	"customTemplates": [
+		{
+			"name": "index",
+			"title": "Post page",
+			"postTypes": [ "post" ]
+	}
 	],
 	"templateParts": [
 		{

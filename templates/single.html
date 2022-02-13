@@ -20,11 +20,16 @@
 	<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
 	<!-- wp:post-content {"align":"full","layout":{"inherit":true}} /-->
-	<!-- wp:group {"className":"post-nav","style":{"spacing":{"margin":{"top":"2.375em"}}}} -->
+
+	<!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"space-between"}, "className":"post-nav","style":{"spacing":{"margin":{"top":"2.375em"}}}} -->
 	<div class="wp-block-group post-nav" style="margin-top:2.375em">
-	<!-- wp:post-navigation-link {"type":"previous"} /-->
-	<!-- wp:post-navigation-link /-->
-	</div><!-- /wp:group -->
+
+		<!-- wp:post-navigation-link {"type":"previous","showTitle":true, "linkLabel":true} /-->
+
+		<!-- wp:post-navigation-link {"showTitle":true, "linkLabel":true} /-->
+	</div>
+	<!-- /wp:group -->
+
 	<!-- wp:spacer {"height":70} -->
 	<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
