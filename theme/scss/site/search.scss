@@ -10,9 +10,10 @@
 	@extend .form-control;
 }
 .wp-block-search__button {
-	@extend .btn;
+	@extend .wp-block-button__link;
 	@extend .has-scout-teal-background-color;
 	color: white;
+	border: 0px solid transparent;
 }
 .wp-block-search__button:hover {
 	color: white;
