@@ -1,3 +1,6 @@
+main.site-main .entry-content {
+	@extend .clearfix;
+}
 .wp-block-post {
 	@extend .card;
 	@extend .mb-2;

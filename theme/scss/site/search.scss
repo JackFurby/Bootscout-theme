@@ -11,7 +11,11 @@
 }
 .wp-block-search__button {
 	@extend .btn;
-	@extend .btn-scout-teal;
+	@extend .has-scout-teal-background-color;
+	color: white;
+}
+.wp-block-search__button:hover {
+	color: white;
 }
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
 	border: 0px;

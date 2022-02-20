@@ -1,5 +1,17 @@
 // Buttons
 
+.wp-block-button .wp-block-button__link {
+	padding: .375rem .75rem;
+	border-radius: .25rem;
+}
+.is-style-outline > :where(.wp-block-button__link), :where(.wp-block-button__link).is-style-outline {
+	border: 1px solid;
+}
+.is-style-outline:hover > :where(.wp-block-button__link), :where(.wp-block-button__link).is-style-outline:hover {
+	background-color: currentColor;
+}
+
+/*
 .btn-scout-purple {
 	background-color: $scout-purple;
 	border-color: $scout-purple;
@@ -49,6 +61,7 @@
 .btn-scout-purple-dark:focus {
 	box-shadow: 0 0 0 0.2rem rgba(darken($scout-purple, 10%),.5);
 }
+
 .btn-scout-teal {
 	background-color: $scout-teal;
 	border-color: $scout-teal;
@@ -103,6 +116,7 @@
 	border-color: $scout-green;
 	color: $white;
 }
+
 .btn-scout-green:hover {
 	background-color: darker($scout-green, 10%);
 	border-color: darken($scout-green, 10%);
@@ -526,10 +540,6 @@
 .btn-scout-black-dark:focus {
 	box-shadow: 0 0 0 0.2rem rgba(darken($black, 10%),.5);
 }
-.wp-block-button .wp-block-button__link {
-	@extend .btn;
-}
 
-.wp-block-button .wp-block-button__link:hover {
-	filter: brightness(90%);
-}
+
+*/
