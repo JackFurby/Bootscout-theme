@@ -1,39 +1,6 @@
 /*
- * b4st JS
+ * site JS
  */
-
-
-(function ($) {
-
-	'use strict';
-
-	$(document).ready(function() {
-
-		// Pagination fix for ellipsis
-
-		$('.pagination .dots').addClass('page-link').parent().addClass('disabled');
-
-		// Navbar
-
-		// allows nested dropdowns to be open at the same time
-		$('.dropdown-menu button.dropdown-toggle').on('click', function(e) {
-			if (!$(this).next().hasClass('show')) {
-				$(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-			}
-			var $subMenu = $(this).next(".dropdown-menu");
-			$subMenu.toggleClass('show');
-
-			$(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-				$('.dropdown-submenu .show').removeClass("show");
-			});
-
-			return false;
-		});
-
-	});
-
-})(jQuery);
-
 
 // Buttons
 
@@ -50,8 +17,8 @@ var outlineButtonHover = function() {
 // revert hover colour to how they were before
 var outlineButtonHoverOver = function() {
 	var btnColor = getComputedStyle(this.getElementsByTagName("a")[0]).backgroundColor;
-	this.getElementsByTagName("a")[0].style.setProperty("background-color", "transparent", "important")
-	this.getElementsByTagName("a")[0].style.setProperty("color", btnColor, "important")
+	this.getElementsByTagName("a")[0].style.setProperty("background-color", "transparent", "important");
+	this.getElementsByTagName("a")[0].style.setProperty("color", btnColor, "important");
 };
 
 for (var i = 0; i < outlineButtons.length; i++) {
@@ -60,4 +27,79 @@ for (var i = 0; i < outlineButtons.length; i++) {
 
 	// if outline button has background, set background to transparent
 	outlineButtons[i].getElementsByTagName("a")[0].style.setProperty("background-color", "transparent", "important");
+}
+
+// darken regular buttons (no outline)
+var regularButtons = document.querySelectorAll( '.wp-block-button:not(.is-style-outline)' );
+
+// darken background colour by 10%
+var regularButtonHover = function() {
+	var btnColor = getComputedStyle(this.getElementsByTagName("a")[0]).backgroundColor;
+	var newBgColour = LightenDarkenColor(rgbToHex(btnColor), 10);
+	this.getElementsByTagName("a")[0].style.setProperty("background-color", newBgColour, "important");
+};
+
+// revert background colour (lighten by 10%)
+var regularButtonHoverOver = function() {
+	var btnColor = getComputedStyle(this.getElementsByTagName("a")[0]).backgroundColor;
+	var newBgColour = LightenDarkenColor(rgbToHex(btnColor), -10);
+	this.getElementsByTagName("a")[0].style.setProperty("background-color", newBgColour, "important");
+};
+
+for (var i = 0; i < regularButtons.length; i++) {
+	regularButtons[i].addEventListener('mouseover', regularButtonHover, false);
+	regularButtons[i].addEventListener('mouseout', regularButtonHoverOver, false);
+}
+
+// utils
+
+// RGB to hex (https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb)
+function componentToHex(c) {
+	var hex = c.toString(16);
+	return hex.length == 1 ? "0" + hex : hex;
+}
+
+function rgbToHex(rgb) {
+	// extract RGb values
+	var rgbSplit = rgb.replace(/[^\d,]/g, '').split(',');
+	// convert rgb values to hex
+	return "#" + componentToHex(Number(rgbSplit[0])) + componentToHex(Number(rgbSplit[1])) + componentToHex(Number(rgbSplit[2]));
+}
+
+// lighten / darken hex colours (https://jonlabelle.com/snippets/view/javascript/lighten-and-darken-colors-in-javascript)
+function LightenDarkenColor(colorCode, amount) {
+	var usePound = false;
+
+	if (colorCode[0] == "#") {
+		colorCode = colorCode.slice(1);
+		usePound = true;
+	}
+
+	var num = parseInt(colorCode, 16);
+
+	var r = (num >> 16) + amount;
+
+	if (r > 255) {
+		r = 255;
+	} else if (r < 0) {
+		r = 0;
+	}
+
+	var b = ((num >> 8) & 0x00FF) + amount;
+
+	if (b > 255) {
+		b = 255;
+	} else if (b < 0) {
+		b = 0;
+	}
+
+	var g = (num & 0x0000FF) + amount;
+
+	if (g > 255) {
+		g = 255;
+	} else if (g < 0) {
+		g = 0;
+	}
+
+	return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16);
 }
