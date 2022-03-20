@@ -1,0 +1,9 @@
+.wp-block-navigation__submenu-container {
+	@extend .rounded;
+	.wp-block-navigation-item {
+		color: black !important;
+	}
+	.wp-block-navigation-item:hover {
+		background-color: $grey-5;
+	}
+}
