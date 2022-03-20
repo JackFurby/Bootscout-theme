@@ -10,3 +10,12 @@
 .is-style-outline:hover > :where(.wp-block-button__link), :where(.wp-block-button__link).is-style-outline:hover {
 	background-color: currentColor;
 }
+
+.wp-block-button:not(.is-style-outline) {
+	.wp-block-button__link:hover {
+		filter: brightness(85%);
+	}
+}
+.has-inline-color:hover, .wp-block-post-navigation-link:hover, .wp-block-search__button:hover {
+	filter: brightness(85%);
+}
