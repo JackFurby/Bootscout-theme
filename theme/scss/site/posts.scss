@@ -23,30 +23,8 @@ main.site-main .entry-content {
 		@extend .rounded-pill;
 		@extend .bg-secondary;
 	}
-
-	.wp-block-columns {
-		margin-bottom: 0;
-		@extend .d-flex;
-		gap: 0px;
-
-		.wp-block-column:first-child {
-			@extend .flex-shrink-1;
-			background-color: $grey-5;
-		}
-		.wp-block-column:last-child {
-			width: 100%;
-		}
-	}
-
-	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
-		flex-basis: unset;
-		flex-grow: unset;
-	}
-
-	.wp-block-column {
-		flex-grow: unset;
-	}
 }
+
 
 .sticky {
 	@extend .border-dark;
