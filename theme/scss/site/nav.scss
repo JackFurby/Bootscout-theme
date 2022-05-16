@@ -7,3 +7,8 @@
 		background-color: $grey-5;
 	}
 }
+
+.wp-block-navigation__container .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container{
+	left: 100% !important;
+	right: auto !important;
+}
