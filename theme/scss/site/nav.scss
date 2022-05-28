@@ -12,3 +12,10 @@
 	left: 100% !important;
 	right: auto !important;
 }
+
+@media screen and (min-width: 782px) {
+	.wp-block-columns:not(.is-not-stacked-on-mobile) > .site-title-column {
+		flex: initial !important;
+		width: initial !important;
+	}
+}

@@ -25,6 +25,7 @@
 		"hosted-git-info": ">=2.8.9",
 		"is-svg": ">=4.2.2",
 		"lodash": "^4.17.21",
+		"nanoid": ">=3.1.31",
 		"nth-check": ">=2.0.1",
 		"postcss": ">=8.2.10",
 		"sass": "^1.37.5",
@@ -32,8 +33,7 @@
 		"tar": ">=6.1.9",
 		"trim-newlines": ">=3.0.1",
 		"y18n": ">=3.2.2",
-		"yargs-parser": ">=5.0.1",
-		"nanoid": ">=3.1.31"
+		"yargs-parser": ">=5.0.1"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
