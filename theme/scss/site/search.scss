@@ -11,7 +11,7 @@
 }
 .wp-block-search__button {
 	@extend .wp-block-button__link;
-	@extend .has-scout-teal-background-color;
+	@extend .has-secondary-background-color;
 	color: white;
 	border: 0px solid transparent;
 }

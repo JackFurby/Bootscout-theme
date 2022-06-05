@@ -57,3 +57,10 @@
 .bg-black, .has-black-background-color, .bg-scout-black {
 	background-color: $black !important;
 }
+
+.has-primary-background-color {
+	background-color: var(--wp--preset--color--primary);
+}
+.has-secondary-background-color {
+	background-color: var(--wp--preset--color--secondary);
+}
