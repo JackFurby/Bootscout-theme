@@ -31,3 +31,9 @@
 	  border-top-right-radius: .25rem !important;
 	}
 }
+
+.wp-block-search__button-outside {
+	.wp-block-search__button {
+		margin-left: .625em;
+	}
+}
