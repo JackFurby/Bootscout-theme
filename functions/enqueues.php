@@ -20,4 +20,10 @@ function bootscout_theme_scripts() {
 	wp_enqueue_script('theme-script', get_template_directory_uri() . '/theme/js/site.js', false, null, true);
 }
 
+function bootscout_theme_editor_scripts() {
+	// Styles
+	wp_enqueue_script('theme-editor-script', get_template_directory_uri() . '/theme/js/site-editor.js', false, null, true);
+}
+
 add_action( 'enqueue_block_assets', 'bootscout_theme_scripts' );
+add_action( 'enqueue_block_editor_assets', 'bootscout_theme_editor_scripts' );
