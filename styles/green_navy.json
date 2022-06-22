@@ -1,0 +1,100 @@
+{
+	"version": 2,
+	"title": "Green and navy",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#23a950",
+					"name": "Primary colour"
+				},
+				{
+					"slug": "secondary",
+					"color": "#003982",
+					"name": "Secondary colour"
+				},
+				{
+					"slug": "scout-purple",
+					"color": "#7413dc",
+					"name": "Scout purple"
+				},
+				{
+					"slug": "scout-teal",
+					"color": "#00a794",
+					"name": "Scout teal"
+				},
+				{
+					"slug": "scout-red",
+					"color": "#e22e12",
+					"name": "Scout red"
+				},
+				{
+					"slug": "scout-pink",
+					"color": "#ffb4e5",
+					"name": "Scout pink"
+				},
+				{
+					"slug": "scout-green",
+					"color": "#23a950",
+					"name": "Scout green"
+				},
+				{
+					"slug": "scout-section-green",
+					"color": "#004851",
+					"name": "Scout section green"
+				},
+				{
+					"slug": "scout-navy",
+					"color": "#003982",
+					"name": "Scout navy"
+				},
+				{
+					"slug": "scout-blue",
+					"color": "#006ddf",
+					"name": "Scout blue"
+				},
+				{
+					"slug": "scout-yellow",
+					"color": "#ffe627",
+					"name": "Scout yellow"
+				},
+				{
+					"slug": "white",
+					"color": "#ffffff",
+					"name": "White"
+				},
+				{
+					"slug": "grey-5",
+					"color": "#F2F2F2",
+					"name": "Grey 5%"
+				},
+				{
+					"slug": "grey-20",
+					"color": "#CCCCCC",
+					"name": "Grey 20%"
+				},
+				{
+					"slug": "grey-40",
+					"color": "#999999",
+					"name": "Grey 40%"
+				},
+				{
+					"slug": "grey-60",
+					"color": "#666666",
+					"name": "Grey 60%"
+				},
+				{
+					"slug": "grey-80",
+					"color": "#333333",
+					"name": "Grey 80%"
+				},
+				{
+					"slug": "black",
+					"color": "#000000",
+					"name": "Black"
+				}
+			]
+		}
+	}
+}
