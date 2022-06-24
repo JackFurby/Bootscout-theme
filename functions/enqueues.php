@@ -9,8 +9,6 @@ function bootscout_theme_scripts() {
 	wp_enqueue_style('BootstrapIcons');
 	wp_register_style('theme', get_template_directory_uri() . '/theme/css/site.css', false, null);
 	wp_enqueue_style('theme');
-	wp_register_style('theme', get_template_directory_uri() . '/theme/css/site.css', false, null);
-	wp_enqueue_style('theme');
 	wp_enqueue_script("jquery");  // use WordPress built in jQuery
 
 	// Scripts
