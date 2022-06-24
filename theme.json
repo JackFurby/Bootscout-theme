@@ -240,7 +240,13 @@
 			}
 		},
 		"typography": {},
-		"elements": {},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--scout-purple)"
+				}
+			}
+		},
 		"blocks": {}
 	},
 	"customTemplates": [

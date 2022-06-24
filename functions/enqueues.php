@@ -10,6 +10,8 @@ function bootscout_theme_scripts() {
 	wp_enqueue_style('gutenberg-blocks', get_template_directory_uri() . '/theme/css/blocks.css');
 	wp_register_style('theme', get_template_directory_uri() . '/theme/css/site.css', false, null);
 	wp_enqueue_style('theme');
+	wp_register_style('theme', get_template_directory_uri() . '/theme/css/site.css', false, null);
+	wp_enqueue_style('theme');
 	wp_enqueue_script("jquery");  // use WordPress built in jQuery
 
 	// Scripts
@@ -17,12 +19,12 @@ function bootscout_theme_scripts() {
 	wp_register_script('bootstrap5', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', false, '5.1.3', true);
 	wp_enqueue_script('bootstrap5');
 	// (The Bootstrap JS bundle contains Popper JS.)
-	wp_enqueue_script('theme-script', get_template_directory_uri() . '/theme/js/site.js', false, null, true);
+	wp_enqueue_script('theme-script', get_template_directory_uri() . '/theme/js/site.js');
 }
 
 function bootscout_theme_editor_scripts() {
 	// Styles
-	wp_enqueue_script('theme-editor-script', get_template_directory_uri() . '/theme/js/site-editor.js', false, null, true);
+	wp_enqueue_script('theme-editor-script', get_template_directory_uri() . '/theme/js/site-editor.js');
 }
 
 add_action( 'enqueue_block_assets', 'bootscout_theme_scripts' );
