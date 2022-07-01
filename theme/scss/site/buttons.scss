@@ -3,6 +3,7 @@
 .wp-block-button__link {
 	padding: .375rem .75rem;
 	border-radius: .25rem;
+	color: initial;
 }
 .is-style-outline > :where(.wp-block-button__link), :where(.wp-block-button__link).is-style-outline {
 	border: 1px solid;
