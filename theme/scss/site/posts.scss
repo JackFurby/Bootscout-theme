@@ -41,15 +41,10 @@ main.site-main .entry-content {
 
 /* Post featured image in index.html*/
 
-.wp-block-post-featured-image img {
-	height:100%;
-}
-
 .wp-block-post-featured-image{
 	position: relative;
 	margin: auto;
 	max-width: 100%;
-	width: 500px;
 }
 
 .wp-block-post-featured-image, .wp-block-post-featured-image img {
