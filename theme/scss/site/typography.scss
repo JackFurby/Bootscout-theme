@@ -1,0 +1,63 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+* {
+	font-family: "Nunito Sans", sans-serif;
+}
+h1, .h1, .has-x-large-font-size {
+	font-weight: 900;
+	font-size: var(--wp--preset--font-size--x-large);
+	color: #333333;
+}
+h2, .h2, .has-large-font-size {
+	font-weight: bolder;
+	font-size: var(--wp--preset--font-size--large);
+	color: #333333;
+}
+h3, .h3, .has-medium-font-size {
+	font-weight: bold;
+	font-size: var(--wp--preset--font-size--medium);
+	color: #333333;
+}
+h4, .h4, .has-small-font-size {
+	font-weight: bold;
+	font-size: var(--wp--preset--font-size--small);
+	color: #333333;
+}
+h5, .h5, .has-x-small-font-size {
+	font-size: var(--wp--preset--font-size--x-small);
+	color: #333333;
+}
+h6, .h6, .has-smallest-font-size {
+	font-size: var(--wp--preset--font-size--smallest);
+	color: #333333;
+}
+p, .p, .has-text-font-size {
+	font-weight: normal;
+	font-size: var(--wp--preset--font-size--text);
+}
+
+strong, .strong {
+	font-weight: 900;
+}
+
+// CSS lock -- see https://fvsch.com/css-locks/
+
+// More link
+
+.more-link {
+	display: block;
+}
+
+.a, a {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	&.alignwide, &.alignfull {
+		margin-top: 0 !important;
+		margin-bottom: 0.5rem !important;
+	}
+}

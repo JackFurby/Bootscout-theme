@@ -1,6 +1,6 @@
 # Bootscout – WordPress theme for UK scout websites
 
-*Version 1.6.4*
+*Version 2.0*
 
 ------------------
 

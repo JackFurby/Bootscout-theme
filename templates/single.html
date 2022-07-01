@@ -1,0 +1,47 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","align":"full"} /-->
+<!-- wp:group {"className":"post-meta", "backgroundColor":"grey-5"} -->
+<div class="wp-block-group post-meta has-grey-5-background-color has-background">
+	<!-- wp:group {"tagName":"main","className":"site-main","align":"full","layout":{"inherit":true}} -->
+	<main class="wp-block-group site-main alignfull">
+		<!-- wp:post-title /-->
+		<!-- wp:post-date /-->
+		<!-- wp:spacer {"height":20} -->
+		<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+		<!-- wp:post-author /-->
+		<!-- wp:spacer {"height":20} -->
+		<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+		<!-- wp:post-terms {"term":"category","prefix":"Categories: "} /-->
+		<!-- wp:post-terms {"term":"post_tag","prefix":"Tags: "} /-->
+	</main>
+	<!-- /wp:group -->
+</div><!-- /wp:group -->
+<!-- wp:group {"tagName":"main","className":"site-main","align":"full","layout":{"inherit":true}} -->
+<!-- wp:post-featured-image /-->
+<main class="wp-block-group site-main alignfull">
+	<!-- wp:spacer {"height":50} -->
+	<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+	<!-- wp:post-content {"align":"full","layout":{"inherit":true}} /-->
+
+	<!-- wp:separator {"align":"full","className":"is-style-wide"} -->
+	<hr class="wp-block-separator alignfull is-style-wide"/>
+	<!-- /wp:separator -->
+
+	<!-- wp:group {"layout":{"type":"flex","allowOrientation":false,"justifyContent":"space-between"}, "className":"post-nav","style":{"spacing":{"margin":{"top":"2.375em"}}}} -->
+	<div class="wp-block-group post-nav" style="margin-top:2.375em">
+
+		<!-- wp:post-navigation-link {"type":"previous","showTitle":true, "linkLabel":true} /-->
+
+		<!-- wp:post-navigation-link {"showTitle":true, "linkLabel":true} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:spacer {"height":70} -->
+	<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+	<!-- wp:template-part {"slug":"comments"} /-->
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","align":"full"} /-->

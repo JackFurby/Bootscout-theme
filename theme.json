@@ -1,5 +1,5 @@
 {
-	"version": 1,
+	"version": 2,
 	"settings": {
 		"color": {
 			"custom": true,
@@ -61,6 +61,16 @@
 			],
 			"link": false,
 			"palette": [
+				{
+					"slug": "primary",
+					"color": "#7413dc",
+					"name": "Primary colour"
+				},
+				{
+					"slug": "secondary",
+					"color": "#00a794",
+					"name": "Secondary colour"
+				},
 				{
 					"slug": "scout-purple",
 					"color": "#7413dc",
@@ -179,38 +189,38 @@
 			"fontSizes": [
 				{
 					"slug": "text",
-					"size": 16,
-					"name": "text"
+					"size": "1rem",
+					"name": "Text"
 				},
 				{
-					"slug": "h6",
-					"size": 16,
+					"slug": "Smallest",
+					"size": "1rem",
 					"name": "smallest"
 				},
 				{
-					"slug": "h5",
-					"size": 20,
-					"name": "small"
+					"slug": "x-small",
+					"size": "1.25rem",
+					"name": "Extra small"
 				},
 				{
-					"slug": "h4",
-					"size": 24,
+					"slug": "small",
+					"size": "1.5rem",
+					"name": "Small"
+				},
+				{
+					"slug": "Medium",
+					"size": "1.75rem",
 					"name": "medium"
 				},
 				{
-					"slug": "h3",
-					"size": 28,
-					"name": "large"
+					"slug": "large",
+					"size": "2rem",
+					"name": "Large"
 				},
 				{
-					"slug": "h2",
-					"size": 32,
-					"name": "larger"
-				},
-				{
-					"slug": "h1",
-					"size": 40,
-					"name": "largest"
+					"slug": "x-large",
+					"size": "2.5rem",
+					"name": "Extra-large"
 				}
 			]
 		},
@@ -218,7 +228,7 @@
 	},
 	"styles": {
 		"color": {
-			"background": "#F5F5F5",
+			"background": "var(--wp--preset--color--white)",
 			"text": "var(--wp--preset--color--grey-80)"
 		},
 		"spacing": {
@@ -230,24 +240,28 @@
 			}
 		},
 		"typography": {},
-		"elements": {},
-		"blocks": {}
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--scout-purple)"
+				}
+			}
+		},
+		"blocks": {
+			"core/button": {
+				"color": {
+					"background": "var(--wp--preset--color--black)",
+					"text": "var(--wp--preset--color--white)"
+				}
+			}
+		}
 	},
 	"customTemplates": [
 		{
-			"name": "contact-page-template",
-			"title": "Contact template",
-			"postTypes": [
-				"page"
-			]
-		},
-		{
-			"name": "no-title-page-template",
-			"title": "No title template",
-			"postTypes": [
-				"page"
-			]
-		}
+			"name": "index",
+			"title": "Post page",
+			"postTypes": [ "post" ]
+	}
 	],
 	"templateParts": [
 		{

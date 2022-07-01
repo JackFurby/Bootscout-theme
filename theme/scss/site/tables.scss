@@ -1,0 +1,13 @@
+.wp-block-table td, .wp-block-table th {
+	border: unset;
+	border-color: inherit;
+	border-style: solid;
+	border-width: 0;
+}
+.wp-block-table thead {
+	border: unset;
+	border-width: 0;
+}
+.table, .wp-block-table table {
+	@extend .table;
+}

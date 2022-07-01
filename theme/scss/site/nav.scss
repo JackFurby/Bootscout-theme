@@ -1,0 +1,21 @@
+.wp-block-navigation__submenu-container {
+	@extend .rounded;
+	.wp-block-navigation-item {
+		color: black !important;
+	}
+	.wp-block-navigation-item:hover {
+		background-color: $grey-5;
+	}
+}
+
+.wp-block-navigation__container .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container{
+	left: 100% !important;
+	right: auto !important;
+}
+
+@media screen and (min-width: 782px) {
+	.wp-block-columns:not(.is-not-stacked-on-mobile) > .site-title-column {
+		flex: initial !important;
+		width: initial !important;
+	}
+}

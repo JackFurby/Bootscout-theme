@@ -1,65 +1,45 @@
 /*
- * b4st Editor Styles (Gutenberg Ready)
+ * site Editor Styles
  * ====================================
- * (1.) Bootstrap’s Reboot: `reboot.min.css`
- * (2.) Title: `.editor-post-title__block .editor-post-title__input`
- *      — copied from base font-family and Bootstrap h1
  */
 
-@import "b4st/variables";
-@import "../../bootstrap/scss/bootstrap-reboot";
+ @import "site/variables";
+ @import "../../bootstrap/scss/bootstrap";
+ @import "site/icons";
+ @import "site/bootstrap-override";
+ @import "site/search";
+ @import "site/buttons";
+ @import "site/backgrounds";
+ @import "site/base";
+ @import "site/layout";
+ @import "site/typography";
+ @import "site/groups";
+ @import "site/footer";
+ @import "site/posts";
+ @import "site/tables";
+ @import "site/comments";
+ @import "site/quotes";
+ @import "site/nav";
 
-.components-circular-option-picker__option {
-	border-radius: 50%;
-}
+/* header search */
+.wp-block-search__inside-wrapper {
+	flex-wrap: nowrap;
+	border-radius: .25rem;
 
-.editor-post-title__block .editor-post-title__input {
-	margin-bottom: .5rem;
-	font-weight: 900;
-	font-size: 2.5rem;
-	font-family: "Nunito Sans", sans-serif;
-	line-height: 1.2;
-}
-
-.wp-block {
-	max-width: 1110px;
-}
-.wp-block[data-align="wide"] {
-	max-width: 1440px;
-}
-.wp-block[data-align="full"] {
-	max-width: none;
-}
-
-a:hover {
-	color: inherit !important;
-}
-
-// Widget blocks
-
-body.wp-block-widget-area__inner-blocks {  // widget block editor section
-	>div[class^="block-editor-block"], >div[class*=" block-editor-block"] {  // block editor container
-		>[class^="block-editor-block"], >[class*=" block-editor-block"] {  // widget container
-			background: #fff;
-			padding: 1rem;
-			border-radius: .25rem !important;
-			box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
-		}
+	.wp-block-search__button {
+		border-bottom-right-radius: .25rem !important;
+	  border-top-right-radius: .25rem !important;
 	}
 }
 
+.wp-block-search__button-outside {
+	.wp-block-search__button {
+		margin-left: .625em;
+	}
+}
 
+/* search */
 
-
-@import "b4st/typography";
-@import "b4st/code";
-@import "b4st/lists";
-@import "b4st/quotes";
-@import "b4st/layout_editor";
-@import "b4st/groups";
-@import "b4st/images-and-galleries";
-@import "b4st/embeds";
-@import "b4st/tables";
-@import "b4st/comments";
-@import "b4st/shadows";
-@import "b4st/buttons";
+.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+	flex-wrap: nowrap;
+}

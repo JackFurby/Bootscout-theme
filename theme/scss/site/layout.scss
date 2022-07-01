@@ -1,0 +1,64 @@
+// General structure
+
+body {
+	overflow-x: hidden;  // stop full width elements overflowing
+}
+
+.col-lg-12 :not(article) {
+	.alignfull {
+		position: relative;
+		right: 0px; // Fallback
+		right: calc((100vw - 100%)/2);
+		width: 100vw;
+		max-width: 100vw;
+		clear: both;
+	}
+
+	.alignwide {
+		position: relative;
+		right: 0px; // Fallback
+		right: calc((100vw - 100%)/2);
+		width: 100vw;
+		max-width: 100vw;
+		clear: both;
+	}
+
+	@include media-breakpoint-up(md) {
+		.alignwide {
+			right: 0px;
+			width: calc( 100% );
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+		.alignwide {
+			right: 2rem;
+			width: calc( 100% + (2 * 2rem));
+		}
+	}
+
+	@include media-breakpoint-up(xxl) {
+		.alignwide {
+			right: 3rem;
+			width: calc( 100% + (2 * 3rem));
+		}
+	}
+}
+
+// if has sidebar then ignore alignfull and alignwide
+.col-lg-8, .card {
+	.alignfull,
+	.alignwide {
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+		right: 0 !important;
+	}
+}
+
+@media screen and (min-width: 768px) {
+  .entry-content > * {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

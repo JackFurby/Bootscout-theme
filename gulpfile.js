@@ -6,7 +6,7 @@ const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 
 task('css', function() {
-  return src('./theme/scss/b4st.scss')
+  return src('./theme/scss/site.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'expanded' })).on('error', sass.logError)
     .pipe(postcss([autoprefixer(), cssnano()]))
