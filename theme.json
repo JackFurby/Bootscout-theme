@@ -247,7 +247,14 @@
 				}
 			}
 		},
-		"blocks": {}
+		"blocks": {
+			"core/button": {
+				"color": {
+					"background": "var(--wp--preset--color--black)",
+					"text": "var(--wp--preset--color--white)"
+				}
+			}
+		}
 	},
 	"customTemplates": [
 		{
