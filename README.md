@@ -13,10 +13,6 @@
 * Colour selection for theme
 * Full site editing support (Wordpress 5.9 or higher required)
 
-
-## Base theme
-The base theme can be found here: https://github.com/SimonPadbury/b4st. I used this as a starting point and build it up to the current state of the project.
-
 ## More
 
 You can view the theme in action at [bootscout.org.uk](http://www.bootscout.org.uk).
