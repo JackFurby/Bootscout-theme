@@ -4,48 +4,53 @@ body {
 	overflow-x: hidden;  // stop full width elements overflowing
 }
 
-.col-lg-12 :not(article) {
-	.alignfull {
-		position: relative;
-		right: 0px; // Fallback
-		right: calc((100vw - 100%)/2);
-		width: 100vw;
-		max-width: 100vw;
-		clear: both;
-	}
+.alignfull {
+	position: relative;
+	right: 0px; // Fallback
+	right: calc((100vw - 100%)/2);
+	width: 100vw;
+	max-width: 100vw;
+	clear: both;
+}
 
+.alignwide {
+	position: relative;
+	right: 0px; // Fallback
+	right: calc((100vw - 100%)/2);
+	width: 100vw;
+	max-width: 100vw;
+	clear: both;
+}
+
+@include media-breakpoint-up(md) {
 	.alignwide {
-		position: relative;
-		right: 0px; // Fallback
-		right: calc((100vw - 100%)/2);
-		width: 100vw;
-		max-width: 100vw;
-		clear: both;
+		width: calc( 100% );
 	}
-
-	@include media-breakpoint-up(md) {
-		.alignwide {
-			right: 0px;
-			width: calc( 100% );
-		}
-	}
-
-	@include media-breakpoint-up(xl) {
-		.alignwide {
-			right: 2rem;
-			width: calc( 100% + (2 * 2rem));
-		}
-	}
-
-	@include media-breakpoint-up(xxl) {
-		.alignwide {
-			right: 3rem;
-			width: calc( 100% + (2 * 3rem));
-		}
+	.post-content-main .alignwide {
+		right: 0px;
 	}
 }
 
-// if has sidebar then ignore alignfull and alignwide
+@include media-breakpoint-up(xl) {
+	.alignwide {
+		width: calc( 100% + (2 * 2rem));
+	}
+	.post-content-main .alignwide {
+		right: 2rem;
+	}
+}
+
+@include media-breakpoint-up(xxl) {
+	.alignwide {
+		width: calc( 100% + (2 * 3rem));
+	}
+	.post-content-main .alignwide {
+		right: 3rem;
+	}
+}
+
+
+// blog post page cards has differnt settings for align wide and full
 .col-lg-8, .card {
 	.alignfull,
 	.alignwide {
