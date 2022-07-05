@@ -258,6 +258,11 @@
 	},
 	"customTemplates": [
 		{
+			"name": "no-title-template",
+			"title": "No title",
+			"postTypes": [ "post","page" ]
+		},
+		{
 			"name": "index",
 			"title": "Post page",
 			"postTypes": [ "post" ]
