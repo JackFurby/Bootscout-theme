@@ -1,0 +1,35 @@
+form {
+	input {
+		@extend .form-control;
+	}
+
+	label {
+		@extend .form-label;
+	}
+
+	button {
+		@extend .btn;
+	}
+}
+
+input[type=submit] {
+	display: initial;
+	width: initial;
+}
+
+.post-password-form {
+	input[type=submit] {
+		@extend .has-secondary-background-color;
+		color: white;
+		border: 0px solid transparent;
+	}
+}
+
+.post-password-form input[type=submit]:hover{
+	filter: brightness(85%);
+}
+
+select {
+	@extend .form-select;
+	width: initial;
+}
