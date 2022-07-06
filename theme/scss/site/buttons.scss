@@ -16,6 +16,10 @@
 		filter: brightness(85%);
 	}
 }
-.has-inline-color:hover, .wp-block-post-navigation-link:hover, .wp-block-search__button:hover {
+.has-inline-color:hover, .wp-block-post-navigation-link:hover, .wp-block-search__button:hover, .wp-block-navigation-item__content:hover {
 	filter: brightness(85%);
+}
+
+.wp-block-navigation-item__content:hover {
+	color: currentColor;
 }
