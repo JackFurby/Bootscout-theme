@@ -15,8 +15,7 @@ body {
 
 .alignwide {
 	position: relative;
-	right: 0px; // Fallback
-	right: calc((100vw - 100%)/2);
+	right: 0px;
 	width: 100vw;
 	max-width: 100vw;
 	clear: both;
