@@ -25,6 +25,16 @@ main.site-main .entry-content {
 	}
 }
 
+.post-card {
+	@extend .w-100;
+	gap: 0 !important;
+	padding: 0;
+
+	.wp-block-column .wp-block-group {
+		height: 100%;
+	}
+}
+
 
 .sticky {
 	@extend .border-dark;
@@ -41,12 +51,14 @@ main.site-main .entry-content {
 
 /* Post featured image in index.html*/
 
-.wp-block-post-featured-image{
+.wp-block-post-featured-image {
 	position: relative;
 	margin: auto;
 	max-width: 100%;
+	text-align: center;
 }
 
 .wp-block-post-featured-image, .wp-block-post-featured-image img {
 	max-height: 500px;
+	width: auto;
 }

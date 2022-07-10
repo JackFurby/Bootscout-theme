@@ -6,25 +6,32 @@
 
 	<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
 	<div class="wp-block-group">
-		<!-- wp:media-text {"mediaType":"image", "mediaPosition":"right","mediaWidth":30,"imageFill":false,"backgroundColor":"grey-5"} -->
-		<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile has-grey-5-background-color has-background" style="grid-template-columns:auto 30%">
-			<figure class="wp-block-media-text__media">
-				<!-- wp:post-featured-image /-->
-			</figure>
-			<div class="wp-block-media-text__content">
 
-				<!-- wp:group {"className":"post-meta", "backgroundColor":"grey-5"} -->
-				<div class="wp-block-group post-meta has-grey-5-background-color has-background">
-					<!-- wp:post-title {"isLink":true, "backgroundColor":"grey-5"} /-->
-					<!-- wp:post-date /-->
-					<!-- wp:spacer {"height":10} -->
-					<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
-					<!-- /wp:spacer -->
-					<!-- wp:post-author /-->
-				</div><!-- /wp:group -->
+			<!-- wp:columns {"className":"post-card", "backgroundColor":"grey-5"} -->
+			<div class="wp-block-columns post-card has-grey-5-background-color has-background">
+				<!-- wp:column {"width":"66.66%"} -->
+				<div class="wp-block-column" style="flex-basis:66.66%">
+					<!-- wp:group {"className":"post-meta"} -->
+					<div class="wp-block-group post-meta">
+						<!-- wp:post-title {"isLink":true} /-->
+						<!-- wp:post-date /-->
+						<!-- wp:spacer {"height":10} -->
+						<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+						<!-- /wp:spacer -->
+						<!-- wp:post-author /-->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:column -->
+
+				<!-- wp:column {"width":"33.33%"} -->
+				<div class="wp-block-column" style="flex-basis:33.33%">
+					<!-- wp:post-featured-image /-->
+				</div>
+				<!-- /wp:column -->
 			</div>
-		</div>
-		<!-- /wp:media-text -->
+			<!-- /wp:columns -->
+
 		<!-- wp:post-excerpt {"moreText":"Continue reading"} /-->
 	</div>
 	<!-- /wp:group -->
