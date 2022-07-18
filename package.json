@@ -7,10 +7,10 @@
 	},
 	"main": "gulpfile.js",
 	"dependencies": {
-		"@wordpress/block-editor": "^9.4.0",
-		"@wordpress/blocks": "^11.11.0",
-		"@wordpress/i18n": "^4.12.0",
-		"@wordpress/scripts": "^23.4.0"
+		"@wordpress/block-editor": "^9.5.0",
+		"@wordpress/blocks": "^11.12.0",
+		"@wordpress/i18n": "^4.13.0",
+		"@wordpress/scripts": "^23.5.0"
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.4.7",
