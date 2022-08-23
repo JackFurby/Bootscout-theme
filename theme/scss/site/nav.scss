@@ -13,6 +13,10 @@
 	right: auto !important;
 }
 
+.wp-block-navigation__container > li {
+	margin-right: 10px;
+}
+
 @media screen and (min-width: 782px) {
 	.wp-block-columns:not(.is-not-stacked-on-mobile) > .site-title-column {
 		flex: initial !important;
