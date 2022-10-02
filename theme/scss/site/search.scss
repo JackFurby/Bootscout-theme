@@ -10,10 +10,12 @@
 	@extend .form-control;
 }
 .wp-block-search__button {
-	@extend .wp-block-button__link;
 	@extend .has-secondary-background-color;
+	@extend .wp-block-button__link;
 	color: white;
 	border: 0px solid transparent;
+	background-color: var(--wp--preset--color--secondary) !important;
+	padding: .375rem .75rem !important;
 }
 .wp-block-search__button:hover {
 	color: white;

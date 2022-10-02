@@ -252,6 +252,14 @@
 				"color": {
 					"background": "var(--wp--preset--color--black)",
 					"text": "var(--wp--preset--color--white)"
+				},
+				"spacing": {
+					"padding": {
+						"top": ".375rem",
+						"right": ".75rem",
+						"bottom": ".375rem",
+						"left": ".75rem"
+					}
 				}
 			}
 		}

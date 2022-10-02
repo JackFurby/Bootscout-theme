@@ -1,7 +1,6 @@
 // Buttons
 
 .wp-block-button__link {
-	padding: .375rem .75rem;
 	border-radius: .25rem;
 }
 .is-style-outline > :where(.wp-block-button__link), :where(.wp-block-button__link).is-style-outline {
@@ -22,4 +21,12 @@
 
 .wp-block-navigation-item__content:hover {
 	color: currentColor;
+}
+
+a:where(:not(.wp-element-button)) {
+	text-decoration: none !important;
+}
+
+.wp-block-button.is-style-outline > .wp-block-button__link {
+	padding: .375rem .75rem !important;
 }
