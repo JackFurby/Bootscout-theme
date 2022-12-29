@@ -1,0 +1,15 @@
+.wp-block-file__button:hover {
+	color: $white;
+}
+
+.wp-block-file__button {
+	color: $white;
+	padding: 0.5em 1em !important;
+	@extend .btn;
+}
+
+.wp-block-file  {
+	a {
+		@extend .p;
+	}
+}
