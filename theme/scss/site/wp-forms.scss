@@ -1,0 +1,29 @@
+.wpforms-form  {
+
+	.wpforms-field.wpforms-field-number-slider {
+		input {
+			@extend .form-range;
+			border: 0px;
+		}
+	}
+
+	.wpforms-field-checkbox, .wpforms-field-radio {
+		@extend .form-check;
+		input {
+			@extend .form-check-input;
+		}
+
+		input[type="checkbox"], input[type="radio"] {
+			padding: .5rem;
+		}
+	}
+
+	ul {
+		padding-left: 0px;
+	}
+
+	.wpforms-submit {
+		@extend .btn;
+		@extend .btn-primary;
+	}
+}
