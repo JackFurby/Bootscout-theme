@@ -20,6 +20,9 @@ if ( ! function_exists( 'bootscout_theme_support' ) ) :
 
 		// Add support for custom units.
 		add_theme_support( 'custom-units' );
+
+		// plugins
+		add_filter( 'woocommerce_enqueue_styles', '__return_false' );  // remove woocommerce default styles
 	}
 	add_action( 'after_setup_theme', 'bootscout_theme_support' );
 endif;
