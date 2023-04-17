@@ -103,6 +103,22 @@
 	}
 }
 
+/* cart page */
+
+.woocommerce {
+	@extend .row;
+	@extend .g-2;
+
+	.woocommerce-cart-form, .cart-collaterals {
+		@extend .col-12;
+		@extend .col-md-6;
+	}
+}
+
+.cart-collaterals .shop_table {
+	margin-bottom: 24px;
+}
+
 .woocommerce-tabs.wc-tabs-wrapper {
 	.tabs.wc-tabs {
 		@extend .nav;
@@ -114,6 +130,15 @@
 			padding-right: 10px;
 		}
 	}
+}
+
+table.cart .product-thumbnail>a>img {
+	width:100px;
+	height:auto;
+}
+
+#coupon_code {
+	margin-bottom: 5px;
 }
 
 /* forms */
