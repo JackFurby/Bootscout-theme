@@ -22,9 +22,24 @@ if ( ! function_exists( 'bootscout_theme_support' ) ) :
 		add_theme_support( 'custom-units' );
 
 		// plugins
-		add_filter( 'woocommerce_enqueue_styles', '__return_false' );  // remove woocommerce default styles
+		//add_filter( 'woocommerce_enqueue_styles', '__return_false' );  // remove woocommerce default styles
+		remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+		remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+		add_action('woocommerce_before_main_content', 'bootscout_woocommerce_output_content_wrapper', 10);
+		add_action('woocommerce_after_main_content', 'bootscout_woocommerce_output_content_wrapper_end', 10);
+
 	}
 	add_action( 'after_setup_theme', 'bootscout_theme_support' );
 endif;
 
 add_action('init', 'bootscout_theme_support');
+
+
+function bootscout_woocommerce_output_content_wrapper() {
+	echo '<main id="wp-block-group site-main is-layout-constrained" class="wc-main">';
+}
+
+function bootscout_woocommerce_output_content_wrapper_end() {
+	echo '</main>';
+}

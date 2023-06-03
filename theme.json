@@ -1,4 +1,5 @@
 {
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
 	"settings": {
 		"color": {
@@ -173,6 +174,7 @@
 		"typography": {
 			"customFontSize": true,
 			"customLineHeight": false,
+			"fluid": true,
 			"dropCap": true,
 			"fontFamilies": [
 				{
@@ -188,39 +190,49 @@
 			],
 			"fontSizes": [
 				{
-					"slug": "text",
+					"fluid": {
+						"min": "0.875rem",
+						"max": "1rem"
+					},
 					"size": "1rem",
-					"name": "Text"
+					"slug": "text"
 				},
 				{
-					"slug": "Smallest",
+					"fluid": {
+						"min": "0.875rem",
+						"max": "1rem"
+					},
 					"size": "1rem",
-					"name": "smallest"
+					"slug": "small"
 				},
 				{
-					"slug": "x-small",
-					"size": "1.25rem",
-					"name": "Extra small"
+					"fluid": {
+						"min": "1rem",
+						"max": "1.125rem"
+					},
+					"size": "1.125rem",
+					"slug": "medium"
 				},
 				{
-					"slug": "small",
-					"size": "1.5rem",
-					"name": "Small"
+					"fluid": {
+						"min": "1.75rem",
+						"max": "1.875rem"
+					},
+					"size": "1.75rem",
+					"slug": "large"
 				},
 				{
-					"slug": "Medium",
-					"size": "2rem",
-					"name": "medium"
+					"fluid": false,
+					"size": "2.25rem",
+					"slug": "x-large"
 				},
 				{
-					"slug": "large",
-					"size": "2.5rem",
-					"name": "Large"
-				},
-				{
-					"slug": "x-large",
-					"size": "3rem",
-					"name": "Extra-large"
+					"fluid": {
+						"min": "4rem",
+						"max": "10rem"
+					},
+					"size": "10rem",
+					"slug": "xx-large"
 				}
 			]
 		},
@@ -248,6 +260,33 @@
 			}
 		},
 		"blocks": {
+			"core/navigation": {
+				"elements": {
+					"link": {
+						":hover": {
+							"typography": {
+								"textDecoration": "none"
+							}
+						},
+						":focus": {
+							"typography": {
+								"textDecoration": "none"
+							}
+						},
+						":active": {
+							"typography": {
+								"textDecoration": "none"
+							}
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)"
+				}
+			},
 			"core/button": {
 				"color": {
 					"background": "var(--wp--preset--color--black)",

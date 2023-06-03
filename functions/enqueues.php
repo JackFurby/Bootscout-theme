@@ -24,5 +24,5 @@ function bootscout_theme_editor_scripts() {
 	wp_enqueue_script('theme-editor-script', get_template_directory_uri() . '/theme/js/site-editor.js', false, null, true);
 }
 
-add_action( 'enqueue_block_assets', 'bootscout_theme_scripts' );
-add_action( 'enqueue_block_editor_assets', 'bootscout_theme_editor_scripts' );
+add_action( 'enqueue_block_assets', 'bootscout_theme_scripts', 20 );
+add_action( 'enqueue_block_editor_assets', 'bootscout_theme_editor_scripts', );
