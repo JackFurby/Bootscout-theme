@@ -12,7 +12,7 @@ main.wc-main.alignwide {
 
 /* products page */
 
-.woocommerce div.product .woocommerce-tabs .panel, .woocommerce div.product div.summary, .woocommerce .woocommerce-breadcrumb, .woocommerce div.product .related.products {
+.woocommerce div.product .woocommerce-tabs .panel, .woocommerce div.product div.summary, .woocommerce .woocommerce-breadcrumb, .woocommerce div.product .related.products, main.wc-main.alignwide > * {
 	padding-inline: 10px;
 }
 .wc-block-grid__products .wc-block-grid__product, .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
@@ -20,6 +20,16 @@ main.wc-main.alignwide {
 	margin-left: 5px;
 	margin-right: 5px;
 	margin-bottom: 5px;
+	overflow: hidden;
+}
+
+.woocommerce-page ul.products li.product > a:first-child {
+	@extend .card-body;
+	padding: 0;
+}
+
+.woocommerce ul.products {
+	@extend .card-group;
 }
 
 .theme-twentytwenty .wc-block-grid.has-3-columns .wc-block-grid__product, .wc-block-grid.has-3-columns .wc-block-grid__product {
@@ -78,6 +88,32 @@ main.wc-main.alignwide {
 	}
 }
 
+/* categories */
+
+.woocommerce ul.products li.product .onsale {
+	left: auto;
+	margin: 0;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+
+	background: #fff;
+	border: 1px solid #43454b;
+	border-radius: 3px;
+	color: #43454b;
+	font-size: .875em;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: normal;
+	min-height: auto;
+}
+
+/* reviews */
+
+.woocommerce .star-rating span, .wc-block-components-product-rating__stars span{
+	font-family:star;
+}
+
 /* product page */
 .woocommerce div.product form.cart .variations {
 	width: auto;
@@ -96,6 +132,11 @@ main.wc-main.alignwide {
 	@extend .btn;
 }
 
+.woocommerce-info .button {
+	background-color: #32373c;
+	color: white;
+}
+
 .woocommerce table.variations tr td select {
 	height: auto;
 	@extend .form-select;
@@ -111,4 +152,24 @@ main.wc-main.alignwide {
 	filter: brightness(85%);
 	color: #fff;
 	background-color: #32373c;
+}
+
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+	@extend .form-control;
+}
+
+/* account */
+
+.woocommerce-MyAccount-navigation {
+	@extend .list-group;
+}
+
+.woocommerce-MyAccount-navigation-link {
+	padding: 0 !important;
+
+	> a {
+		@extend .list-group-item;
+		@extend .list-group-item-action;
+		padding: 1em !important;
+	}
 }
