@@ -158,6 +158,22 @@ main.wc-main.alignwide {
 	@extend .form-control;
 }
 
+.woocommerce .woocommerce-form-login .woocommerce-form-login__rememberme {
+	display: block !important;
+}
+
+.comment-form-cookies-consent, .woocommerce-form-login__rememberme {
+	@extend .form-check;
+	input {
+		@extend .form-check-input;
+		margin-right: 10px;
+		margin-left: -1.3em;
+	}
+	label {
+		@extend .form-check-label;
+	}
+}
+
 /* account */
 
 .woocommerce-MyAccount-navigation {
