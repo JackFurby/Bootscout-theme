@@ -1,21 +1,22 @@
 {
 	"name": "bootscout",
-	"version": "2.0.3",
+	"version": "2.1",
 	"description": "A simple WordPress theme for scout websites styled with Bootstrap",
 	"repository": {
 		"url": "git+https://github.com/JackFurby/Bootscout-theme.git"
 	},
 	"main": "gulpfile.js",
 	"dependencies": {
-		"@wordpress/block-editor": "^11.4.0",
-		"@wordpress/blocks": "^12.4.0",
-		"@wordpress/env": "^5.6.0",
-		"@wordpress/i18n": "^4.13.0",
-		"@wordpress/scripts": "^25.4.0"
+		"@wordpress/block-editor": "^12.0.0",
+		"@wordpress/blocks": "^12.9.0",
+		"@wordpress/env": "^6.0.0",
+		"@wordpress/i18n": "^4.32.0",
+		"@wordpress/scripts": "^26.3.0"
 	},
 	"devDependencies": {
-		"autoprefixer": "^10.4.7",
-		"browserslist": ">=4.21.1",
+		"autoprefixer": "^10.4.13",
+		"bourbon": "^7.3.0",
+		"browserslist": ">=4.21.4",
 		"css-what": ">=6.1.0",
 		"cssnano": "^5.1.12",
 		"glob-parent": ">=6.0.2",
@@ -31,6 +32,7 @@
 		"postcss": ">=8.4.14",
 		"sass": "^1.53.0",
 		"set-value": ">=4.1.0",
+		"susy": "2.2.14",
 		"tar": ">=6.1.11",
 		"trim-newlines": ">=4.0.2",
 		"y18n": ">=5.0.8",
