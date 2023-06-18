@@ -10,12 +10,16 @@
 	background-color: currentColor;
 }
 
+.wp-block-file__button:hover {
+	background-color: $grey-80;
+}
+
 .wp-block-button:not(.is-style-outline) {
 	.wp-block-button__link:hover {
 		filter: brightness(85%);
 	}
 }
-.has-inline-color:hover, .wp-block-post-navigation-link:hover, .wp-block-search__button:hover, .wp-block-navigation-item__content:hover {
+.has-inline-color:hover, .wp-block-post-navigation-link:hover, .wp-block-search__button:hover, .wp-block-navigation-item__content:hover, .wp-block-file__button:hover {
 	filter: brightness(85%);
 }
 

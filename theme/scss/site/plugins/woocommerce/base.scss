@@ -15,12 +15,26 @@ main.wc-main.alignwide {
 .woocommerce div.product .woocommerce-tabs .panel, .woocommerce div.product div.summary, .woocommerce .woocommerce-breadcrumb, .woocommerce div.product .related.products, main.wc-main.alignwide > * {
 	padding-inline: 10px;
 }
+
+.wc-block-grid__products, .woocommerce div.product .related.products ul.products {
+	@extend .row;
+	@extend .row-cols-1;
+	@extend .row-cols-sm-2;
+	@extend .row-cols-md-2;
+	@extend .row-cols-lg-2;
+	@extend .row-cols-xl-3;
+	@extend .row-cols-xxl-3;
+	@extend .g-3;
+}
+
 .wc-block-grid__products .wc-block-grid__product, .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
 	@extend .card;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-bottom: 10px;
+	@extend .col;
 	overflow: hidden;
+}
+
+.wc-block-components-product-sort-select {
+	margin-bottom: 24px;
 }
 
 .woocommerce-page ul.products li.product > a:first-child {
