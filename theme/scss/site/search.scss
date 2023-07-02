@@ -2,7 +2,11 @@
 	.wp-block-search__inside-wrapper {
 		@extend .input-group;
 		.wp-block-search__button {
-			margin-left: 0px;
+			position: relative;
+			z-index: 2;
+			&:focus {
+				z-index: 5;
+			}
 		}
 	}
 }
