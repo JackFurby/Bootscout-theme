@@ -17,18 +17,11 @@ function bootscout_theme_scripts() {
 		null
 	);
 	wp_enqueue_style('Nunito+Sans');
-	wp_register_style(
-		'BootstrapIcons',
-		'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css',
-		false,
-		null,
-		null
-	);
-	wp_enqueue_style('BootstrapIcons');
+
 	wp_register_style(
 		'theme',
 		get_template_directory_uri() . '/theme/css/site.css',
-		['Nunito+Sans', 'BootstrapIcons'],
+		['Nunito+Sans'],
 		wp_get_theme()->get('Version')
 	);
 	wp_enqueue_style('theme');
