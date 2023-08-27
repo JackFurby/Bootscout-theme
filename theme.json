@@ -8,17 +8,17 @@
 			"customGradient": true,
 			"duotone": [
 				{
-					"colors": [ "#7413dc", "#00a794" ],
+					"colors": [ "#7413dc", "#088486" ],
 					"slug": "scout-purple-and-teal",
 					"name": "Scout purple and teal"
 				},
 				{
-					"colors": [ "#e22e12", "#ffb4e5" ],
+					"colors": [ "#ed3f23", "#ffb4e5" ],
 					"slug": "scout-red-and-pink",
 					"name": "Scout red and pink"
 				},
 				{
-					"colors": [ "#23a950", "#003982" ],
+					"colors": [ "#25b755", "#003982" ],
 					"slug": "scout-green-and-navy",
 					"name": "Scout green and navy"
 				},
@@ -26,6 +26,11 @@
 					"colors": [ "#006ddf", "#ffe627" ],
 					"slug": "scout-blue-and-yellow",
 					"name": "Scout blue and yellow"
+				},
+				{
+					"colors": [ "#ff912a", "#205b41" ],
+					"slug": "scout-orange-and-forest-green",
+					"name": "Scout orange and forest green"
 				},
 				{
 					"colors": [ "#000000", "#ffffff" ],
@@ -36,17 +41,17 @@
 			"gradients": [
 				{
 					"slug": "scout-purple-to-teal",
-					"gradient": "linear-gradient(135deg,#7413dc 0%,#00a794 100%)",
+					"gradient": "linear-gradient(135deg,#7413dc 0%,#088486 100%)",
 					"name": "Scout purple to teal"
 				},
 				{
 					"slug": "scout-red-to-pink",
-					"gradient": "linear-gradient(135deg,#e22e12 0%,#ffb4e5 100%)",
+					"gradient": "linear-gradient(135deg,#ed3f23 0%,#ffb4e5 100%)",
 					"name": "Scout red to pink"
 				},
 				{
 					"slug": "scout-green-to-navy",
-					"gradient": "linear-gradient(135deg,#23a950 0%,#003982 100%)",
+					"gradient": "linear-gradient(135deg,#25b755 0%,#003982 100%)",
 					"name": "Scout green to navy"
 				},
 				{
@@ -58,6 +63,11 @@
 					"slug": "black to white",
 					"gradient": "linear-gradient(135deg,#000000 0%,#ffffff 100%)",
 					"name": "Black to white"
+				},
+				{
+					"slug": "scout-orange-to-forest-green",
+					"gradient": "linear-gradient(135deg,#ff912a 0%,#205b41 100%)",
+					"name": "Scout orange to forest green"
 				}
 			],
 			"link": false,
@@ -69,7 +79,7 @@
 				},
 				{
 					"slug": "secondary",
-					"color": "#00a794",
+					"color": "#088486",
 					"name": "Secondary colour"
 				},
 				{
@@ -79,13 +89,18 @@
 				},
 				{
 					"slug": "scout-teal",
-					"color": "#00a794",
+					"color": "#088486",
 					"name": "Scout teal"
 				},
 				{
 					"slug": "scout-red",
-					"color": "#e22e12",
+					"color": "#ed3f23",
 					"name": "Scout red"
+				},
+				{
+					"slug": "scout-orange",
+					"color": "#ff912a",
+					"name": "Scout orange"
 				},
 				{
 					"slug": "scout-pink",
@@ -94,12 +109,17 @@
 				},
 				{
 					"slug": "scout-green",
-					"color": "#23a950",
+					"color": "#25b755",
 					"name": "Scout green"
 				},
 				{
+					"slug": "scout-forest-green",
+					"color": "#205b41",
+					"name": "Scout forest green"
+				},
+				{
 					"slug": "scout-section-green",
-					"color": "#004851",
+					"color": "#004a53",
 					"name": "Scout section green"
 				},
 				{
