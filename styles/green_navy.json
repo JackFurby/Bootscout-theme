@@ -6,7 +6,7 @@
 			"palette": [
 				{
 					"slug": "primary",
-					"color": "#23a950",
+					"color": "#25b755",
 					"name": "Primary colour"
 				},
 				{
@@ -21,13 +21,18 @@
 				},
 				{
 					"slug": "scout-teal",
-					"color": "#00a794",
+					"color": "#088486",
 					"name": "Scout teal"
 				},
 				{
 					"slug": "scout-red",
-					"color": "#e22e12",
+					"color": "#ed3f23",
 					"name": "Scout red"
+				},
+				{
+					"slug": "scout-orange",
+					"color": "#ff912a",
+					"name": "Scout orange"
 				},
 				{
 					"slug": "scout-pink",
@@ -36,12 +41,17 @@
 				},
 				{
 					"slug": "scout-green",
-					"color": "#23a950",
+					"color": "#25b755",
 					"name": "Scout green"
 				},
 				{
+					"slug": "scout-forest-green",
+					"color": "#205b41",
+					"name": "Scout forest green"
+				},
+				{
 					"slug": "scout-section-green",
-					"color": "#004851",
+					"color": "#004a53",
 					"name": "Scout section green"
 				},
 				{
