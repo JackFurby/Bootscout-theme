@@ -29,3 +29,14 @@
 		padding: .375rem .75rem !important;
 	}
 }
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container {
+	a, span {
+		color: #333333 !important;
+	}
+
+	.wp-block-navigation__submenu-container, .wp-block-navigation-item {
+		padding-top: 1rem !important;
+		padding-bottom: 0;
+	}
+}
