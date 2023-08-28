@@ -23,6 +23,6 @@ Please see the Wiki accompanying this repository for guides on setting up and de
 
 ### Compile scss to css
 
-From the root directory of the repository run `gulp css` and `gulp editor-css`. This will update editor.css, editor.css.map, site.css and site.css.map files.
+From the root directory of the repository run `gulp css`. This will update site.css and site.css.map files.
 
 Basic setup info for scss here (not my guide): https://github.com/SimonPadbury/b4st/wiki/Customizing-Bootstrap-4-(SCSS)-in-b4st
