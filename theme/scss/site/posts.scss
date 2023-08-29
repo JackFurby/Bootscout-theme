@@ -43,10 +43,10 @@ main.site-main .entry-content {
 .wp-block-post-navigation-link a, .wp-block-query-pagination a {
 	@extend .wp-block-button__link;
 	@extend .has-scout-purple-background-color;
-	color: white;
+	color: white !important;
 }
 .wp-block-post-navigation-link a:hover, .wp-block-query-pagination a:hover {
-	color: white;
+	color: white !important;
 }
 
 /* Post featured image in index.html*/
