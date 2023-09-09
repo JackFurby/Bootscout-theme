@@ -1,3 +1,7 @@
+.table, .wp-block-table table {
+	@extend .table;
+	--bs-table-bg: unset;
+}
 .wp-block-table td, .wp-block-table th {
 	border: unset;
 	border-color: inherit;
@@ -7,7 +11,4 @@
 .wp-block-table thead {
 	border: unset;
 	border-width: 0;
-}
-.table, .wp-block-table table {
-	@extend .table;
 }
