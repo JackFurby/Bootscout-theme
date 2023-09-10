@@ -23,6 +23,14 @@ main.site-main .entry-content {
 		@extend .rounded-pill;
 		@extend .bg-secondary;
 	}
+
+
+}
+
+li.wp-block-post {
+	div {
+		height: 100%;
+	}
 }
 
 .post-card {
