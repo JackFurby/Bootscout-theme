@@ -1,6 +1,7 @@
 # Bootscout – WordPress theme for UK scout websites
 
-*Version 2.2.2*
+![GitHub tag (with filter)](https://img.shields.io/github/v/tag/JackFurby/Bootscout-theme?label=Version)
+
 
 ------------------
 
