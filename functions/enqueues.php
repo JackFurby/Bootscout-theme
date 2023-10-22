@@ -33,6 +33,7 @@ function bootscout_theme_scripts() {
 	wp_enqueue_script('bootstrap5');
 	// (The Bootstrap JS bundle contains Popper JS.)
 	wp_enqueue_script('theme-script', get_template_directory_uri() . '/theme/js/site.js', false, null, true);
+
 }
 
 function bootscout_theme_editor_scripts() {
@@ -40,6 +41,28 @@ function bootscout_theme_editor_scripts() {
 	wp_enqueue_script('theme-editor-script', get_template_directory_uri() . '/theme/js/site-editor.js', false, null, true);
 }
 
+if ( ! function_exists( 'bootscout_theme_pattern_categories' ) ) :
+	/**
+	 * Register pattern categories
+	 *
+	 * @return void
+	 * @since Bootscout-theme 2.2.3
+	 *
+	 */
+	function bootscout_theme_pattern_categories() {
+
+		register_block_pattern_category(
+			'bootscout',
+			array(
+				'label'       => _x( 'Bootscout', 'Block pattern category' ),
+				'description' => __( 'Block patterns for scout websites' ),
+			)
+		);
+	}
+endif;
+
+
 add_action( 'wp_head', 'bootscout_theme_preconnect', 2 );
 add_action( 'enqueue_block_assets', 'bootscout_theme_scripts', 20 );
 add_action( 'enqueue_block_editor_assets', 'bootscout_theme_editor_scripts', );
+add_action( 'init', 'bootscout_theme_pattern_categories' );
