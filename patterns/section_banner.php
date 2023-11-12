@@ -6,12 +6,13 @@
  */
 ?>
 
-<!-- wp:columns {"align":"full","backgroundColor":"secondary"} -->
+
+<!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|70"}}},"backgroundColor":"secondary"} -->
 <div class="wp-block-columns alignfull has-secondary-background-color has-background">
 	<!-- wp:column {"verticalAlignment":"bottom"} -->
 	<div class="wp-block-column is-vertically-aligned-bottom">
-		<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
-		<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+		<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
+		<div class="wp-block-group">
 			<!-- wp:image -->
 			<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/squirrels-primary-logo-white-png.png" alt="squirrel scouts logo"/></figure>
 			<!-- /wp:image -->
@@ -26,8 +27,8 @@
 
 	<!-- wp:column {"verticalAlignment":"bottom"} -->
 	<div class="wp-block-column is-vertically-aligned-bottom">
-		<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
-		<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+		<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
+		<div class="wp-block-group">
 			<!-- wp:image -->
 			<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/beavers-logo-white-png.png" alt="beaver scouts logo"/></figure>
 			<!-- /wp:image -->
@@ -42,8 +43,8 @@
 
 	<!-- wp:column {"verticalAlignment":"bottom"} -->
 	<div class="wp-block-column is-vertically-aligned-bottom">
-		<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
-		<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+		<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
+		<div class="wp-block-group">
 			<!-- wp:image -->
 			<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/cubs-logo-white-png.png" alt="cub scouts logo"/></figure>
 			<!-- /wp:image -->
@@ -58,8 +59,8 @@
 
 	<!-- wp:column {"verticalAlignment":"bottom"} -->
 	<div class="wp-block-column is-vertically-aligned-bottom">
-		<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
-		<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+		<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
+		<div class="wp-block-group">
 			<!-- wp:image -->
 			<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/scouts-logo-white-png.png" alt="scouts logo"/></figure>
 			<!-- /wp:image -->
@@ -74,8 +75,8 @@
 
 	<!-- wp:column {"verticalAlignment":"bottom"} -->
 	<div class="wp-block-column is-vertically-aligned-bottom">
-		<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
-		<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+		<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
+		<div class="wp-block-group">
 			<!-- wp:image -->
 			<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/explorers-logo-white-png.png" alt="explorer scouts logo"/></figure>
 			<!-- /wp:image -->
@@ -90,8 +91,8 @@
 
 	<!-- wp:column {"verticalAlignment":"bottom"} -->
 	<div class="wp-block-column is-vertically-aligned-bottom">
-		<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
-		<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+		<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
+		<div class="wp-block-group">
 			<!-- wp:image -->
 			<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/network-logo-white-png.png" alt="network scouts logo"/></figure>
 			<!-- /wp:image -->
