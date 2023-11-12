@@ -305,6 +305,9 @@
 				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
+				},
+				"spacing": {
+					"blockGap": "0.5em"
 				}
 			},
 			"core/button": {
@@ -319,6 +322,11 @@
 						"bottom": ".375rem",
 						"left": ".75rem"
 					}
+				}
+			},
+			"core/group": {
+				"spacing": {
+					"blockGap": "0.5em"
 				}
 			}
 		}
