@@ -181,15 +181,14 @@
 			"units": [ "px", "em", "rem", "%", "vw" ]
 		},
 		"spacing": {
-			"customMargin": false,
-			"customPadding": false,
-			"units": [ "px", "em", "rem", "vh", "vw" ]
+			"margin": true,
+			"padding": true
 		},
 		"border": {
-			"customColor": true,
-			"customRadius": true,
-			"customStyle": true,
-			"customWidth": true
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true
 		},
 		"typography": {
 			"customFontSize": true,
