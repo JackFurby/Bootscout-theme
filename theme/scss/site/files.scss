@@ -10,6 +10,7 @@
 
 .wp-block-file  {
 	a {
-		@extend .p;
+		font-weight: normal;
+		font-size: var(--wp--preset--font-size--text);
 	}
 }

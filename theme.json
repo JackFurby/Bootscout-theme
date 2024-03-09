@@ -196,16 +196,152 @@
 			"customLineHeight": false,
 			"fluid": true,
 			"dropCap": true,
+			"lineHeight": true,
+			"fontWeight": true,
+			"fontStyle": true,
+			"letterSpacing": true,
+			"textColumns": false,
+			"textDecoration": true,
+			"textTransform": true,
+			"writingMode": false,
 			"fontFamilies": [
-				{
-					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Nunito Sans\",sans-serif",
-					"slug": "system-font",
-					"name": "System Font"
-				},
 				{
 					"fontFamily": "Nunito Sans, sans-serif",
 					"slug": "nunito-sans",
-					"name": "Nunito Sans"
+					"name": "Nunito Sans",
+					"fontFace": [
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "200",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "300",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "500",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "600",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "700",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "800",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "900",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "1000",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "200",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "300",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "400",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "500",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "600",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "700",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "800",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "900",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
+						},
+						{
+							"fontFamily": "Open Sans",
+							"fontWeight": "1000",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "system-ui, sans-serif",
+					"slug": "system-font",
+					"name": "System Font"
 				}
 			],
 			"fontSizes": [
@@ -256,7 +392,10 @@
 				}
 			]
 		},
-		"blocks": {}
+		"blocks": {},
+		"shadow": {
+			"defaultPresets": true
+		}
 	},
 	"styles": {
 		"color": {
@@ -271,11 +410,66 @@
 				"left": "0px"
 			}
 		},
-		"typography": {},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--nunito-sans)",
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"fontStyle": "normal",
+			"fontWeight": "400",
+			"lineHeight": "1.55"
+		},
 		"elements": {
 			"link": {
 				"color": {
 					"text": "var(--wp--preset--color--scout-purple)"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--xx-large)",
+					"lineHeight": "1.15",
+					"fontWeight": "900"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--x-large)",
+					"fontWeight": "800"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--large)",
+					"fontWeight": "700"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "700"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)",
+					"fontWeight": "700"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--text)",
+					"fontWeight": "700"
+				}
+			},
+			"p": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--text)",
+					"fontWeight": "400"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontWeight": "800",
+					"lineHeight": "1.2"
 				}
 			}
 		},

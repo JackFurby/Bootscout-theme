@@ -47,9 +47,18 @@
 			color: #333333 !important;
 		}
 
+		ul, li {
+			margin-left: 10px;
+			color: #333333 !important;
+		}
+
 		.wp-block-navigation__submenu-container, .wp-block-navigation-item {
 			padding-top: 1rem !important;
 			padding-bottom: 0;
 		}
 	}
+}
+
+ul.has-background {
+	padding: 0;
 }
