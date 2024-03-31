@@ -12,10 +12,3 @@ strong, .strong {
 	text-decoration: none;
 	background-color: transparent;
 }
-
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-	&.alignwide, &.alignfull {
-		margin-top: 0 !important;
-		margin-bottom: 0.5rem !important;
-	}
-}

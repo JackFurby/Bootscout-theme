@@ -29,7 +29,7 @@ function bootscout_theme_scripts() {
 	// Scripts
 	wp_enqueue_script("jquery");  // use WordPress built in jQuery
 
-	wp_register_script('bootstrap5', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', false, '5.2.3', true);
+	wp_register_script('bootstrap5', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', false, '5.3.2', true);
 	wp_enqueue_script('bootstrap5');
 	// (The Bootstrap JS bundle contains Popper JS.)
 	wp_enqueue_script('theme-script', get_template_directory_uri() . '/theme/js/site.js', false, null, true);

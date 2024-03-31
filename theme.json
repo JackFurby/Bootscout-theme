@@ -464,12 +464,28 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--text)",
 					"fontWeight": "400"
+				},
+				"spacing": {
+					"margin": {
+						"top": ".5rem",
+						"right": ".0rem",
+						"bottom": ".5rem",
+						"left": ".0rem"
+					}
 				}
 			},
 			"heading": {
 				"typography": {
 					"fontWeight": "800",
 					"lineHeight": "1.2"
+				},
+				"spacing": {
+					"margin": {
+						"top": "1rem",
+						"right": ".0rem",
+						"bottom": ".5rem",
+						"left": ".0rem"
+					}
 				}
 			}
 		},
