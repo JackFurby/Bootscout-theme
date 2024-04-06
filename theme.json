@@ -559,7 +559,12 @@
 			"name": "index",
 			"title": "Post page",
 			"postTypes": [ "post" ]
-	}
+		},
+		{
+			"name": "single-volunteer_opp",
+			"title": "volunteer opportunity template",
+			"postTypes": [ "volunteer_opp" ]
+		}
 	],
 	"templateParts": [
 		{
