@@ -538,6 +538,14 @@
 				"spacing": {
 					"blockGap": "0.5em"
 				}
+			},
+			"core/columns": {
+				"spacing": {
+					"margin": {
+						"top": "0rem",
+						"bottom": "1rem"
+					}
+				}
 			}
 		}
 	},
