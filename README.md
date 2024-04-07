@@ -9,10 +9,11 @@
 
 ## Features
 
-* On brand styling as detailed in the UK scouts brand guidelines including correct colours and fonts
-* Site logo can be added and displayed in the navigation bar
-* Colour selection for theme
-* Full site editing support (Wordpress 5.9 or higher required)
+* On brand styling as detailed in the UK scouts brand guidelines including correct colours and fonts.
+* Customisable site colours.
+* WordPress full site editing support (WordPress 6.0 or higher required)
+* Theme specific block patterns
+* Support for a number of popular WordPress plugins (support for other plugins can be requested by creating a new issue)
 
 ## More
 
