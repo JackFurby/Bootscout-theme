@@ -1,0 +1,26 @@
+// volunteer lists
+
+.flexible-opp, .one-time-opp {
+	@extend .card;
+	@extend .mb-2;
+	}
+
+.volunteer-opps .volunteer_opp .entry-title {
+	@extend .mt-0;
+}
+
+.volunteer-opps .entry-content {
+	@extend .pb-0;
+	@extend .p-2;
+}
+
+.volunteer-opps .entry-header {
+	@extend .card-header;
+	@extend .p-2;
+	@extend .border-0;
+	@extend .has-grey-5-background-color;
+}
+
+.volunteer_opp .entry-title {
+	@extend .mb-0;
+}
