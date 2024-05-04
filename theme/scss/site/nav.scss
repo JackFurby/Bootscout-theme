@@ -1,5 +1,6 @@
 .wp-block-navigation__submenu-container {
 	@extend .rounded;
+	z-index: 999 !important;  // the menu should always show ontop of other page elements
 	.wp-block-navigation-item {
 		color: black !important;
 		&:first-child {

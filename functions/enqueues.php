@@ -61,6 +61,24 @@ if ( ! function_exists( 'bootscout_theme_pattern_categories' ) ) :
 	}
 endif;
 
+add_filter( 'wpsl_templates', 'custom_templates' , 10, 2);
+
+function custom_templates( $templates ) {
+
+	/**
+	* The 'id' is for internal use and must be unique ( since 2.0 ).
+	* The 'name' is used in the template dropdown on the settings page.
+	* The 'path' points to the location of the custom template,
+	* in this case the folder of your active theme.
+	*/
+	$templates[] = array (
+		'id'   => 'bootscout',
+		'name' => 'Bootscout',
+		'path' => get_stylesheet_directory() . '/' . 'plugins/wpsl-templates/bootscout.php',
+	);
+
+	return $templates;
+}
 
 add_action( 'wp_head', 'bootscout_theme_preconnect', 2 );
 add_action( 'enqueue_block_assets', 'bootscout_theme_scripts', 20 );
