@@ -19,6 +19,16 @@
 		}
 	}
 
+	.input-group.wpsl-input {
+		display: flex !important;
+		flex-wrap: nowrap;
+
+		input {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+
 	.wpsl-select-wrap {
 		margin: 0;
 		padding: 0 !important
@@ -72,6 +82,10 @@
 			}
 		}
 	}
+
+	.wpsl-search-btn-wrap {
+		width: 100%;
+	}
 }
 
 #wpsl-result-list ul li {
@@ -84,7 +98,10 @@
 
 @media (max-width: 825px) {
 	#wpsl-search-wrap .wpsl-input {
-		width: auto !important;
 		margin-bottom: 10px;
 	}
+}
+
+.wpsl-search {
+	padding: 12px 12px 12px 12px !important;
 }

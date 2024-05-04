@@ -12,14 +12,15 @@ $output .= "\t" . '<div class="container">' . "\r\n";
 $output .= "\t" . '<p class="text-center h2 mt-3">Find your local group</p>' . "\r\n";
 $output .= "\t\t" . '<div id="wpsl-search-wrap">' . "\r\n";
 $output .= "\t\t\t" . '<form autocomplete="off" class="row justify-content-center">' . "\r\n";
-$output .= "\t\t\t\t" . '<div class="row justify-content-start justify-content-md-center col-12 me-0">' . "\r\n";
-$output .= "\t\t\t\t\t" . '<div class="wpsl-input col-auto col-md-6 mb-2 me-0 pe-3 g-0">' . "\r\n";
-$output .= "\t\t\t\t\t" . '<label for="wpsl-search-input" class="form-label w-100">' . esc_html( $wpsl->i18n->get_translation( 'search_label', __( 'Your location', 'wpsl' ) ) ) . '</label>' . "\r\n";
-$output .= "\t\t\t\t\t" . '<input id="wpsl-search-input" class="form-control w-100" type="text" value="' . apply_filters( 'wpsl_search_input', '' ) . '" name="wpsl-search-input" placeholder="" aria-required="true" />' . "\r\n";
+$output .= "\t\t\t\t" . '<div class="col-12 me-0 row justify-content-center">' . "\r\n";
+$output .= "\t\t\t\t\t" . '<div class="col col-md-6 g-0 me-0">' . "\r\n";
+$output .= "\t\t\t\t\t\t" . '<div class="input-group wpsl-input mb-2 me-0 g-0">' . "\r\n";
+$output .= "\t\t\t\t\t\t\t" . '<input id="wpsl-search-input" class="form-control rounded-end-0" type="text" value="' . apply_filters( 'wpsl_search_input', '' ) . '" name="wpsl-search-input" placeholder="' . esc_html( $wpsl->i18n->get_translation( 'search_label', __( 'Your location', 'wpsl' ) ) ) . '" aria-required="true" aria-describedby="wpsl-search-btn" />' . "\r\n";
+$output .= "\t\t\t\t\t\t\t" . '<button id="wpsl-search-btn" class="btn btn-secondary m-0 rounded-start-0" type="submit">' . esc_attr( $wpsl->i18n->get_translation( 'search_btn_label', __( 'Search', 'wpsl' ) ) ) . '</button>' . "\r\n";
+$output .= "\t\t\t\t\t\t" . '</div>' . "\r\n";
 $output .= "\t\t\t\t\t" . '</div>' . "\r\n";
-
-$output .= "\t\t\t\t\t" . '<div class="col-auto row align-items-end mb-2 me-0 g-0"><input id="wpsl-search-btn" class="col-12 col-md-2 me-0 mb-0" type="submit" value="' . esc_attr( $wpsl->i18n->get_translation( 'search_btn_label', __( 'Search', 'wpsl' ) ) ) . '"></div>' . "\r\n";
 $output .= "\t\t\t\t" . '</div>' . "\r\n";
+
 
 if ( $wpsl_settings['radius_dropdown'] || $wpsl_settings['results_dropdown'] || $this->use_category_filter() ) {
   $output .= "\t\t\t" . '<p class="text-center text-body-secondary">More settings</p>' . "\r\n";

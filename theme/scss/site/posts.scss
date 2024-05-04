@@ -21,7 +21,7 @@ main.site-main .entry-content {
 	.wp-block-post-date {
 		@extend .badge;
 		@extend .rounded-pill;
-		@extend .bg-secondary;
+		background-color: $grey-40 !important;
 	}
 
 
