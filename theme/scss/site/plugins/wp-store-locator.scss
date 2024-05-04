@@ -20,8 +20,6 @@
 	}
 
 	.wpsl-select-wrap {
-		@extend .col-12;
-		@extend .col-md-7;
 		margin: 0;
 		padding: 0 !important
 
@@ -37,6 +35,10 @@
 	.wpsl-dropdown {
 		border: var(--bs-border-width) solid var(--bs-border-color);
 		border-radius: var(--bs-border-radius);
+	}
+
+	.wpsl-dropdown:hover {
+		box-shadow: none;
 	}
 
 	#wpsl-search-btn {
@@ -62,8 +64,10 @@
 			@extend .form-check-inline;
 			label {
 				@extend .form-check-label;
+				line-height: 1.55;
 				input {
 					@extend .form-check-input;
+					padding: 0;
 				}
 			}
 		}

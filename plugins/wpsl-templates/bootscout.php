@@ -27,7 +27,7 @@ if ( $wpsl_settings['radius_dropdown'] || $wpsl_settings['results_dropdown'] || 
     $output .= "\t\t\t" . '<div class="wpsl-select-wrap col-12 col-lg-6 mb-2 g-0">' . "\r\n";
 
     if ( $wpsl_settings['radius_dropdown'] ) {
-        $output .= "\t\t\t\t" . '<div id="wpsl-radius">' . "\r\n";
+        $output .= "\t\t\t\t" . '<div id="wpsl-radius" class="w-50">' . "\r\n";
         $output .= "\t\t\t\t\t" . '<label for="wpsl-radius-dropdown" class="form-label w-100">' . esc_html( $wpsl->i18n->get_translation( 'radius_label', __( 'Search radius', 'wpsl' ) ) ) . '</label>' . "\r\n";
         $output .= "\t\t\t\t\t" . '<select id="wpsl-radius-dropdown" class="wpsl-dropdown w-100" name="wpsl-radius">' . "\r\n";
         $output .= "\t\t\t\t\t\t" . $this->get_dropdown_list( 'search_radius' ) . "\r\n";
@@ -36,7 +36,7 @@ if ( $wpsl_settings['radius_dropdown'] || $wpsl_settings['results_dropdown'] || 
     }
 
     if ( $wpsl_settings['results_dropdown'] ) {
-        $output .= "\t\t\t\t" . '<div id="wpsl-results">' . "\r\n";
+        $output .= "\t\t\t\t" . '<div id="wpsl-results" class="w-50">' . "\r\n";
         $output .= "\t\t\t\t\t" . '<label for="wpsl-results-dropdown" class="form-label w-100">' . esc_html( $wpsl->i18n->get_translation( 'results_label', __( 'Results', 'wpsl' ) ) ) . '</label>' . "\r\n";
         $output .= "\t\t\t\t\t" . '<select id="wpsl-results-dropdown" class="wpsl-dropdown w-100" name="wpsl-results">' . "\r\n";
         $output .= "\t\t\t\t\t\t" . $this->get_dropdown_list( 'max_results' ) . "\r\n";
@@ -58,7 +58,7 @@ $output .= "\t" . '</div>' . "\r\n";
 $output .= "\t" . '</div>' . "\r\n";
 
 $output .= "\t" . '<div class="container">' . "\r\n";
-$output .= "\t\t" . '<div id="wpsl-gmap" class="wpsl-gmap-canvas"></div>' . "\r\n";
+$output .= "\t\t" . '<div id="wpsl-gmap" class="wpsl-gmap-canvas mt-0"></div>' . "\r\n";
 
 $output .= "\t\t" . '<div id="wpsl-result-list">' . "\r\n";
 $output .= "\t\t\t" . '<div id="wpsl-stores" '. $autoload_class .'>' . "\r\n";
