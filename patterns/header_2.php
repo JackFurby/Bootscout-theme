@@ -14,7 +14,7 @@
 
 		<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
 		<div class="wp-block-group">
-			<!-- wp:navigation {"textColor":"primary","icon":"menu","layout":{"type":"flex","justifyContent":"left"},"fontSize":"medium"} /-->
+			<!-- wp:navigation {"textColor":"primary","icon":"menu","layout":{"type":"flex","justifyContent":"right"},"fontSize":"medium"} /-->
 		</div>
 		<!-- /wp:group -->
 	</div>

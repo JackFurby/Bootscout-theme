@@ -63,3 +63,12 @@
 ul.has-background {
 	padding: 0;
 }
+
+// overlay menu
+.wp-block-navigation__responsive-container.is-menu-open.has-modal-open {
+	ul.wp-block-navigation.items-justified-right {
+		width: 100vw;
+		--navigation-layout-justification-setting: flex-start;
+		--navigation-layout-justify: flex-start;
+	}
+}
