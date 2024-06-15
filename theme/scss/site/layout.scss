@@ -21,6 +21,16 @@ body {
 	clear: both;
 }
 
+// make sure align elements inside align elements behave properly. note: the page also uses align, but in a <main> tag
+div.alignfull, div.alignwide {
+	.alignfull, .alignwide {
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+		right: 0 !important;
+	}
+}
+
 @include media-breakpoint-up(md) {
 	.alignwide {
 		width: calc( 100% );
