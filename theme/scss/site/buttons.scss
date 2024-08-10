@@ -34,3 +34,7 @@ a:where(:not(.wp-element-button)) {
 .wp-block-button.is-style-outline > .wp-block-button__link, .wp-block-query-pagination a {
 	padding: .375rem .75rem !important;
 }
+
+.wp-block-buttons {
+	width: 100%;
+}

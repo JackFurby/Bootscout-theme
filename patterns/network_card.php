@@ -19,9 +19,9 @@
 <p class="has-text-align-left has-white-color has-text-color has-link-color">Ages 18-25 years</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"white","textColor":"black","width":100,"style":{"elements":{"link":{"color":{"text":"var:preset|color|black"}}}},"className":"is-style-fill"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill"><a class="wp-block-button__link has-black-color has-white-background-color has-text-color has-background has-link-color wp-element-button">Learn more</a></div>
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"white","textColor":"black","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|black"}}}}} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-black-color has-white-background-color has-text-color has-background has-link-color wp-element-button">Learn more</a></div>
 <!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
+<!-- /wp:buttons -->div>
 <!-- /wp:group -->
