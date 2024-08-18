@@ -58,6 +58,14 @@ if ( ! function_exists( 'bootscout_theme_pattern_categories' ) ) :
 				'description' => __( 'Block patterns for scout websites' ),
 			)
 		);
+
+		register_block_pattern_category(
+			'page_layouts',
+			array(
+				'label'       => _x( 'Page layouts', 'Block pattern category' ),
+				'description' => __( 'Block patterns for full page layouts' ),
+			)
+		);
 	}
 endif;
 

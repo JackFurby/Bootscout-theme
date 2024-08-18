@@ -23,7 +23,7 @@
 						<!-- /wp:heading -->
 
 						<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-						<p class="has-white-color has-text-color has-link-color">We're Scouts and everyone is welcome here. Every week, we help almost half a million people aged 4-25 develop skills for life. Are you ready to join the adventure?</p>
+						<p class="has-white-color has-text-color has-link-color">We're 1st Bootscout Scout group, part of The Scouts and everyone is welcome here. Every week, we help our members aged 4-25 develop skills for life. Are you ready to join the adventure?</p>
 						<!-- /wp:paragraph -->
 
 						<!-- wp:buttons {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"left"}} -->

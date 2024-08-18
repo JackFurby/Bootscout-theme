@@ -28,7 +28,6 @@ main.wc-main.alignwide {
 }
 
 .wc-block-grid__products .wc-block-grid__product, .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-	//@extend .card;
 	@extend .col;
 	overflow: hidden;
 	background-clip: content-box;
@@ -45,12 +44,6 @@ li.product {
 .woocommerce ul.products li.product .button {
 	margin-bottom: 10px;
 }
-
-//.wc-block-grid__product.wc-block-layout {
-	//@extend .card;
-//	@extend .col;
-//	overflow: hidden;
-//}
 
 .wc-block-components-product-sort-select {
 	margin-bottom: 24px;

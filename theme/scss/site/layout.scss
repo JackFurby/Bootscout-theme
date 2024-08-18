@@ -52,7 +52,6 @@ div.alignfull, div.alignwide {
 	}
 }
 
-
 // blog post page cards has differnt settings for align wide and full
 .card {
 	.alignfull,
@@ -66,5 +65,10 @@ div.alignfull, div.alignwide {
 
 .is-content-justification-center {
 	margin-left: auto !important;
-  margin-right: auto !important;
+	margin-right: auto !important;
+}
+
+// query block
+.wp-block-query .wp-block-post .wp-block-group {
+	height: 100%;
 }

@@ -6,7 +6,7 @@ main.site-main .entry-content {
 	@extend .mb-2;
 	@extend .overflow-hidden;
 
-	.post-meta, .wp-block-post-excerpt {
+	.post-meta { //.wp-block-post-excerpt
 		@extend .p-2;
 	}
 
@@ -22,14 +22,6 @@ main.site-main .entry-content {
 		@extend .badge;
 		@extend .rounded-pill;
 		background-color: $grey-40 !important;
-	}
-
-
-}
-
-li.wp-block-post {
-	div {
-		height: 100%;
 	}
 }
 
