@@ -6,9 +6,9 @@
  */
 ?>
 
-<!-- wp:group {"backgroundColor":"black","className":"has-black-background-color","layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
+<!-- wp:group {"metadata":{"categories":["bootscout"],"patternName":"bootscout-theme/nextwork_card","name":"Network card"},"backgroundColor":"black","layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
 <div class="wp-block-group has-black-background-color has-background"><!-- wp:image -->
-<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/network-logo-white-png.png" alt="network scouts logo"/></figure>
+  <figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/network-logo-white-png.png" alt="network scouts logo"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
@@ -23,5 +23,5 @@
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"white","textColor":"black","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|black"}}}}} -->
 <div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-black-color has-white-background-color has-text-color has-background has-link-color wp-element-button">Learn more</a></div>
 <!-- /wp:button --></div>
-<!-- /wp:buttons -->div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group -->
