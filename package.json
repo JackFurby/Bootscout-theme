@@ -18,7 +18,7 @@
 		"bourbon": "^7.3.0",
 		"browserslist": ">=4.23.1",
 		"css-what": ">=6.1.0",
-		"cssnano": "^7.0.2",
+		"cssnano": "^7.0.5",
 		"glob-parent": ">=6.0.2",
 		"gulp": "^5.0.0",
 		"gulp-postcss": "^10.0.0",
