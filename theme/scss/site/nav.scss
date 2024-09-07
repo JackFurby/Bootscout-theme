@@ -72,3 +72,12 @@ ul.has-background {
 		--navigation-layout-justify: flex-start;
 	}
 }
+
+.wp-block-search.wp-block-search__button-only .wp-block-search__button[aria-expanded="true"] {
+	max-width: 100%;
+}
+
+// fix only half the button being visible when in row with a nav element on a small scren
+.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden {
+	overflow: visible;
+}
