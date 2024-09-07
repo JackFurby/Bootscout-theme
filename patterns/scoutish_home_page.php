@@ -12,8 +12,8 @@
 	<div class="wp-block-cover__inner-container">
 		<!-- wp:columns -->
 		<div class="wp-block-columns">
-			<!-- wp:column {"width":"50%"} -->
-			<div class="wp-block-column" style="flex-basis:50%">
+			<!-- wp:column {"width":"50%","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}}} -->
+			<div class="wp-block-column" style="padding-top:0;padding-right:var(--wp--preset--spacing--40);padding-bottom:0;padding-left:var(--wp--preset--spacing--40);flex-basis:50%">
 				<!-- wp:group {"style":{"color":{"background":"#000000ad"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 				<div class="wp-block-group has-background" style="background-color:#000000ad">
 					<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
