@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Scout-ish header
+ * Title: Scoutish header
  * Slug: bootscout-theme/scoutish_header
  * Categories: bootscout, header
  */

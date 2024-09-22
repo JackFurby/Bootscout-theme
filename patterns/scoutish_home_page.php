@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Scout-ish home page
+ * Title: Scoutish home page
  * Slug: bootscout-theme/scoutish_home_page
  * Categories: bootscout, page_layouts
  */
