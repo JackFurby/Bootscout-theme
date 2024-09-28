@@ -11,14 +11,14 @@ var outlineButtons = document.getElementsByClassName("wp-block-button is-style-o
 var outlineButtonHover = function() {
 	var btnColor = getComputedStyle(this).color;
 	var btnBgColor = getComputedStyle(this).backgroundColor;
-	this.style.setProperty("background-color", btnColor, "important")
+	this.style.setProperty("background-color", btnColor, "important");
 
 	// if outline button has no background, set background to white
 	if (this.classList.contains("has-background") == false) {
 		this.style.setProperty("color", "white", "important");
 	} else {
 		this.style.setProperty("color", btnBgColor, "important");
-	}
+	};
 };
 
 // revert hover colour to how they were before
@@ -35,7 +35,9 @@ var outlineButtonHoverOver = function() {
 	this.style.setProperty("color", btnColor, "important");
 };
 
-for (var i = 0; i < outlineButtons.length; i++) {
-	outlineButtons[i].getElementsByTagName("a")[0].addEventListener('mouseover', outlineButtonHover, false);
-	outlineButtons[i].getElementsByTagName("a")[0].addEventListener('mouseout', outlineButtonHoverOver, false);
-}
+window.onload = function(){
+	for (var i = 0; i < outlineButtons.length; i++) {
+		outlineButtons[i].getElementsByTagName("a")[0].addEventListener('mouseover', outlineButtonHover, false);
+		outlineButtons[i].getElementsByTagName("a")[0].addEventListener('mouseout', outlineButtonHoverOver, false);
+	};
+};

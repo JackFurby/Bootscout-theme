@@ -69,7 +69,7 @@
 		<!-- /wp:paragraph -->
 
 		<!-- wp:heading -->
-		<h2 class="wp-block-heading"><strong>Headings should be bold and with a heading 2 (H2) level applied</strong></h2>
+		<h2 class="wp-block-heading">Headings should be bold (the default font weight applied)</h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|30","left":"0","right":"0"}}},"backgroundColor":"grey-5","layout":{"type":"flex","orientation":"vertical"}} -->

@@ -28,5 +28,5 @@ window.onload = function(){
 
 		// if outline button has background, set background to transparent
 		outlineButtons[i].firstChild.style.setProperty("background-color", "transparent", "important");
-	}
+	};
 }
