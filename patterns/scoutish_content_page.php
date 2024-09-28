@@ -69,7 +69,7 @@
 		<!-- /wp:paragraph -->
 
 		<!-- wp:heading -->
-		<h2 class="wp-block-heading"><strong>Headings should be bold</strong> and with a heading 2 (H2) level applied</h2>
+		<h2 class="wp-block-heading"><strong>Headings should be bold and with a heading 2 (H2) level applied</strong></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|30","left":"0","right":"0"}}},"backgroundColor":"grey-5","layout":{"type":"flex","orientation":"vertical"}} -->
@@ -105,7 +105,7 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
 			<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
 				<!-- wp:heading {"level":4,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
-				<h4 class="wp-block-heading has-white-color has-text-color has-link-color"><strong>Coloured background</strong> sidebar area</h4>
+				<h4 class="wp-block-heading has-white-color has-text-color has-link-color"><strong>Coloured background sidebar area</strong></h4>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
