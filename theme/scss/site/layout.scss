@@ -73,6 +73,8 @@ div.alignfull, div.alignwide, div.is-layout-constrained > :where(:not(.alignleft
 	height: 100%;
 }
 
-.wp-block-separator.is-style-wide {
-	width: 100%;
+// separator block
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots).alignwide, .wp-block-separator:not(.is-style-wide):not(.is-style-dots).alignfull{
+	right: 0rem;
 }
