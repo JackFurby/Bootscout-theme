@@ -60,7 +60,7 @@
 <!-- wp:group {"align":"wide","layout":{"type":"grid","minimumColumnWidth":"14rem"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"backgroundColor":"primary","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-primary-background-color has-background"><!-- wp:image {"linkDestination":"none","align":"wide"} -->
-<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/squirrels-primary-logo-white-png.png" alt="squirrel scouts logo"/></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/squirrels-primary-logo-white-png.png" alt="squirrel scouts logo"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
@@ -70,7 +70,7 @@
 
 <!-- wp:group {"backgroundColor":"primary","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-primary-background-color has-background"><!-- wp:image {"linkDestination":"none","align":"wide"} -->
-<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/beavers-logo-white-png.png" alt="beaver scouts logo"/></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/beavers-logo-white-png.png" alt="beaver scouts logo"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
@@ -80,7 +80,7 @@
 
 <!-- wp:group {"backgroundColor":"primary","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-primary-background-color has-background"><!-- wp:image {"linkDestination":"none","align":"wide"} -->
-<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/cubs-logo-white-png.png" alt="cub scouts logo"/></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/cubs-logo-white-png.png" alt="cub scouts logo"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
@@ -90,7 +90,7 @@
 
 <!-- wp:group {"backgroundColor":"primary","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-primary-background-color has-background"><!-- wp:image {"linkDestination":"none","align":"wide"} -->
-<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/scouts-logo-white-png.png" alt="scouts logo"/></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/scouts-logo-white-png.png" alt="scouts logo"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
@@ -100,7 +100,7 @@
 
 <!-- wp:group {"backgroundColor":"primary","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-primary-background-color has-background"><!-- wp:image {"align":"wide"} -->
-<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/explorers-logo-white-png.png" alt="explorer scouts logo"/></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/explorers-logo-white-png.png" alt="explorer scouts logo"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
@@ -110,7 +110,7 @@
 
 <!-- wp:group {"backgroundColor":"primary","layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-primary-background-color has-background"><!-- wp:image {"align":"wide"} -->
-<figure class="wp-block-image alignwide"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/network-logo-white-png.png" alt="network scouts logo"/></figure>
+<figure class="wp-block-image"><img src="<?php echo esc_url( get_template_directory_uri()); ?>/theme/images/network-logo-white-png.png" alt="network scouts logo"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
