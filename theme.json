@@ -33,6 +33,26 @@
 					"name": "Scout orange and forest green"
 				},
 				{
+					"colors": [ "#ed3f23", "#ffb4e5" ],
+					"slug": "scout-red-and-pink",
+					"name": "Scout red and pink"
+				},
+				{
+					"colors": [ "#003982", "#006ddf" ],
+					"slug": "scout-navy-and-blue",
+					"name": "Scout navy and blue"
+				},
+				{
+					"colors": [ "#205b41", "#25b755" ],
+					"slug": "scout-forest-green-and-green",
+					"name": "Scout forest green and green"
+				},
+				{
+					"colors": [ "#ff912a", "#ffe627" ],
+					"slug": "scout-orange-and-yellow",
+					"name": "Scout orange and yellow"
+				},
+				{
 					"colors": [ "#000000", "#ffffff" ],
 					"slug": "black-and-white",
 					"name": "Black and white"
@@ -68,6 +88,21 @@
 					"slug": "scout-orange-to-forest-green",
 					"gradient": "linear-gradient(135deg,#ff912a 0%,#205b41 100%)",
 					"name": "Scout orange to forest green"
+				},
+				{
+					"slug": "scout-navy-to-blue",
+					"gradient": "linear-gradient(135deg,#003982 0%,#006ddf 100%)",
+					"name": "Scout navy to blue"
+				},
+				{
+					"slug": "scout-forest-green-to-green",
+					"gradient": "linear-gradient(135deg,#205b41 0%,#25b755 100%)",
+					"name": "Scout forest green to green"
+				},
+				{
+					"slug": "scout-orange-to-yellow",
+					"gradient": "linear-gradient(135deg,#ff912a 0%,#ffe627 100%)",
+					"name": "Scout orange to yellow"
 				}
 			],
 			"link": false,
