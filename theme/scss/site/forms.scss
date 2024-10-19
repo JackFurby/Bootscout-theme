@@ -1,6 +1,7 @@
 form {
 	input, textarea {
 		@extend .form-control;
+		border: 1px solid #949494;
 	}
 
 	label {
@@ -19,6 +20,11 @@ form {
 input[type=submit] {
 	display: initial;
 	width: initial;
+}
+
+input[type=checkbox] {
+	border: 1px solid #949494;
+	padding: .5rem;
 }
 
 .post-password-form {
