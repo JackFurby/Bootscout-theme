@@ -1,6 +1,6 @@
 {
 	"$schema": "https://schemas.wp.org/wp/6.5/theme.json",
-	"version": 2,
+	"version": 3,
 	"settings": {
 		"color": {
 			"custom": true,
@@ -230,7 +230,8 @@
 		"spacing": {
 			"margin": true,
 			"padding": true,
-			"blockGap": true
+			"blockGap": true,
+			"defaultSpacingSizes": true
 		},
 		"border": {
 			"color": true,
@@ -391,6 +392,7 @@
 					"name": "System Font"
 				}
 			],
+			"defaultFontSizes": false,
 			"fontSizes": [
 				{
 					"fluid": {
