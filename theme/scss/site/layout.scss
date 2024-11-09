@@ -63,6 +63,12 @@ div.alignfull, div.alignwide, div.is-layout-constrained > :where(:not(.alignleft
 	}
 }
 
+.wp-block-post div.wp-block-group:only-child {
+	grid-column: 1 / -1; // grid column span across both columns if no featured image is present
+}
+
+
+
 .is-content-justification-center {
 	margin-left: auto !important;
 	margin-right: auto !important;
