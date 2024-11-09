@@ -69,8 +69,9 @@ div.alignfull, div.alignwide, div.is-layout-constrained > :where(:not(.alignleft
 }
 
 // query block
-.wp-block-query .wp-block-post .wp-block-group {
+div.wp-block-group:only-child {
 	height: 100%;
+	//@extend .align-self-stretch;
 }
 
 // separator block

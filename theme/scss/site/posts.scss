@@ -17,12 +17,6 @@ main.site-main .entry-content {
 	.wp-block-post-title {
 		@extend .mb-0;
 	}
-
-	.wp-block-post-date {
-		@extend .badge;
-		@extend .rounded-pill;
-		background-color: $grey-40 !important;
-	}
 }
 
 .post-card {
