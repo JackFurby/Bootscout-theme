@@ -81,3 +81,13 @@ ul.has-background {
 .wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden {
 	overflow: visible;
 }
+
+// if overlay menu is disabled
+
+@media (max-width: 768px) {
+	nav {
+		ul.wp-block-navigation__container {
+			display: block;
+		}
+	}
+}
