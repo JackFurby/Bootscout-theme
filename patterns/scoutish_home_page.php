@@ -141,7 +141,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="http://localhost:8888/?tribe_events=test-event" data-type="tribe_events" data-id="2161"></a><a href="https://www.scouts.org.uk/activities/">Discover the activities</a></p>
+<p><a href="https://www.scouts.org.uk/activities/" data-type="tribe_events" target="_blank" rel="noreferrer noopener">Discover the activities</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -163,7 +163,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="http://localhost:8888/?tribe_events=test-event" data-type="tribe_events" data-id="2161">Explore badges</a></p>
+<p><a href="https://www.scouts.org.uk/activity-badges/" data-type="tribe_events" target="_blank" rel="noreferrer noopener">Explore badges</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -185,7 +185,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="http://localhost:8888/?tribe_events=test-event" data-type="tribe_events" data-id="2161"></a><a href="https://www.scouts.org.uk/volunteers/running-your-section/planning-your-programme/nights-away-and-camping/">Find your adventure</a></p>
+<p><a href="https://www.scouts.org.uk/volunteers/running-your-section/planning-your-programme/nights-away-and-camping/" data-type="tribe_events" target="_blank" rel="noreferrer noopener">Find your adventure</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -207,7 +207,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="http://localhost:8888/?tribe_events=test-event" data-type="tribe_events" data-id="2161">Check out the guidance</a><a href="http://localhost:8888/?tribe_events=test-event" data-type="tribe_events" data-id="2161"></a></p>
+<p><a href="https://www.scouts.org.uk/por/" data-type="tribe_events" target="_blank" rel="noreferrer noopener">Check out the guidance</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -229,7 +229,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="http://localhost:8888/?tribe_events=test-event" data-type="tribe_events" data-id="2161">See what you'll learn</a><a href="http://localhost:8888/?tribe_events=test-event" data-type="tribe_events" data-id="2161"></a><a href="http://localhost:8888/?tribe_events=test-event" data-type="tribe_events" data-id="2161"></a></p>
+<p><a href="https://www.scouts.org.uk/volunteers/learning-development-and-awards/learning/" data-type="tribe_events" target="_blank" rel="noreferrer noopener">See what you'll learn</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
