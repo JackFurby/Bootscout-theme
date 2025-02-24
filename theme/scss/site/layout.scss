@@ -31,10 +31,17 @@ div.alignfull, div.alignwide, div.is-layout-constrained > :where(:not(.alignleft
 	}
 }
 
-@include media-breakpoint-up(xl) {
+@include media-breakpoint-down(xl) {
 	.alignwide {
 		width: calc( 100% );
 		right: 0px;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.alignwide {
+		width: calc( 100% + (2 * 2rem));
+		right: 2rem;
 	}
 }
 
