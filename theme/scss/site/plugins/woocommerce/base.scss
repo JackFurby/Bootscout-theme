@@ -12,8 +12,22 @@ main.wc-main.alignwide, *[class^='wc-block'].alignwide {
 
 /* products page */
 
-ul.wc-block-product-template li.wc-block-product {
+ul.wc-block-product-template li.wc-block-product, ul.wc-block-grid__products li.wc-block-grid__product {
 	background-color: $grey-5;
+}
+
+ul.wc-block-grid__products {
+	gap: 10px;
+	li.wc-block-grid__product {
+		max-width: calc((100% - (3 * 10px)) / 4) !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.wc-block-grid.has-4-columns .wc-block-grid__product {
+		max-width: calc(100% - 50px) !important;
+		margin-bottom: 10px;
+	}
 }
 
 /* categories */
