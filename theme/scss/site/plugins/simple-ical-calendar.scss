@@ -1,0 +1,52 @@
+.wp-block-simplegoogleicalenderwidget-simple-ical-block {
+	.simple-ical-widget {  // all events list
+		li {
+			border: 0px;
+			padding: 0px;
+
+			// startdate higher level layout
+			li.list-group-item {
+				background-color: $grey-5;
+				margin-bottom: 10px;
+				border-radius: var(--bs-list-group-border-radius);
+				padding: var(--bs-list-group-item-padding-x) !important;
+			}
+		}
+	}
+
+	// all layouts but startdate higher level
+	li.list-group-item:not(:has(ul.list-group)) {
+		background-color: $grey-5;
+		margin-bottom: 10px;
+		border-radius: var(--bs-list-group-border-radius);
+		padding: var(--bs-list-group-item-padding-x) !important;
+	}
+
+	.ical-date {
+		@extend .h4;
+	}
+
+	li.list-group-item {
+
+		.ical_summary {
+			margin: 0;
+		}
+
+		.ical_details {
+			span {
+				margin-top: 16px;
+				display: block;
+			}
+		}
+
+		.location {
+			margin-top: 16px;
+			display: block;
+		}
+
+		.location:before {
+			content:"Location: ";
+			font-weight: bold;
+		}
+	}
+}
