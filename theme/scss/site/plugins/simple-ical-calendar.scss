@@ -49,4 +49,12 @@
 			font-weight: bold;
 		}
 	}
+
+	// If an event has no expanded info (e.g. description or location) then display the title as regular text (not <a> tag default)
+	li:has(.ical_details:empty) > a {
+		color: inherit;
+	 	text-decoration: none;
+	 	pointer-events: none;
+	 	cursor: default;
+	}
 }
