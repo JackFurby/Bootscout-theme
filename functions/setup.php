@@ -37,3 +37,62 @@ function bootscout_woocommerce_output_content_wrapper() {
 function bootscout_woocommerce_output_content_wrapper_end() {
 	echo '</main>';
 }
+
+# Copy WooCommerce templates to template folder if the plugin is installed
+function conditionally_register_woo_templates() {
+	if ( ! class_exists( 'WooCommerce' ) ) {
+		return;
+	}
+
+	$template_dir = get_stylesheet_directory();
+	$woo_templates = [
+		'single-product.html',
+		'page-cart.html',
+		'page-checkout.html',
+		'archive-product.html',
+		'order-confirmation.html',
+		'product-search-results.html',
+		'taxonomy-product_attribute.html',
+		'taxonomy-product_cat.html',
+		'taxonomy-product_tag.html'
+	];
+
+	foreach ( $woo_templates as $template ) {
+		$source = $template_dir . '/plugins/woocommerce/' . $template;
+		$destination = $template_dir . '/templates/' . $template;
+
+		if ( file_exists( $source ) && ! file_exists( $destination ) ) {
+			copy( $source, $destination );
+		}
+	}
+}
+
+# delete WooCommerce templates from template folder if the plugin is not installed
+function remove_woo_templates_if_plugin_missing() {
+	if ( class_exists( 'WooCommerce' ) ) {
+		return;
+	}
+
+	$template_dir = get_stylesheet_directory() . '/templates/';
+	$woo_templates = [
+		'single-product.html',
+		'page-cart.html',
+		'page-checkout.html',
+		'archive-product.html',
+		'order-confirmation.html',
+		'product-search-results.html',
+		'taxonomy-product_attribute.html',
+		'taxonomy-product_cat.html',
+		'taxonomy-product_tag.html'
+	];
+
+	foreach ( $woo_templates as $template ) {
+		$path = $template_dir . $template;
+		if ( file_exists( $path ) ) {
+			unlink( $path );
+		}
+	}
+}
+
+add_action( 'after_setup_theme', 'conditionally_register_woo_templates' );
+add_action( 'after_setup_theme', 'remove_woo_templates_if_plugin_missing' );
