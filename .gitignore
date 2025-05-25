@@ -9,3 +9,12 @@ site.css
 site.css.map
 editor.css
 editor.css.map
+templates/archive-product.html
+templates/order-confirmation.html
+templates/page-cart.html
+templates/page-checkout.html
+templates/product-search-results.html
+templates/single-product.html
+templates/taxonomy-product_attribute.html
+templates/taxonomy-product_cat.html
+templates/taxonomy-product_tag.html
