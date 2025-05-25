@@ -3,9 +3,7 @@
 .wp-block-button__link {
 	border-radius: .25rem;
 }
-.is-style-outline > :where(.wp-block-button__link), :where(.wp-block-button__link).is-style-outline {
-	border: 1px solid;
-}
+
 .is-style-outline:hover > :where(.wp-block-button__link), :where(.wp-block-button__link).is-style-outline:hover {
 	background-color: currentColor;
 }

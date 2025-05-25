@@ -38,7 +38,7 @@ function bootscout_woocommerce_output_content_wrapper_end() {
 	echo '</main>';
 }
 
-# Copy WooCommerce templates to template folder if the plugin is installed
+// Copy WooCommerce templates to template folder if the plugin is installed
 function conditionally_register_woo_templates() {
 	if ( ! class_exists( 'WooCommerce' ) ) {
 		return;
@@ -61,13 +61,14 @@ function conditionally_register_woo_templates() {
 		$source = $template_dir . '/plugins/woocommerce/' . $template;
 		$destination = $template_dir . '/templates/' . $template;
 
+		// Only copy if not already copied
 		if ( file_exists( $source ) && ! file_exists( $destination ) ) {
 			copy( $source, $destination );
 		}
 	}
 }
 
-# delete WooCommerce templates from template folder if the plugin is not installed
+// delete WooCommerce templates from template folder if the plugin is not installed
 function remove_woo_templates_if_plugin_missing() {
 	if ( class_exists( 'WooCommerce' ) ) {
 		return;
@@ -88,6 +89,7 @@ function remove_woo_templates_if_plugin_missing() {
 
 	foreach ( $woo_templates as $template ) {
 		$path = $template_dir . $template;
+		// Only remove if it still exists
 		if ( file_exists( $path ) ) {
 			unlink( $path );
 		}
