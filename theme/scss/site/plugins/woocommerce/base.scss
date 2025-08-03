@@ -10,7 +10,7 @@ main.wc-main.alignwide, *[class^='wc-block'].alignwide {
 	clear: both;
 }
 
-// stop breadcrumbs overflowing page (breadcrumbs uses alignwide)
+// stop breadcrumbs overflowing page (breadcrumbs uses alignwide in the woocommerce template)
 main.wp-block-group.wp-block-group-is-layout-constrained {
 	.woocommerce.wp-block-breadcrumbs.wc-block-breadcrumbs {
 		width: 100%;
