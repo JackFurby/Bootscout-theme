@@ -27,6 +27,7 @@
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
 	border: 0px;
 	padding: 0px;
+	border-radius:0.25rem;
 }
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__input {
 	@extend .form-control;

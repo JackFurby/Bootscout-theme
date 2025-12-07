@@ -3,10 +3,8 @@
 	"version": "2.7.2",
 	"description": "![GitHub tag (with filter)](https://img.shields.io/github/v/tag/JackFurby/Bootscout-theme?label=Version)",
 	"main": "gulpfile.js",
-	"dependencies": {
-		"@wordpress/env": "^10.17.0"
-	},
 	"devDependencies": {
+		"@wordpress/env": "^10.36.0",
 		"autoprefixer": "^10.4.20",
 		"bourbon": "^7.3.0",
 		"cssnano": "^7.0.6",
@@ -38,5 +36,8 @@
 	"bugs": {
 		"url": "https://github.com/JackFurby/Bootscout-theme/issues"
 	},
-	"homepage": "https://github.com/JackFurby/Bootscout-theme#readme"
+	"homepage": "https://github.com/JackFurby/Bootscout-theme#readme",
+	"dependencies": {
+		"gulp-cli": "^3.1.0"
+	}
 }
