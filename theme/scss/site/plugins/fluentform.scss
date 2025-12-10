@@ -1,3 +1,33 @@
 .fluentform form input {
 	width: auto;
 }
+
+.ff-el-form-check, .wpforms-field-radio {
+	@extend .form-check;
+	input {
+		@extend .form-check-input;
+	}
+
+	input[type="checkbox"], input[type="radio"] {
+		padding: .5rem;
+	}
+}
+
+/* Align radio buttons, checkboxes, and lables on one line*/
+
+.ff-el-form-check-label {
+	display: inline-flex;
+	align-items: center;
+	gap: .5rem;
+}
+
+/* T and C block */
+.ff-el-form-check-label.ff_tc_label {
+		display: flex !important;
+    align-items: center !important;
+		gap: 0.5rem !important;
+}
+
+.fluentform .ff-el-tc label.ff_tc_label > span {
+	padding-top: 0px !important;
+}
