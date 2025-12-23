@@ -1,4 +1,4 @@
 {
-  "phpVersion": "8.0",
-  "themes": [ "." ]
+	"phpVersion": "8.2",
+	"themes": [ "." ]
 }
