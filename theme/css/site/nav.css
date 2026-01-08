@@ -1,0 +1,99 @@
+.wp-block-navigation__submenu-container {
+	border-radius: 0.25rem;
+	z-index: 999 !important; /* the menu should always show on top of other page elements */
+}
+
+.wp-block-navigation__submenu-container .wp-block-navigation-item {
+	color: black !important;
+}
+
+.wp-block-navigation__submenu-container .wp-block-navigation-item:first-child {
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+}
+
+.wp-block-navigation__submenu-container .wp-block-navigation-item:last-child {
+	border-bottom-left-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+}
+
+.wp-block-navigation__submenu-container .wp-block-navigation-item:hover {
+	background-color: var(--grey-5);
+}
+
+.wp-block-navigation__container .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container{
+	left: 100% !important;
+	right: auto !important;
+}
+
+.wp-block-navigation__container > li {
+	margin-right: 10px;
+}
+
+@media screen and (min-width: 782px) {
+	.wp-block-columns:not(.is-not-stacked-on-mobile) > .site-title-column {
+		flex: initial !important;
+		width: initial !important;
+	}
+}
+
+.wp-block-post-navigation-link {
+	a {
+		padding: .375rem .75rem !important;
+	}
+	margin-bottom: 5px !important;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	.wp-block-navigation__responsive-container-close {
+		color: #333333 !important;
+	}
+
+	.wp-block-navigation__responsive-container-content .wp-block-navigation__container {
+		a, span {
+			color: #333333 !important;
+		}
+
+		ul, li {
+			margin-left: 10px;
+			color: #333333 !important;
+		}
+
+		.wp-block-navigation__submenu-container, .wp-block-navigation-item {
+			padding-top: 1rem !important;
+			padding-bottom: 0;
+		}
+	}
+}
+
+ul.has-background {
+	padding: 0;
+}
+
+/* overlay menu */
+.wp-block-navigation__responsive-container.is-menu-open.has-modal-open {
+	ul.wp-block-navigation.items-justified-right {
+		width: 100vw;
+		--navigation-layout-justification-setting: flex-start;
+		--navigation-layout-justify: flex-start;
+	}
+}
+
+.wp-block-search.wp-block-search__button-only .wp-block-search__button[aria-expanded="true"] {
+	max-width: 100%;
+}
+
+/* fix only half the button being visible when in row with a nav element on a small scren */
+.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden {
+	overflow: visible;
+}
+
+/* if overlay menu is disabled */
+
+@media (max-width: 768px) {
+	nav {
+		ul.wp-block-navigation__container {
+			display: block;
+		}
+	}
+}
