@@ -30,7 +30,7 @@
 	<!-- wp:column {"verticalAlignment":"center","width":"270px","style":{"spacing":{"padding":{"top":"1.25em","bottom":"1.25em"}}}} -->
 	<div class="wp-block-column is-vertically-aligned-center has-background"
 		style="padding-top:1.25em;padding-bottom:1.25em;flex-basis:270px">
-		<!-- wp:search {"label":"Search","showLabel":false,"width":100,"widthUnit":"%","buttonText":"Search","buttonUseIcon":true, "buttonPosition":"button-inside", "align":"center"} /-->
+		<!-- wp:search {"label":"Search","showLabel":false,"width":100,"widthUnit":"%","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":true,"align":"center","style":{"border":{"radius":{"topLeft":"0.25rem","topRight":"0.25rem","bottomLeft":"0.25rem","bottomRight":"0.25rem"},"width":"0px","style":"none"}}} /-->
 	</div>
 	<!-- /wp:column -->
 </div>
