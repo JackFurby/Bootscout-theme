@@ -71,13 +71,13 @@ ul.has-background {
 }
 
 /* overlay menu */
-.wp-block-navigation__responsive-container.is-menu-open.has-modal-open {
-	ul.wp-block-navigation.items-justified-right {
-		width: 100vw;
-		--navigation-layout-justification-setting: flex-start;
-		--navigation-layout-justify: flex-start;
-	}
+.wp-block-navigation__responsive-container.is-menu-open.has-modal-open
+ul.wp-block-navigation.items-justified-right {
+	width: 100vw;
+	--navigation-layout-justification-setting: flex-start;
+	--navigation-layout-justify: flex-start;
 }
+
 
 .wp-block-search.wp-block-search__button-only .wp-block-search__button[aria-expanded="true"] {
 	max-width: 100%;
@@ -91,9 +91,7 @@ ul.has-background {
 /* if overlay menu is disabled */
 
 @media (max-width: 768px) {
-	nav {
-		ul.wp-block-navigation__container {
-			display: block;
-		}
+	nav ul.wp-block-navigation__container {
+		display: block;
 	}
 }

@@ -22,13 +22,16 @@ body {
 }
 
 /* make sure align elements inside align elements behave properly. note: the page also uses align, but in a <main> tag */
-div.alignfull, div.alignwide, div.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
-	.alignfull, .alignwide {
-		width: 100%;
-		margin-left: 0px;
-		margin-right: 0px;
-		right: 0 !important;
-	}
+div.alignfull .alignfull,
+div.alignfull .alignwide,
+div.alignwide .alignfull,
+div.alignwide .alignwide,
+div.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) .alignfull,
+div.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) .alignwide {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	right: 0 !important;
 }
 
 @include media-breakpoint-down(xl) {
@@ -52,22 +55,9 @@ div.alignfull, div.alignwide, div.is-layout-constrained > :where(:not(.alignleft
 	}
 }
 
-/* blog post page cards has differnt settings for align wide and full */
-.card {
-	.alignfull,
-	.alignwide {
-		width: 100%;
-		margin-left: 0px;
-		margin-right: 0px;
-		right: 0 !important;
-	}
-}
-
 .wp-block-post div.wp-block-group:only-child {
-	grid-column: 1 / -1; // grid column span across both columns if no featured image is present
+	grid-column: 1 / -1; /* grid column span across both columns if no featured image is present */
 }
-
-
 
 .is-content-justification-center {
 	margin-left: auto !important;
@@ -77,7 +67,6 @@ div.alignfull, div.alignwide, div.is-layout-constrained > :where(:not(.alignleft
 /* query block */
 div.wp-block-group:only-child {
 	height: 100%;
-	//@extend .align-self-stretch;
 }
 
 /* separator block */

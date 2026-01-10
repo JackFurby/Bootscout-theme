@@ -32,10 +32,10 @@ main.site-main::after .entry-content::after {  /* clearfix */
 	width: 100%;
 	gap: 0 !important;
 	padding: 0;
+}
 
-	.wp-block-column .wp-block-group {
-		height: 100%;
-	}
+.post-card	.wp-block-column .wp-block-group {
+	height: 100%;
 }
 
 .sticky {
