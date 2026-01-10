@@ -6,7 +6,7 @@ body {
 
 .alignfull {
 	position: relative;
-	right: 0px; // Fallback
+	right: 0px; /* Fallback */
 	right: calc((100vw - 100%)/2);
 	width: 100vw;
 	max-width: 100vw;
@@ -34,23 +34,26 @@ div.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignf
 	right: 0 !important;
 }
 
-@include media-breakpoint-down(xl) {
+/* Down from xl */
+@media (max-width: 1199.98px) {
 	.alignwide {
-		width: calc( 100% );
+		width: calc(100%);
 		right: 0px;
 	}
 }
 
-@include media-breakpoint-up(xl) {
+/* xl and up */
+@media (min-width: 1200px) {
 	.alignwide {
-		width: calc( 100% + (2 * 2rem));
+		width: calc(100% + (2 * 2rem));
 		right: 2rem;
 	}
 }
 
-@include media-breakpoint-up(xxl) {
+/* xxl and up */
+@media (min-width: 1400px) {
 	.alignwide {
-		width: calc( 100% + (2 * 10rem));
+		width: calc(100% + (2 * 10rem));
 		right: 10rem;
 	}
 }
