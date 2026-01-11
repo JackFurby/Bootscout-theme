@@ -444,6 +444,9 @@
 		"blocks": {},
 		"shadow": {
 			"defaultPresets": true
+		},
+		"comments": {
+			"enabled": false
 		}
 	},
 	"styles": {
