@@ -26,7 +26,7 @@
 			<!-- wp:social-links {"iconColor":"white","iconColorValue":"#ffffff","className":"has-icon-color is-style-logos-only","layout":{"type":"flex","justifyContent":"center"}} -->
 			<ul class="wp-block-social-links has-icon-color is-style-logos-only">
 				<!-- wp:social-link {"url":"#","service":"facebook"} /-->
-				<!-- wp:social-link {"url":"#","service":"x"} /-->
+				<!-- wp:social-link {"url":"#","service":"bluesky"} /-->
 				<!-- wp:social-link {"url":"#","service":"instagram"} /-->
 			</ul>
 			<!-- /wp:social-links -->
@@ -34,8 +34,8 @@
 		<!-- /wp:column -->
 	</div>
 	<!-- /wp:columns -->
-	<!-- wp:separator {"className":"is-style-wide"} -->
-	<hr class="wp-block-separator is-style-wide" />
+	<!-- wp:separator {"className":"is-style-wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"0"}},"color":{"background":"#3fbbbd"}}} -->
+		<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-top:var(--wp--preset--spacing--20);margin-bottom:0;background-color:#3fbbbd;color:#3fbbbd"/>
 	<!-- /wp:separator -->
 	<!-- wp:columns {"align":"wide"} -->
 	<div class="wp-block-columns alignwide">

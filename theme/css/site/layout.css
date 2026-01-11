@@ -77,3 +77,10 @@ div.wp-block-group:only-child {
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots).alignwide, .wp-block-separator:not(.is-style-wide):not(.is-style-dots).alignfull{
 	right: 0rem;
 }
+/* separator height without background colour is set by border width*/
+.wp-block-separator {
+	border-width: 3px;
+}
+.wp-block-separator.has-background:not(.is-style-dots), .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+	height: 3px;
+}
