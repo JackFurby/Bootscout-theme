@@ -103,73 +103,80 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// Function to apply bottom borders to all cells of a table
 	function updateTableBorders(table) {
-	const style = table.style;
 
-	// Width & style hierarchy: inline → default
-	const borderWidth =
-		style.borderBottomWidth ||
-		style.borderWidth ||
-		'var(--wp--custom--table-border-width)';
-
-	const borderStyle =
-		style.borderBottomStyle ||
-		style.borderStyle ||
-		'var(--wp--custom--table-border-style)';
-
-	// Colour hierarchy: inline → class → default
-	let borderColor =
-		style.borderBottomColor ||
-		style.borderColor;
-
-	// Ignore unusable inline values
-	if (!borderColor || borderColor === 'initial' || borderColor === 'inherit') {
-		borderColor = '';
-	}
-
-	// Named WordPress colour class
-	if (!borderColor) {
-		const colorClass = [...table.classList].find(c =>
-			c.startsWith('has-') && c.endsWith('-border-color') && c !== 'has-border-color'
-		);
-
-		// Set borderColor to the varable for the WP colour class
-		if (colorClass) {
-			const slug = colorClass
-				.replace('has-', '')
-				.replace('-border-color', '');
-			borderColor = `var(--wp--preset--color--${slug})`;
+		// Do not update a table if it has the class 'is-style-stripes'
+		const figure = table.closest('.wp-block-table');
+		if (figure && figure.classList.contains('is-style-stripes')) {
+			return;
 		}
+
+		const style = table.style;
+
+		// Width & style hierarchy: inline → default
+		const borderWidth =
+			style.borderBottomWidth ||
+			style.borderWidth ||
+			'var(--wp--custom--table-border-width)';
+
+		const borderStyle =
+			style.borderBottomStyle ||
+			style.borderStyle ||
+			'var(--wp--custom--table-border-style)';
+
+		// Colour hierarchy: inline → class → default
+		let borderColor =
+			style.borderBottomColor ||
+			style.borderColor;
+
+		// Ignore unusable inline values
+		if (!borderColor || borderColor === 'initial' || borderColor === 'inherit') {
+			borderColor = '';
+		}
+
+		// Named WordPress colour class
+		if (!borderColor) {
+			const colorClass = [...table.classList].find(c =>
+				c.startsWith('has-') && c.endsWith('-border-color') && c !== 'has-border-color'
+			);
+
+			// Set borderColor to the varable for the WP colour class
+			if (colorClass) {
+				const slug = colorClass
+					.replace('has-', '')
+					.replace('-border-color', '');
+				borderColor = `var(--wp--preset--color--${slug})`;
+			}
+		}
+
+		// Default fallback
+		if (!borderColor) {
+			borderColor = 'var(--wp--custom--table-border-color)';
+		}
+
+		// Update cell style properties
+		table.querySelectorAll('td, th').forEach(cell => {
+			cell.style.borderTop = '0';
+			cell.style.borderLeft = '0';
+			cell.style.borderRight = '0';
+			cell.style.borderBottom = `${borderWidth} ${borderStyle} ${borderColor}`;
+		});
 	}
 
-	// Default fallback
-	if (!borderColor) {
-		borderColor = 'var(--wp--custom--table-border-color)';
-	}
 
-	// Update cell style properties
-	table.querySelectorAll('td, th').forEach(cell => {
-		cell.style.borderTop = '0';
-		cell.style.borderLeft = '0';
-		cell.style.borderRight = '0';
-		cell.style.borderBottom = `${borderWidth} ${borderStyle} ${borderColor}`;
-	});
-}
+		// Initialize all tables on page load
+		document.querySelectorAll('.wp-block-table table').forEach(table => {
+			updateTableBorders(table);
 
-
-	// Initialize all tables on page load
-	document.querySelectorAll('.wp-block-table table').forEach(table => {
-		updateTableBorders(table);
-
-		// Observe changes to the inline style attribute (use in the page / post editor)
-		const observer = new MutationObserver(mutations => {
-			mutations.forEach(mutation => {
-				if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
-					updateTableBorders(table);
-				}
+			// Observe changes to the inline style attribute (use in the page / post editor)
+			const observer = new MutationObserver(mutations => {
+				mutations.forEach(mutation => {
+					if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+						updateTableBorders(table);
+					}
+				});
 			});
+
+			observer.observe(table, { attributes: true });
 		});
 
-		observer.observe(table, { attributes: true });
 	});
-
-});
