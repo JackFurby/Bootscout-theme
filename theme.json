@@ -616,14 +616,7 @@
 				 "style": "var(--wp--custom--table-border-style)",
 				 "color": "var(--wp--custom--table-border-color)"
 			 }
-		 },
-		 "core/table td, core/table th, core/table tr": {
-			 "border": {
-				 "width": "var(--wp-table-border-width)",
-				 "style": "var(--wp-table-border-style)",
-				 "color": "var(--wp-table-border-color)"
-			 }
-			}
+		 }
 		}
 	},
 	"customTemplates": [
