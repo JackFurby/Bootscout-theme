@@ -1,19 +1,10 @@
 form input, form textarea {
-	/* @extend .form-control; */
 	border: 1px solid #949494;
 	border-radius: 0.25em;
 }
 
 form label {
-	/* @extend .form-label; */
-}
-
-form button {
-	/* @extend .btn; */
-}
-
-form select {
-	/* @extend .form-select; */
+	margin-bottom: 0.5rem;
 }
 
 input[type=submit] {
@@ -37,6 +28,5 @@ input[type=checkbox] {
 }
 
 select {
-	/* @extend .form-select; */
 	width: initial;
 }
