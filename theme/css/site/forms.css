@@ -1,20 +1,21 @@
-form input, form textarea {
-	border: 1px solid #949494;
-	border-radius: 0.25em;
+form input, form textarea, form select, form button {
+	border: 1px solid var(--grey-40);
+	border-radius: 0.25rem;
+	font-size: var(--wp--preset--font-size--text);
+	padding: .5rem .75rem;
+}
+
+form select {
+	background-color: var(--grey-20);
+	color: var(--grey-60)
+}
+
+form input::placeholder, form textarea::placeholder {
+  color: var(--grey-40);
 }
 
 form label {
 	margin-bottom: 0.5rem;
-}
-
-input[type=submit] {
-	display: initial;
-	width: initial;
-}
-
-input[type=checkbox] {
-	border: 1px solid #949494;
-	padding: .5rem;
 }
 
 .post-password-form input[type=submit] {
@@ -25,8 +26,4 @@ input[type=checkbox] {
 
 .post-password-form input[type=submit]:hover{
 	filter: brightness(85%);
-}
-
-select {
-	width: initial;
 }
