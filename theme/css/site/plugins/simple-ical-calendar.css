@@ -15,6 +15,15 @@ li.list-group-item {
 	padding: var(--bs-list-group-item-padding-x) !important;
 }
 
+.simple-ical-widget .ical_summary,
+.simple-ical-widget li > span {
+    display: block;
+}
+
+.simple-ical-widget .ical_summary {
+    margin-bottom: 0.25rem;
+}
+
 /* all layouts but startdate higher level */
 .wp-block-simplegoogleicalenderwidget-simple-ical-block
 li.list-group-item:not(:has(ul.list-group)) {
@@ -24,7 +33,7 @@ li.list-group-item:not(:has(ul.list-group)) {
 	padding: var(--bs-list-group-item-padding-x) !important;
 }
 
-/* Date heading (converted from @extend .h4) */
+/* Date heading */
 .wp-block-simplegoogleicalenderwidget-simple-ical-block .ical-date {
 	font-size: 1.5rem;
 	font-weight: 500;
@@ -44,6 +53,27 @@ li.list-group-item
 .ical_details span {
 	margin-top: 16px;
 	display: block;
+}
+
+/* Time */
+/* keep time items on the same line */
+.simple-ical-widget .ical_details {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.simple-ical-widget .ical_details > * {
+	flex-basis: 100%;
+}
+
+.simple-ical-widget .ical_details .time {
+	flex-basis: auto;
+	white-space: nowrap;
+}
+
+/* add space between time elements */
+.simple-ical-widget .ical_details .time + .time {
+	margin-left: 0.25rem;
 }
 
 /* Location */
@@ -71,7 +101,6 @@ li:has(.ical_details:empty) > a {
 }
 
 /* Bootstrap classes (expected by the plugin)*/
-
 .list-group {
 	display: flex;
 	flex-direction: column;
