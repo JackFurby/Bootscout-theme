@@ -7,6 +7,11 @@
 	color: black !important;
 }
 
+/* Align sub menus with parent menu item */
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container {
+	top: 0;
+}
+
 .wp-block-navigation__submenu-container .wp-block-navigation-item:first-child {
 	border-top-left-radius: 0.25rem;
 	border-top-right-radius: 0.25rem;
@@ -38,32 +43,47 @@
 }
 
 .wp-block-post-navigation-link {
-	a {
-		padding: .375rem .75rem !important;
-	}
 	margin-bottom: 5px !important;
 }
 
-.wp-block-navigation__responsive-container.is-menu-open {
-	.wp-block-navigation__responsive-container-close {
-		color: #333333 !important;
-	}
+.wp-block-post-navigation-link a {
+	padding: .375rem .75rem !important;
+}
 
-	.wp-block-navigation__responsive-container-content .wp-block-navigation__container {
-		a, span {
-			color: #333333 !important;
-		}
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-close {
+	color: #333333 !important;
+}
 
-		ul, li {
-			margin-left: 10px;
-			color: #333333 !important;
-		}
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-content
+.wp-block-navigation__container a,
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-content
+.wp-block-navigation__container span {
+	color: #333333 !important;
+}
 
-		.wp-block-navigation__submenu-container, .wp-block-navigation-item {
-			padding-top: 1rem !important;
-			padding-bottom: 0;
-		}
-	}
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-content
+.wp-block-navigation__container ul,
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-content
+.wp-block-navigation__container li {
+	margin-left: 10px;
+	color: #333333 !important;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-content
+.wp-block-navigation__container
+.wp-block-navigation__submenu-container,
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-content
+.wp-block-navigation__container
+.wp-block-navigation-item {
+	padding-top: 1rem !important;
+	padding-bottom: 0;
 }
 
 ul.has-background {

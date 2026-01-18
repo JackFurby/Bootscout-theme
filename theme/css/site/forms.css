@@ -7,7 +7,7 @@ form input, form textarea, form select, form button {
 
 form select {
 	background-color: var(--grey-20);
-	color: var(--grey-60)
+	color: var(--grey-80)
 }
 
 form input::placeholder, form textarea::placeholder {
