@@ -8,8 +8,13 @@
 }
 
 /* Align sub menus with parent menu item */
-.wp-block-navigation .has-child .wp-block-navigation__submenu-container {
-	top: 0;
+@media (max-width: 768px) {
+  .wp-block-navigation__submenu-container
+		> .has-child
+    > .wp-block-navigation__submenu-container {
+    top: 0;
+    left: 100%;
+  }
 }
 
 .wp-block-navigation__submenu-container .wp-block-navigation-item:first-child {
