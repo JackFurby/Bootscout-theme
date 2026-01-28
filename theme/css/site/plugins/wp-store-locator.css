@@ -43,7 +43,8 @@
 }
 
 #wpsl-search-wrap .wpsl-input div label,
-#wpsl-search-wrap .wpsl-select-wrap div label {
+#wpsl-search-wrap .wpsl-select-wrap div label,
+#wpsl-search-wrap #wpsl-category label {
 	display: inline-block;
 	margin-bottom: 0.5rem;
 	width: 100% !important;
@@ -53,13 +54,10 @@
 #wpsl-search-wrap #wpsl-checkbox-filter {
 	flex: 0 0 auto;
 	width: 100%;
-	padding-left: calc(var(--gutter) * .5);
-	padding-right: calc(var(--gutter) * .5);
 }
 
 #wpsl-search-wrap #wpsl-checkbox-filter li {
 	min-height: 1.5rem;
-	padding-left: 1.5em;
 	margin-bottom: 0.125rem;
 	display: inline-block;
 	margin-right: 1rem;
@@ -138,6 +136,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-right: 0;
 }
 
 .wpsl-bootscout-container form .wpsl-search-input .wpsl-input {
@@ -153,11 +152,10 @@
 .wpsl-bootscout-container form .wpsl-search-input .wpsl-input #wpsl-search-btn {
 	border-top-left-radius: 0 !important;
 	border-bottom-left-radius: 0 !important;
-	margin-right: 0;
+	margin: 0 !important;
 }
 
 .wpsl-bootscout-container form p {
-	color: var(--grey-40);
 	text-align: center;
 	width: 100%;
 	flex-basis: 100%;

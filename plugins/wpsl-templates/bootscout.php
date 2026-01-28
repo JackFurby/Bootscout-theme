@@ -21,7 +21,7 @@ $output .= "\t\t\t\t" . '</div>' . "\r\n";
 
 
 if ( $wpsl_settings['radius_dropdown'] || $wpsl_settings['results_dropdown'] || $this->use_category_filter() ) {
-  $output .= "\t\t\t" . '<p class="text-body-secondary">More settings</p>' . "\r\n";
+	$output .= "\t\t\t" . '<p class="text-grey-60">More settings</p>' . "\r\n";
 	$output .= "\t\t\t\t" . '<div class="wpsl-setting-options">' . "\r\n";
     $output .= "\t\t\t" . '<div class="wpsl-select-wrap">' . "\r\n";
 

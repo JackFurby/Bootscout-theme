@@ -48,3 +48,58 @@ p, .p {
 	font-size: var(--wp--preset--font-size--text);
 	font-weight: var(--wp--custom--font-weight--regular);
 }
+
+.text-scout-purple {
+	color: var(--scout-purple);
+}
+.text-scout-green{
+	color: var(--scout-green);
+}
+.text-scout-forest-green{
+	color: var(--scout-forest-green);
+}
+.text-scout-blue{
+	color: var(--scout-blue);
+}
+.text-scout-navy{
+	color: var(--scout-navy);
+}
+.text-scout-teal{
+	color: var(--scout-teal);
+}
+.text-scout-red{
+	color: var(--scout-red);
+}
+.text-scout-orange{
+	color: var(--scout-orange);
+}
+.text-scout-pink{
+	color: var(--scout-pink);
+}
+.text-scout-yellow{
+	color: var(--scout-yellow);
+}
+.text-scout-section-green{
+	color: var(--scout-section-green);
+}
+.text-white{
+	color: var(--scout-white);
+}
+.text-grey-5{
+	color: var(--scout-grey-5);
+}
+.text-grey-20{
+	color: var(--scout-grey-20);
+}
+.text-grey-40{
+	color: var(--scout-grey-40);
+}
+.text-grey-60{
+	color: var(--scout-grey-60);
+}
+.text-grey-80{
+	color: var(--scout-grey-80);
+}
+.text-black{
+	color: var(--scout-black);
+}
