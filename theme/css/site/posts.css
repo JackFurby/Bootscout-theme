@@ -43,7 +43,7 @@ main.site-main::after .entry-content::after {  /* clearfix */
 }
 
 .wp-block-post-navigation-link a, .wp-block-query-pagination a {
-	border-radius: .25rem;
+	border-radius: var(--border-radius);
 	background-color: var(--wp--preset--color--primary);
 	color: white !important;
 }

@@ -5,8 +5,8 @@
 	z-index: 2;
 	border-top-left-radius: 0 !important;
 	border-bottom-left-radius: 0 !important;
-	border-top-right-radius: 0.25rem;
-	border-bottom-right-radius: 0.25rem;
+	border-top-right-radius: var(--border-radius);
+	border-bottom-right-radius: var(--border-radius);
 }
 
 .wp-block-search__button-inside
@@ -16,7 +16,7 @@
 }
 
 .wp-block-search__button {
-	border-radius: .25rem;
+	border-radius: var(--border-radius);
 	color: var(--white);
 	border: 0px solid transparent;
 	background-color: var(--wp--preset--color--secondary) !important;
@@ -28,12 +28,12 @@
 }
 
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
-	border-radius: 0.25rem;
+	border-radius: var(--border-radius);
 	overflow: hidden;
 }
 
 .wp-block-search__input {
-	border-radius: 0.25rem;
+	border-radius: var(--border-radius);
 }
 
 .wp-block-search__button-only input {
