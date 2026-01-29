@@ -136,7 +136,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-right: 0;
+	margin-right: 0 !important;
 }
 
 .wpsl-bootscout-container form .wpsl-search-input .wpsl-input {
@@ -167,4 +167,5 @@
 	display: flex;
   justify-content: center;
   align-items: center;
+	margin-right: 0 !important;
 }
