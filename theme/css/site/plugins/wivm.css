@@ -20,3 +20,13 @@
 .volunteer-opps .entry-content {
 	padding-bottom: 0 !important;
 }
+
+#wivm-sign-up-form input[type=submit] {
+	background-color: var(--wp--preset--color--secondary);
+	color: var(--white);
+	border: 0px solid transparent;
+}
+
+#wivm-sign-up-form input[type=submit]:hover{
+	filter: brightness(85%);
+}
