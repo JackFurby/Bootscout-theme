@@ -27,6 +27,10 @@
 	color: var(--white);
 }
 
+.wp-block-search.wp-block-search__button-only .wp-block-search__button {
+	display: block;  /* align the button icon to the center */
+}
+
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
 	border-radius: var(--border-radius);
 	overflow: hidden;

@@ -29,7 +29,7 @@
 				<!-- wp:social-links {"className":"is-style-logos-only","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
 				<ul class="wp-block-social-links is-style-logos-only">
 					<!-- wp:social-link {"url":"#","service":"facebook"} /-->
-					<!-- wp:social-link {"url":"#","service":"x"} /-->
+					<!-- wp:social-link {"url":"#","service":"bluesky"} /-->
 					<!-- wp:social-link {"url":"#","service":"instagram"} /-->
 				</ul>
 				<!-- /wp:social-links -->
