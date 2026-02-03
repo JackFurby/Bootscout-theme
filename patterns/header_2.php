@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Bootscout header 2
+ * Title: Bootscout header with socials
  * Slug: bootscout-theme/header_2
  * Categories: bootscout, header
  */
