@@ -13,6 +13,22 @@
 	}
 }
 
+/* Align the first level of a submenu to the left of the parent menu text on smaller screens*/
+@media (max-width: 768px) {
+	.wp-block-navigation.items-justified-right .wp-block-navigation__container .has-child .wp-block-navigation__submenu-container {
+		left: auto;
+		right: auto;
+	}
+}
+
+/* Space out nav items in top most layer*/
+@media (max-width: 768px) {
+	.wp-block-navigation__container > li {
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+	}
+}
+
 .wp-block-navigation__submenu-container .wp-block-navigation-item:first-child {
 	border-top-left-radius: var(--border-radius);
 	border-top-right-radius: var(--border-radius);
@@ -34,6 +50,7 @@
 
 .wp-block-navigation__container > li {
 	margin-right: 10px;
+	width: fit-content;
 }
 
 @media screen and (min-width: 782px) {
@@ -108,6 +125,21 @@ ul.wp-block-navigation.items-justified-right {
 .wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden {
 	overflow: visible;
 }
+
+/* Set the screen size where the hamburger menu is shown and the nav items are hidden */
+@media (max-width: 1024px) {
+
+	/* Show hamburger */
+	.wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: flex;
+	}
+
+	/* Hide desktop menu items */
+	.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+		display: none;
+	}
+}
+
 
 /* if overlay menu is disabled */
 

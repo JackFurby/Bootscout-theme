@@ -6,7 +6,6 @@
  */
 ?>
 
-
 <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"secondary","textColor":"white"} -->
 <div class="wp-block-group alignfull has-white-color has-secondary-background-color has-text-color has-background has-link-color">
 	<!-- wp:columns {"align":"wide"} -->
