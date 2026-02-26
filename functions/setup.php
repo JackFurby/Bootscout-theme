@@ -27,8 +27,6 @@ if ( ! function_exists( 'bootscout_theme_support' ) ) :
 	add_action( 'after_setup_theme', 'bootscout_theme_support' );
 endif;
 
-add_action('init', 'bootscout_theme_support');
-
 
 function bootscout_woocommerce_output_content_wrapper() {
 	echo '<main id="wp-block-group site-main is-layout-constrained" class="wc-main">';
