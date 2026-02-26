@@ -18,3 +18,4 @@ templates/single-product.html
 templates/taxonomy-product_attribute.html
 templates/taxonomy-product_cat.html
 templates/taxonomy-product_tag.html
+parts/checkout-header.html
