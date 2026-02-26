@@ -54,8 +54,7 @@ function conditionally_register_woo_templates() {
 		'product-search-results.html',
 		'taxonomy-product_attribute.html',
 		'taxonomy-product_cat.html',
-		'taxonomy-product_tag.html',
-		'checkout-header.html'
+		'taxonomy-product_tag.html'
 	];
 
 	foreach ( $woo_templates as $template ) {

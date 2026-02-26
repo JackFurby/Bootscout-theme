@@ -72,6 +72,17 @@ ul.wc-block-grid__products li.wc-block-grid__product {
 
 /* product page */
 
+.wp-block-woocommerce-product-image-gallery span.onsale {
+	background-color: var(--wp--preset--color--white) !important;
+	color: var(--wp--preset--color--grey-80) !important;
+	border: 2px solid var(--wp--preset--color--grey-80) !important;
+	border-radius: .25rem !important;
+	min-height: 0 !important;
+	min-width: 0 !important;
+	line-height: 1.5 !important;
+	padding: .25em .5em !important;
+}
+
 .wp-block-woocommerce-add-to-cart-form .quantity .qty {
 	width: 5em;
 }
@@ -81,14 +92,14 @@ ul.wc-block-grid__products li.wc-block-grid__product {
 }
 
 button.single_add_to_cart_button, button.wc-block-components-button, button.woocommerce-Button, div.woocommerce button {
-	background-color: #32373c;
-	color: white;
+	background-color: var(--wp--preset--color--black);
+	color: var(--wp--preset--color--white);
 }
 
 button.single_add_to_cart_button:hover, button.wc-block-components-button:hover, button.woocommerce-Button:hover, div.woocommerce button:hover {
 	filter: brightness(85%);
-	background-color: #32373c;
-	color: white;
+	background-color: var(--wp--preset--color--black);
+	color: var(--wp--preset--color--white);
 }
 
 
