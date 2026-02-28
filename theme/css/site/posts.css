@@ -67,8 +67,8 @@ main.site-main::after .entry-content::after {  /* clearfix */
 
 /* query block */
 
-.wp-block-query .wp-block-post {
-	padding: 10px;
+.wp-block-query .wp-block-post:not(:has(> .wp-block-group)) {
+    padding: 10px;
 }
 
 .wp-block-query .wp-block-post * {
