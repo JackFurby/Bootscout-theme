@@ -14,8 +14,6 @@ zip -vr Bootscout-theme-${vn}.zip ./Bootscout-theme -x "./Bootscout-theme/.git/*
 # delete folders and files we do not want in the zip file
 zip --delete Bootscout-theme-${vn}.zip "Bootscout-theme/package-lock.json"
 zip --delete Bootscout-theme-${vn}.zip "Bootscout-theme/package.json"
-zip --delete Bootscout-theme-${vn}.zip "Bootscout-theme/Bootscout-theme*.zip"
-zip --delete Bootscout-theme-${vn}.zip "Bootscout-theme/.gitignore"
 zip --delete Bootscout-theme-${vn}.zip "Bootscout-theme/create_zip.sh"
 zip --delete Bootscout-theme-${vn}.zip "Bootscout-theme/CLAUDE.md"
 
