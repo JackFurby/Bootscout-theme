@@ -398,18 +398,18 @@
 	<p class="has-text-align-center has-white-color has-text-color has-link-color">All the latest news for you and your Scouts</p>
 	<!-- /wp:paragraph -->
 
-	<!-- wp:query {"query":{"perPage":"3","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Grid"},"layout":{"type":"default"}} -->
-	<div class="wp-block-query">
-		<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
-		<!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"30px","left":"30px"}}},"layout":{"inherit":false}} -->
-		<div class="wp-block-group" style="padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px">
+	<!-- wp:query {"queryId":42,"query":{"perPage":"3","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Grid"},"layout":{"type":"default"}} -->
+	<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+		<!-- wp:group {"style":{"spacing":{"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"layout":{"inherit":false}} -->
+		<div class="wp-block-group" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px">
 			<!-- wp:post-featured-image {"height":"200px","style":{"border":{"radius":"5px"}}} /-->
 
 			<!-- wp:post-title {"level":3,"isLink":true,"style":{"elements":{"link":{"color":{"text":"var:preset|color|grey-80"}}}},"textColor":"grey-80"} /-->
 
 			<!-- wp:post-date {"textAlign":"left","metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /-->
 
-			<!-- wp:post-excerpt {"moreText":"Continue reading","style":{"spacing":{"margin":{"top":"0","bottom":"0","left":"0","right":"0"},"padding":{"top":"0.5rem","bottom":"0rem"}}}} /--></div>
+			<!-- wp:post-excerpt {"moreText":"Continue reading","style":{"spacing":{"margin":{"top":"0","bottom":"0","left":"0","right":"0"},"padding":{"top":"0.5rem","bottom":"0rem"}}}} /-->
+		</div>
 		<!-- /wp:group -->
 		<!-- /wp:post-template -->
 	</div>
