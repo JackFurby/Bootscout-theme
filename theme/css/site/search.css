@@ -1,0 +1,50 @@
+.wp-block-search__button-inside
+.wp-block-search__inside-wrapper
+.wp-block-search__button {
+	position: relative;
+	z-index: 2;
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	border-top-right-radius: var(--border-radius);
+	border-bottom-right-radius: var(--border-radius);
+}
+
+.wp-block-search__button-inside
+.wp-block-search__inside-wrapper
+.wp-block-search__button:focus {
+	z-index: 5;
+}
+
+.wp-block-search__button {
+	border-radius: var(--border-radius);
+	color: var(--white);
+	border: 0px solid transparent;
+	background-color: var(--wp--preset--color--secondary) !important;
+	padding: .375rem .75rem !important;
+}
+
+.wp-block-search__button:hover {
+	color: var(--white);
+}
+
+.wp-block-search.wp-block-search__button-only .wp-block-search__button {
+	display: block;  /* align the button icon to the center */
+}
+
+.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+	border-radius: var(--border-radius);
+	overflow: hidden;
+}
+
+.wp-block-search__input {
+	border-radius: var(--border-radius);
+}
+
+.wp-block-search__button-only input {
+	margin-right: 5px;
+}
+
+:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){
+	padding: 0;
+	border: 0px solid transparent;
+}

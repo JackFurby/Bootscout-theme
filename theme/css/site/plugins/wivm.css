@@ -1,0 +1,32 @@
+.flexible-opp, .one-time-opp {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.25rem;
+	margin-bottom: calc(var(--spacer) * 2) !important;
+	overflow: hidden;
+	background-color: var(--grey-5);
+	padding: calc(var(--spacer) * 2) !important;
+	}
+
+.volunteer-opps .volunteer_opp .entry-title {
+	margin-top: 0 !important;
+}
+
+.volunteer-opps .entry-content {
+	padding-bottom: 0 !important;
+}
+
+#wivm-sign-up-form input[type=submit] {
+	background-color: var(--wp--preset--color--secondary);
+	color: var(--white);
+	border: 0px solid transparent;
+}
+
+#wivm-sign-up-form input[type=submit]:hover{
+	filter: brightness(85%);
+}

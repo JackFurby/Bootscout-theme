@@ -27,8 +27,6 @@ if ( ! function_exists( 'bootscout_theme_support' ) ) :
 	add_action( 'after_setup_theme', 'bootscout_theme_support' );
 endif;
 
-add_action('init', 'bootscout_theme_support');
-
 
 function bootscout_woocommerce_output_content_wrapper() {
 	echo '<main id="wp-block-group site-main is-layout-constrained" class="wc-main">';
@@ -66,6 +64,13 @@ function conditionally_register_woo_templates() {
 			copy( $source, $destination );
 		}
 	}
+
+	// checkout header is stored in a different directory
+	$source = $template_dir . '/plugins/woocommerce/' . 'checkout-header.html';
+	$destination = $template_dir . '/parts/' . 'checkout-header.html';
+	if ( file_exists( $source ) && ! file_exists( $destination ) ) {
+		copy( $source, $destination );
+	}
 }
 
 // delete WooCommerce templates from template folder if the plugin is not installed
@@ -93,6 +98,12 @@ function remove_woo_templates_if_plugin_missing() {
 		if ( file_exists( $path ) ) {
 			unlink( $path );
 		}
+	}
+
+	// checkout header is stored in a different directory
+	$path = get_stylesheet_directory() . '/parts/' . 'checkout-header.html';
+	if ( file_exists( $path ) ) {
+		unlink( $path );
 	}
 }
 

@@ -7,25 +7,23 @@ $output         = $this->get_custom_css();
 $autoload_class = ( !$wpsl_settings['autoload'] ) ? 'class="wpsl-not-loaded"' : '';
 
 $output .= '<div id="wpsl-wrap" class="alignfull">' . "\r\n";
-$output .= "\t" . '<div class="wpsl-search wpsl-clearfix p-1 has-grey-5-background-color mb-0 ' . $this->get_css_classes() . '">' . "\r\n";
-$output .= "\t" . '<div class="container">' . "\r\n";
-$output .= "\t" . '<p class="text-center h2 mt-3">Find your local group</p>' . "\r\n";
+$output .= "\t" . '<div class="bootscout-wpsl-search wpsl-search wpsl-clearfix has-grey-5-background-color' . $this->get_css_classes() . '">' . "\r\n";
+$output .= "\t" . '<div class="wpsl-bootscout-container">' . "\r\n";
+$output .= "\t" . '<p class="wpsl-header h2">Find your local group</p>' . "\r\n";
 $output .= "\t\t" . '<div id="wpsl-search-wrap">' . "\r\n";
-$output .= "\t\t\t" . '<form autocomplete="off" class="row justify-content-center">' . "\r\n";
-$output .= "\t\t\t\t" . '<div class="col-12 me-0 row justify-content-center">' . "\r\n";
-$output .= "\t\t\t\t\t" . '<div class="col col-md-6 g-0 me-0">' . "\r\n";
-$output .= "\t\t\t\t\t\t" . '<div class="input-group wpsl-input mb-2 me-0 g-0">' . "\r\n";
-$output .= "\t\t\t\t\t\t\t" . '<input id="wpsl-search-input" class="form-control rounded-end-0" type="text" value="' . apply_filters( 'wpsl_search_input', '' ) . '" name="wpsl-search-input" placeholder="' . esc_html( $wpsl->i18n->get_translation( 'search_label', __( 'Your location', 'wpsl' ) ) ) . '" aria-required="true" aria-describedby="wpsl-search-btn" />' . "\r\n";
-$output .= "\t\t\t\t\t\t\t" . '<button id="wpsl-search-btn" class="btn btn-secondary m-0 rounded-start-0" type="submit">' . esc_attr( $wpsl->i18n->get_translation( 'search_btn_label', __( 'Search', 'wpsl' ) ) ) . '</button>' . "\r\n";
-$output .= "\t\t\t\t\t\t" . '</div>' . "\r\n";
+$output .= "\t\t\t" . '<form autocomplete="off">' . "\r\n";
+$output .= "\t\t\t\t" . '<div class="wpsl-search-input">' . "\r\n";
+$output .= "\t\t\t\t\t" . '<div class="wpsl-input">' . "\r\n";
+$output .= "\t\t\t\t\t\t" . '<input id="wpsl-search-input" class="" type="text" value="' . apply_filters( 'wpsl_search_input', '' ) . '" name="wpsl-search-input" placeholder="' . esc_html( $wpsl->i18n->get_translation( 'search_label', __( 'Your location', 'wpsl' ) ) ) . '" aria-required="true" aria-describedby="wpsl-search-btn" />' . "\r\n";
+$output .= "\t\t\t\t\t\t" . '<button id="wpsl-search-btn" class="" type="submit">' . esc_attr( $wpsl->i18n->get_translation( 'search_btn_label', __( 'Search', 'wpsl' ) ) ) . '</button>' . "\r\n";
 $output .= "\t\t\t\t\t" . '</div>' . "\r\n";
 $output .= "\t\t\t\t" . '</div>' . "\r\n";
 
 
 if ( $wpsl_settings['radius_dropdown'] || $wpsl_settings['results_dropdown'] || $this->use_category_filter() ) {
-  $output .= "\t\t\t" . '<p class="text-center text-body-secondary">More settings</p>' . "\r\n";
-  $output .= "\t\t\t\t" . '<div class="row justify-content-center col-12 me-0">' . "\r\n";
-    $output .= "\t\t\t" . '<div class="wpsl-select-wrap col-12 col-lg-6 mb-2 g-0">' . "\r\n";
+	$output .= "\t\t\t" . '<p class="text-grey-60">More settings</p>' . "\r\n";
+	$output .= "\t\t\t\t" . '<div class="wpsl-setting-options">' . "\r\n";
+    $output .= "\t\t\t" . '<div class="wpsl-select-wrap">' . "\r\n";
 
     if ( $wpsl_settings['radius_dropdown'] ) {
         $output .= "\t\t\t\t" . '<div id="wpsl-radius" class="w-50">' . "\r\n";

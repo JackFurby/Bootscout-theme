@@ -1,0 +1,150 @@
+.wp-block-navigation__submenu-container {
+	border-radius: 0.25rem;
+	z-index: 999 !important; /* the menu should always show on top of other page elements */
+}
+
+/* Align sub menus with parent menu item */
+@media (max-width: 768px) {
+	.wp-block-navigation__submenu-container
+		> .has-child
+		> .wp-block-navigation__submenu-container {
+		top: 0;
+		left: 100%;
+	}
+}
+
+/* Align the first level of a submenu to the left of the parent menu text on smaller screens*/
+@media (max-width: 768px) {
+	.wp-block-navigation.items-justified-right .wp-block-navigation__container .has-child .wp-block-navigation__submenu-container {
+		left: auto;
+		right: auto;
+	}
+}
+
+/* Space out nav items in top most layer*/
+@media (max-width: 768px) {
+	.wp-block-navigation__container > li {
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+	}
+}
+
+.wp-block-navigation__submenu-container .wp-block-navigation-item:first-child {
+	border-top-left-radius: var(--border-radius);
+	border-top-right-radius: var(--border-radius);
+}
+
+.wp-block-navigation__submenu-container .wp-block-navigation-item:last-child {
+	border-bottom-left-radius: var(--border-radius);
+	border-bottom-right-radius: var(--border-radius);
+}
+
+.wp-block-navigation__submenu-container .wp-block-navigation-item:hover {
+	background-color: var(--grey-5);
+}
+
+.wp-block-navigation__container .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container{
+	left: 100% !important;
+	right: auto !important;
+}
+
+.wp-block-navigation__container > li {
+	margin-right: 10px;
+	width: fit-content;
+}
+
+@media screen and (min-width: 782px) {
+	.wp-block-columns:not(.is-not-stacked-on-mobile) > .site-title-column {
+		flex: initial !important;
+		width: initial !important;
+	}
+}
+
+.wp-block-post-navigation-link {
+	margin-bottom: 5px !important;
+}
+
+.wp-block-post-navigation-link a {
+	padding: .375rem .75rem !important;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-close {
+	color: #333333 !important;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-content
+.wp-block-navigation__container a,
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-content
+.wp-block-navigation__container span {
+	color: #333333 !important;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-content
+.wp-block-navigation__container ul,
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-content
+.wp-block-navigation__container li {
+	margin-left: 10px;
+	color: #333333 !important;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-content
+.wp-block-navigation__container
+.wp-block-navigation__submenu-container,
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-content
+.wp-block-navigation__container
+.wp-block-navigation-item {
+	padding-top: 1rem !important;
+	padding-bottom: 0;
+}
+
+ul.has-background {
+	padding: 0;
+}
+
+/* overlay menu */
+.wp-block-navigation__responsive-container.is-menu-open.has-modal-open
+ul.wp-block-navigation.items-justified-right {
+	width: 100vw;
+	--navigation-layout-justification-setting: flex-start;
+	--navigation-layout-justify: flex-start;
+}
+
+
+.wp-block-search.wp-block-search__button-only .wp-block-search__button[aria-expanded="true"] {
+	max-width: 100%;
+}
+
+/* fix only half the button being visible when in row with a nav element on a small scren */
+.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden {
+	overflow: visible;
+}
+
+/* Set the screen size where the hamburger menu is shown and the nav items are hidden */
+@media (max-width: 1024px) {
+
+	/* Show hamburger */
+	.wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: flex;
+	}
+
+	/* Hide desktop menu items */
+	.wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+		display: none;
+	}
+}
+
+
+/* if overlay menu is disabled */
+
+@media (max-width: 768px) {
+	nav ul.wp-block-navigation__container {
+		display: block;
+	}
+}

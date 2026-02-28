@@ -220,7 +220,10 @@
 				"bold": 700,
 				"extra-bold": 800,
 				"black": 900
-			}
+			},
+			"--table-border-width": "2px",
+			"--table-border-style": "solid",
+			"--table-border-color": "var(--wp--preset--color--grey-60)"
 		},
 		"layout": {
 			"contentSize": "1110px",
@@ -441,9 +444,20 @@
 				}
 			]
 		},
-		"blocks": {},
+		"blocks": {
+			"core/table": {
+				"border": {
+					"customWidth": true,
+					"customColor": true,
+					"customStyle": true
+				}
+			}
+		},
 		"shadow": {
 			"defaultPresets": true
+		},
+		"comments": {
+			"enabled": false
 		}
 	},
 	"styles": {
@@ -595,7 +609,14 @@
 						"bottom": "1rem"
 					}
 				}
-			}
+			},
+			"core/table": {
+			 "border": {
+				 "width": "var(--wp--custom--table-border-width)",
+				 "style": "var(--wp--custom--table-border-style)",
+				 "color": "var(--wp--custom--table-border-color)"
+			 }
+		 }
 		}
 	},
 	"customTemplates": [

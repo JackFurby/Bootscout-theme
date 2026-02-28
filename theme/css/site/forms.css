@@ -1,0 +1,29 @@
+form input, form textarea, form select, form button {
+	border: 1px solid var(--grey-40);
+	border-radius: 0.25rem;
+	font-size: var(--wp--preset--font-size--text);
+	padding: .5rem .75rem;
+}
+
+form select {
+	background-color: var(--grey-20);
+	color: var(--grey-80)
+}
+
+form input::placeholder, form textarea::placeholder {
+  color: var(--grey-40);
+}
+
+form label {
+	margin-bottom: 0.5rem;
+}
+
+.post-password-form input[type=submit] {
+	background-color: var(--wp--preset--color--secondary);
+	color: var(--white);
+	border: 0px solid transparent;
+}
+
+.post-password-form input[type=submit]:hover{
+	filter: brightness(85%);
+}

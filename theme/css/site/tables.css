@@ -1,0 +1,18 @@
+/* Collapse table borders so lines don't double */
+.wp-block-table table {
+  border-collapse: collapse;
+  border: 0; /* no outer border */
+}
+
+/* Remove all borders except bottom */
+.wp-block-table td,
+.wp-block-table th {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+
+  /* Only apply bottom border if not set inline */
+  border-bottom-width: var(--wp--custom--table-border-width);
+  border-bottom-style: var(--wp--custom--table-border-style);
+  border-bottom-color: var(--wp--custom--table-border-color);
+}

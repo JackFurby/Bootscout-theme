@@ -1,0 +1,11 @@
+.wp-block-file__button:hover {
+}
+
+.wp-block-file__button {
+	padding: 0.5em 1em !important;
+}
+
+.wp-block-file a  {
+	font-weight: normal;
+	font-size: var(--wp--preset--font-size--text);
+}

@@ -1,0 +1,105 @@
+/* Fonts */
+
+strong, .strong {
+	font-weight: var(--wp--custom--font-weight--extra-bold);
+}
+
+.more-link {
+	display: block;
+}
+
+.a, a {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+h1, .h1 {
+	font-size: var(--wp--preset--font-size--xx-large);
+	line-height: 1.15;
+	font-weight: var(--wp--custom--font-weight--black);
+}
+
+h2, .h2 {
+	font-size: var(--wp--preset--font-size--x-large);
+	font-weight: var(--wp--custom--font-weight--extra-bold);
+}
+
+h3, .h3 {
+	font-size: var(--wp--preset--font-size--large);
+	font-weight: var(--wp--custom--font-weight--bold);
+}
+
+h4, .h4 {
+	font-size: var(--wp--preset--font-size--medium);
+	font-weight: var(--wp--custom--font-weight--bold);
+}
+
+h5, .h5 {
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: var(--wp--custom--font-weight--bold);
+}
+
+h6, .h6 {
+	font-size: var(--wp--preset--font-size--text);
+	font-weight: var(--wp--custom--font-weight--bold);
+}
+
+p, .p {
+	font-size: var(--wp--preset--font-size--text);
+	font-weight: var(--wp--custom--font-weight--regular);
+}
+
+.text-scout-purple {
+	color: var(--scout-purple);
+}
+.text-scout-green{
+	color: var(--scout-green);
+}
+.text-scout-forest-green{
+	color: var(--scout-forest-green);
+}
+.text-scout-blue{
+	color: var(--scout-blue);
+}
+.text-scout-navy{
+	color: var(--scout-navy);
+}
+.text-scout-teal{
+	color: var(--scout-teal);
+}
+.text-scout-red{
+	color: var(--scout-red);
+}
+.text-scout-orange{
+	color: var(--scout-orange);
+}
+.text-scout-pink{
+	color: var(--scout-pink);
+}
+.text-scout-yellow{
+	color: var(--scout-yellow);
+}
+.text-scout-section-green{
+	color: var(--scout-section-green);
+}
+.text-white{
+	color: var(--scout-white);
+}
+.text-grey-5{
+	color: var(--scout-grey-5);
+}
+.text-grey-20{
+	color: var(--scout-grey-20);
+}
+.text-grey-40{
+	color: var(--scout-grey-40);
+}
+.text-grey-60{
+	color: var(--scout-grey-60);
+}
+.text-grey-80{
+	color: var(--scout-grey-80);
+}
+.text-black{
+	color: var(--scout-black);
+}

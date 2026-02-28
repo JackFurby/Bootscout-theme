@@ -1,0 +1,86 @@
+/* General structure */
+
+body {
+	overflow-x: hidden;  /* stop full width elements overflowing */
+}
+
+.alignfull {
+	position: relative;
+	right: 0px; /* Fallback */
+	right: calc((100vw - 100%)/2);
+	width: 100vw;
+	max-width: 100vw;
+	clear: both;
+}
+
+.alignwide {
+	position: relative;
+	right: 2.375em;
+	width: 100vw;
+	max-width: 100vw;
+	clear: both;
+}
+
+/* make sure align elements inside align elements behave properly. note: the page also uses align, but in a <main> tag */
+div.alignfull .alignfull,
+div.alignfull .alignwide,
+div.alignwide .alignfull,
+div.alignwide .alignwide,
+div.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) .alignfull,
+div.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) .alignwide {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	right: 0 !important;
+}
+
+/* Down from xl */
+@media (max-width: 1199.98px) {
+	.alignwide {
+		width: calc(100%);
+		right: 0px;
+	}
+}
+
+/* xl and up */
+@media (min-width: 1200px) {
+	.alignwide {
+		width: calc(100% + (2 * 2rem));
+		right: 2rem;
+	}
+}
+
+/* xxl and up */
+@media (min-width: 1400px) {
+	.alignwide {
+		width: calc(100% + (2 * 10rem));
+		right: 10rem;
+	}
+}
+
+.wp-block-post div.wp-block-group:only-child {
+	grid-column: 1 / -1; /* grid column span across both columns if no featured image is present */
+}
+
+.is-content-justification-center {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+/* query block */
+div.wp-block-group:only-child {
+	height: 100%;
+}
+
+/* separator block */
+
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots).alignwide, .wp-block-separator:not(.is-style-wide):not(.is-style-dots).alignfull{
+	right: 0rem;
+}
+/* separator height without background colour is set by border width*/
+.wp-block-separator {
+	border-width: 3px;
+}
+.wp-block-separator.has-background:not(.is-style-dots), .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+	height: 3px;
+}
