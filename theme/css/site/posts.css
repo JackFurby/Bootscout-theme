@@ -64,3 +64,13 @@ main.site-main::after .entry-content::after {  /* clearfix */
 	max-height: 500px;
 	width: auto;
 }
+
+/* query block */
+
+.wp-block-query .wp-block-post {
+	padding: 10px;
+}
+
+.wp-block-query .wp-block-post * {
+	margin: 0;
+}
