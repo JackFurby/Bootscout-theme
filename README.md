@@ -44,3 +44,7 @@ You can view the theme in action and find user guides at [bootscout.org.uk](http
 ## Development
 
 Please see the Wiki accompanying this repository for guides on setting up and developing the theme. The Wiki is aimed at developers. For general usage guidance please visit [bootscout.org.uk](https://bootscout.org.uk).
+
+## AI Disclosure
+
+Parts of this project were developed with assistance from AI tools. AI was used to support code writing, review, debugging, and documentation. All AI-generated or AI-assisted output was reviewed and approved by the project author. Final decisions on design, architecture, and implementation remain the author's own.
