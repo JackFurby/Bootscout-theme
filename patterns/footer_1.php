@@ -46,7 +46,7 @@
 			<h3 class="wp-block-heading">Useful links</h3>
 			<!-- /wp:heading -->
 
-			<!-- wp:navigation {textColor":"white","overlayMenu":"never","overlayTextColor":"grey-80","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"}} /-->
+			<!-- wp:navigation {"textColor":"white","overlayMenu":"never","overlayTextColor":"grey-80","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"}} /-->
 		</div>
 		<!-- /wp:column -->
 
@@ -56,7 +56,7 @@
 			<h3 class="wp-block-heading" style="margin-top:0;margin-bottom:0">Look wider</h3>
 			<!-- /wp:heading -->
 
-			<!-- wp:navigation {textColor":"white","overlayMenu":"never","overlayTextColor":"grey-80","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"}} /-->
+			<!-- wp:navigation {"textColor":"white","overlayMenu":"never","overlayTextColor":"grey-80","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"}} /-->
 		</div>
 		<!-- /wp:column -->
 
