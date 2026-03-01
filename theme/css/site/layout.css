@@ -67,6 +67,18 @@ div.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignf
 	margin-right: auto !important;
 }
 
+.is-content-justification-left {
+	margin-right: auto !important;
+}
+
+.is-content-justification-right {
+	margin-left: auto !important;
+}
+
+.is-content-justification-space-between {
+	flex-grow: 1
+}
+
 /* query block */
 div.wp-block-group:only-child {
 	height: 100%;

@@ -12,11 +12,11 @@
 	<div class="wp-block-columns alignfull are-vertically-aligned-center">
 		<!-- wp:column {"verticalAlignment":"center","width":"80%"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:80%">
-			<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group">
 				<!-- wp:site-title {"textAlign":"left","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"spacing":{"margin":{"bottom":"0px"}},"layout":{"selfStretch":"fit","flexSize":null}},"textColor":"white","fontSize":"large"} /-->
 
-				<!-- wp:navigation {"textColor":"white","icon":"menu","overlayTextColor":"grey-80","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"medium","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left"}} /-->
+				<!-- wp:navigation {"textColor":"white","overlayTextColor":"grey-80","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} /-->
 			</div>
 			<!-- /wp:group -->
 		</div>
