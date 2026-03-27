@@ -211,11 +211,7 @@
 		},
 		"custom": {
 			"fontWeight": {
-				"thin": 100,
-				"extra-light": 200,
-				"light": 300,
 				"regular": 400,
-				"medium": 500,
 				"semi-bold": 600,
 				"bold": 700,
 				"extra-bold": 800,
@@ -262,130 +258,16 @@
 					"name": "Nunito Sans",
 					"fontFace": [
 						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "200",
+							"fontFamily": "Nunito Sans",
+							"fontWeight": "400 600 700 800 900",
 							"fontStyle": "normal",
-							"fontStretch": "normal",
 							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
 						},
 						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "300",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "400",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "500",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "600",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "700",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "800",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "900",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "1000",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "200",
+							"fontFamily": "Nunito Sans",
+							"fontWeight": "400 600 700 800 900",
 							"fontStyle": "italic",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "300",
-							"fontStyle": "italic",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "400",
-							"fontStyle": "italic",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "500",
-							"fontStyle": "italic",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "600",
-							"fontStyle": "italic",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "700",
-							"fontStyle": "italic",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "800",
-							"fontStyle": "italic",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "900",
-							"fontStyle": "italic",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontWeight": "1000",
-							"fontStyle": "italic",
-							"fontStretch": "normal",
-							"src": [ "file:./theme/fonts/NunitoSans-italic.woff2" ]
+							"src": [ "file:./theme/fonts/NunitoSans-Italic.woff2" ]
 						}
 					]
 				},
