@@ -212,9 +212,7 @@
 		"custom": {
 			"fontWeight": {
 				"regular": 400,
-				"semi-bold": 600,
 				"bold": 700,
-				"extra-bold": 800,
 				"black": 900
 			},
 			"--table-border-width": "2px",
@@ -259,13 +257,13 @@
 					"fontFace": [
 						{
 							"fontFamily": "Nunito Sans",
-							"fontWeight": "400 600 700 800 900",
+							"fontWeight": "400 700 900",
 							"fontStyle": "normal",
 							"src": [ "file:./theme/fonts/NunitoSans.woff2" ]
 						},
 						{
 							"fontFamily": "Nunito Sans",
-							"fontWeight": "400 600 700 800 900",
+							"fontWeight": "400 700 900",
 							"fontStyle": "italic",
 							"src": [ "file:./theme/fonts/NunitoSans-Italic.woff2" ]
 						}
