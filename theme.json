@@ -270,11 +270,6 @@
 							"src": [ "file:./theme/fonts/NunitoSans-Italic.woff2" ]
 						}
 					]
-				},
-				{
-					"fontFamily": "system-ui, sans-serif",
-					"slug": "system-font",
-					"name": "System Font"
 				}
 			],
 			"defaultFontSizes": false,

@@ -6,8 +6,14 @@
  */
 ?>
 
-<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}},"backgroundColor":"scout-blue","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-scout-blue-background-color has-background" style="margin-bottom:var(--wp--preset--spacing--50)">
+<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"0","bottom":"0"}}},"backgroundColor":"grey-5","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-grey-5-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0">
+	<!-- wp:breadcrumbs /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|50"}}},"backgroundColor":"scout-blue","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-scout-blue-background-color has-background" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--50)">
 	<!-- wp:columns -->
 	<div class="wp-block-columns">
 		<!-- wp:column {"width":"66%"} -->
