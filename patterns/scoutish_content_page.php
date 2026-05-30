@@ -91,7 +91,7 @@
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph -->
-				<p>Add some text, set and image, add a link to another page etc.</p>
+				<p>Add some text, set an image, add a link to another page etc.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

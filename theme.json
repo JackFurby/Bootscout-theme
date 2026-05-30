@@ -250,6 +250,7 @@
 			"textColumns": false,
 			"textDecoration": true,
 			"textTransform": true,
+			"textIndent": true,
 			"writingMode": false,
 			"fontFamilies": [
 				{
