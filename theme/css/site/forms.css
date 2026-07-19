@@ -6,7 +6,7 @@ form input, form textarea, form select, form button {
 }
 
 form select {
-	background-color: var(--grey-20);
+	background-color: var(--white);
 	color: var(--grey-80)
 }
 
@@ -16,6 +16,29 @@ form input::placeholder, form textarea::placeholder {
 
 form label {
 	margin-bottom: 0.5rem;
+}
+
+/* Fluent Forms multiselect (Choices.js) — theme-inherited style only */
+.ff-inherit-theme-style .choices__inner {
+	border: 1px solid var(--grey-40);
+	border-radius: 0.25rem;
+}
+
+.ff-inherit-theme-style .choices__list--dropdown {
+	border: 1px solid var(--grey-40);
+	border-radius: 0 0 0.25rem 0.25rem;
+	background-color: var(--white);
+}
+
+.ff-inherit-theme-style .choices__list--dropdown .choices__item {
+	font-size: var(--wp--preset--font-size--text);
+	color: var(--grey-80);
+	background-color: var(--white);
+}
+
+.ff-inherit-theme-style .choices__item--selectable.is-highlighted {
+	background-color: var(--grey-10);
+	color: var(--grey-80);
 }
 
 .post-password-form input[type=submit] {
