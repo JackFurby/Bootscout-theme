@@ -6,26 +6,30 @@
  */
 ?>
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"backgroundColor":"primary","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-primary-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
-	<!-- wp:columns {"verticalAlignment":null} -->
-	<div class="wp-block-columns">
-		<!-- wp:column {"width":"50%","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}}} -->
-		<div class="wp-block-column" style="padding-top:0;padding-right:var(--wp--preset--spacing--40);padding-bottom:0;padding-left:var(--wp--preset--spacing--40);flex-basis:50%">
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"0","margin":{"top":"0","bottom":"0"}},"dimensions":{"minHeight":"0"}},"backgroundColor":"scout-blue","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-scout-blue-background-color has-background" style="min-height:0;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
+	<!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}}} -->
+	<div class="wp-block-columns alignwide are-vertically-aligned-center" style="margin-top:var(--wp--preset--spacing--80);margin-bottom:var(--wp--preset--spacing--80)">
+		<!-- wp:column {"verticalAlignment":"center","width":"40%","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}}} -->
+		<div class="wp-block-column is-vertically-aligned-center" style="padding-top:0;padding-right:var(--wp--preset--spacing--40);padding-bottom:0;padding-left:var(--wp--preset--spacing--40);flex-basis:40%">
 			<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
 			<div class="wp-block-group">
-				<!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|scout-pink"}}}},"textColor":"scout-pink","fontSize":"xx-large"} -->
-				<h2 class="wp-block-heading has-scout-pink-color has-text-color has-link-color has-xx-large-font-size">Preparing young people with skills for life</h2>
+				<!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|scout-yellow"}}}},"textColor":"scout-yellow","fontSize":"xx-large"} -->
+				<h2 class="wp-block-heading has-scout-yellow-color has-text-color has-link-color has-xx-large-font-size">Giving young people a place to belong</h2>
+				<!-- /wp:heading -->
+
+				<!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} -->
+				<h3 class="wp-block-heading has-white-color has-text-color has-link-color">Are you ready to join the adventure?</h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:buttons {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"left"}} -->
 				<div class="wp-block-buttons">
-					<!-- wp:button {"backgroundColor":"primary","textColor":"white","width":50,"className":"is-style-outline","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}}} -->
-					<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline"><a class="wp-block-button__link has-white-color has-primary-background-color has-text-color has-background has-link-color wp-element-button">Volunteer</a></div>
+					<!-- wp:button {"backgroundColor":"scout-blue","textColor":"white","width":50,"className":"is-style-outline","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}}} -->
+					<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline"><a class="wp-block-button__link has-white-color has-scout-blue-background-color has-text-color has-background has-link-color wp-element-button">Volunteer</a></div>
 					<!-- /wp:button -->
 
-					<!-- wp:button {"backgroundColor":"primary","textColor":"white","width":50,"className":"is-style-outline","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}}} -->
-					<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline"><a class="wp-block-button__link has-white-color has-primary-background-color has-text-color has-background has-link-color wp-element-button">Join Scouts</a></div>
+					<!-- wp:button {"backgroundColor":"scout-blue","textColor":"white","width":50,"className":"is-style-outline","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}}} -->
+					<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-outline"><a class="wp-block-button__link has-white-color has-scout-blue-background-color has-text-color has-background has-link-color wp-element-button">Join Scouts</a></div>
 					<!-- /wp:button -->
 				</div>
 				<!-- /wp:buttons -->
@@ -34,23 +38,25 @@
 		</div>
 		<!-- /wp:column -->
 
-		<!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
-		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%">
-			<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+		<!-- wp:column {"verticalAlignment":"center","width":"60%"} -->
+		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%">
+
+			<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 			<div class="wp-block-group">
-				<!-- wp:image {"sizeSlug":"medium","linkDestination":"none"} -->
-				<figure class="wp-block-image size-medium"><img alt=""/></figure>
+				<!-- wp:image {"className":"size-large","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}}} -->
+				<figure class="wp-block-image size-large" style="margin-bottom:var(--wp--preset--spacing--60)"><img alt=""/></figure>
 				<!-- /wp:image -->
 
-				<!-- wp:image {"sizeSlug":"medium","linkDestination":"none","style":{"spacing":{"margin":{"top":"var:preset|spacing|80"}}}} -->
-				<figure class="wp-block-image size-medium" style="margin-top:var(--wp--preset--spacing--80)"><img alt=""/></figure>
+				<!-- wp:image {"className":"size-large","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}}} -->
+				<figure class="wp-block-image size-large" style="margin-top:var(--wp--preset--spacing--60)"><img alt=""/></figure>
 				<!-- /wp:image -->
 
-				<!-- wp:image {"sizeSlug":"medium","linkDestination":"none"} -->
-				<figure class="wp-block-image size-medium"><img alt=""/></figure>
+				<!-- wp:image {"className":"size-large","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}}} -->
+				<figure class="wp-block-image size-large" style="margin-bottom:var(--wp--preset--spacing--60)"><img alt=""/></figure>
 				<!-- /wp:image -->
 			</div>
 			<!-- /wp:group -->
+
 		</div>
 		<!-- /wp:column -->
 	</div>
