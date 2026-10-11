@@ -1,12 +1,17 @@
 
 /*# base styling */
 
-.wpsl-select-wrap, .wpsl-input {
+/* WP Store Locator 2.x only ( 3.x adds .wpsl-v3 to the body ), plus the Bootscout template's search bar. */
+body:not(.wpsl-v3) .wpsl-select-wrap,
+body:not(.wpsl-v3) .wpsl-input,
+.wpsl-bootscout-container .wpsl-input {
 	width: 45%;
 }
 
 @media (max-width: 825px) {
-	.wpsl-select-wrap, .wpsl-input {
+	body:not(.wpsl-v3) .wpsl-select-wrap,
+	body:not(.wpsl-v3) .wpsl-input,
+	.wpsl-bootscout-container .wpsl-input {
 		width: 100%;
 	}
 }
@@ -27,7 +32,7 @@
 
 #wpsl-search-wrap .wpsl-dropdown div {
 	border: 1px solid var(--grey-40) !important;
-	border-radius: var(--border-radius !important);
+	border-radius: var(--border-radius) !important;
 }
 
 #wpsl-search-wrap .wpsl-dropdown:hover {
@@ -42,9 +47,10 @@
 	background-color: var(--wp--preset--color--secondary) !important;
 }
 
-#wpsl-search-wrap .wpsl-input div label,
-#wpsl-search-wrap .wpsl-select-wrap div label,
-#wpsl-search-wrap #wpsl-category label {
+/* WP Store Locator 2.x only, 3.x sizes the labels with JS. */
+body:not(.wpsl-v3) #wpsl-search-wrap .wpsl-input div label,
+body:not(.wpsl-v3) #wpsl-search-wrap .wpsl-select-wrap div label,
+body:not(.wpsl-v3) #wpsl-search-wrap #wpsl-category label {
 	display: inline-block;
 	margin-bottom: 0.5rem;
 	width: 100% !important;
@@ -168,4 +174,177 @@
   justify-content: center;
   align-items: center;
 	margin-right: 0 !important;
+}
+
+/*
+ * WP Store Locator 3.x: label above each filter, filters centred in a wrapping row.
+ * The plugin's alignSearchColumns() sets inline label widths and a category
+ * dropdown min-width for its own stacked layout.
+ */
+#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap .wpsl-setting-options,
+#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap .wpsl-select-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 1rem;
+	float: none;
+	margin: 0;
+}
+
+#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap .wpsl-select-wrap {
+	width: auto;
+}
+
+#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap #wpsl-radius,
+#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap #wpsl-results,
+#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap #wpsl-category {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	height: auto;
+	min-height: 0;
+	max-height: none;
+	margin: 0;
+	float: none;
+}
+
+#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap .wpsl-setting-options label {
+	width: auto !important;
+	margin: 0 0 0.5rem;
+	float: none;
+}
+
+#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap #wpsl-category .wpsl-dropdown {
+	min-width: 0 !important;
+}
+
+#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap #wpsl-checkbox-filter {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0 1rem;
+	margin: 0;
+	padding: 0;
+}
+
+#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap #wpsl-checkbox-filter li {
+	width: auto;
+	margin: 0;
+	float: none;
+}
+
+#wpsl-wrap.wpsl-bootscout-template .wpsl-cat-autosubmit #wpsl-search-btn {
+	display: flex;
+}
+
+/* Single store pages. */
+
+.single-wpsl_stores .wp-block-post-content {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	column-gap: 2.375em;
+	row-gap: 0;
+	align-items: start;
+}
+
+.single-wpsl_stores .wp-block-post-content > * {
+	grid-column: 1 / -1;
+	width: 100%;
+	max-width: none;
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+	box-sizing: border-box;
+}
+
+.single-wpsl_stores .wp-block-post-content > [id^="wpsl-base-"] {
+	border-radius: var(--border-radius);
+}
+
+.single-wpsl_stores .wpsl-locations-details,
+.single-wpsl_stores .wpsl-opening-hours-status,
+.single-wpsl_stores .wpsl-opening-hours,
+.single-wpsl_stores .wpsl-location-status {
+	padding: 1.5rem;
+	border-radius: var(--border-radius);
+	background-color: var(--wp--preset--color--grey-5);
+}
+
+.single-wpsl_stores .wpsl-locations-details > span:first-child {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 1.25rem;
+}
+
+.single-wpsl_stores .wpsl-contact-details {
+	margin-top: 1rem;
+}
+
+.single-wpsl_stores .wpsl-location-directions p {
+	margin: 1rem 0 0;
+}
+
+.single-wpsl_stores .wpsl-location-directions a {
+	display: inline-block;
+	padding: .375rem .75rem;
+	border-radius: var(--border-radius);
+	color: var(--white);
+	background-color: var(--wp--preset--color--secondary);
+}
+
+.single-wpsl_stores .wpsl-location-directions a:hover {
+	filter: brightness(85%);
+}
+
+/* The open / closed status and the hours table read as one box. WPSL sets the status margin with !important. */
+.single-wpsl_stores .wpsl-opening-hours-status {
+	align-self: end;
+	margin-bottom: 0 !important;
+	padding-bottom: 0.5rem;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.single-wpsl_stores .wpsl-opening-hours-status + .wpsl-opening-hours {
+	padding-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.single-wpsl_stores .wpsl-opening-hours {
+	display: table;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.single-wpsl_stores .wpsl-opening-hours td {
+	padding: .25rem 1rem .25rem 0;
+	border: 0;
+}
+
+@media (min-width: 782px) {
+	.single-wpsl_stores .wp-block-post-content {
+		grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+	}
+
+	.single-wpsl_stores .wp-block-post-content > [id^="wpsl-base-"] {
+		grid-column: 1;
+		grid-row: span 3;
+	}
+
+	.single-wpsl_stores .wpsl-locations-details,
+	.single-wpsl_stores .wpsl-opening-hours-status,
+	.single-wpsl_stores .wpsl-opening-hours,
+	.single-wpsl_stores .wpsl-location-status {
+		grid-column: 2;
+	}
+}
+
+@media (max-width: 570px) {
+	#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap .wpsl-select-wrap,
+	#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap #wpsl-radius,
+	#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap #wpsl-results,
+	#wpsl-wrap.wpsl-bootscout-template #wpsl-search-wrap #wpsl-category {
+		width: 100%;
+	}
 }

@@ -29,7 +29,7 @@ endif;
 
 
 function bootscout_woocommerce_output_content_wrapper() {
-	echo '<main id="wp-block-group site-main is-layout-constrained" class="wc-main">';
+	echo '<main class="wc-main">';
 }
 
 function bootscout_woocommerce_output_content_wrapper_end() {
@@ -37,12 +37,12 @@ function bootscout_woocommerce_output_content_wrapper_end() {
 }
 
 // Copy WooCommerce templates to template folder if the plugin is installed
-function conditionally_register_woo_templates() {
+function bootscout_theme_copy_woo_templates() {
 	if ( ! class_exists( 'WooCommerce' ) ) {
 		return;
 	}
 
-	$template_dir = get_stylesheet_directory();
+	$template_dir = get_template_directory();
 	$woo_templates = [
 		'single-product.html',
 		'page-cart.html',
@@ -74,12 +74,12 @@ function conditionally_register_woo_templates() {
 }
 
 // delete WooCommerce templates from template folder if the plugin is not installed
-function remove_woo_templates_if_plugin_missing() {
+function bootscout_theme_remove_woo_templates() {
 	if ( class_exists( 'WooCommerce' ) ) {
 		return;
 	}
 
-	$template_dir = get_stylesheet_directory() . '/templates/';
+	$template_dir = get_template_directory() . '/templates/';
 	$woo_templates = [
 		'single-product.html',
 		'page-cart.html',
@@ -101,11 +101,11 @@ function remove_woo_templates_if_plugin_missing() {
 	}
 
 	// checkout header is stored in a different directory
-	$path = get_stylesheet_directory() . '/parts/' . 'checkout-header.html';
+	$path = get_template_directory() . '/parts/' . 'checkout-header.html';
 	if ( file_exists( $path ) ) {
 		unlink( $path );
 	}
 }
 
-add_action( 'after_setup_theme', 'conditionally_register_woo_templates' );
-add_action( 'after_setup_theme', 'remove_woo_templates_if_plugin_missing' );
+add_action( 'after_setup_theme', 'bootscout_theme_copy_woo_templates' );
+add_action( 'after_setup_theme', 'bootscout_theme_remove_woo_templates' );

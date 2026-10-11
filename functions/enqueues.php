@@ -80,7 +80,7 @@ if ( ! function_exists( 'bootscout_theme_pattern_categories' ) ) :
 	}
 endif;
 
-add_filter( 'wpsl_templates', 'custom_templates' , 10, 2);
+add_filter( 'wpsl_templates', 'bootscout_theme_wpsl_templates' );
 
 /**
  * Register custom WP Store Locator template.
@@ -93,18 +93,24 @@ add_filter( 'wpsl_templates', 'custom_templates' , 10, 2);
  * @param array $templates Array of available templates for the plugin.
  * @return array Modified array of templates with Bootscout template added.
  */
-function custom_templates( $templates ) {
+function bootscout_theme_wpsl_templates( $templates ) {
 
 	/**
 	 * The 'id' is for internal use and must be unique ( since 2.0 ).
 	 * The 'name' is used in the template dropdown on the settings page.
-	 * The 'path' points to the location of the custom template,
-	 * in this case the folder of your active theme.
+	 * The 'path' points to the location of the custom template in this
+	 * theme.
+	 *
+	 * WP Store Locator 3.0 changed the template API, so 2.x keeps its own template.
+	 * 2.x will be removed at a later date.
 	 */
+	$is_wpsl_v3 = defined( 'WPSL_VERSION_NUM' ) && version_compare( WPSL_VERSION_NUM, '3.0', '>=' );
+
 	$templates[] = array (
 		'id'   => 'bootscout',
 		'name' => 'Bootscout',
-		'path' => get_stylesheet_directory() . '/' . 'plugins/wpsl-templates/bootscout.php',
+		'desc' => __( 'The search form sits in a full-width banner, with the store listings and map below.', 'bootscout-theme' ),
+		'path' => get_template_directory() . '/plugins/wpsl-templates/' .( $is_wpsl_v3 ? 'bootscout.php' : 'bootscout-v2.php' ),
 	);
 
 	return $templates;
