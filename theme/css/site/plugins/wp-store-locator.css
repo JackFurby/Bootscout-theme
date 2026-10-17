@@ -348,3 +348,13 @@ body:not(.wpsl-v3) #wpsl-search-wrap #wpsl-category label {
 		width: 100%;
 	}
 }
+
+/* map only block */
+
+/* [wpsl_map] shortcode: full width unless a width is set inline. Covers OSM (wpsl-canvas-osm) and Google (wpsl-gmap-canvas) */
+:is(.wp-block-post-content, .entry-content) > :is([id^="wpsl-base-"], .wpsl-canvas-osm, .wpsl-gmap-canvas):not([style*="width"]) {
+	position: relative;
+	width: 100vw;
+	max-width: 100vw;
+	right: calc((100vw - 100%) / 2);
+}
